@@ -51,4 +51,4 @@ fetch('https://api.yourdomain.com/v1/countries?name=nigeria', {
 ```
 
 ## 🔗 Next Steps
-- [Fetch States by Country](./state.md)
+- [Fetch States by Country](./states.md)

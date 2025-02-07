@@ -17,16 +17,21 @@ features:
   - title: Scalable & Secure
     details: Designed to handle high traffic while ensuring secure transactions.
   - title: Comprehensive Endpoints
-    details:  Manage products, orders, customers, payments, and more with our extensive API.
+    details: Manage products, orders, customers, payments, and more with our extensive API.
   - title: Developer-Friendly
     details: Detailed documentation, SDKs, and code samples to get you started quickly.
   - title: Multi-Payment Gateway
     details: Supports various payment providers for seamless checkout experiences.
-  - title: Customer Support
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: Real-Time Order Tracking
+    details: Track your orders with real-time status updates and fulfillments.
+  - title: Flexible Product Management
+    details: Add, update, and manage products with rich specifications, pricing, and availability.
+  - title: AI-Driven Insights (Coming Soon)
+    details: We are working on AI-powered features for business owners to query the system and get quick insights into orders, payments, and other key metrics.
 
 footer: MIT Licensed | Copyright © 2018-present VuePress Community
 ---
+
 
 This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
 

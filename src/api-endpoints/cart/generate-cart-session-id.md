@@ -37,4 +37,4 @@ fetch('https://api.yourdomain.com/v1/generate/session/id', {
 ## 🔗 Next Steps
 - [Add Item to Cart](./add-item-to-cart.md)
 - [Remove Item from Cart](./remove-cart-item.md)
-- [Fetch Cart Details](./fetch-cart.md)
+- [Fetch Cart Details](./list-cart-items.md)

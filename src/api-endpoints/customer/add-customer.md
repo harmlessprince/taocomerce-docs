@@ -72,5 +72,4 @@ fetch('https://api.yourdomain.com/v1/customers/signup', {
 ```
 
 ## 🔗 Next Steps
-- [Authenticate Customer](./authentication.md)
-- [Fetch Customer Details](./fetch-customer.md)
+- [Authenticate Customer](../authentication/login.md)

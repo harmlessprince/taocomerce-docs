@@ -13,7 +13,7 @@ The **Cart API** provides endpoints for managing a user's shopping cart. Users c
 - The `X-TenantId` header is **mandatory** for all requests.
 
 ## 🔗 Available Endpoints
-- [Generate Cart Session](./generate-cart-session.md) *(For guest users)*
+- [Generate Cart Session](./generate-cart-session-id.md) *(For guest users)*
 - [Add Item to Cart](./add-item-to-cart.md)
 - [List Cart Items](./list-cart-items.md)
 - [Increment Cart Item Quantity](./increment-cart-item.md)
@@ -22,4 +22,4 @@ The **Cart API** provides endpoints for managing a user's shopping cart. Users c
 - [Clear Cart](./clear-cart.md)
 
 ## 🔗 Next Steps
-- [Checkout API](../checkout/README.md)
+- [Checkout API](./checkout.md)
