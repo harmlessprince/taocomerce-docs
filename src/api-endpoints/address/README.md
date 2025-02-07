@@ -9,7 +9,7 @@ The **Addresses API** allows users to manage their saved addresses, which are us
 
 
 ## 🔗 Next Steps
-- [Fetch Addresses](./fetch-addresses.md)
+- [Fetch Addresses](./fetch-address.md)
 - [Add Address](./add-address.md)
 - [Update Address](./update-address.md)
 - [Delete Address](./delete-address.md)
