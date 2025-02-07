@@ -25,7 +25,7 @@ The **Set Default Address** API allows users to designate a specific address as 
 
 ### **Example API Call (Fetch or Axios)**
 ```javascript
-fetch('https://taocommerceapi.taoforge.org/v1/addresses/1/default', {
+fetch('https://taocommerceapi.taoforge.org/v1/addresses/67a6233a39c0d26e52f6c1b4/default', {
   method: 'PUT',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',
@@ -41,7 +41,7 @@ fetch('https://taocommerceapi.taoforge.org/v1/addresses/1/default', {
 ```json
 {
   "data": {
-    "id": "1",
+    "id": "67a6233a39c0d26e52f6c1b4",
     "street": "123 Main St",
     "streetNumber": "12A",
     "postalCode": "100001",
@@ -76,4 +76,4 @@ fetch('https://taocommerceapi.taoforge.org/v1/addresses/1/default', {
 
 ## 🔗 Next Steps
 - Learn more about [Fetching Addresses](./README.md)
-- Explore available [API Endpoints](../../api-endpoints/README.md)
+- Explore available [API Endpoints](../../v1-endpoints/README.md)

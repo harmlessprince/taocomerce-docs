@@ -23,7 +23,7 @@ The Addresses API allows users to manage their saved addresses, which can be use
 
 #### **Example API Call (Fetch or Axios)**
 ```javascript
-fetch('https://taocommerceapi.taoforge.org/api/addresses', {
+fetch('https://taocommerceapi.taoforge.org/v1/addresses', {
   method: 'GET',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',
@@ -59,4 +59,4 @@ fetch('https://taocommerceapi.taoforge.org/api/addresses', {
 
 ## 🔗 Next Steps
 - Learn more about [Delete Address](delete-address.md)
-- Explore additional [API Endpoints](../../api-endpoints/README.md)
+- Explore additional [API Endpoints](../../v1-endpoints/README.md)

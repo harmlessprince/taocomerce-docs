@@ -15,7 +15,7 @@ The Addresses API allows users to manage their saved addresses, which can be use
 ```json
 {
   "data": {
-    "id": "1",
+    "id": "67a6233a39c0d26e52f6c1b4",
     "street": "456 New St",
     "streetNumber": "15B",
     "postalCode": "100002",
@@ -33,4 +33,4 @@ The Addresses API allows users to manage their saved addresses, which can be use
 
 ## 🔗 Next Steps
 - Learn more about [Delete Address](delete-address.md)
-- Explore additional [API Endpoints](../../api-endpoints/README.md)
+- Explore additional [API Endpoints](../../v1-endpoints/README.md)

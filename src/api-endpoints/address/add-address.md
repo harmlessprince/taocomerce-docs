@@ -34,7 +34,7 @@ The Addresses API allows users to manage their saved addresses, which can be use
 
 #### **Example API Call (Fetch or Axios)**
 ```javascript
-fetch('https://taocommerceapi.taoforge.org/api/addresses', {
+fetch('https://taocommerceapi.taoforge.org/v1/addresses', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',
@@ -59,7 +59,7 @@ fetch('https://taocommerceapi.taoforge.org/api/addresses', {
 ```json
 {
   "data": {
-    "id": "1",
+    "id": "67a6233a39c0d26e52f6c1b4",
     "street": "123 Main St",
     "streetNumber": "12A",
     "postalCode": "100001",
@@ -88,5 +88,5 @@ fetch('https://taocommerceapi.taoforge.org/api/addresses', {
 
 ## 🔗 Next Steps
 - Learn more about [Update Address](update-address.md)
-- Explore additional [API Endpoints](../../api-endpoints/README.md)
+- Explore additional [API Endpoints](../../v1-endpoints/README.md)
 [baseUrl](https://taocommerceapi.taoforge.org/)
