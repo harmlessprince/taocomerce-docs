@@ -52,6 +52,13 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Product",
+          link: "product/",
+          prefix: "product/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Cart",
           link: "cart/",
           prefix: "cart/",
@@ -72,6 +79,10 @@ export default sidebar({
         {
           text: "Fetch States by Country ID",
           link: "states.md",
+        },
+        {
+          text: "Fetch Product Specification",
+          link: "specification.md",
         }
       ],
     },
