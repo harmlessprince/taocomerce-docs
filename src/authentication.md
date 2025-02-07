@@ -4,68 +4,55 @@ title: Authentication
 
 # Authentication
 
-## 🔐 API Authentication Overview
-The eCommerce API supports authentication using **Tenant ID** and **JWT tokens**. All API requests must be authenticated to ensure secure access.
+## 📌 Why is Authentication Important?
+Authentication is a core aspect of securing your e-commerce platform. It ensures that only authorized users can access sensitive operations, such as managing carts, placing orders, and retrieving user-specific information. Our API uses a combination of **Tenant ID** and **JWT authentication** to provide a secure and scalable solution.
 
-### **Authentication Methods**
-1. **Tenant ID (X-TenantId Header)**
-   - Required for public API requests.
-   - Must be included in the request header.
-   - Assigned during user registration.
+## 🔑 Understanding Tenant ID
+### What is a Tenant ID?
+A **Tenant ID** is a unique identifier assigned to each business upon signing up on our platform. It allows our API to isolate and manage data securely for different users and businesses.
 
-2. **JWT Token**
-   - Issued upon user login.
-   - Encodes the user's authentication details, including their **Tenant ID**.
-   - If authenticated via JWT, the API extracts the **Tenant ID** from the token.
+### Why is Tenant ID Needed?
+- **Multi-Tenant System**: Ensures that each business or developer has a separate and secure environment.
+- **Data Segmentation**: Prevents unauthorized access between different accounts.
+- **Scalability**: Enables businesses to grow without interference from others.
+- **Mandatory for All API Requests**: Every API request must include the `X-TenantId` header to specify which business the request belongs to.
 
-## 📌 Including Authentication in Requests
-### **Using the X-TenantId Header**
-For public API access, the `X-TenantId` header must be included.
-```bash
-curl -X GET   "{{BASE_URL}}/products" \
-     -H "X-TenantId: YOUR_TENANT_ID"
-```
+### How to Get Your Tenant ID?
+1. **Sign Up** on our platform.
+2. **Log in** with your credentials.
+3. Navigate to the **Profile Page** where you will find your **Tenant ID**.
+4. Use the Tenant ID in your API requests by adding it to the request header:
+   ```json
+   {
+     "X-TenantId": "YOUR_TENANT_ID"
+   }
+   ```
 
-### **Using JWT Token for Authentication**
-When the user is logged in, API requests should include the JWT token in the `Authorization` header.
-```bash
-curl -X GET "https://api.yourdomain.com/orders" \
-     -H "Authorization: Bearer YOUR_JWT_TOKEN"
-```
+## 🔒 Why Use JWT Authentication?
+### What is JWT?
+JWT (JSON Web Token) is a secure way to authenticate users and ensure only authorized individuals can access protected resources.
 
-### **Using Both JWT and X-TenantId** *(Recommended)*
-Although the system extracts the **Tenant ID** from the JWT token, it is best practice to include `X-TenantId` explicitly.
-```bash
-curl -X GET "https://api.yourdomain.com/orders" \
-     -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-     -H "X-TenantId: YOUR_TENANT_ID"
-```
+### When is JWT Required?
+- **For Authenticated Users**: Any request related to user-specific operations (like checkout, profile updates, or order management) requires a valid JWT token.
+- **For Guest Users**: A session ID is used instead of a JWT for cart tracking.
 
-## 📦 Sample Responses
-The API follows a consistent response format.
-
-### **Successful Authentication Response**
+### How to Use JWT in API Requests?
+Once logged in, users receive a JWT token that should be included in the `Authorization` header:
 ```json
 {
-    "user": {
-        "id": "679e88wsd60ed25b3ca5dd530f",
-        "email": "email@yopmail.com",
-        "fullName": "tao adewuyi",
-        "phoneNumber": "string|null",
-        "address": "string|null"
-    },
-    "token": "jwt signed token",
-    "expiresIn": 86400000
+  "Authorization": "Bearer YOUR_JWT_TOKEN"
 }
 ```
 
-### **Missing Authentication Response**
-```json
-{
-    "status": false,
-    "message": "Unauthorized. Missing X-TenantId Header"
-}
-```
+## 🚀 Summary
+| Feature        | Tenant ID | JWT Authentication |
+|--------------|------------|---------------------|
+| Required For | All API requests | User-specific operations (checkout, profile updates, order management) |
+| Purpose      | Identifies business | Verifies user authentication |
+| How to Get It | From Profile Page | After logging in |
+| Example Header | `X-TenantId: YOUR_TENANT_ID` | `Authorization: Bearer YOUR_JWT_TOKEN` |
+
+By combining **Tenant ID** and **JWT**, our API ensures **security, scalability, and efficient data management** for every user. 
 
 ## 🔗 Next Steps
 - [Get Started](get-started.md) with API integration.
