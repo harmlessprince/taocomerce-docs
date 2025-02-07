@@ -59,6 +59,27 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Product Review",
+          link: "review/",
+          prefix: "review/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
+          text: "File Upload",
+          link: "media/",
+          prefix: "media/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
+          text: "Product Category",
+          link: "category/",
+          prefix: "category/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Cart",
           link: "cart/",
           prefix: "cart/",
