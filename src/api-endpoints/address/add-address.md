@@ -7,7 +7,10 @@ The Addresses API allows users to manage their saved addresses, which can be use
 ---
 
 #### **Endpoint:**
-`POST /api/addresses`
+`POST /v1/addresses` 
+
+#### **Base URL:**
+{{$base_url }}
 
 #### **Required Headers:**
 ```json
@@ -31,7 +34,7 @@ The Addresses API allows users to manage their saved addresses, which can be use
 
 #### **Example API Call (Fetch or Axios)**
 ```javascript
-fetch('https://api.yourdomain.com/api/addresses', {
+fetch('{{baseUrl}}/api/addresses', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',
@@ -75,39 +78,15 @@ fetch('https://api.yourdomain.com/api/addresses', {
 ```json
 {
   "data": null,
-  "message": "Validation failed. Street is required.",
-  "status": false
+  "message": "Validation failed.",
+  "status": false,
+  "errors": []
 }
 ```
 
 ---
 
-### **3. Update Address**
-#### **Endpoint:**
-`PUT /api/addresses/{id}`
-
-#### **Body Parameters:**
-(Same as `POST /api/addresses`, but all fields are optional.)
-
-#### **Sample 200 Response (Updated):**
-```json
-{
-  "data": {
-    "id": "1",
-    "street": "456 New St",
-    "streetNumber": "15B",
-    "postalCode": "100002",
-    "city": "Abuja",
-    "state": "FCT",
-    "country": "Nigeria",
-    "localGovernmentName": "Garki",
-    "isDefault": false
-  },
-  "message": "Address updated successfully",
-  "status": true
-}
-```
-
 ## 🔗 Next Steps
 - Learn more about [Update Address](update-address.md)
 - Explore additional [API Endpoints](../../api-endpoints/README.md)
+[baseUrl](https://api.yourdomain.com/)

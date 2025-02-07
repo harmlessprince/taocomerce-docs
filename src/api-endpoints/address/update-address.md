@@ -6,10 +6,10 @@ The Addresses API allows users to manage their saved addresses, which can be use
 
 
 #### **Endpoint:**
-`PUT /api/addresses/{id}`
+`PATCH /v1/addresses/{id}`
 
 #### **Body Parameters:**
-(Same as `POST /api/addresses`, but all fields are optional.)
+(Same as `POST /v1/addresses`, but all fields are optional.)
 
 #### **Sample 200 Response (Updated):**
 ```json

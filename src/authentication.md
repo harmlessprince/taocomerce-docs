@@ -22,7 +22,7 @@ The eCommerce API supports authentication using **Tenant ID** and **JWT tokens**
 ### **Using the X-TenantId Header**
 For public API access, the `X-TenantId` header must be included.
 ```bash
-curl -X GET "https://api.yourdomain.com/products" \
+curl -X GET   "{{BASE_URL}}/products" \
      -H "X-TenantId: YOUR_TENANT_ID"
 ```
 
@@ -42,26 +42,28 @@ curl -X GET "https://api.yourdomain.com/orders" \
 ```
 
 ## 📦 Sample Responses
-The API follows a consistent response format using the `CustomResponse<T>` class.
+The API follows a consistent response format.
 
 ### **Successful Authentication Response**
 ```json
 {
-  "data": {
-    "token": "your_generated_jwt_token",
-    "expiresIn": 3600
-  },
-  "message": "Authentication successful",
-  "status": true
+    "user": {
+        "id": "679e88wsd60ed25b3ca5dd530f",
+        "email": "email@yopmail.com",
+        "fullName": "tao adewuyi",
+        "phoneNumber": "string|null",
+        "address": "string|null"
+    },
+    "token": "jwt signed token",
+    "expiresIn": 86400000
 }
 ```
 
 ### **Missing Authentication Response**
 ```json
 {
-  "data": null,
-  "message": "Unauthorized. Missing or invalid token.",
-  "status": false
+    "status": false,
+    "message": "Unauthorized. Missing X-TenantId Header"
 }
 ```
 

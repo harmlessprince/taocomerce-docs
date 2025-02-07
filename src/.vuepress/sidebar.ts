@@ -3,7 +3,7 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/": [
     "",
-    "portfolio",
+    // "portfolio",
     {
       text: "Introduction",
       collapsible: true,
@@ -31,9 +31,23 @@ export default sidebar({
       link: "api-endpoints/",
       children: [
         {
+          text: "Authentication",
+          link: "authentication/",
+          prefix: "authentication/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Address",
           link: "",
           prefix: "address/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
+          text: "Customer",
+          link: "customer/",
+          prefix: "customer/",
           collapsible: true,
           children: "structure"
         }
@@ -46,12 +60,12 @@ export default sidebar({
     //   link: "demo/",
     //   children: "structure",
     // },
-    {
-      text: "Docs",
-      icon: "book",
-      prefix: "guide/",
-      children: "structure",
-    },
+    // {
+    //   text: "Docs",
+    //   icon: "book",
+    //   prefix: "guide/",
+    //   children: "structure",
+    // },
     // {
     //   text: "Slides",
     //   icon: "person-chalkboard",
