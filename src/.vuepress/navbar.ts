@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "get-started",
-  "/v1-endpoints/"
+  "/api-endpoints/"
   // "/demo/",
   // {
   //   text: "Guide",
