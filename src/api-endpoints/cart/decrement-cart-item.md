@@ -25,7 +25,7 @@ The **Decrement Cart Item Quantity** API decreases the quantity of a specific it
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/carts/item/decrement/quantity/67a6261a320f3f7368dfec35', {
+fetch('https://taocommerceapi.taoforge.org/v1/carts/item/decrement/quantity/67a6261a320f3f7368dfec35', {
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

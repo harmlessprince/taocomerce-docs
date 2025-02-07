@@ -25,7 +25,7 @@ The **Remove Cart Item** API allows users to remove a specific item from their c
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/carts/remove/679f8f5a3b5f2173201c2582', {
+fetch('https://taocommerceapi.taoforge.org/v1/carts/remove/679f8f5a3b5f2173201c2582', {
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

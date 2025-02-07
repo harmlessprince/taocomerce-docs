@@ -19,7 +19,7 @@ The **Get Authenticated User Profile** API retrieves the details of the currentl
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/auth/users/profile', {
+fetch('https://taocommerceapi.taoforge.org/v1/auth/users/profile', {
   method: 'GET',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN'

@@ -25,7 +25,7 @@ The **Clear Cart** API allows users to remove all items from their cart.
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/carts/clear', {
+fetch('https://taocommerceapi.taoforge.org/v1/carts/clear', {
   method: 'DELETE',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

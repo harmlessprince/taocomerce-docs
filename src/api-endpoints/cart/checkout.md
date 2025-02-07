@@ -39,7 +39,7 @@ The **Checkout API** allows authenticated users to place an order using the item
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/carts/checkout', {
+fetch('https://taocommerceapi.taoforge.org/v1/carts/checkout', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

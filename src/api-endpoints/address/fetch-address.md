@@ -23,7 +23,7 @@ The Addresses API allows users to manage their saved addresses, which can be use
 
 #### **Example API Call (Fetch or Axios)**
 ```javascript
-fetch('https://api.yourdomain.com/api/addresses', {
+fetch('https://taocommerceapi.taoforge.org/api/addresses', {
   method: 'GET',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

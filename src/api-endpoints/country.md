@@ -17,7 +17,7 @@ The **Fetch All Countries** API allows users to retrieve a list of countries. Th
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/countries?name=nigeria', {
+fetch('https://taocommerceapi.taoforge.org/v1/countries?name=nigeria', {
   method: 'GET'
 })
 .then(response => response.json())

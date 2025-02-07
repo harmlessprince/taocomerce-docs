@@ -26,7 +26,7 @@ The **Verify Payment** API confirms the status of a payment using the payment re
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.yourdomain.com/v1/payments/confirm', {
+fetch('https://taocommerceapi.taoforge.org/v1/payments/confirm', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

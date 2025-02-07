@@ -25,7 +25,7 @@ The **Set Default Address** API allows users to designate a specific address as 
 
 ### **Example API Call (Fetch or Axios)**
 ```javascript
-fetch('https://api.yourdomain.com/v1/addresses/1/default', {
+fetch('https://taocommerceapi.taoforge.org/v1/addresses/1/default', {
   method: 'PUT',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

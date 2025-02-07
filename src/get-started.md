@@ -20,7 +20,7 @@ To use the eCommerce API, users must sign up on our platform. Register at [https
 ## 🔑 Making API Requests
 ### **Example Request (Authenticated User)**
 ```bash
-curl -X GET "https://api.yourdomain.com/orders" \
+curl -X GET "https://taocommerceapi.taoforge.org/orders" \
      -H "Authorization: Bearer YOUR_JWT_TOKEN" \
      -H "X-TenantId: YOUR_TENANT_ID"
 ```
