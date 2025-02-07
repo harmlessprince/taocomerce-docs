@@ -50,6 +50,21 @@ export default sidebar({
           prefix: "customer/",
           collapsible: true,
           children: "structure"
+        },
+        {
+          text: "Cart",
+          link: "cart/",
+          prefix: "cart/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
+          text: "Fetch All Countries",
+          link: "country.md",
+        },
+        {
+          text: "Fetch States by Country ID",
+          link: "states.md",
         }
       ],
     },

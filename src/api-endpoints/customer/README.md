@@ -1,16 +1,16 @@
 ---
-title: Customer
+title: Customer API
 ---
 
 # Addresses
 
 ## 📌 Description
-The **Customer API** allows users to manage their saved addresses, which are used for order deliveries, billing, and other functionalities. Users can create, update, delete, and set default addresses. Each address is uniquely associated with a user and contains relevant location details.
+The **Customer API** 
 
 
 ## 🔗 Next Steps
-- [Fetch Addresses](./fetch-addresses.md)
-- [Add Address](./add-address.md)
-- [Update Address](./update-address.md)
-- [Delete Address](./delete-address.md)
-- [Set Default Address](./set-default-address.md)
+- [Add Addresses](./add-customer.md)
+- [Update Address](./update-customer.md)
+- [Deactivate Customer](./deactivate-customer.md)
+- [Activate Customer](./activate-customer.md)
+- [Delete Customer](./delete-customer.md)

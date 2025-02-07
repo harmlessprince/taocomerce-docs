@@ -1,5 +1,5 @@
 ---
-title: Addresses
+title: Addresses API
 ---
 
 # Addresses
