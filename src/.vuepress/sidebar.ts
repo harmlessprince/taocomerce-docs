@@ -59,6 +59,13 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Payment",
+          link: "payment/",
+          prefix: "payment/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Fetch All Countries",
           link: "country.md",
         },
