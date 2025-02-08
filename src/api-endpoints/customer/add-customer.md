@@ -13,6 +13,7 @@ The **Customer Registration API** allows new users to create an account in the s
 ## 🛠️ Required Headers
 ```json
 {
+  "X-TenantId": "YOUR_TENANT_ID",
   "Content-Type": "application/json"
 }
 ```

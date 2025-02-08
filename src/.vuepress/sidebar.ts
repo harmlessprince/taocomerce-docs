@@ -94,7 +94,7 @@ export default sidebar({
           children: "structure"
         },
         {
-          text: "Fetch All Countries",
+          text: "Fetch Countries",
           link: "country.md",
         },
         {
@@ -102,8 +102,16 @@ export default sidebar({
           link: "states.md",
         },
         {
-          text: "Fetch Product Specification",
+          text: "Fetch Specifications",
           link: "specification.md",
+        },
+        {
+          text: "Fetch Brands",
+          link: "brand.md",
+        },
+        {
+          text: "Fetch Colors",
+          link: "color.md",
         }
       ],
     },

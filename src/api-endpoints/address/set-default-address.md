@@ -76,4 +76,4 @@ fetch('https://taocommerceapi.taoforge.org/v1/addresses/67a6233a39c0d26e52f6c1b4
 
 ## 🔗 Next Steps
 - Learn more about [Fetching Addresses](./README.md)
-- Explore available [API Endpoints](../../v1-endpoints/README.md)
+- Explore available [API Endpoints](../../api-endpoints/README.md)

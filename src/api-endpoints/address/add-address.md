@@ -88,5 +88,5 @@ fetch('https://taocommerceapi.taoforge.org/v1/addresses', {
 
 ## 🔗 Next Steps
 - Learn more about [Update Address](update-address.md)
-- Explore additional [API Endpoints](../../v1-endpoints/README.md)
+- Explore additional [API Endpoints](../../api-endpoints/README.md)
 [baseUrl](https://taocommerceapi.taoforge.org/)
