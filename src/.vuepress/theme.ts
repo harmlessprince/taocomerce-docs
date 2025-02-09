@@ -3,7 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://tao-commeerce.netlify.app",
 
   author: {
     name: "Adewuyi Taofeeq O.",
@@ -12,7 +12,7 @@ export default hopeTheme({
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "harmlessprince/taocomerce-docs",
 
   docsDir: "src",
 
