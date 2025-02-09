@@ -28,7 +28,7 @@ This API allows users to add a new product variation, including color, image, an
 | `colorId`       | String | No (Min: 10 characters) | The ID of the color for the variation. |
 | `customColor`   | String | No (Min: 3 characters) | The custom color name if applicable. |
 | `image`         | String | No       | The image URL representing the variation. |
-| `priceDetails`  | List<ProductPriceDetail> | Yes (Min: 1 item) | A list of price details for the variation. |
+| `priceDetails`  | List | Yes (Min: 1 item) | A list of price details for the variation. |
 
 ### 📥 Price Details Structure
 | Field Name       | Type   | Required | Description |
