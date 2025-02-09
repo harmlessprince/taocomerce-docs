@@ -57,5 +57,4 @@ fetch('https://taocommerceapi.taoforge.org/v1/specifications', {
 ```
 
 ## 🔗 Next Steps
-- [Product API](./product.md)
-- [Filter Products by Specifications](./filter-products.md)
+- [Product API](./product/README.md)

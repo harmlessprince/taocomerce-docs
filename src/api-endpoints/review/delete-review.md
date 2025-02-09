@@ -1,15 +1,15 @@
 ---
-title: Hide Product Review
+title: Delete Product Review
 ---
 
-# Hide Review
+# Delete Review
 
 ## 📌 Description
-This API allows you to hide a product review by its unique ID. Once hidden, the review will no longer be visible to customers.
+This API allows shop owners to delete a product review by its unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/reviews/hide/679f8f5a3b5f2173201c2582`
-- **Method:** `PATCH`
+- **URL:** `{{url}}/v1/reviews/679f8f5a3b5f2173201c2582`
+- **Method:** `DELETE`
 
 ## 🛠️ Required Headers
 ```json
@@ -20,13 +20,10 @@ This API allows you to hide a product review by its unique ID. Once hidden, the 
 }
 ```
 
-## 📥 Request Body
-None
-
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
-  method: "PATCH",
+fetch("{{url}}/v1/reviews/679f8f5a3b5f2173201c2582", {
+  method: "DELETE",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",
     "X-TenantId": "YOUR_TENANT_ID",
@@ -42,7 +39,7 @@ fetch("{{url}}/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
 ```json
 {
   "status": true,
-  "message": "Review hidden successfully"
+  "message": "Review deleted successfully"
 }
 ```
 
@@ -55,6 +52,6 @@ fetch("{{url}}/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
 ```
 
 ## 🔗 Next Steps
+- Learn more about [Adding a Review](./add-review.md)
 - Learn more about [Fetching Product Reviews](./fetch-product-review.md)
-- Learn more about [Updating a Review](./update-review.md)
 
