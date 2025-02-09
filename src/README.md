@@ -32,7 +32,7 @@ features:
 footer: MIT Licensed | Copyright © 2018-present VuePress Community
 ---
 
+Tao-Commerce is an innovative e-commerce platform designed to help small and medium-sized businesses (SMBs) sell online effortlessly and scale globally. Our goal is to provide a seamless, API-first e-commerce solution for businesses looking to integrate cutting-edge technology with flexibility and simplicity.
 
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
 
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+
