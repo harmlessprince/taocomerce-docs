@@ -5,7 +5,7 @@ title: Getting Started
 # Getting Started with the eCommerce API
 
 ## 📝 Sign Up & Authentication
-To use the eCommerce API, users must sign up on our platform. Register at [https://yourdomain.com/signup](https://yourdomain.com/signup). Upon successful registration, each user is assigned a **Tenant ID**, which can be found in their profile.
+To use the eCommerce API, users must sign up on our platform. Register at [Coming Soon](https://comingsoon.com/signup). Upon successful registration, each user is assigned a **Tenant ID**, which can be found in their profile.
 
 ### **Authentication**
 - API requests require authentication via JWT.
