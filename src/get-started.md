@@ -20,7 +20,7 @@ To use the eCommerce API, users must sign up on our platform. Register at [Comin
 ## 🔑 Making API Requests
 ### **Example Request (Authenticated User)**
 ```bash
-curl -X GET "https://taocommerceapi.taoforge.org/orders" \
+curl -X GET "{{url}}/v1/countries?name=nigeria" \
      -H "Authorization: Bearer YOUR_JWT_TOKEN" \
      -H "X-TenantId: YOUR_TENANT_ID"
 ```
@@ -31,21 +31,18 @@ The API uses a consistent response format, as defined by the `CustomResponse<T>`
 ### **Successful Response Example**
 ```json
 {
-  "data": {
-    "orderId": "12345",
-    "status": "Processing"
-  },
-  "message": "Order retrieved successfully",
-  "status": true
-}
-```
-
-### **Error Response Example**
-```json
-{
-  "data": null,
-  "message": "An error has occurred",
-  "status": false
+    "data": [
+        {
+            "createdAt": "2025-02-01T21:28:29.049",
+            "updatedAt": "2025-02-01T21:28:29.049",
+            "id": "679e91fd22079a5dc4eb75f4",
+            "name": "Nigeria",
+            "status": true,
+            "states": null
+        }
+    ],
+    "message": "Success",
+    "status": true
 }
 ```
 
