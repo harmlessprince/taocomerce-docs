@@ -26,7 +26,7 @@ curl -X GET "{{url}}/v1/countries?name=nigeria" \
 ```
 
 ## 📦 Response Structure
-The API uses a consistent response format, as defined by the `CustomResponse<T>` class:
+The API uses a consistent response format:
 
 ### **Successful Response Example**
 ```json
@@ -43,6 +43,46 @@ The API uses a consistent response format, as defined by the `CustomResponse<T>`
     ],
     "message": "Success",
     "status": true
+}
+```
+
+### **Error Response Example**
+```json
+{
+    "message": "Some Error response",
+    "status": false
+}
+```
+
+
+### **Invalid URL Response Example**
+```json
+{
+    "status": false,
+    "message": "No static resource v1/users/profile/updatedkd."
+}
+```
+
+
+### **Unauthenticated Response Example**
+```json
+{
+    "path": "/v1/users/profile",
+    "error": "unauthenticated",
+    "message": "Full authentication is required to access this resource",
+    "status": false,
+    "statusCode": 401
+}
+```
+### **Unauthenticated Response Example**
+```json
+{
+    "type": "about:blank",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "Bad credentials",
+    "instance": "/v1/auth/login",
+    "description": "The username or password is incorrect"
 }
 ```
 
