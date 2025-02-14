@@ -8,7 +8,7 @@ title: Update Product Variation Price Detail
 This API allows users to update the price details of an existing product variation. If a product variation already exists, users can modify attributes such as price, storage, RAM size, size, SKU, quantity, and discount.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products/variation/priceDetail/{variationPriceDetailId}`
+- **URL:** `https://shopsyncapi/v1/products/variation/priceDetail/{variationPriceDetailId}`
 - **Method:** `PATCH`
 
 
@@ -38,7 +38,7 @@ This API allows users to update the price details of an existing product variati
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products/variation/priceDetail/{variationPriceDetailId}", {
+fetch("https://shopsyncapi/v1/products/variation/priceDetail/{variationPriceDetailId}", {
   method: "PATCH",
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

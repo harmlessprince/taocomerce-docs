@@ -8,7 +8,7 @@ title: Delete Product Review
 This API allows shop owners to delete a product review by its unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/reviews/679f8f5a3b5f2173201c2582`
+- **URL:** `https://shopsyncapi/v1/reviews/679f8f5a3b5f2173201c2582`
 - **Method:** `DELETE`
 
 ## 🛠️ Required Headers
@@ -22,7 +22,7 @@ This API allows shop owners to delete a product review by its unique ID.
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/reviews/679f8f5a3b5f2173201c2582", {
+fetch("https://shopsyncapi/v1/reviews/679f8f5a3b5f2173201c2582", {
   method: "DELETE",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

@@ -7,7 +7,7 @@ title: Update Product Variation
 This API allows users to update a product variation by modifying attributes such as color, custom color, image, and product association.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products/variation/{variationId}`
+- **URL:** `https://shopsyncapi/v1/products/variation/{variationId}`
 - **Method:** `PATCH`
 
 ## 🛠️ Required Headers
@@ -30,7 +30,7 @@ This API allows users to update a product variation by modifying attributes such
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products/variation/{variationId}", {
+fetch("https://shopsyncapi/v1/products/variation/{variationId}", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

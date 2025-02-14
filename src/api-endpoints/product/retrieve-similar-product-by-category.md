@@ -7,7 +7,7 @@ title: Retrieve Similar Products By Category
 This API retrieves similar products based on the category of a given product. The number of similar products returned is limited between 1 and 10, with a default of 4 if the limit is set to 0 or a negative number.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products/similar/by/category/{productID}?limit=0`
+- **URL:** `https://shopsyncapi/v1/products/similar/by/category/{productID}?limit=0`
 - **Method:** `GET`
 
 ## Query Parameters
@@ -27,7 +27,7 @@ This API retrieves similar products based on the category of a given product. Th
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products/similar/by/category/679f8f5a3b5f2173201c2582?limit=4", {
+fetch("https://shopsyncapi/v1/products/similar/by/category/679f8f5a3b5f2173201c2582?limit=4", {
   method: "GET",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

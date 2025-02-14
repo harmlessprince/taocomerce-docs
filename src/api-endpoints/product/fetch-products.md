@@ -8,7 +8,7 @@ title: Fetch Products
 This API retrieves a list of products based on various filter parameters such as name, category, RAM size, storage, brand, and search query.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&storage=&brand=&search=Smart`
+- **URL:** `https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&storage=&brand=&search=Smart`
 - **Method:** `GET`
 
 ## Query Parameters
@@ -34,7 +34,7 @@ This API retrieves a list of products based on various filter parameters such as
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&search=Smart", {
+fetch("https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&search=Smart", {
   method: "GET",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

@@ -19,7 +19,7 @@ features:
   - title: Comprehensive Endpoints
     details: Manage products, orders, customers, payments, and more with our extensive API.
   - title: Developer-Friendly
-    details: Detailed documentation, SDKs, and code samples to get you started quickly.
+    details: Detailed documentation and code samples to get you started quickly.
   - title: Multi-Payment Gateway
     details: Supports various payment providers for seamless checkout experiences.
   - title: Real-Time Order Tracking
@@ -32,7 +32,7 @@ features:
 footer: MIT Licensed | Copyright © 2018-present VuePress Community
 ---
 
-Tao-Commerce is an innovative e-commerce platform designed to help small and medium-sized businesses (SMBs) sell online effortlessly and scale globally. Our goal is to provide a seamless, API-first e-commerce solution for businesses looking to integrate cutting-edge technology with flexibility and simplicity.
+ShopSync is an innovative e-commerce platform designed to help small and medium-sized businesses (SMBs) sell online effortlessly and scale globally. Our goal is to provide a seamless, API-first e-commerce solution for businesses looking to integrate cutting-edge technology with flexibility and simplicity.
 
 
 

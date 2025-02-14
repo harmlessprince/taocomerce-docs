@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "en-US",
-  title: "Taocommerce API",
+  title: "ShopSync API",
   description: "Build with joy",
 
   theme,

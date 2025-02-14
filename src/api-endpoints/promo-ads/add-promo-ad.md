@@ -7,7 +7,7 @@ title: Add Promo Ad
 This API allows store owners to add a promotional advertisement to their store. Only authorized users (store owners) can access this endpoint.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/promo-ads`
+- **URL:** `https://shopsyncapi/v1/promo-ads`
 - **Method:** `POST`
 
 ## 🛠️ Required Headers
@@ -42,7 +42,7 @@ This API allows store owners to add a promotional advertisement to their store. 
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/promo-ads/12345", {
+fetch("https://shopsyncapi/v1/promo-ads/12345", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

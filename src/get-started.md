@@ -20,7 +20,7 @@ To use the eCommerce API, users must sign up on our platform. Register at [Comin
 ## 🔑 Making API Requests
 ### **Example Request (Authenticated User)**
 ```bash
-curl -X GET "{{url}}/v1/countries?name=nigeria" \
+curl -X GET "https://shopsyncapi/v1/countries?name=nigeria" \
      -H "Authorization: Bearer YOUR_JWT_TOKEN" \
      -H "X-TenantId: YOUR_TENANT_ID"
 ```

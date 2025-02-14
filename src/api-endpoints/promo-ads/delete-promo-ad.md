@@ -8,7 +8,7 @@ title: Delete Promo Ad
 This API allows store owners to delete a promotional advertisement by its unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/promo-ads/{promoAdId}`
+- **URL:** `https://shopsyncapi/v1/promo-ads/{promoAdId}`
 - **Method:** `DELETE`
 
 ## 🛠️ Required Headers
@@ -22,7 +22,7 @@ This API allows store owners to delete a promotional advertisement by its unique
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/promo-ads/12345", {
+fetch("https://shopsyncapi/v1/promo-ads/12345", {
   method: "DELETE",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

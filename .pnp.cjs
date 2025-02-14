@@ -11,14 +11,14 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "taocommerce-docs",\
+      "name": "shopsync-docs",\
       "reference": "workspace:."\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["taocommerce-docs", ["workspace:."]]\
+    ["shopsync-docs", ["workspace:."]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -5918,11 +5918,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["taocommerce-docs", [\
+    ["shopsync-docs", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["taocommerce-docs", "workspace:."],\
+          ["shopsync-docs", "workspace:."],\
           ["@vitejs/plugin-vue", "virtual:882d67d140616dfe5f9ea47363037693b93b7321e5a719711ed8112aaccd1f6844c7bec722584bfad9b47e299ec4f886c31552e5851f28128812c75fd5a22ec8#npm:5.2.1"],\
           ["@vuepress/bundler-vite", "npm:2.0.0-rc.19"],\
           ["@vuepress/plugin-register-components", "virtual:882d67d140616dfe5f9ea47363037693b93b7321e5a719711ed8112aaccd1f6844c7bec722584bfad9b47e299ec4f886c31552e5851f28128812c75fd5a22ec8#npm:2.0.0-rc.66"],\

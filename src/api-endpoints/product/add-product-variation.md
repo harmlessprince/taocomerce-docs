@@ -8,7 +8,7 @@ title: Add Product Variation
 This API allows users to add a new product variation, including color, image, and price details.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products/variation/add`
+- **URL:** `https://shopsyncapi/v1/products/variation/add`
 - **Method:** `POST`
 
 ## 🛠️ Required Headers
@@ -44,7 +44,7 @@ This API allows users to add a new product variation, including color, image, an
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products/variation/add", {
+fetch("https://shopsyncapi/v1/products/variation/add", {
   method: "POST",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

@@ -8,7 +8,7 @@ title: Fetch Promo Ads
 This API retrieves a list of promotional ads filtered by status and paginated using a cursor. The response includes promotional ads in either `DRAFT` or `PUBLISHED` status.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1`
+- **URL:** `https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1`
 - **Method:** `GET`
 
 ## Query Parameters:
@@ -29,7 +29,7 @@ This API retrieves a list of promotional ads filtered by status and paginated us
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
+fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
   method: "GET",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

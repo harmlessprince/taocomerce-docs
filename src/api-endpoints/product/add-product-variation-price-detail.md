@@ -4,7 +4,7 @@
 This API allows users to add more price details for an existing product and variation. For example, if you have created a Shoe product with a red color variation in sizes 30, 40, and 35, this API enables you to add another size, such as size 43.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products/variation/priceDetail`
+- **URL:** `https://shopsyncapi/v1/products/variation/priceDetail`
 - **Method:** `POST`
 
 
@@ -33,7 +33,7 @@ This API allows users to add more price details for an existing product and vari
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products/variation/priceDetail", {
+fetch("https://shopsyncapi/v1/products/variation/priceDetail", {
   method: "POST",
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

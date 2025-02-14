@@ -24,7 +24,7 @@ The **Increment Cart Item Quantity** API increases the quantity of a specific it
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://taocommerceapi.taoforge.org/v1/carts/item/increment/quantity/67a6261a320f3f7368dfec35', {
+fetch('https://shopsyncapi.taoforge.org/v1/carts/item/increment/quantity/67a6261a320f3f7368dfec35', {
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

@@ -15,7 +15,7 @@ No authentication is required for this request.
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://taocommerceapi.taoforge.org/v1/specifications', {
+fetch('https://shopsyncapi.taoforge.org/v1/specifications', {
   method: 'GET'
 })
 .then(response => response.json())

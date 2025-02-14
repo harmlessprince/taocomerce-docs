@@ -8,7 +8,7 @@ title: Add Product Review
 This API allows users to add a review for a specific product by providing a rating, comment, and product ID.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/reviews`
+- **URL:** `https://shopsyncapi/v1/reviews`
 - **Method:** `POST`
 
 ## 🛠️ Required Headers
@@ -30,7 +30,7 @@ This API allows users to add a review for a specific product by providing a rati
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/reviews", {
+fetch("https://shopsyncapi/v1/reviews", {
   method: "POST",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

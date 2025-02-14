@@ -8,7 +8,7 @@ title: Fetch Single Product Reviews
 This API retrieves all reviews for a specific product using the product's unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/reviews/product/679f8f5a3b5f2173201c2582`
+- **URL:** `https://shopsyncapi/v1/reviews/product/679f8f5a3b5f2173201c2582`
 - **Method:** `GET`
 
 ## Query Parameters
@@ -27,7 +27,7 @@ This API retrieves all reviews for a specific product using the product's unique
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/reviews/product/679f8f5a3b5f2173201c2582", {
+fetch("https://shopsyncapi/v1/reviews/product/679f8f5a3b5f2173201c2582", {
   method: "GET",
   headers: {
     "X-TenantId": "YOUR_TENANT_ID",

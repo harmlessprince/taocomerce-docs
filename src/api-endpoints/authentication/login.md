@@ -26,7 +26,7 @@ The **User Login API** allows registered users to authenticate and receive a JWT
 
 ### Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://taocommerceapi.taoforge.org/v1/auth/login', {
+fetch('https://shopsyncapi.taoforge.org/v1/auth/login', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

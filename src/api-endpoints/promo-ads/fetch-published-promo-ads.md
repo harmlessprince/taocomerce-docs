@@ -13,7 +13,7 @@ This API retrieves a list of promotional ads that has been published. The defaul
 This is suitable for users that wants to show some adds on there site hero section.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/promo-ads?limit=3`
+- **URL:** `https://shopsyncapi/v1/promo-ads?limit=3`
 - **Method:** `GET`
 
 ## Query Parameters:
@@ -32,7 +32,7 @@ This is suitable for users that wants to show some adds on there site hero secti
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
+fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
   method: "GET",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",

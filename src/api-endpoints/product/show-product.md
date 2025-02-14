@@ -8,7 +8,7 @@ title: Show Product
 This API allows users to retrieve details of a specific product by its ID.
 
 ## 🔗 Endpoint
-- **URL:** `{{url}}/v1/products/{productId}`
+- **URL:** `https://shopsyncapi/v1/products/{productId}`
 - **Method:** `GET`
 
 ## 🛠️ Required Headers
@@ -22,7 +22,7 @@ This API allows users to retrieve details of a specific product by its ID.
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("{{url}}/v1/products/679f8f5a3b5f2173201c2582", {
+fetch("https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582", {
   method: "GET",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",
