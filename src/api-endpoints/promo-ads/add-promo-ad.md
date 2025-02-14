@@ -24,10 +24,10 @@ This API allows store owners to add a promotional advertisement to their store. 
 | Field Name  | Type   | Required | Description |
 |-------------|--------|----------|-------------|
 | `adName`    | String | Yes      | The name of the promotional ad (max: 100 characters). |
-| `images`    | List<String> | Yes | A list of image URLs for the ad. At least one image is required. |
+| `images`    | List | Yes | A list of image URLs for the ad. At least one image is required. |
 | `ctaText`   | String | Yes      | The call-to-action (CTA) text for the ad. |
 | `promoCode` | String | Yes      | The promotional code associated with the ad (max: 20 characters). |
-| `buttons`   | List<ButtonRequest> | Yes | A list of buttons associated with the ad. At least one button is required. |
+| `buttons`   | List | Yes | A list of buttons associated with the ad. At least one button is required. |
 | `status`    | String | Yes      | The status of the ad (`DRAFT` or `PUBLISHED`). |
 
 ### ButtonRequest
