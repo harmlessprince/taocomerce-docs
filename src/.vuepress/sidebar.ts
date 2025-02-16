@@ -79,6 +79,14 @@ export default sidebar({
           collapsible: true,
           children: "structure"
         },
+
+        {
+          text: "Promotion Ads",
+          link: "promo-ads/",
+          prefix: "promo-ads/",
+          collapsible: true,
+          children: "structure"
+        },
         {
           text: "Cart",
           link: "cart/",
