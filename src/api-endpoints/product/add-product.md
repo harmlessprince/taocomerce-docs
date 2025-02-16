@@ -26,7 +26,6 @@ Here is a breakdown of each field in the `ProductRequest` DTO:
 
 | Field             | Type      | Required | Description                                                       |
 |-------------------|-----------|----------|-------------------------------------------------------------------|
-| `id`              | string    | No       | Unique product identifier.                                        |
 | `name`            | string    | Yes      | The name of the product.                                          |
 | `slug`            | string    | No       | Auto-generated product slug based on the product name.            |
 | `description`     | string    | Yes      | The product's detailed description (min 50 characters).           |
