@@ -2,7 +2,7 @@
 title: Show Customer
 ---
 
-# Show Product
+# Show Customer
 
 ## 📌 Description
 This API allows client to retrieve details of a specific customer by its ID.
