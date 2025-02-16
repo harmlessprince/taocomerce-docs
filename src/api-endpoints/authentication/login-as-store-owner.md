@@ -1,11 +1,11 @@
 ---
-title: User Login
+title: Client Login
 ---
 
-# User Login
+# Client Login
 
 ## 📌 Description
-The **User Login API** allows registered users to authenticate and receive a JWT token for secure access to protected resources.
+The **Client Login API** allows registered client or store to authenticate and receive a JWT token for secure access to protected resources.
 
 ## 🔗 Endpoint
 **POST** `/v1/auth/login`
@@ -13,8 +13,7 @@ The **User Login API** allows registered users to authenticate and receive a JWT
 ## 🛠️ Required Headers
 ```json
 {
-  "Content-Type": "application/json",
-  "X-TenantId": "YOUR_TENANT_ID"
+  "Content-Type": "application/json"
 }
 ```
 
@@ -29,8 +28,7 @@ The **User Login API** allows registered users to authenticate and receive a JWT
 fetch('https://shopsyncapi.taoforge.org/v1/auth/login', {
   method: 'POST',
   headers: {
-    'Content-Type': 'application/json',
-    'X-TenantId': 'YOUR_TENANT_ID'
+    'Content-Type': 'application/json'
   },
   body: JSON.stringify({
     email: "system@yopmail.com",
