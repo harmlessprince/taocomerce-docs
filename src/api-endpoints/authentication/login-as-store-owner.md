@@ -44,7 +44,7 @@ fetch('https://shopsyncapi.taoforge.org/v1/auth/login', {
 {
     "user": {
         "id": "679e88fddded25b3ca5dd5xxf",
-        "email": "customer@yopmail.com",
+        "email": "system@yopmail.com",
         "fullName": "tao adewuyi",
         "phoneNumber": "0907XXXXXXXX",
         "address": "address of user"
