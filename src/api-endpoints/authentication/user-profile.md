@@ -8,7 +8,7 @@ title: Get Authenticated User Profile
 The **Get Authenticated User Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
 
 ## 🔗 Endpoint
-**GET** `/v1/auth/profile`
+**GET** `/v1/auth/users/profile`
 
 ## 🛠️ Required Headers
 ```json
