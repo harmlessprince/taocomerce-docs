@@ -102,6 +102,13 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Media",
+          link: "media/",
+          prefix: "media/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Fetch Countries",
           link: "country.md",
         },
