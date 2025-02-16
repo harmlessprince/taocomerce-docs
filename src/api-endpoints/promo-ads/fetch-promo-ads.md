@@ -8,14 +8,14 @@ title: Fetch Promo Ads
 This API retrieves a list of promotional ads filtered by status and paginated using a cursor. The response includes promotional ads in either `DRAFT` or `PUBLISHED` status.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1`
+- **URL:** `/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1`
 - **Method:** `GET`
 
 ## Query Parameters:
 | Parameter | Type   | Required | Description                               |
 |-----------|--------|----------|-------------------------------------------|
 | `status`  | String | Yes      | The status of the promo ads (`DRAFT` or `PUBLISHED`). |
-| `cursor`  | String | No       | The cursor for pagination.                |
+| `cursor`  | String | No       | The cursor for pagination.    (2025-02-11T18:21:53Z&)            |
 | `limit`   | Integer| Yes      | The number of promo ads to retrieve (min: 1, max: 20). |
 
 ## 🛠️ Required Headers

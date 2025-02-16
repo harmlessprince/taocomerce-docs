@@ -1,0 +1,34 @@
+GET Request Format
+
+URL: 
+Method: GET
+Required headers
+{
+  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "X-TenantId": "YOUR_TENANT_ID",
+  "Content-Type": "application/json"
+}
+
+
+Follow this format
+
+Title
+
+📌 Description
+
+🔗 Endpoint
+📥 Query Parameters (Parameters, Type, Description)
+
+## 🛠️ Required Headers
+json
+{
+  "X-TenantId": "YOUR_TENANT_ID",
+  "Content-Type": "application/json"
+}
+
+
+📡 Example API Call (Fetch or Axios)
+Sample 200 Response (Success)
+Sample 404 Response (Not found Error):
+## 🔗 Next Steps
+

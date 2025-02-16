@@ -8,7 +8,7 @@ title: Add Product Variation
 This API allows users to add a new product variation, including color, image, and price details.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/variation/add`
+- **URL:** `/v1/products/variation/add`
 - **Method:** `POST`
 
 ## 🛠️ Required Headers

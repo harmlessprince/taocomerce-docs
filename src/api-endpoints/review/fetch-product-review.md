@@ -8,7 +8,7 @@ title: Fetch Single Product Reviews
 This API retrieves all reviews for a specific product using the product's unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/reviews/product/679f8f5a3b5f2173201c2582`
+- **URL:** `/v1/reviews/product/{productId}`
 - **Method:** `GET`
 
 ## Query Parameters

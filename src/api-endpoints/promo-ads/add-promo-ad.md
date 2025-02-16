@@ -7,7 +7,7 @@ title: Add Promo Ad
 This API allows store owners to add a promotional advertisement to their store. Only authorized users (store owners) can access this endpoint.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/promo-ads`
+- **URL:** `/v1/promo-ads`
 - **Method:** `POST`
 
 ## 🛠️ Required Headers

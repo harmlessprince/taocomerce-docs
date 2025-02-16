@@ -8,7 +8,7 @@ title: Hide Product Review
 This API allows you to hide a product review by its unique ID. Once hidden, the review will no longer be visible to customers.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/reviews/hide/679f8f5a3b5f2173201c2582`
+- **URL:** `/v1/reviews/hide/{reviewId}`
 - **Method:** `PATCH`
 
 ## 🛠️ Required Headers

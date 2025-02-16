@@ -7,7 +7,7 @@ title: Retrieve Similar Products By Category
 This API retrieves similar products based on the category of a given product. The number of similar products returned is limited between 1 and 10, with a default of 4 if the limit is set to 0 or a negative number.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/similar/by/category/{productID}?limit=0`
+- **URL:** `/v1/products/similar/by/category/{productID}`
 - **Method:** `GET`
 
 ## Query Parameters

@@ -4,7 +4,7 @@
 This API allows users to add more price details for an existing product and variation. For example, if you have created a Shoe product with a red color variation in sizes 30, 40, and 35, this API enables you to add another size, such as size 43.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/variation/priceDetail`
+- **URL:** `/v1/products/variation/priceDetail`
 - **Method:** `POST`
 
 

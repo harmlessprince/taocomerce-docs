@@ -1,0 +1,27 @@
+Patch Request Format
+
+URL: 
+Method: PATCH
+
+Follow the format
+
+Title
+📌 Description
+🔗 Endpoint
+
+## 🛠️ Required Headers
+json
+{
+  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "X-TenantId": "YOUR_TENANT_ID",
+  "Content-Type": "application/json"
+}
+
+📥 Request Body(filed name, type, required, description)
+
+📡 Example API Call (Fetch or Axios)
+
+Sample 200 Response (Success)
+
+Sample 422 Response (Validation Error):
+## 🔗 Next Steps

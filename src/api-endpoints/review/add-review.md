@@ -8,7 +8,7 @@ title: Add Product Review
 This API allows users to add a review for a specific product by providing a rating, comment, and product ID.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/reviews`
+- **URL:** `/v1/reviews`
 - **Method:** `POST`
 
 ## 🛠️ Required Headers

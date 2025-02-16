@@ -13,7 +13,7 @@ This API retrieves a list of promotional ads that has been published. The defaul
 This is suitable for users that wants to show some adds on there site hero section.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/promo-ads?limit=3`
+- **URL:** `/v1/promo-ads?limit=3`
 - **Method:** `GET`
 
 ## Query Parameters:

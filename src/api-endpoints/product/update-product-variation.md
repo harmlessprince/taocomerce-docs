@@ -7,7 +7,7 @@ title: Update Product Variation
 This API allows users to update a product variation by modifying attributes such as color, custom color, image, and product association.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/variation/{variationId}`
+- **URL:** `/v1/products/variation/{variationId}`
 - **Method:** `PATCH`
 
 ## 🛠️ Required Headers

@@ -8,7 +8,7 @@ title: Show Product
 This API allows users to retrieve details of a specific product by its ID.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/{productId}`
+- **URL:** `/v1/products/{productId}`
 - **Method:** `GET`
 
 ## 🛠️ Required Headers

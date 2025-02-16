@@ -8,7 +8,7 @@ title: Update Promo Ad
 This API allows store owners to update an existing promotional advertisement by its unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/promo-ads/promoAdId`
+- **URL:** `/v1/promo-ads/{promoAdId}`
 - **Method:** `PATCH`
 
 ## 🛠️ Required Headers

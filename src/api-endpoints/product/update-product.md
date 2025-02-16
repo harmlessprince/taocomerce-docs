@@ -8,7 +8,7 @@ title: Update Product
 This API allows users to update an existing product's details. Users can modify attributes such as name, description, summary, price, images, specifications, and more.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582`
+- **URL:** `/v1/products/{productId}`
 - **Method:** `PATCH`
 
 ## 🛠️ Required Headers

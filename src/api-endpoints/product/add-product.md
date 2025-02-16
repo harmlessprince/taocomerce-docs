@@ -32,7 +32,7 @@ Here is a breakdown of each field in the `ProductRequest` DTO:
 | `image`           | string    | Yes      | The main image URL for the product.                               |
 | `thumbnail`       | string    | Yes      | The thumbnail image URL for the product.                          |
 | `imageList`       | list      | No       | A list of additional image URLs for the product.                  |
-| `features`        | list      | Yes      | A list of product features or specifications.                     |
+| `features`        | list      | No      | A list of product features or specifications.                     |
 | `price`           | double    | Yes      | The price of the product (must be greater than 1).                |
 | `ramSize`         | string    | No       | The RAM size of the product (e.g., 4GB, 512MB, 12KB, 1TB).        |
 | `storage`         | string    | No       | The storage capacity of the product.                              |
@@ -43,9 +43,9 @@ Here is a breakdown of each field in the `ProductRequest` DTO:
 | `discount`        | double    | No       | Discount on the product (0-100%).                                 |
 | `categoryId`      | string    | Yes      | The category ID the product belongs to.                           |
 | `tenantId`        | string    | Yes      | Tenant ID for your business account.                              |
-| `colorId`         | string    | Yes      | Color ID for the product. Available colors can be found [here](../specification.md). You can also specify a custom color using the `customColor` field. |
+| `colorId`         | string    | No      | Color ID for the product. Available colors can be found [here](../specification.md). You can also specify a custom color using the `customColor` field. |
 | `customColor`     | string    | No       | Custom color for the product (e.g., "Deep Red").                  |
-| `specifications`  | list      | Yes      | List of product specifications. Each specification must have a key and value. [More Info](#productspecification-dto) |
+| `specifications`  | list      | No      | List of product specifications. Each specification must have a key and value. [More Info](#productspecification-dto) |
 | `variations`      | list      | Yes      | Variations of the product (e.g., color, size). [More Info](#productvariation-dto) |
 
 ### ProductSpecification DTO

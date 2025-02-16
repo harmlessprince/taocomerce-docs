@@ -8,7 +8,7 @@ title: Delete Product Review
 This API allows shop owners to delete a product review by its unique ID.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/reviews/679f8f5a3b5f2173201c2582`
+- **URL:** `/v1/reviews/{reviewId}`
 - **Method:** `DELETE`
 
 ## 🛠️ Required Headers

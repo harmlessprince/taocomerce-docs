@@ -8,7 +8,7 @@ title: Update Product Variation Price Detail
 This API allows users to update the price details of an existing product variation. If a product variation already exists, users can modify attributes such as price, storage, RAM size, size, SKU, quantity, and discount.
 
 ## 🔗 Endpoint
-- **URL:** `https://shopsyncapi/v1/products/variation/priceDetail/{variationPriceDetailId}`
+- **URL:** `/v1/products/variation/priceDetail/{variationPriceDetailId}`
 - **Method:** `PATCH`
 
 
