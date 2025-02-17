@@ -8,7 +8,7 @@ title: Get Authenticated Client Profile
 The **Get Authenticated User Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
 
 ## 🔗 Endpoint
-**GET** `/v1/auth/users/profile`
+**GET** `/v1/users/profile`
 
 ## 🛠️ Required Headers
 ```json
@@ -36,13 +36,13 @@ fetch('https://shopsyncapi.taoforge.org/v1/auth/users/profile', {
     "message": "User profile retrieved",
     "data": {
         "id": "67a5ff5cb6ac842d1241d096",
-        "email": "customer@yopmail.com",
+        "email": "client@yopmail.com",
         "fullName": null,
         "phoneNumber": null,
         "address": null,
         "role": {
-            "name": "Customer",
-            "slug": "customer",
+            "name": "Shop Owner",
+            "slug": "shop_owner",
             "permissions": null
         },
         "tenantId": "YourTenantId"
