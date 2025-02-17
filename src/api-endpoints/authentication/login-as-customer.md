@@ -8,7 +8,7 @@ title: Customer Login
 The **Customer Login API** allows registered customers to authenticate and receive a JWT token for secure access to protected resources.
 
 ## 🔗 Endpoint
-**POST** `/v1/auth/login`
+**POST** `/v1/auth/login/customer`
 
 ## 🛠️ Required Headers
 ```json

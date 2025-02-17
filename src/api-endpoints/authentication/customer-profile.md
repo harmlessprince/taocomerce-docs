@@ -1,25 +1,27 @@
 ---
-title: Get Authenticated Client Profile
+title: Get Authenticated Customer Profile
 ---
 
-# Get Authenticated User Profile
+# Get Authenticated Customer Profile
 
 ## 📌 Description
-The **Get Authenticated User Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
+The **Get Authenticated Customer Profile** API retrieves the details of the currently authenticated customer. This endpoint requires a valid JWT token and X-TenantId header.
 
 ## 🔗 Endpoint
-**GET** `/v1/auth/users/profile`
+**GET** `/v1/auth/customers/profile`
 
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN"
+  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "X-TenantId": "YOUR_TENANT_ID",
+  "Content-Type": "application/json"
 }
 ```
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/auth/users/profile', {
+fetch('https://shopsyncapi.taoforge.org/v1/customers/profile', {
   method: 'GET',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN'
