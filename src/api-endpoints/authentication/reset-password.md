@@ -21,7 +21,7 @@ The **Customer Reset Password API** allows you reset customer password by supply
 ## 📥 Request Body
 | Parameter  | Type   | Required | Description |
 |-----------|--------|----------|-------------|
-| `token`   | string | Yes      | The token sent to the customer email. |
+| `token`   | string | Yes      | The token sent to the customer email or attached to client url supplied. |
 | `newPassword`| string | Yes      | The customer new password. |
 | `confirmPassword`| string | Yes      | Confirm password to make sure customer is certain of the newly inputted password |
 
@@ -34,8 +34,9 @@ fetch('https://shopsyncapi.taoforge.org/v1/password/reset/customer', {
     'X-TenantId': 'YOUR_TENANT_ID'
   },
   body: JSON.stringify({
-    email: "customer@yopmail.com",
-    clientUrl: "https://example.com/reset/password"
+    token: "45645897-5f8b-4f63-85b6-5c6ca1ab68b7",
+    newPassword: "123456",
+    confirmPassword: "123456"
   })
 })
 .then(response => response.json())
