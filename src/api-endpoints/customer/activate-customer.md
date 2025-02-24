@@ -5,7 +5,7 @@ title: Activate Customer
 # Deactivate Customer
 
 ## 📌 Description
-The **Activate Customer** API allows client users to activate a customer a deactivated customer account, this allows the customer to login  to your application.
+The **Activate Customer** API allows client to activate a customer that has been deactivated, one the account is activated, the customer will regain the ability to login to the system
 
 ## 🔗 Endpoint
 **PATCH** `/v1/customers/{customerId}/deactivate`
