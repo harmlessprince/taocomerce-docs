@@ -1,11 +1,11 @@
 ---
-title: Decrement Cart Item Quantity
+title: Decrease Cart Item Quantity
 ---
 
-# Decrement Cart Item Quantity
+# Decrease Cart Item Quantity
 
 ## 📌 Description
-The **Decrement Cart Item Quantity** API decreases the quantity of a specific item in the user's cart.
+The **Decrease Cart Item Quantity** API decreases the quantity of a specific item in the user's cart.
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart.
@@ -46,6 +46,6 @@ fetch('https://shopsyncapi.taoforge.org/v1/carts/item/decrement/quantity/67a6261
 ```
 
 ## 🔗 Next Steps
-- [Increment Cart Item](./increment-cart-item.md)
+- [Decrease Cart Item](./increment-cart-item.md)
 - [List Cart Items](./list-cart-items.md)
 - [Remove Item from Cart](./remove-cart-item.md)

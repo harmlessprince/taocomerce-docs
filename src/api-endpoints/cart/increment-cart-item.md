@@ -1,11 +1,11 @@
 ---
-title: Increment Cart Item Quantity
+title: Increase Cart Item Quantity
 ---
 
-# Increment Cart Item Quantity
+# Increase Cart Item Quantity
 
 ## 📌 Description
-The **Increment Cart Item Quantity** API increases the quantity of a specific item in the user's cart.
+The **Increase Cart Item Quantity** API increases the quantity of a specific item in the user's cart.
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart.
@@ -44,6 +44,6 @@ fetch('https://shopsyncapi.taoforge.org/v1/carts/item/increment/quantity/67a6261
 ```
 
 ## 🔗 Next Steps
-- [Decrement Cart Item](./decrement-cart-item.md)
+- [Decrease Cart Item](./decrement-cart-item.md)
 - [List Cart Items](./list-cart-items.md)
 - [Remove Item from Cart](./remove-cart-item.md)
