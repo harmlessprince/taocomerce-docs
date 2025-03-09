@@ -38,6 +38,7 @@ This API allows store owners to update an existing promotional advertisement by 
 | `position`   | String | Yes      | The position of the button (e.g., `top-right`, `bottom-left`). |
 | `color`      | String | Yes      | The background color of the button (hex or name). |
 | `textColor`  | String | Yes      | The text color of the button (hex or name). |
+| `text`       | String | Yes      | The text inside the button. |
 | `link`       | String | Yes      | The URL associated with the button. |
 | `metadata`   | Object | No       | Additional metadata for the button. |
 
