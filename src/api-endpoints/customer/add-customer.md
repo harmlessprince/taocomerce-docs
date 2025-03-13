@@ -73,4 +73,5 @@ fetch('https://shopsyncapi.taoforge.org/v1/customers/signup', {
 ```
 
 ## 🔗 Next Steps
-- [Authenticate Customer](../authentication/login.md)
+- [Login As Business Owner](../authentication/login-as-store-owner.md)
+- [Login As Customer](../authentication/login-as-customer.md)

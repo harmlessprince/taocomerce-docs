@@ -10,7 +10,7 @@ The Products API provides endpoints for managing product-related operations, inc
 
 
 ## 🔗 Next Steps
-- [Fetch Products](./fetch-product.md)
+- [Fetch Products](./fetch-products.md)
 - [Add Product](./add-product.md)
 - [Update Product](./update-product.md)
 - [Delete Address](./delete-product.md)

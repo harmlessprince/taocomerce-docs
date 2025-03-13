@@ -1,11 +1,11 @@
 ---
-title: Get Authenticated Client Profile
+title: Get Authenticated Business Owner Profile
 ---
 
 # Get Authenticated User Profile
 
 ## 📌 Description
-The **Get Authenticated User Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
+The **Get Authenticated Business Owner Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
 
 ## 🔗 Endpoint
 **GET** `/v1/users/profile`
@@ -59,6 +59,7 @@ fetch('https://shopsyncapi.taoforge.org/v1/auth/users/profile', {
 ```
 
 ## 🔗 Next Steps
-- [User Login](./login.md)
+- [Login as Business Owner](./login-as-store-owner.md)
+- [Login as Customer](./login-as-customer.md)
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
