@@ -109,6 +109,13 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "order",
+          link: "order/",
+          prefix: "order/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Fetch Countries",
           link: "country.md",
         },
