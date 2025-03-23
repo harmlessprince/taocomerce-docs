@@ -18,7 +18,8 @@ The **Authentication API** enables users to securely log in, manage their creden
 - The `Authorization` header must be included for protected requests.
 
 ## 🔗 Next Steps
-- [User Login](./login.md)
+- [Customer Login](./login-as-customer.md)
+- [Merchant Login](./login-as-store-owner.md)
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)

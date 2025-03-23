@@ -56,5 +56,4 @@ fetch("https://shopsyncapi/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
 
 ## 🔗 Next Steps
 - Learn more about [Fetching Product Reviews](./fetch-product-review.md)
-- Learn more about [Updating a Review](./update-review.md)
 
