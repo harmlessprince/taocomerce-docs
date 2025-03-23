@@ -1,11 +1,11 @@
 ---
-title: Client Login
+title: Merchant Login
 ---
 
 # Client Login
 
 ## 📌 Description
-The **Client Login API** allows registered client or store to authenticate and receive a JWT token for secure access to protected resources.
+The **Merchant Login API** allows registered merchant or store owner to authenticate and receive a JWT token for secure access to protected resources.
 
 ## 🔗 Endpoint
 **POST** `/v1/auth/login`

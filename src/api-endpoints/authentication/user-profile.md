@@ -1,11 +1,11 @@
 ---
-title: Get Authenticated Business Owner Profile
+title: Get Authenticated Merchant Profile
 ---
 
-# Get Authenticated User Profile
+# Get Authenticated Merchant Profile
 
 ## 📌 Description
-The **Get Authenticated Business Owner Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
+The **Get Authenticated Merchant Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
 
 ## 🔗 Endpoint
 **GET** `/v1/users/profile`
