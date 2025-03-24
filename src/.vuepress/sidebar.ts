@@ -65,13 +65,13 @@ export default sidebar({
           collapsible: true,
           children: "structure"
         },
-        {
-          text: "File Upload",
-          link: "media/",
-          prefix: "media/",
-          collapsible: true,
-          children: "structure"
-        },
+        // {
+        //   text: "File Upload",
+        //   link: "media/",
+        //   prefix: "media/",
+        //   collapsible: true,
+        //   children: "structure"
+        // },
         {
           text: "Product Category",
           link: "category/",
