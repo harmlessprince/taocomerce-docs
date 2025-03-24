@@ -65,13 +65,6 @@ export default sidebar({
           collapsible: true,
           children: "structure"
         },
-        // {
-        //   text: "File Upload",
-        //   link: "media/",
-        //   prefix: "media/",
-        //   collapsible: true,
-        //   children: "structure"
-        // },
         {
           text: "Product Category",
           link: "category/",
@@ -102,9 +95,9 @@ export default sidebar({
           children: "structure"
         },
         {
-          text: "Media",
-          link: "media/",
-          prefix: "media/",
+          text: "Media Management",
+          link: "media-management/",
+          prefix: "media-management/",
           collapsible: true,
           children: "structure"
         },
