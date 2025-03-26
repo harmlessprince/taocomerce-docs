@@ -5,7 +5,7 @@ title: Initialize Payment
 # Initialize Payment
 
 ## 📌 Description
-The **Initialize Payment** API allows users to start the payment process for an order. Before initializing payment, users must have a valid `orderId`, which can be obtained from the **Checkout API**.
+The **Initialize Payment** API allows users to start the payment process for an order. Before initializing payment, you must have a valid `orderId`, which can be obtained from the **Checkout API**.
 
 ## 🔗 How to Get an `orderId`
 To get a valid `orderId`, the user must first complete the checkout process. Refer to the **[Checkout API](../cart/checkout.md)** for details on how to create an order and retrieve the `orderId`.
