@@ -1,8 +1,8 @@
 ---
-title: Fetch orders
+title: Fetch Orders
 ---
 
-# Fetch orders
+# Fetch Orders
 
 ## 📌 Description
 This API retrieves a list of placed orders based on various filter parameters.

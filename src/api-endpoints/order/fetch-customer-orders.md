@@ -1,8 +1,8 @@
 ---
-title: Fetch orders
+title: Fetch Customer Orders
 ---
 
-# Fetch orders
+# Fetch Customer Orders
 
 ## 📌 Description
 This API retrieves a list of placed orders by currently authenticated customer and based on various filter parameters.

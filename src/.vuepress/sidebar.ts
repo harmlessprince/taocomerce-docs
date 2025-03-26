@@ -102,7 +102,7 @@ export default sidebar({
           children: "structure"
         },
         {
-          text: "order",
+          text: "Order",
           link: "order/",
           prefix: "order/",
           collapsible: true,
