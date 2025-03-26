@@ -1,24 +1,25 @@
 ---
-title: Authenticated Customer Checkout
+title: Guest Checkout
 ---
 
-# Authenticated Customer Checkout
+# Guest Checkout
 
 ## 📌 Description
-The **Checkout API** allows authenticated customers to place an order using the items in their cart.
+The **Guest Checkout API** allows none authenticated customers to place an order using the items in their cart and session id used in adding items to a cart ([Generate Session Id](./generate-cart-session-id.md)). 
 
 ## 🛠️ Authentication Requirements
-- Customers **must** be authenticated and provide a valid JWT token.
+-  The `X-SessionId` header is **mandatory** .
 - The `X-TenantId` header is **mandatory** for all requests.
 
 ## 🔗 Endpoint
-**POST** `/v1/carts/checkout`
+**POST** `/v1/carts/guest/checkout`
 
 ## 🛠️ Required Headers
 ```json
 {
   "Authorization": "Bearer YOUR_JWT_TOKEN",
   "X-TenantId": "YOUR_TENANT_ID",
+  "X-SessionId": "XXXXXXXXXX",
   "Content-Type": "application/json"
 }
 ```
@@ -43,7 +44,7 @@ The **Checkout API** allows authenticated customers to place an order using the 
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/carts/checkout', {
+fetch('https://shopsyncapi.taoforge.org/v1/carts/guest/checkout', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',
@@ -73,52 +74,40 @@ fetch('https://shopsyncapi.taoforge.org/v1/carts/checkout', {
 ## 📤 Sample 200 Response (Success)
 ```json
 {
-    "id": "67a6261a320f3f7368dfec35",
-    "orderNumber": "ORD123456",
-    "orderDate": "2025-02-10T10:01:30.129971",
-    "shippingAddress": "123 Main St, Los Angeles, CA",
-    "billingAddress": "123 Main St, Los Angeles, CA",
-    "shippingMethod": "Standard",
-    "paymentMethod": "Credit Card",
-    "totalPrice": 150.00,
-    "waybillPrice": 10.00,
-    "country": "USA",
-    "state": "California",
-    "city": "Los Angeles",
-    "area": "Downtown",
-    "landmark": "Near Central Park",
-    "status": "Processing",
-    "paymentStatus": "PENDING",
-    "paymentGateway": "PAYSTACK",
-    "paymentGatewayTransactionId": "txn_123456789",
-    "fulfillmentStatus": "Pending",
-    "user": {
-        "id": "679f8f5a3b5f2173201c2582",
-        "fullName": "John Doe"
+    "data": {
+        "id": "67e3b3ee8a86a453d84eb58d",
+        "orderNumber": "ORD-A780935E",
+        "orderDate": "2025-03-26T08:59:42.925",
+        "billingAddress": null,
+        "shippingMethod": "Bus",
+        "paymentMethod": null,
+        "totalPrice": "51196.82",
+        "waybillPrice": null,
+        "country": "Nigeria",
+        "state": "Lagos",
+        "city": "ikeja",
+        "area": null,
+        "landmark": null,
+        "status": "PENDING",
+        "paymentStatus": "PENDING",
+        "paymentGateway": null,
+        "paymentGatewayTransactionId": null,
+        "fulfillmentStatus": "UNFULFILLED",
+        "user": null,
+        "contactInformation": {
+            "firstName": "Taofeeq",
+            "lastName": "Adewuyi",
+            "email": "realolamilekan@gmail.com",
+            "phoneNumber": "07086556010",
+            "address": "Ajegunle"
+        },
+        "promotion": null,
+        "address": null,
+        "tenantId": "679f2dd75f703c799f673415",
+        "createdAt": "2025-03-26T08:59:42.94"
     },
-    "promotion": {
-        "id": "promo123",
-        "name": "Winter Sale",
-        "code": "WINTER2025",
-        "description": "10% off all items",
-        "startDate": "2025-02-01T00:00:00",
-        "endDate": "2025-02-28T23:59:59",
-        "discount": 10.0
-    },
-    "address": {
-        "id": "addr456",
-        "fullAddress": "123 Main St, Los Angeles, CA",
-        "street": "Main St",
-        "streetNumber": "123",
-        "postalCode": "90001",
-        "city": "Los Angeles",
-        "userId": "679f8f5a3b5f2173201c2582",
-        "isDefault": true,
-        "state": "California",
-        "localGovernment": "LA County",
-        "country": "USA"
-    },
-    "createdAt": "2025-02-10T10:01:30.129971"
+    "message": "Order initiated successfully",
+    "status": true
 }
 ```
 

@@ -5,11 +5,12 @@ title: Add Item to Cart
 # Add Item to Cart
 
 ## 📌 Description
-The **Add Item to Cart** API allows users to add products to their cart. 
+The **Add Item to Cart** API allows customers to add products to their cart. 
 
 - **Authenticated Users**: Must provide a valid JWT token.
-- **Guest Users**: Must provide a `sessionId` to track the cart.
+- **Guest Users**: Must provide a `sessionId` to track the cart ([Generate Session Id](./generate-cart-session-id.md)).
 - The `X-TenantId` header is **mandatory** for all requests.
+- The `X-SessionId` header is **mandatory** for adding item to cart for none authenticated customers.
 
 ## 🔗 Endpoint
 **POST** `/v1/carts/add`
