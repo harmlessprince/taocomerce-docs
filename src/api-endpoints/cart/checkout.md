@@ -5,7 +5,7 @@ title: Authenticated Customer Checkout
 # Authenticated Customer Checkout
 
 ## 📌 Description
-The **Checkout API** allows authenticated customers to place an order using the items in their cart.
+The **Checkout API** allows authenticated customers to place an order using the items in their cart. If you want your customers to checkout without been authenticated, visit: [Guest Checkout](./checkout-guest.md)
 
 ## 🛠️ Authentication Requirements
 - Customers **must** be authenticated and provide a valid JWT token.
@@ -131,6 +131,8 @@ fetch('https://shopsyncapi.taoforge.org/v1/carts/checkout', {
 ```
 
 ## 🔗 Next Steps
+
 - [List Cart Items](./list-cart-items.md)
 - [Add Item to Cart](./add-item-to-cart.md)
 - [Payment API](../payment/initialize-payment.md)
+- [Guest Checkout](./checkout-guest.md)
