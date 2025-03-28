@@ -1,14 +1,14 @@
 ---
-title: Fetch Customer Orders
+title: Fetch Authenticated Customer Orders
 ---
 
-# Fetch Customer Orders
+# Fetch Authenticated Customer Orders
 
 ## 📌 Description
 This API retrieves a list of placed orders by currently authenticated customer and based on various filter parameters.
 
 ## 🔗 Endpoint
-- **URL:** `/v1/orders/customers`
+- **URL:** `/v1/orders/customer-orders`
 - **Method:** `GET`
 
 ## Query Parameters
@@ -39,7 +39,7 @@ This API retrieves a list of placed orders by currently authenticated customer a
 
 ## 📡 Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
+fetch("https://shopsyncapi/v1/customer-orders?sortDirectionParam=ASC", {
   method: "GET",
   headers: {
     "Authorization": "Bearer YOUR_JWT_TOKEN",
@@ -111,5 +111,6 @@ fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
 ```
 
 ## 🔗 Next Steps
-- [Show Order](./show-order.md)
+- [Fetch Order Detail](./fetch-order-detail.md)
+- [Fetch Order Items](./show-order-items.md)
 - [Checkout](../cart/checkout.md)

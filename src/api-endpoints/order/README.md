@@ -11,5 +11,6 @@ The Orders API provides endpoints for managing orders that has been placed by a 
 
 ## 🔗 Next Steps
 - [Fetch Orders](./fetch-orders.md)
-- [Fetch Customer Orders](./fetch-customer-orders.md)
-- [Show Order](./show-order.md)
+- [Fetch Authenticated Customer Orders](./fetch-customer-orders.md)
+- [Fetch Order Items](./show-order-items.md)
+- [Fetch Order Detail](./fetch-order-detail.md)

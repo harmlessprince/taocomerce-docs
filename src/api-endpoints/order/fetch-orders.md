@@ -111,5 +111,5 @@ fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
 ```
 
 ## 🔗 Next Steps
-- [Show Order](./show-order.md)
+- [Show Order](./show-order-items.md)
 - [Checkout](../cart/checkout.md)

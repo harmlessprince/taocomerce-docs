@@ -2,7 +2,7 @@
 title: Fetch Order Details
 ---
 
-# Show Order
+# Fetch Order Details
 
 ## 📌 Description
 This API allows merchant to retrieve order detail, including order items and order history
