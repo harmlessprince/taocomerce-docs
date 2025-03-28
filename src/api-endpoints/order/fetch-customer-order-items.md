@@ -1,14 +1,14 @@
 ---
-title: Fetch Order Items
+title: Fetch Authenticated Customer Order Items
 ---
 
 # Fetch Order Items
 
 ## 📌 Description
-This API allows merchant to retrieve items of a specific of specific order
+This API allows authenticated customers to retrieve order items for a specific order
 
 ## 🔗 Endpoint
-- **URL:** `/v1/customer-orders/:orderId/items`
+- **URL:** `/v1/customer-orders/{orderId}/items`
 - **Method:** `GET`
 
 ## 🛠️ Required Headers
