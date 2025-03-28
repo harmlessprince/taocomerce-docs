@@ -33,7 +33,8 @@ This API retrieves a list of placed orders based on various filter parameters.
 ```json
 {
   "X-TenantId": "YOUR_TENANT_ID",
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
+  "Authorization": "Bearer YOUR_JWT_TOKEN",
 }
 ```
 
