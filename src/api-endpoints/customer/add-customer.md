@@ -29,7 +29,7 @@ The **Customer Registration API** allows new users to create an account in the s
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/customers/signup', {
+fetch('https://api.shopsynch.com/v1/customers/signup', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'

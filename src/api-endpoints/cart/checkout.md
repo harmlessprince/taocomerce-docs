@@ -43,7 +43,7 @@ The **Checkout API** allows authenticated customers to place an order using the 
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/carts/checkout', {
+fetch('https://api.shopsynch.com/v1/carts/checkout', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

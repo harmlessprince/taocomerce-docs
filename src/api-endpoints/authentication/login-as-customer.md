@@ -26,7 +26,7 @@ The **Customer Login API** allows registered customers to authenticate and recei
 
 ### Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/auth/login/customer', {
+fetch('https://api.shopsynch.com/v1/auth/login/customer', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

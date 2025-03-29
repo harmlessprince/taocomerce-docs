@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "en-US",
-  title: "ShopSync API",
+  title: "ShopSynch API",
   description: "Build with joy",
 
   theme,

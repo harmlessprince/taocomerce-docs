@@ -32,7 +32,7 @@ By default the token expires after 1 hour.
 
 ### Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/password/forgot/request/customer', {
+fetch('https://api.shopsynch.com/v1/password/forgot/request/customer', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

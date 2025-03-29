@@ -27,7 +27,7 @@ The **Customer Reset Password API** allows you reset customer password by supply
 
 ### Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/password/reset/customer', {
+fetch('https://api.shopsynch.com/v1/password/reset/customer', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

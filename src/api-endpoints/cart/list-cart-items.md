@@ -24,7 +24,7 @@ The **List Cart Items** API retrieves all items currently in the user's cart.
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/carts/items', {
+fetch('https://api.shopsynch.com/v1/carts/items', {
   method: 'GET',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

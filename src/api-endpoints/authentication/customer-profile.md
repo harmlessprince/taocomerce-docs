@@ -21,7 +21,7 @@ The **Get Authenticated Customer Profile** API retrieves the details of the curr
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/customers/profile', {
+fetch('https://api.shopsynch.com/v1/customers/profile', {
   method: 'GET',
   headers: {
   "Authorization": "Bearer YOUR_JWT_TOKEN",

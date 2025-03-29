@@ -32,7 +32,7 @@ features:
 footer: MIT Licensed | Copyright © 2018-present VuePress Community
 ---
 
-ShopSync is an innovative e-commerce platform designed to help small and medium-sized businesses (SMBs) sell online effortlessly and scale globally. Our goal is to provide a seamless, API-first e-commerce solution for businesses looking to integrate cutting-edge technology with flexibility and simplicity.
+ShopSynch is an innovative e-commerce platform designed to help small and medium-sized businesses (SMBs) sell online effortlessly and scale globally. Our goal is to provide a seamless, API-first e-commerce solution for businesses looking to integrate cutting-edge technology with flexibility and simplicity.
 
 
 

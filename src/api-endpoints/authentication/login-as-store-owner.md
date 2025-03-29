@@ -25,7 +25,7 @@ The **Merchant Login API** allows registered merchant or store owner to authenti
 
 ### Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/auth/login', {
+fetch('https://api.shopsynch.com/v1/auth/login', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'

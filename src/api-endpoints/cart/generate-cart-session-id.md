@@ -15,7 +15,7 @@ No authentication is required for this endpoint.
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/generate/session/id', {
+fetch('https://api.shopsynch.com/v1/generate/session/id', {
   method: 'GET'
 })
 .then(response => response.json())

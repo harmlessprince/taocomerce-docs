@@ -24,7 +24,7 @@ None
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/customers/67a5ff5cb6ac842d1241d096/deactivate', {
+fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/deactivate', {
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

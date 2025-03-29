@@ -44,7 +44,7 @@ The **Guest Checkout API** allows none authenticated customers to place an order
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/carts/guest/checkout', {
+fetch('https://api.shopsynch.com/v1/carts/guest/checkout', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

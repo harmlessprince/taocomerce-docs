@@ -17,7 +17,7 @@ The **Fetch States by Country ID** API allows users to retrieve a list of states
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/states/679e8caa72d06732223ab672', {
+fetch('https://api.shopsynch.com/v1/states/679e8caa72d06732223ab672', {
   method: 'GET'
 })
 .then(response => response.json())

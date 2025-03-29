@@ -35,7 +35,7 @@ The **Add Item to Cart** API allows customers to add products to their cart.
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/carts/add', {
+fetch('https://api.shopsynch.com/v1/carts/add', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

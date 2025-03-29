@@ -29,7 +29,7 @@ Ensure the new password meets the required security standards.
 
 ### Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/change/password/merchant', {
+fetch('https://api.shopsynch.com/v1/change/password/merchant', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

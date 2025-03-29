@@ -27,7 +27,7 @@ The **Update Customer Profile** API allows authenticated users to modify their p
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/customers/profile/update', {
+fetch('https://api.shopsynch.com/v1/customers/profile/update', {
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

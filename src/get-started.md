@@ -2,10 +2,10 @@
 title: Getting Started
 ---
 
-# Getting Started with the eCommerce API
+# Getting Started with the ShopSynch API
 
 ## 📝 Sign Up & Authentication
-To use the eCommerce API, users must sign up on our platform. Register at [Coming Soon](https://comingsoon.com/signup). Upon successful registration, each user is assigned a **Tenant ID**, which can be found in their profile.
+To use the ShopSynch API, you must sign up on our platform. Register at [ShopSynch](https://shopsynch.com/signup). Upon successful registration, you will be assigned a **Tenant ID**, which can be found in their [Profile](https://shopsynch.com/merchant/profile) .
 
 ### **Authentication**
 - API requests require authentication via JWT.

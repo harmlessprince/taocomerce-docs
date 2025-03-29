@@ -37,7 +37,7 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/payments/guest/initialize', {
+fetch('https://api.shopsynch.com/v1/payments/guest/initialize', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

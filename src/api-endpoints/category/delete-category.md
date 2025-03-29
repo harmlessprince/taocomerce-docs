@@ -24,7 +24,7 @@ The **Delete Category** API allows users to delete a category the have selected 
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/tenant-categories/67b1eba52950d47e85cf54f4', {
+fetch('https://api.shopsynch.com/v1/tenant-categories/67b1eba52950d47e85cf54f4', {
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN',

@@ -19,7 +19,7 @@ The **Get Authenticated Merchant Profile** API retrieves the details of the curr
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://shopsyncapi.taoforge.org/v1/auth/users/profile', {
+fetch('https://api.shopsynch.com/v1/auth/users/profile', {
   method: 'GET',
   headers: {
     'Authorization': 'Bearer YOUR_JWT_TOKEN'
