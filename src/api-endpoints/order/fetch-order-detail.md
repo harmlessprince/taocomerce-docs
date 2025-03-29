@@ -14,8 +14,8 @@ This API allows merchant to retrieve order detail, including order items and ord
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -25,8 +25,8 @@ This API allows merchant to retrieve order detail, including order items and ord
 fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/detail", {
   method: "GET",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })

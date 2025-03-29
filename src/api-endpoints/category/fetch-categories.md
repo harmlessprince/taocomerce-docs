@@ -20,8 +20,8 @@ This endpoint retrieves a list of categories available in the system.
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -32,8 +32,8 @@ This endpoint retrieves a list of categories available in the system.
 fetch('{{url}}/v1/categories', {
   method: 'GET',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json',
   }
 })

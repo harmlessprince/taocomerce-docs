@@ -14,8 +14,8 @@ This API allows shop owners to delete a product review by its unique ID.
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -25,8 +25,8 @@ This API allows shop owners to delete a product review by its unique ID.
 fetch("https://shopsyncapi/v1/reviews/679f8f5a3b5f2173201c2582", {
   method: "DELETE",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })

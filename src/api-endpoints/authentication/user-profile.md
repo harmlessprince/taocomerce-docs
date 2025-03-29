@@ -13,7 +13,7 @@ The **Get Authenticated Merchant Profile** API retrieves the details of the curr
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN"
+  "Authorization": "Bearer JWT_TOKEN"
 }
 ```
 
@@ -22,7 +22,7 @@ The **Get Authenticated Merchant Profile** API retrieves the details of the curr
 fetch('https://api.shopsynch.com/v1/auth/users/profile', {
   method: 'GET',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN'
+    'Authorization': 'Bearer JWT_TOKEN'
   }
 })
 .then(response => response.json())
@@ -33,19 +33,19 @@ fetch('https://api.shopsynch.com/v1/auth/users/profile', {
 ```json
 {
     "status": true,
-    "message": "User profile retrieved",
+    "message": "profile retrieved",
     "data": {
-        "id": "67a5ff5cb6ac842d1241d096",
-        "email": "client@yopmail.com",
-        "fullName": null,
-        "phoneNumber": null,
-        "address": null,
+        "id": "679e88f60ed25b3ca5dd530f",
+        "email": "system@yopmail.com",
+        "fullName": "tao adewuyi",
+        "phoneNumber": "090765541234",
+        "address": "44 Ogunsolu street",
         "role": {
-            "name": "Shop Owner",
-            "slug": "shop_owner",
-            "permissions": null
+            "name": "Merchant",
+            "slug": "merchant"
         },
-        "tenantId": "YourTenantId"
+        "tenantId": "SYSTEM-0971648-2-2-2025",
+        "merchantId": "SYSTEM-0971648-2-2-2025"
     }
 }
 ```

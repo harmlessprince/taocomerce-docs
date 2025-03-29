@@ -12,8 +12,8 @@ The **Set Default Address** API allows users to designate a specific address as 
 ### **Required Headers:**
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -28,8 +28,8 @@ The **Set Default Address** API allows users to designate a specific address as 
 fetch('https://api.shopsynch.com/v1/addresses/67a6233a39c0d26e52f6c1b4/default', {
   method: 'PUT',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   }
 })

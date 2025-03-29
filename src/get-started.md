@@ -10,19 +10,19 @@ To use the ShopSynch API, you must sign up on our platform. Register at [ShopSyn
 ### **Authentication**
 - API requests require authentication via JWT.
 - Upon login, a JWT token is issued, containing the **Tenant ID**.
-- Clients should include the **Tenant ID** in the request headers using `X-TenantId`.
+- Clients should include the **Tenant ID** in the request headers using `X-MerchantId`.
 
 ### **Tenant ID Usage**
-- If the request is to a **public API**, the `X-TenantId` header is **mandatory**.
+- If the request is to a **public API**, the `X-MerchantId` header is **mandatory**.
 - If the client is authenticated, the system extracts the **Tenant ID** from the JWT token.
-- However, it is **recommended** to always pass the `X-TenantId` header explicitly.
+- However, it is **recommended** to always pass the `X-MerchantId` header explicitly.
 
 ## 🔑 Making API Requests
 ### **Example Request (Authenticated User)**
 ```bash
 curl -X GET "https://shopsyncapi/v1/countries?name=nigeria" \
-     -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-     -H "X-TenantId: YOUR_TENANT_ID"
+     -H "Authorization: Bearer JWT_TOKEN" \
+     -H "X-MerchantId: YOUR_MERCHANT_ID"
 ```
 
 ## 📦 Response Structure

@@ -13,8 +13,8 @@ The **Add Product** API allows businesses to add new products to their eCommerce
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -180,8 +180,8 @@ Available specifications can be found [here](../specification.md).
 fetch('https://api.yourdomain.com/v1/products', {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

@@ -9,7 +9,7 @@ The **Remove Cart Item** API allows users to remove a specific item from their c
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart.
-- The `X-TenantId` header is **mandatory** for all requests.
+- The `X-MerchantId` header is **mandatory** for all requests.
 
 ## 🔗 Endpoint
 **PATCH** `/v1/carts/remove/{carItemId}`
@@ -17,8 +17,8 @@ The **Remove Cart Item** API allows users to remove a specific item from their c
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN", // For authenticated users
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN", // For authenticated users
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -28,8 +28,8 @@ The **Remove Cart Item** API allows users to remove a specific item from their c
 fetch('https://api.shopsynch.com/v1/carts/remove/679f8f5a3b5f2173201c2582', {
   method: 'PATCH',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   }
 })

@@ -32,9 +32,9 @@ This API retrieves a list of placed orders by a customer. As a merchant you can 
 ## 🛠️ Required Headers
 ```json
 {
-  "X-TenantId": "YOUR_TENANT_ID",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json",
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "Authorization": "Bearer JWT_TOKEN",
 }
 ```
 
@@ -43,8 +43,8 @@ This API retrieves a list of placed orders by a customer. As a merchant you can 
 fetch("https://shopsyncapi/v1/customer-orders/67dfb8408bd13b35a66f42ed?sortDirectionParam=ASC", {
   method: "GET",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })

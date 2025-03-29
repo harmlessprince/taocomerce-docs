@@ -5,7 +5,7 @@ title: Get Authenticated Customer Profile
 # Get Authenticated Customer Profile
 
 ## 📌 Description
-The **Get Authenticated Customer Profile** API retrieves the details of the currently authenticated customer. This endpoint requires a valid JWT token and X-TenantId header.
+The **Get Authenticated Customer Profile** API retrieves the details of the currently authenticated customer. This endpoint requires a valid JWT token and X-MerchantId header.
 
 ## 🔗 Endpoint
 **GET** `/v1/customers/profile`
@@ -13,8 +13,8 @@ The **Get Authenticated Customer Profile** API retrieves the details of the curr
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -24,8 +24,8 @@ The **Get Authenticated Customer Profile** API retrieves the details of the curr
 fetch('https://api.shopsynch.com/v1/customers/profile', {
   method: 'GET',
   headers: {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
   }
 })

@@ -23,8 +23,8 @@ This endpoint allows you to add a new category and select category to the tenant
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -35,8 +35,8 @@ This endpoint allows you to add a new category and select category to the tenant
 fetch('{{baseURL}}/v1/tenant-categories', {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({

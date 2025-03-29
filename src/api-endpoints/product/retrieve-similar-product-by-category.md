@@ -19,8 +19,8 @@ This API retrieves similar products based on the category of a given product. Th
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -30,8 +30,8 @@ This API retrieves similar products based on the category of a given product. Th
 fetch("https://shopsyncapi/v1/products/similar/by/category/679f8f5a3b5f2173201c2582?limit=4", {
   method: "GET",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })

@@ -32,9 +32,9 @@ This API retrieves a list of placed orders based on various filter parameters.
 ## 🛠️ Required Headers
 ```json
 {
-  "X-TenantId": "YOUR_TENANT_ID",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json",
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "Authorization": "Bearer JWT_TOKEN",
 }
 ```
 
@@ -43,8 +43,8 @@ This API retrieves a list of placed orders based on various filter parameters.
 fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
   method: "GET",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })

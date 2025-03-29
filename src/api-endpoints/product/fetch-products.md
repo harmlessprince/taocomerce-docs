@@ -27,7 +27,7 @@ This API retrieves a list of products based on various filter parameters such as
 ## 🛠️ Required Headers
 ```json
 {
-  "X-TenantId": "YOUR_TENANT_ID",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -37,8 +37,8 @@ This API retrieves a list of products based on various filter parameters such as
 fetch("https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&search=Smart", {
   method: "GET",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })

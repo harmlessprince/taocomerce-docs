@@ -1,18 +1,16 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
-
 export default hopeTheme({
-  hostname: "https://tao-commeerce.netlify.app",
+  hostname: "https://docs.shopsynch.com/",
 
   author: {
-    name: "Adewuyi Taofeeq O.",
+    name: "ShopSynch.",
     url: "https://www.linkedin.com/in/adewuyi-taofeeq-olamilekan/",
   },
+  logo: "https://res.cloudinary.com/ibreathcode/image/upload/v1743273890/shopsynch/Artboard_1_3x_lnzwhf.png",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "harmlessprince/taocomerce-docs",
+  repo: "#",
 
   docsDir: "src",
 

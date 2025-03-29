@@ -15,7 +15,7 @@ A **Tenant ID** is a unique identifier assigned to each business upon signing up
 - **Multi-Tenant System**: Ensures that each business or developer has a separate and secure environment.
 - **Data Segmentation**: Prevents unauthorized access between different accounts.
 - **Scalability**: Enables businesses to grow without interference from others.
-- **Mandatory for All API Requests**: Every API request must include the `X-TenantId` header to specify which business the request belongs to.
+- **Mandatory for All API Requests**: Every API request must include the `X-MerchantId` header to specify which business the request belongs to.
 
 ### How to Get Your Tenant ID?
 1. **Sign Up** on our platform.
@@ -24,7 +24,7 @@ A **Tenant ID** is a unique identifier assigned to each business upon signing up
 4. Use the Tenant ID in your API requests by adding it to the request header:
    ```json
    {
-     "X-TenantId": "YOUR_TENANT_ID"
+     "X-MerchantId": "YOUR_MERCHANT_ID"
    }
    ```
 
@@ -40,7 +40,7 @@ JWT (JSON Web Token) is a secure way to authenticate users and ensure only autho
 Once logged in, users receive a JWT token that should be included in the `Authorization` header:
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN"
+  "Authorization": "Bearer JWT_TOKEN"
 }
 ```
 
@@ -50,7 +50,7 @@ Once logged in, users receive a JWT token that should be included in the `Author
 | Required For | All API requests | User-specific operations (checkout, profile updates, order management) |
 | Purpose      | Identifies business | Verifies user authentication |
 | How to Get It | From Profile Page | After logging in |
-| Example Header | `X-TenantId: YOUR_TENANT_ID` | `Authorization: Bearer YOUR_JWT_TOKEN` |
+| Example Header | `X-MerchantId: YOUR_MERCHANT_ID` | `Authorization: Bearer JWT_TOKEN` |
 
 By combining **Tenant ID** and **JWT**, our API ensures **security, scalability, and efficient data management** for every user. 
 

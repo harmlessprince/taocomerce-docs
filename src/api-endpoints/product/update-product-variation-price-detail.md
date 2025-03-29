@@ -15,8 +15,8 @@ This API allows users to update the price details of an existing product variati
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -41,8 +41,8 @@ This API allows users to update the price details of an existing product variati
 fetch("https://shopsyncapi/v1/products/variation/priceDetail/{variationPriceDetailId}", {
   method: "PATCH",
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

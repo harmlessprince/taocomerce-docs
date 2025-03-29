@@ -13,7 +13,7 @@ The **Update Customer Profile** API allows authenticated users to modify their p
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "Authorization": "Bearer JWT_TOKEN",
   "Content-Type": "application/json"
 }
 ```
@@ -30,7 +30,7 @@ The **Update Customer Profile** API allows authenticated users to modify their p
 fetch('https://api.shopsynch.com/v1/customers/profile/update', {
   method: 'PATCH',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
+    'Authorization': 'Bearer JWT_TOKEN',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

@@ -12,7 +12,7 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 
 ## 🛠️ Authentication Requirements
 -  The `X-SessionId` header is **mandatory** .
-- The `X-TenantId` header is **mandatory** for all requests.
+- The `X-MerchantId` header is **mandatory** for all requests.
 
 ## 🔗 Endpoint
 **POST** `/v1/payments/guest/initialize`
@@ -20,8 +20,8 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "X-SessionId": "XXXXXXXXXX",
   "Content-Type": "application/json"
 }
@@ -40,8 +40,8 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 fetch('https://api.shopsynch.com/v1/payments/guest/initialize', {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

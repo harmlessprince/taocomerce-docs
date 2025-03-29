@@ -9,7 +9,7 @@ The **Increase Cart Item Quantity** API increases the quantity of a specific ite
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart.
-- The `X-TenantId` header is **mandatory** for all requests.
+- The `X-MerchantId` header is **mandatory** for all requests.
 
 ## 🔗 Endpoint
 **PATCH** `/v1/carts/item/increment/quantity/{cartItemId}`
@@ -17,8 +17,8 @@ The **Increase Cart Item Quantity** API increases the quantity of a specific ite
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN", // For authenticated users
-  "X-TenantId": "YOUR_TENANT_ID"
+  "Authorization": "Bearer JWT_TOKEN", // For authenticated users
+  "X-MerchantId": "YOUR_MERCHANT_ID"
 }
 ```
 
@@ -27,8 +27,8 @@ The **Increase Cart Item Quantity** API increases the quantity of a specific ite
 fetch('https://api.shopsynch.com/v1/carts/item/increment/quantity/67a6261a320f3f7368dfec35', {
   method: 'PATCH',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID'
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID'
   }
 })
 .then(response => response.json())

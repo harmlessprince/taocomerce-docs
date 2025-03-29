@@ -9,7 +9,7 @@ The **Checkout API** allows authenticated customers to place an order using the 
 
 ## 🛠️ Authentication Requirements
 - Customers **must** be authenticated and provide a valid JWT token.
-- The `X-TenantId` header is **mandatory** for all requests.
+- The `X-MerchantId` header is **mandatory** for all requests.
 
 ## 🔗 Endpoint
 **POST** `/v1/carts/checkout`
@@ -17,8 +17,8 @@ The **Checkout API** allows authenticated customers to place an order using the 
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -46,8 +46,8 @@ The **Checkout API** allows authenticated customers to place an order using the 
 fetch('https://api.shopsynch.com/v1/carts/checkout', {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

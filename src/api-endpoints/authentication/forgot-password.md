@@ -19,7 +19,7 @@ By default the token expires after 1 hour.
 ```json
 {
   "Content-Type": "application/json",
-  "X-TenantId": "YOUR_TENANT_ID"
+  "X-MerchantId": "YOUR_MERCHANT_ID"
 }
 ```
 
@@ -36,7 +36,7 @@ fetch('https://api.shopsynch.com/v1/password/forgot/request/customer', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-TenantId': 'YOUR_TENANT_ID'
+    'X-MerchantId': 'YOUR_MERCHANT_ID'
   },
   body: JSON.stringify({
     email: "customer@yopmail.com",

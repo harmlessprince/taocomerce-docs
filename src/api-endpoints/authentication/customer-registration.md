@@ -1,19 +1,19 @@
 ---
-title: Customer Registration
+title: Customer Registration Using Email and Password
 ---
 
-# Customer Registration
+# Customer Registration Using Email and Password
 
 ## 📌 Description
 The **Customer Registration API** allows new users to create an account in the system. Upon successful registration, the user receives a unique customer ID.
 
 ## 🔗 Endpoint
-**POST** `/v1/customers/signup`
+**POST** `/v1/auth/customers/signup`
 
 ## 🛠️ Required Headers
 ```json
 {
-  "X-TenantId": "YOUR_TENANT_ID",
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```

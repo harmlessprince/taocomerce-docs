@@ -13,7 +13,7 @@ The **Activate Customer** API allows client to activate a customer that has been
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
+  "Authorization": "Bearer JWT_TOKEN",
   "Content-Type": "application/json"
 }
 ```
@@ -27,7 +27,7 @@ None
 fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/activate', {
   method: 'PATCH',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
+    'Authorization': 'Bearer JWT_TOKEN',
     'Content-Type': 'application/json'
   }
 })

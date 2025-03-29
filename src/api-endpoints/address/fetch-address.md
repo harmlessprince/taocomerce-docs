@@ -10,8 +10,8 @@ The Addresses API allows users to manage their saved addresses, which can be use
 #### **Required Headers:**
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN",
-  "X-TenantId": "YOUR_TENANT_ID"
+  "Authorization": "Bearer JWT_TOKEN",
+  "X-MerchantId": "YOUR_MERCHANT_ID"
 }
 ```
 
@@ -26,8 +26,8 @@ The Addresses API allows users to manage their saved addresses, which can be use
 fetch('https://api.shopsynch.com/v1/addresses', {
   method: 'GET',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID'
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID'
   }
 })
 .then(response => response.json())

@@ -12,8 +12,8 @@ This API allows users to update an existing product's details. Users can modify 
 - **Method:** `PATCH`
 
 ## 🛠️ Required Headers
-- `Authorization: Bearer YOUR_JWT_TOKEN`
-- `X-TenantId: YOUR_TENANT_ID`
+- `Authorization: Bearer JWT_TOKEN`
+- `X-MerchantId: YOUR_MERCHANT_ID`
 - `Content-Type: application/json`
 
 ## 📥 Request Body
@@ -77,8 +77,8 @@ Available specifications can be found [here](../specification.md).
 fetch("https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582", {
   method: "PATCH",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   },
   body: JSON.stringify({

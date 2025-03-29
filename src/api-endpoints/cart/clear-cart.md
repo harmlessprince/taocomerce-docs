@@ -9,7 +9,7 @@ The **Clear Cart** API allows users to remove all items from their cart.
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart.
-- The `X-TenantId` header is **mandatory** for all requests.
+- The `X-MerchantId` header is **mandatory** for all requests.
 
 ## 🔗 Endpoint
 **DELETE** `/v1/carts/clear`
@@ -17,8 +17,8 @@ The **Clear Cart** API allows users to remove all items from their cart.
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN", // For authenticated users
-  "X-TenantId": "YOUR_TENANT_ID",
+  "Authorization": "Bearer JWT_TOKEN", // For authenticated users
+  "X-MerchantId": "YOUR_MERCHANT_ID",
   "Content-Type": "application/json"
 }
 ```
@@ -28,8 +28,8 @@ The **Clear Cart** API allows users to remove all items from their cart.
 fetch('https://api.shopsynch.com/v1/carts/clear', {
   method: 'DELETE',
   headers: {
-    'Authorization': 'Bearer YOUR_JWT_TOKEN',
-    'X-TenantId': 'YOUR_TENANT_ID',
+    'Authorization': 'Bearer JWT_TOKEN',
+    'X-MerchantId': 'YOUR_MERCHANT_ID',
     'Content-Type': 'application/json'
   }
 })

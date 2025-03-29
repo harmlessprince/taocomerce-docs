@@ -14,7 +14,7 @@ The **Customer Login API** allows registered customers to authenticate and recei
 ```json
 {
   "Content-Type": "application/json",
-  "X-TenantId": "YOUR_TENANT_ID"
+  "X-MerchantId": "YOUR_MERCHANT_ID"
 }
 ```
 
@@ -30,7 +30,7 @@ fetch('https://api.shopsynch.com/v1/auth/login/customer', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-TenantId': 'YOUR_TENANT_ID'
+    'X-MerchantId': 'YOUR_MERCHANT_ID'
   },
   body: JSON.stringify({
     email: "system@yopmail.com",

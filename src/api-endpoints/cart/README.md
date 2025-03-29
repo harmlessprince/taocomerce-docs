@@ -10,7 +10,7 @@ The **Cart API** provides endpoints for managing a user's shopping cart. Users c
 ## 🛠️ Authentication Requirements
 - **Authenticated Users**: Must provide a valid JWT token in the `Authorization` header.
 - **Guest Users**: Must provide a `sessionId` to track their cart.
-- The `X-TenantId` header is **mandatory** for all requests.
+- The `X-MerchantId` header is **mandatory** for all requests.
 
 ## 🔗 Available Endpoints
 - [Generate Cart Session](./generate-cart-session-id.md) *(For guest users)*

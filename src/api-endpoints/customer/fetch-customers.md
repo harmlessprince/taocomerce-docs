@@ -25,8 +25,8 @@ This API retrieves a list of customers filtered by email, name and paginated usi
 ## 🛠️ Required Headers
 ```json
 {
-  "Authorization": "Bearer YOUR_JWT_TOKEN", 
-  "X-TenantId": "YOUR_TENANT_ID", //optional
+  "Authorization": "Bearer JWT_TOKEN", 
+  "X-MerchantId": "YOUR_MERCHANT_ID", //optional
   "Content-Type": "application/json"
 }
 ```
@@ -36,8 +36,8 @@ This API retrieves a list of customers filtered by email, name and paginated usi
 fetch("https://shopsyncapi/v1/customers", {
   method: "GET",
   headers: {
-    "Authorization": "Bearer YOUR_JWT_TOKEN",
-    "X-TenantId": "YOUR_TENANT_ID",
+    "Authorization": "Bearer JWT_TOKEN",
+    "X-MerchantId": "YOUR_MERCHANT_ID",
     "Content-Type": "application/json"
   }
 })
@@ -70,7 +70,7 @@ fetch("https://shopsyncapi/v1/customers", {
 
 
 ## 🔗 Next Steps
-- Learn more about [Adding a Customer](./add-customer.md)
+- Learn more about [Register a Customer](../authentication/customer-registration.md)
 - Learn more about [Updating a Customer](./update-customer.md)
 - Learn more about [Deleting a Customer](./delete-customer.md)
 

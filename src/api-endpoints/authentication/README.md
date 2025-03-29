@@ -14,7 +14,7 @@ The **Authentication API** enables users to securely log in, manage their creden
 - **Retrieve User Profile:** Fetch user profile details.
 
 ### **Headers Requirement:**
-- All authentication-related endpoints require the `X-TenantId` header **except** for retrieving the user profile.
+- All authentication-related endpoints require the `X-MerchantId` header **except** for retrieving the user profile.
 - The `Authorization` header must be included for protected requests.
 
 ## 🔗 Next Steps
