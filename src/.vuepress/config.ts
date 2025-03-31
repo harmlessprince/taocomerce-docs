@@ -2,7 +2,8 @@ import { defineUserConfig } from "vuepress";
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import theme from "./theme.js";
 import sidebar from "./sidebar.js";
-
+import {config} from "dotenv"
+config()
 export default defineUserConfig({
   base: "/",
 
@@ -18,7 +19,7 @@ export default defineUserConfig({
   },
   plugins: [
     googleAnalyticsPlugin({
-      id: 'G-H7MQXF50EB',
+      id: process.env.GOOGLE_ANALYTICS_API,
     }),
   ]
   // Enable it with pwa

@@ -1,6 +1,9 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import {config} from "dotenv"
+config()
+
 export default hopeTheme({
   hostname: "https://docs.shopsynch.com/",
 
@@ -126,8 +129,8 @@ export default hopeTheme({
       prefix: "fa6-solid:",
     },
     docsearch: {
-      apiKey: "5b318d23ee07a7f43bb86c63a98be539",
-      appId: "XU1X246B58",
+      apiKey: process.env.ALGOLIA_API_KEY,
+      appId: process.env.ALGOLIA_APP_ID,
       indexName: "shopsynch",
     }
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
