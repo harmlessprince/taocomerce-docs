@@ -13,7 +13,8 @@ export default defineUserConfig({
   theme,
 
   define: {
-   BASE_URL: "https://api.shopsynch.com"
+   BASE_URL: "https://api.shopsynch.com",
+   SANDBOX_BASE_URL: "https://api-sandbox.shopsynch.com"
   },
   plugins: [
     googleAnalyticsPlugin({

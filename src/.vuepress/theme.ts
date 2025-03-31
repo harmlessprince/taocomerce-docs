@@ -125,7 +125,11 @@ export default hopeTheme({
     icon: {
       prefix: "fa6-solid:",
     },
-
+    docsearch: {
+      apiKey: "5b318d23ee07a7f43bb86c63a98be539",
+      appId: "XU1X246B58",
+      indexName: "shopsynch",
+    }
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",
