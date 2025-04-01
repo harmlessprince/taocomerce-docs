@@ -16,12 +16,17 @@ This API retrieves a list of products based on various filter parameters such as
 | Parameter            | Type   | Description |
 |----------------------|--------|-------------|
 | `sortDirectionParam` | String | Sorting direction (`ASC` or `DESC`). Default: `ASC`. |
-| `sortFieldParam`     | String | Field to sort results by (e.g., `NAME`). Default: `NAME`. |
+| `sortFieldParam`     | String | Field to sort results by (e.g., `NAME,CATEGORY,PRICE,CREATED_AT`). Default: `NAME`. |
 | `name`              | String | Filter products by name. |
+| `minPrice`              | Number | Filter products by minimum price. |
+| `maxPrice`              | Number | Filter products by maximum price. |
+| `availability`              | String | Filter products for availability (`in_stock`, `out_of_stock`).  |
 | `category`          | String | Filter products by category. |
 | `ramSize`           | String | Filter products by RAM size (e.g., `16GB`). |
 | `storage`           | String | Filter products by storage capacity. |
 | `brand`             | String | Filter products by brand. |
+| `rating`             | Number | Filter products by rating. |
+| `newArrival`             | Number | Filter products added within a specific time frame (e.g., last 30 days). |
 | `search`            | String | General search query for products.(search by name, description and category) |
 
 ## 🛠️ Required Headers
