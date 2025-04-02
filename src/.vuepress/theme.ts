@@ -130,7 +130,7 @@ export default hopeTheme({
       prefix: "fa6-solid:",
     },
     docsearch: {
-      apiKey: process.env.ALGOLIA_API_KEY,
+      apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
       appId: process.env.ALGOLIA_APP_ID,
       indexName: "shopsynch",
     }
