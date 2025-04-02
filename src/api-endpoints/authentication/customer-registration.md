@@ -2,8 +2,6 @@
 title: Customer Registration Using Email and Password
 ---
 
-# Customer Registration Using Email and Password
-
 ## 📌 Description
 The **Customer Registration API** allows new users to create an account in the system. Upon successful registration, the user receives a unique customer ID.
 

@@ -2,8 +2,6 @@
 title: Customer Registration Using Firebase
 ---
 
-# Customer Registration Using Firebase
-
 ## 📌 Description
 The **Customer Registration Using Firebase API** is for registering customers using google auth via the *Firebase SDK*. A welcome email is sent to customer and there emails are automatically marked as verified.
 

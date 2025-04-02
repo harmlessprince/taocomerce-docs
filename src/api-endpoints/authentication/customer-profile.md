@@ -2,8 +2,6 @@
 title: Get Authenticated Customer Profile
 ---
 
-# Get Authenticated Customer Profile
-
 ## 📌 Description
 The **Get Authenticated Customer Profile** API retrieves the details of the currently authenticated customer. This endpoint requires a valid JWT token and X-MerchantId header.
 

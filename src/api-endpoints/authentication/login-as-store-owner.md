@@ -2,8 +2,6 @@
 title: Merchant Login
 ---
 
-# Client Login
-
 ## 📌 Description
 The **Merchant Login API** allows registered merchant or store owner to authenticate and receive a JWT token for secure access to protected resources.
 

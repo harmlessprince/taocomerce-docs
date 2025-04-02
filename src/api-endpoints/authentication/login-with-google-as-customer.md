@@ -2,8 +2,6 @@
 title: Customer Login Using Firebase
 ---
 
-# Customer Login Using Firebase
-
 ## 📌 Description
 The **Customer Login Using Firebase** is for Login-ing customers using google auth via the *firstbase sdk*. If the customer is not registered before, the customer will be automatically registered, but no welcome email is sent.
 

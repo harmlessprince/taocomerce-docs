@@ -2,8 +2,6 @@
 title: Customer Reset Password 
 ---
 
-# Forgot Password 
-
 ## 📌 Description
 The **Customer Reset Password API** allows you reset customer password by supplying the token sent to their email address.
 

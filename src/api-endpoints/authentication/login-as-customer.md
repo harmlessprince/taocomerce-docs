@@ -2,8 +2,6 @@
 title: Customer Login
 ---
 
-# Customer Login
-
 ## 📌 Description
 The **Customer Login API** allows registered customers to authenticate and receive a JWT token for secure access to protected resources.
 
