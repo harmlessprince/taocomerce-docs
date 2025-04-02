@@ -4,11 +4,11 @@ title: Home
 heroImage: https://res.cloudinary.com/ibreathcode/image/upload/v1743273889/shopsynch/ShopSync_logomark_blue_vj8uzh.png
 actions:
   - text: Get Started
-    link: /get-started
+    link: get-started.md
     type: primary
 
   - text: Introduction
-    link: /introduction
+    link: introduction.md
     type: secondary
 
 features:
