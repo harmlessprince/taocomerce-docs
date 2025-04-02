@@ -8,7 +8,7 @@ title: Customer Registration Using Email and Password
 The **Customer Registration API** allows new users to create an account in the system. Upon successful registration, the user receives a unique customer ID.
 
 ## 🔗 Endpoint
-**POST** `/v1/auth/customers/signup`
+**POST** `/v1/auth/customer/signup`
 
 ## 🛠️ Required Headers
 ```json
@@ -29,7 +29,7 @@ The **Customer Registration API** allows new users to create an account in the s
 
 ## 📡 Example API Call (Fetch or Axios)
 ```javascript
-fetch('https://api.shopsynch.com/v1/customers/signup', {
+fetch('https://api.shopsynch.com/v1/auth/customer/signup', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
