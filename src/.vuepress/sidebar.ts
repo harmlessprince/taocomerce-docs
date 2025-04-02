@@ -35,7 +35,7 @@ export default sidebar({
       children: [
         {
           text: "Authentication",
-          link: "authentication/",
+          link: "",
           prefix: "authentication/",
           collapsible: true,
           children: "structure"
@@ -49,28 +49,28 @@ export default sidebar({
         },
         {
           text: "Customer",
-          link: "customer/",
+          link: "",
           prefix: "customer/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Product",
-          link: "product/",
+          link: "",
           prefix: "product/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Product Review",
-          link: "review/",
+          link: "",
           prefix: "review/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Product Category",
-          link: "category/",
+          link: "",
           prefix: "category/",
           collapsible: true,
           children: "structure"
@@ -78,35 +78,35 @@ export default sidebar({
 
         {
           text: "Promotion Ads",
-          link: "promo-ads/",
+          link: "",
           prefix: "promo-ads/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Cart",
-          link: "cart/",
+          link: "",
           prefix: "cart/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Payment",
-          link: "payment/",
+          link: "",
           prefix: "payment/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Media Management",
-          link: "media-management/",
+          link: "",
           prefix: "media-management/",
           collapsible: true,
           children: "structure"
         },
         {
           text: "Order",
-          link: "order/",
+          link: "",
           prefix: "order/",
           collapsible: true,
           children: "structure"
@@ -115,10 +115,10 @@ export default sidebar({
           text: "Fetch Countries",
           link: "country.md",
         },
-        {
-          text: "Fetch States by Country ID",
-          link: "states.md",
-        },
+        // {
+        //   text: "Fetch States by Country ID",
+        //   link: "states.md",
+        // },
         {
           text: "Fetch Specifications",
           link: "specification.md",

@@ -76,4 +76,4 @@ fetch('https://api.shopsynch.com/v1/addresses/67a6233a39c0d26e52f6c1b4/default',
 
 ## 🔗 Next Steps
 - Learn more about [Fetching Addresses](./README.md)
-- Explore available [API Endpoints](../../api-endpoints/README.md)
+<!-- - Explore available [API Endpoints](../../api-endpoints/README.md) -->

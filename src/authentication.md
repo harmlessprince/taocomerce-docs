@@ -54,4 +54,4 @@ By combining **Tenant ID** and **JWT**, our API ensures **security, scalability,
 
 ## 🔗 Next Steps
 - [Get Started](get-started.md) with API integration.
-- Explore available [API Endpoints](api-endpoints/README.md).
+<!-- - Explore available [API Endpoints](api-endpoints/README.md). -->

@@ -9,10 +9,10 @@ export default navbar([
     text: "Get Started",
     link: "get-started.md",
   },
-  {
-    text: "API Endpoints",
-    // icon: "laptop-code",
-    prefix: "api-endpoints/",
-    link: "api-endpoints/",
-  },
+  // {
+  //   text: "API Endpoints",
+  //   // icon: "laptop-code",
+  //   prefix: "api-endpoints/",
+  //   link: "api-endpoints/",
+  // },
 ]);

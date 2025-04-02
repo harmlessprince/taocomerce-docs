@@ -59,4 +59,4 @@ fetch('https://api.shopsynch.com/v1/addresses', {
 
 ## 🔗 Next Steps
 - Learn more about [Delete Address](delete-address.md)
-- Explore additional [API Endpoints](../../api-endpoints/README.md)
+<!-- - Explore additional [API Endpoints](../../api-endpoints/README.md) -->

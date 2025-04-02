@@ -87,4 +87,4 @@ The API uses a consistent response format:
 
 ## 🚀 Next Steps
 - Learn more about [Authentication](authentication.md).
-- Explore available [API Endpoints](api-endpoints/README.md).
+<!-- - Explore available [API Endpoints](api-endpoints/index.md). -->

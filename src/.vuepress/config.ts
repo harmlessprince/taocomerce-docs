@@ -7,7 +7,8 @@ config()
 export default defineUserConfig({
   base: "/",
   // permalinkPattern: "/:slug",
-  shouldPrefetch: false,
+  // permalinkPattern: ":slug.html",
+  // shouldPrefetch: true,
   lang: "en-US",
   title: "ShopSynch API",
   description: "Build with joy",

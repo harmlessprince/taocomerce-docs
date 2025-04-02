@@ -29,4 +29,4 @@ Ensure that your application properly handles errors by checking response status
 
 ## 🔗 Next Steps
 - Learn more about [Authentication](authentication.md)
-- Explore available [API Endpoints](api-endpoints/README.md)
+<!-- - Explore available [API Endpoints](api-endpoints/README.md) -->
