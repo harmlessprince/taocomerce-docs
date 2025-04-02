@@ -2,8 +2,6 @@
 title: Fetch Brands
 ---
 
-# brands
-
 ## 📌 Description
 The **brands API** provides a list of available product brands that can be used to categorize and filter products effectively.
 

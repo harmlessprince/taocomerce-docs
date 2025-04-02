@@ -2,8 +2,6 @@
 title: Change Customer Password
 ---
 
-# Change Merchant Password
-
 ## 📌 Description
 The **Change Customer Password API** allows an authenticated customer to update their password. The customer must provide their current password and a new password to complete the process. <br> 
 Ensure the new password meets the required security standards.

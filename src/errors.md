@@ -2,8 +2,6 @@
 title: Errors
 ---
 
-# Errors
-
 The eCommerce API follows RESTful principles and uses conventional HTTP response codes to indicate the success or failure of requests.
 
 ## **HTTP Codes**

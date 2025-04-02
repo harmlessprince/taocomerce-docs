@@ -2,8 +2,6 @@
 title: Introduction
 ---
 
-# Introduction
-
 ## 📌 What is This API?
 Welcome to the **ShopSynch API**, a powerful and scalable API built to provide businesses and developers with the tools they need to create, manage, and scale their e-commerce applications. Whether you are a startup, an enterprise, or an independent developer, this API gives you everything you need to build a fully functional online store.
 

@@ -2,8 +2,6 @@
 title: Fetch All Countries
 ---
 
-# Fetch All Countries
-
 ## 📌 Description
 The **Fetch All Countries** API allows users to retrieve a list of countries. This endpoint does not require authentication and can be used to fetch country details optionally filtered by name.
 

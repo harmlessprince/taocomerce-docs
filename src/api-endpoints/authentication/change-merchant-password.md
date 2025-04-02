@@ -2,8 +2,6 @@
 title: Change Merchant Password
 ---
 
-# Change Merchant Password
-
 ## 📌 Description
 The **Change Merchant Password API** allows an authenticated merchant or store owner to update their password. The merchant must provide their current password and a new password to complete the process. <br> 
 Ensure the new password meets the required security standards.

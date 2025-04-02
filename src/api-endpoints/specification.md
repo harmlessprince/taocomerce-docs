@@ -2,8 +2,6 @@
 title: Specifications
 ---
 
-# Specifications
-
 ## 📌 Description
 The **Specifications API** provides a list of available product specifications that can be used to categorize and filter products effectively.
 

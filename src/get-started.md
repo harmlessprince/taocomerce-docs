@@ -1,8 +1,7 @@
 ---
-title: Getting Started
+title: Getting Started with the ShopSynch API
 ---
 
-# Getting Started with the ShopSynch API
 
 ## 📝 Sign Up & Authentication
 To use the ShopSynch API, you must sign up on our platform. Register at [ShopSynch](https://shopsynch.com/signup). Upon successful registration, you will be assigned a **Tenant ID**, which can be found in their [Profile](https://shopsynch.com/merchant/profile) .

@@ -2,8 +2,6 @@
 title: Customer Forgot Password
 ---
 
-# Forgot Password 
-
 ## 📌 Description
 The **Forgot Password API** allows registered customers to request for reset password token. Once this is initiated, they will get
 an email that contains the token to reset there password.

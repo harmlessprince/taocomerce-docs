@@ -2,8 +2,6 @@
 title: Authentication
 ---
 
-# Authentication
-
 ## 📌 Why is Authentication Important?
 Authentication is a core aspect of securing your e-commerce platform. It ensures that only authorized users can access sensitive operations, such as managing carts, placing orders, and retrieving user-specific information. Our API uses a combination of **Tenant ID** and **JWT authentication** to provide a secure and scalable solution.
 

@@ -2,8 +2,6 @@
 title: Fetch Colors
 ---
 
-# Colors
-
 ## 📌 Description
 The **Colors API** provides a list of available product colors that can be used to categorize and filter products effectively.
 

@@ -2,8 +2,6 @@
 title: Fetch States by Country ID
 ---
 
-# Fetch States by Country ID
-
 ## 📌 Description
 The **Fetch States by Country ID** API allows users to retrieve a list of states for a specific country using its unique identifier. This endpoint does not require authentication.
 
