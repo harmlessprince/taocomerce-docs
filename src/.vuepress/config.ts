@@ -6,13 +6,12 @@ import {config} from "dotenv"
 config()
 export default defineUserConfig({
   base: "/",
-
+  permalinkPattern: "/:slug",
+  shouldPrefetch: false,
   lang: "en-US",
   title: "ShopSynch API",
   description: "Build with joy",
-
   theme,
-
   define: {
    BASE_URL: "https://api.shopsynch.com",
    SANDBOX_BASE_URL: "https://api-sandbox.shopsynch.com"
@@ -21,6 +20,7 @@ export default defineUserConfig({
     googleAnalyticsPlugin({
       id: process.env.GOOGLE_ANALYTICS_API,
     }),
+    
   ]
   // Enable it with pwa
   // shouldPrefetch: false,

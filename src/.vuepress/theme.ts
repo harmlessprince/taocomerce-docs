@@ -5,7 +5,7 @@ import {config} from "dotenv"
 config()
 
 export default hopeTheme({
-  hostname: "https://docs.shopsynch.com/",
+  hostname: "https://docs.shopsynch.com",
 
   author: {
     name: "ShopSynch.",
@@ -22,6 +22,7 @@ export default hopeTheme({
 
   // sidebar
   sidebar,
+
 
   footer: "Default footer",
 
@@ -113,13 +114,13 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],
@@ -189,5 +190,6 @@ export default hopeTheme({
     //     ],
     //   },
     // },
+    
   },
 });
