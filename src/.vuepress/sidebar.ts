@@ -1,9 +1,16 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/": [
+  "home": [
     "",
-    // "portfolio",
+  ],
+
+  "/": [
+    {
+      text: "Home",
+      collapsible: false,
+      link: "README.md",
+    },
     {
       text: "Introduction",
       collapsible: true,

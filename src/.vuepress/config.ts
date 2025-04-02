@@ -6,7 +6,7 @@ import {config} from "dotenv"
 config()
 export default defineUserConfig({
   base: "/",
-  permalinkPattern: "/:slug",
+  // permalinkPattern: "/:slug",
   shouldPrefetch: false,
   lang: "en-US",
   title: "ShopSynch API",
