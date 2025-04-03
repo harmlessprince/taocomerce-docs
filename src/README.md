@@ -28,6 +28,7 @@ features:
     details: Add, update, and manage products with rich specifications, pricing, and availability.
   - title: AI-Driven Insights (Coming Soon)
     details: We are working on AI-powered features for business owners to query the system and get quick insights into orders, payments, and other key metrics.
+
 footer: MIT Licensed | Copyright © 2025-present ShopSynch
 ---
 
