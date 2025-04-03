@@ -132,7 +132,7 @@ export default hopeTheme({
     docsearch: {
       apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
       appId: process.env.ALGOLIA_APP_ID,
-      indexName: "shopsynch",
+      indexName: process.env.ALGOLIA_APP_INDEX_NAME,
     }
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
