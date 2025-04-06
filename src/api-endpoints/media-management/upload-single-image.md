@@ -4,14 +4,14 @@ title: Upload Single Image
 
 # Upload Single Image
 
-## 📌 Description
+##  Description
 The **Upload Single Image API** allows you to upload a single image file.
 
-## 🔗 Endpoint
+##  Endpoint
 **GET** `/v1/files/upload/single/image`
 
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -20,7 +20,7 @@ The **Upload Single Image API** allows you to upload a single image file.
 }
 ```
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 var formdata = new FormData();
 formdata.append("file", fileInput.files[0], "WhatsApp Image 2025-02-13 at 13.23.32.jpeg");
@@ -50,5 +50,5 @@ fetch("{{url}}/v1/files/upload/single/image", requestOptions)
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn to [Upload Multiple Images](./upload-multiple-images.md)

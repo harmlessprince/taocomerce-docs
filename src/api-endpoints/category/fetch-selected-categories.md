@@ -5,11 +5,11 @@ title: Fetch Selected Tenant Product Categories
 
 # Fetch Product Categories
 
-## 📌 Description
+##  Description
 
 This endpoint retrieves a list of categories available that a client has either created or selected.
 
-🔗 Endpoint
+ Endpoint
 
 **GET** `/v1/tenant-categories`
 
@@ -18,7 +18,7 @@ This endpoint retrieves a list of categories available that a client has either 
 |---------------|--------|-------------------------------------------------------|
 | `name`        | string| Filter categories by name   |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -27,7 +27,7 @@ This endpoint retrieves a list of categories available that a client has either 
 }
 ```
 
-📡 Example API Call (Fetch or Axios)
+ Example API Call (Fetch or Axios)
 
 ```js
 fetch('{{url}}/v1/tenant-categories', {
@@ -64,6 +64,6 @@ Sample 200 Response (Success)
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Creating/Selecting Tenant Category](./add-category.md)
 - Learn more about [Fetch Selected/Created Tenant Category](./fetch-selected-categories.md)

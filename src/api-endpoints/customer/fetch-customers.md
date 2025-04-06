@@ -4,10 +4,10 @@ title: Fetch Customers
 
 # Fetch Promo Ads
 
-## 📌 Description
+##  Description
 This API retrieves a list of customers filtered by email, name and paginated using a cursor.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/customers`
 - **Method:** `GET`
 - **sortFieldParam:** `CREATED_AT, NAME, EMAIL`
@@ -22,7 +22,7 @@ This API retrieves a list of customers filtered by email, name and paginated usi
 | `cursor`  | String | No       | The cursor for pagination.    (2025-02-11T18:21:53Z&)            |
 | `limit`   | Integer| Yes      | The number of promo ads to retrieve (min: 1, max: 20). |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", 
@@ -31,7 +31,7 @@ This API retrieves a list of customers filtered by email, name and paginated usi
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/customers", {
   method: "GET",
@@ -69,7 +69,7 @@ fetch("https://shopsyncapi/v1/customers", {
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Register a Customer](../authentication/customer-registration.md)
 - Learn more about [Updating a Customer](./update-customer.md)
 - Learn more about [Deleting a Customer](./delete-customer.md)

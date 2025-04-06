@@ -8,11 +8,11 @@ title: Fetch Promo Ads
 
 # Fetch Promo Ads
 
-## 📌 Description
+##  Description
 This API retrieves a list of promotional ads that has been published. The default limit is 3 and maximum is 10.
 This is suitable for users that wants to show some adds on there site hero section.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/promo-ads?limit=3`
 - **Method:** `GET`
 
@@ -21,7 +21,7 @@ This is suitable for users that wants to show some adds on there site hero secti
 |-----------|--------|----------|-------------------------------------------|
 | `limit`   | Integer| Yes      | The number of promo ads to retrieve (min: 1, max: 10). default to 3 |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -30,7 +30,7 @@ This is suitable for users that wants to show some adds on there site hero secti
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
   method: "GET",
@@ -81,7 +81,7 @@ fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding a Promo Ad](./add-promo-ad.md)
 - Learn more about [Updating a Promo Ad](./update-promo-ad.md)
 - Learn more about [Deleting a Promo Ad](./delete-promo-ad.md)

@@ -4,17 +4,17 @@ title: Guest Checkout
 
 # Guest Checkout
 
-## 📌 Description
+##  Description
 The **Guest Checkout API** allows none authenticated customers to place an order using the items in their cart and session id used in adding items to a cart ([Generate Session Id](./generate-cart-session-id.md)). 
 
-## 🛠️ Authentication Requirements
+##  Authentication Requirements
 -  The `X-SessionId` header is **mandatory** .
 - The `X-MerchantId` header is **mandatory** for all requests.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/carts/guest/checkout`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -42,7 +42,7 @@ The **Guest Checkout API** allows none authenticated customers to place an order
 | `email`  | string | Yes       | The customer email address |
 | `phoneNumber`  | string | Yes       | The customer phone number |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/carts/guest/checkout', {
   method: 'POST',
@@ -119,7 +119,7 @@ fetch('https://api.shopsynch.com/v1/carts/guest/checkout', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [List Cart Items](./list-cart-items.md)
 - [Add Item to Cart](./add-item-to-cart.md)
 - [Payment API](../payment/initialize-payment.md)

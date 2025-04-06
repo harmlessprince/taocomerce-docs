@@ -2,16 +2,16 @@
 title: Specifications
 ---
 
-## 📌 Description
+##  Description
 The **Specifications API** provides a list of available product specifications that can be used to categorize and filter products effectively.
 
-## 🔗 Endpoint
+##  Endpoint
 **GET** `/v1/specifications`
 
-## 🛠️ Required Headers
+##  Required Headers
 No authentication is required for this request.
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/specifications', {
   method: 'GET'
@@ -54,5 +54,5 @@ fetch('https://api.shopsynch.com/v1/specifications', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Product API](./product/README.md)

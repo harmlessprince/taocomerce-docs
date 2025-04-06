@@ -2,15 +2,15 @@
 title: Change Merchant Password
 ---
 
-## 📌 Description
+##  Description
 The **Change Merchant Password API** allows an authenticated merchant or store owner to update their password. The merchant must provide their current password and a new password to complete the process. <br> 
 Ensure the new password meets the required security standards.
 
 
-## 🔗 Endpoint
+##  Endpoint
 **PATCH** `/v1/change/password/merchant`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Content-Type": "application/json",
@@ -52,7 +52,7 @@ fetch('https://api.shopsynch.com/v1/change/password/merchant', {
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)

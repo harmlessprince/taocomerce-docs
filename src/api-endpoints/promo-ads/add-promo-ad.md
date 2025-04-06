@@ -3,14 +3,14 @@ title: Add Promo Ad
 ---
 # Add Promo Ad
 
-## 📌 Description
+##  Description
 This API allows store owners to add a promotional advertisement to their store. Only authorized users (store owners) can access this endpoint.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/promo-ads`
 - **Method:** `POST`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -41,7 +41,7 @@ This API allows store owners to add a promotional advertisement to their store. 
 | `link`       | String | Yes      | The URL associated with the button. |
 | `metadata`   | Object | No       | Additional metadata for the button. |
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/promo-ads/12345", {
   method: "PATCH",
@@ -132,7 +132,7 @@ fetch("https://shopsyncapi/v1/promo-ads/12345", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Updating a Promo Ad](./update-promo-ad.md)
 - Learn more about [Deleting a Promo Ad](./delete-promo-ad.md)
 

@@ -4,10 +4,10 @@ title: Fetch Customer Orders By CustomerID
 
 # Fetch Customer Orders By CustomerID
 
-## 📌 Description
+##  Description
 This API retrieves a list of placed orders by a customer. As a merchant you can use this api to get list of all orders that has been made by a customer.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/orders/customer-orders/{customerId}`
 - **Method:** `GET`
 
@@ -29,7 +29,7 @@ This API retrieves a list of placed orders by a customer. As a merchant you can 
 
 
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -38,7 +38,7 @@ This API retrieves a list of placed orders by a customer. As a merchant you can 
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/customer-orders/67dfb8408bd13b35a66f42ed?sortDirectionParam=ASC", {
   method: "GET",
@@ -240,7 +240,7 @@ fetch("https://shopsyncapi/v1/customer-orders/67dfb8408bd13b35a66f42ed?sortDirec
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Fetch Order Detail](./fetch-order-detail.md)
 - [Fetch Order Items](./show-order-items.md)
 - [Checkout](../cart/checkout.md)

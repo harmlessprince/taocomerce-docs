@@ -4,17 +4,17 @@ title: Decrease Cart Item Quantity
 
 # Decrease Cart Item Quantity
 
-## 📌 Description
+##  Description
 The **Decrease Cart Item Quantity** API decreases the quantity of a specific item in the user's cart.
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart.
 - The `X-MerchantId` header is **mandatory** for all requests.
 
-## 🔗 Endpoint
+##  Endpoint
 **PATCH** `/v1/carts/item/decrement/quantity/{cartItemId}`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", // For authenticated users
@@ -23,7 +23,7 @@ The **Decrease Cart Item Quantity** API decreases the quantity of a specific ite
 }
 ```
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/carts/item/decrement/quantity/67a6261a320f3f7368dfec35', {
   method: 'PATCH',
@@ -45,7 +45,7 @@ fetch('https://api.shopsynch.com/v1/carts/item/decrement/quantity/67a6261a320f3f
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Decrease Cart Item](./increment-cart-item.md)
 - [List Cart Items](./list-cart-items.md)
 - [Remove Item from Cart](./remove-cart-item.md)

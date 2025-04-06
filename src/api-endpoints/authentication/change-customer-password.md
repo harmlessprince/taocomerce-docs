@@ -2,15 +2,15 @@
 title: Change Customer Password
 ---
 
-## 📌 Description
+##  Description
 The **Change Customer Password API** allows an authenticated customer to update their password. The customer must provide their current password and a new password to complete the process. <br> 
 Ensure the new password meets the required security standards.
 
 
-## 🔗 Endpoint
+##  Endpoint
 **PATCH** `/v1/change/password/customer`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Content-Type": "application/json",
@@ -54,7 +54,7 @@ fetch('https://api.shopsynch.com/v1/change/password/merchant', {
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)

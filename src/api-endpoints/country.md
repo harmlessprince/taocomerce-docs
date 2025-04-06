@@ -2,18 +2,18 @@
 title: Fetch All Countries
 ---
 
-## 📌 Description
+##  Description
 The **Fetch All Countries** API allows users to retrieve a list of countries. This endpoint does not require authentication and can be used to fetch country details optionally filtered by name.
 
-## 🔗 Endpoint
+##  Endpoint
 **GET** `/v1/countries`
 
-## 🛠️ Query Parameters
+##  Query Parameters
 | Parameter | Type   | Required | Description |
 |-----------|--------|----------|-------------|
 | `name`    | string | No       | Filter countries by name. |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/countries?name=nigeria', {
   method: 'GET'
@@ -48,5 +48,5 @@ fetch('https://api.shopsynch.com/v1/countries?name=nigeria', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Fetch States by Country](./states.md)

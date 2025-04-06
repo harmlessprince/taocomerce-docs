@@ -12,11 +12,11 @@ Required headers
 
 Follow this format
 Title
-📌 Description
-🔗 Endpoint
+ Description
+ Endpoint
 📥 Request Body(field name, type, required, description)
 
-## 🛠️ Required Headers
+##  Required Headers
 json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -24,8 +24,8 @@ json
   "Content-Type": "application/json"
 }
 
-📡 Example API Call (Fetch or Axios)
+ Example API Call (Fetch or Axios)
 Sample 200 Response (Success)
 Sample 404 Response (Not found Error):
-## 🔗 Next Steps
+##  Next Steps
 

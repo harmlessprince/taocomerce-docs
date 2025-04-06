@@ -4,10 +4,10 @@ title: Fetch Orders
 
 # Fetch Orders
 
-## 📌 Description
+##  Description
 This API retrieves a list of placed orders based on various filter parameters.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/orders`
 - **Method:** `GET`
 
@@ -29,7 +29,7 @@ This API retrieves a list of placed orders based on various filter parameters.
 
 
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -38,7 +38,7 @@ This API retrieves a list of placed orders based on various filter parameters.
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
   method: "GET",
@@ -111,6 +111,6 @@ fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Show Order](./show-order-items.md)
 - [Checkout](../cart/checkout.md)

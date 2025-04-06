@@ -4,13 +4,13 @@ title: Verify Payment
 
 # Verify Payment
 
-## 📌 Description
+##  Description
 The **Verify Payment** API confirms the status of a payment using the payment reference obtained from the **Initialize Payment** response. This ensures that a transaction has been completed successfully before processing an order.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/payments/confirm`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -24,7 +24,7 @@ The **Verify Payment** API confirms the status of a payment using the payment re
 |------------|--------|----------|-------------|
 | `reference` | string | Yes      | The unique reference ID for the payment. |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/payments/confirm', {
   method: 'POST',
@@ -57,6 +57,6 @@ fetch('https://api.shopsynch.com/v1/payments/confirm', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Initialize Payment](./initialize-payment.md)
 - [Order Processing](../order/README.md)

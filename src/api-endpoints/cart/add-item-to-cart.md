@@ -4,7 +4,7 @@ title: Add Item to Cart
 
 # Add Item to Cart
 
-## 📌 Description
+##  Description
 The **Add Item to Cart** API allows customers to add products to their cart. 
 
 - **Authenticated Users**: Must provide a valid JWT token.
@@ -12,10 +12,10 @@ The **Add Item to Cart** API allows customers to add products to their cart.
 - The `X-MerchantId` header is **mandatory** for all requests.
 - The `X-SessionId` header is **mandatory** for adding item to cart for none authenticated customers.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/carts/add`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", // For authenticated users
@@ -33,7 +33,7 @@ The **Add Item to Cart** API allows customers to add products to their cart.
 | `quantity`       | integer | Yes      | The number of items to add. Must be at least 1. |
 | `sessionId`      | string  | Yes (for guest users) | The session ID for tracking guest user carts. |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/carts/add', {
   method: 'POST',
@@ -81,6 +81,6 @@ fetch('https://api.shopsynch.com/v1/carts/add', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Remove Item from Cart](./remove-cart-item.md)
 - [Fetch Cart Details](./list-cart-items.md)

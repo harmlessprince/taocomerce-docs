@@ -2,7 +2,7 @@
 title: Customer Login Using Firebase
 ---
 
-## 📌 Description
+##  Description
 The **Customer Login Using Firebase** is for Login-ing customers using google auth via the *firstbase sdk*. If the customer is not registered before, the customer will be automatically registered, but no welcome email is sent.
 
 With firebase integration, you should enable google sign up in your account so customers will be able to signup or login using their google account.
@@ -10,10 +10,10 @@ With firebase integration, you should enable google sign up in your account so c
 
 
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** ` /v1/auth/customer/login/google`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -27,7 +27,7 @@ With firebase integration, you should enable google sign up in your account so c
 | `accessToken`       | string | Yes      | The OAuth 2.0 access token obtained from Firebase Authentication. |
 
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com//v1/auth/social/google/login/customer', {
   method: 'POST',
@@ -68,6 +68,6 @@ fetch('https://api.shopsynch.com//v1/auth/social/google/login/customer', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Login As Business Owner](../authentication/login-as-store-owner.md)
 - [Login As Customer](../authentication/login-as-customer.md)

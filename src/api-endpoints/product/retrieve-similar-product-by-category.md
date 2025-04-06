@@ -3,10 +3,10 @@ title: Retrieve Similar Products By Category
 ---
 # Show Similar Products by Category
 
-## 📌 Description
+##  Description
 This API retrieves similar products based on the category of a given product. The number of similar products returned is limited between 1 and 10, with a default of 4 if the limit is set to 0 or a negative number.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/products/similar/by/category/{productID}`
 - **Method:** `GET`
 
@@ -16,7 +16,7 @@ This API retrieves similar products based on the category of a given product. Th
 |-----------|--------|-------------|
 | `limit`   | Integer | The number of similar products to return. Default is 4 if set to 0 or lower. Maximum is 10. |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -25,7 +25,7 @@ This API retrieves similar products based on the category of a given product. Th
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/products/similar/by/category/679f8f5a3b5f2173201c2582?limit=4", {
   method: "GET",
@@ -82,7 +82,7 @@ fetch("https://shopsyncapi/v1/products/similar/by/category/679f8f5a3b5f2173201c2
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding Product Variation](./update-product-variation-price-detail.md)
 - Learn more about [Adding Product Variation Price Detail](./delete-product-variation-price-detail.md)
 

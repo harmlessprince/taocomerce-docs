@@ -4,14 +4,14 @@ title: Hide Product Review
 
 # Hide Review
 
-## 📌 Description
+##  Description
 This API allows you to hide a product review by its unique ID. Once hidden, the review will no longer be visible to customers.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/reviews/hide/{reviewId}`
 - **Method:** `PATCH`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -23,7 +23,7 @@ This API allows you to hide a product review by its unique ID. Once hidden, the 
 ## 📥 Request Body
 None
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
   method: "PATCH",
@@ -54,6 +54,6 @@ fetch("https://shopsyncapi/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Fetching Product Reviews](./fetch-product-review.md)
 

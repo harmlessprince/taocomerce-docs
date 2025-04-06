@@ -4,14 +4,14 @@ title: Show Product
 
 # Show Product
 
-## 📌 Description
+##  Description
 This API allows users to retrieve details of a specific product by its ID.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/products/{productId}`
 - **Method:** `GET`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -20,7 +20,7 @@ This API allows users to retrieve details of a specific product by its ID.
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582", {
   method: "GET",
@@ -93,7 +93,7 @@ fetch("https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding Product Variation](./update-product-variation-price-detail.md)
 - Learn more about [Adding Product Variation Price Detail](./delete-product-variation-price-detail.md)
 

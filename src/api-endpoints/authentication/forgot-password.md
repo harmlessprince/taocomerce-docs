@@ -2,7 +2,7 @@
 title: Customer Forgot Password
 ---
 
-## 📌 Description
+##  Description
 The **Forgot Password API** allows registered customers to request for reset password token. Once this is initiated, they will get
 an email that contains the token to reset there password.
 
@@ -10,10 +10,10 @@ The token will be attached to the supplied client URL as a query parameter ?toke
 
 By default the token expires after 1 hour.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/password/forgot/request/customer`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Content-Type": "application/json",
@@ -54,7 +54,7 @@ fetch('https://api.shopsynch.com/v1/password/forgot/request/customer', {
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)

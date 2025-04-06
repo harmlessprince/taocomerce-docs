@@ -1,14 +1,14 @@
 # Add Product Variation Price Detail
 
-## 📌 Description
+##  Description
 This API allows users to add more price details for an existing product and variation. For example, if you have created a Shoe product with a red color variation in sizes 30, 40, and 35, this API enables you to add another size, such as size 43.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/products/variation/priceDetail`
 - **Method:** `POST`
 
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -31,7 +31,7 @@ This API allows users to add more price details for an existing product and vari
 | `quantityInStock`| Integer | Yes (Min: 1) | The quantity available in stock. |
 | `discount`       | Double  | No (Min: 0, Max: 100) | The discount percentage applied to the product variation. |
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/products/variation/priceDetail", {
   method: "POST",
@@ -105,6 +105,6 @@ fetch("https://shopsyncapi/v1/products/variation/priceDetail", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Update Product Variation Price Detail](./update-product-variation-price-detail.md)
 - Learn more about  [Delete Product Variation Price Detail](./delete-product-variation-price-detail.md)

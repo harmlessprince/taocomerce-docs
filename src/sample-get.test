@@ -14,12 +14,12 @@ Follow this format
 
 Title
 
-📌 Description
+ Description
 
-🔗 Endpoint
+ Endpoint
 📥 Query Parameters (Parameters, Type, Description)
 
-## 🛠️ Required Headers
+##  Required Headers
 json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -27,8 +27,8 @@ json
 }
 
 
-📡 Example API Call (Fetch or Axios)
+ Example API Call (Fetch or Axios)
 Sample 200 Response (Success)
 Sample 404 Response (Not found Error):
-## 🔗 Next Steps
+##  Next Steps
 

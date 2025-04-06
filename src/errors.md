@@ -24,9 +24,9 @@ The requested resource does not exist. This may occur when trying to access a pr
 ### **5xx - Server Errors**
 An unexpected error occurred on the server, preventing the request from being processed. If this happens, please report it immediately, as it may indicate a system issue.
 
-## 📌 Handling Errors
+##  Handling Errors
 Ensure that your application properly handles errors by checking response status codes and implementing retry logic where appropriate. For authentication failures, verify that the API key or JWT token is valid and included in the request headers.
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Authentication](authentication.md)
 <!-- - Explore available [API Endpoints](api-endpoints/README.md) -->

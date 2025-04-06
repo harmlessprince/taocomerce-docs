@@ -2,18 +2,18 @@
 title: Fetch States by Country ID
 ---
 
-## 📌 Description
+##  Description
 The **Fetch States by Country ID** API allows users to retrieve a list of states for a specific country using its unique identifier. This endpoint does not require authentication.
 
-## 🔗 Endpoint
+##  Endpoint
 **GET** `/v1/states/{countryId}`
 
-## 🛠️ Path Parameters
+##  Path Parameters
 | Parameter   | Type   | Required | Description |
 |------------|--------|----------|-------------|
 | `countryId` | string | Yes      | The unique identifier of the country. |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/states/679e8caa72d06732223ab672', {
   method: 'GET'
@@ -60,5 +60,5 @@ fetch('https://api.shopsynch.com/v1/states/679e8caa72d06732223ab672', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Fetch All Countries](./country.md)

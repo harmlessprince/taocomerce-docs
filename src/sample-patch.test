@@ -6,10 +6,10 @@ Method: PATCH
 Follow the format
 
 Title
-📌 Description
-🔗 Endpoint
+ Description
+ Endpoint
 
-## 🛠️ Required Headers
+##  Required Headers
 json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -19,9 +19,9 @@ json
 
 📥 Request Body(filed name, type, required, description)
 
-📡 Example API Call (Fetch or Axios)
+ Example API Call (Fetch or Axios)
 
 Sample 200 Response (Success)
 
 Sample 422 Response (Validation Error):
-## 🔗 Next Steps
+##  Next Steps

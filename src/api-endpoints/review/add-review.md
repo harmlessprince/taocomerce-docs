@@ -4,14 +4,14 @@ title: Add Product Review
 
 # Add Review
 
-## 📌 Description
+##  Description
 This API allows users to add a review for a specific product by providing a rating, comment, and product ID.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/reviews`
 - **Method:** `POST`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -28,7 +28,7 @@ This API allows users to add a review for a specific product by providing a rati
 | `comment`    | String  | Yes      | The comment describing the review. |
 | `productId`  | String  | Yes      | The ID of the product being reviewed. |
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/reviews", {
   method: "POST",
@@ -80,7 +80,7 @@ fetch("https://shopsyncapi/v1/reviews", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Fetching Reviews](./fetch-reviews.md)
 - Learn more about [Updating Reviews](./hide-review.md)
 

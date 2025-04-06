@@ -4,14 +4,14 @@ title: Add Product Variation
 
 # Add Product Variation
 
-## 📌 Description
+##  Description
 This API allows users to add a new product variation, including color, image, and price details.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/products/variation/add`
 - **Method:** `POST`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -42,7 +42,7 @@ This API allows users to add a new product variation, including color, image, an
 | `quantityInStock`| Integer | Yes (Min: 1) | The available stock quantity. |
 | `discount`      | Double | No (Min: 0, Max: 100) | The discount percentage applied. |
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/products/variation/add", {
   method: "POST",
@@ -206,6 +206,6 @@ fetch("https://shopsyncapi/v1/products/variation/add", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Updating Product Variation](./update-product-variation-price-detail.md)
 - Learn more about [Deleting Product Variation Price Detail](./delete-product-variation-price-detail.md)

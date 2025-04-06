@@ -2,16 +2,16 @@
 title: Customer Registration Using Firebase
 ---
 
-## 📌 Description
+##  Description
 The **Customer Registration Using Firebase API** is for registering customers using google auth via the *Firebase SDK*. A welcome email is sent to customer and there emails are automatically marked as verified.
 
 With firebase integration, you should enable google sign up in your account so customers will be able to signup or login using their google account.
 
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** ` /v1/auth/customer/signup/google`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -25,7 +25,7 @@ With firebase integration, you should enable google sign up in your account so c
 | `accessToken`       | string | Yes      | The OAuth 2.0 access token obtained from Firebase Authentication. |
 
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com//v1/auth/social/google/signup/customer', {
   method: 'POST',
@@ -66,6 +66,6 @@ fetch('https://api.shopsynch.com//v1/auth/social/google/signup/customer', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Login As Business Owner](../authentication/login-as-store-owner.md)
 - [Login As Customer](../authentication/login-as-customer.md)

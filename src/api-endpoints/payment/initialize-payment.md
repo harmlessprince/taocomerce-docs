@@ -4,16 +4,16 @@ title: Initialize Payment
 
 # Initialize Payment
 
-## 📌 Description
+##  Description
 The **Initialize Payment** API allows users to start the payment process for an order. Before initializing payment, you must have a valid `orderId`, which can be obtained from the **Checkout API**.
 
-## 🔗 How to Get an `orderId`
+##  How to Get an `orderId`
 To get a valid `orderId`, the user must first complete the checkout process. Refer to the **[Checkout API](../cart/checkout.md)** for details on how to create an order and retrieve the `orderId`.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/payments/initialize`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -30,7 +30,7 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 | `paymentGateway` | string | Yes      | The selected payment gateway (`PAYSTACK`, `FLUTTERWAVE`, `STRIPE`). |
 | `currency`       | string | Yes      | The currency for the payment (e.g., `NGN`, `USD`). |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/payments/initialize', {
   method: 'POST',
@@ -79,6 +79,6 @@ fetch('https://api.shopsynch.com/v1/payments/initialize', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Checkout API](../cart/checkout.md)
 - [Payment Confirmation](./verify-payment.md)

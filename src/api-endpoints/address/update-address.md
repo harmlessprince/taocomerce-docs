@@ -31,6 +31,6 @@ The Addresses API allows users to manage their saved addresses, which can be use
 ```
 ---
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Delete Address](delete-address.md)
 <!-- - Explore additional [API Endpoints](../../api-endpoints/README.md) -->

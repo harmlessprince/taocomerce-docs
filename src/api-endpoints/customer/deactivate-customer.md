@@ -4,13 +4,13 @@ title: Deactivate Customer
 
 # Deactivate Customer
 
-## 📌 Description
+##  Description
 The **Deactivate Customer** API allows client users to deactivate a customer, this prevents the customer from login in to your application.
 
-## 🔗 Endpoint
+##  Endpoint
 **PATCH** `/v1/customers/{customerId}/deactivate`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -22,7 +22,7 @@ The **Deactivate Customer** API allows client users to deactivate a customer, th
 None
 
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/deactivate', {
   method: 'PATCH',
@@ -45,6 +45,6 @@ fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/deactivat
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - [User Login](./activate-customer.md)
 - [Retrieve User Profile](../authentication/user-profile.md)

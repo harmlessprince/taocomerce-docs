@@ -4,10 +4,10 @@ title: Add Tenant Product Category
 
 # Add Tenant Product Category
 
-📌 Description
+ Description
 This endpoint allows you to add a new category and select category to the tenant's category list.
 
-🔗 Endpoint
+ Endpoint
 **POST** `/v1/tenant-categories`
 
 ### 📥 Request Body
@@ -20,7 +20,7 @@ This endpoint allows you to add a new category and select category to the tenant
 
 `NOTE: You must supply either a categoryId or name.`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -29,7 +29,7 @@ This endpoint allows you to add a new category and select category to the tenant
 }
 ```
 
-📡 Example API Call (Fetch or Axios)
+ Example API Call (Fetch or Axios)
 
 ```js
 fetch('{{baseURL}}/v1/tenant-categories', {
@@ -63,7 +63,7 @@ Sample 200 Response (Success)
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Fetching System Categories](./fetch-categories.md)
 - Learn more about [Fetch Selected/Created Tenant Category](./fetch-selected-categories.md)
 

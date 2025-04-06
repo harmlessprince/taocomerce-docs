@@ -4,10 +4,10 @@ title: Fetch Products
 
 # Fetch Products
 
-## 📌 Description
+##  Description
 This API retrieves a list of products based on various filter parameters such as name, category, RAM size, storage, brand, and search query.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/products`
 - **Method:** `GET`
 
@@ -29,7 +29,7 @@ This API retrieves a list of products based on various filter parameters such as
 | `newArrival`             | Number | Filter products added within a specific time frame (e.g., last 30 days). |
 | `search`            | String | General search query for products.(search by name, description and category) |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -37,7 +37,7 @@ This API retrieves a list of products based on various filter parameters such as
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&search=Smart", {
   method: "GET",
@@ -86,6 +86,6 @@ fetch("https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAM
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding Product Variation](./update-product-variation-price-detail.md)
 - Learn more about [Adding Product Variation Price Detail](./delete-product-variation-price-detail.md)

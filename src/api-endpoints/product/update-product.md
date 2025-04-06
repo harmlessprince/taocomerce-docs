@@ -4,14 +4,14 @@ title: Update Product
 
 # Update Product
 
-## 📌 Description
+##  Description
 This API allows users to update an existing product's details. Users can modify attributes such as name, description, summary, price, images, specifications, and more.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/products/{productId}`
 - **Method:** `PATCH`
 
-## 🛠️ Required Headers
+##  Required Headers
 - `Authorization: Bearer JWT_TOKEN`
 - `X-MerchantId: YOUR_MERCHANT_ID`
 - `Content-Type: application/json`
@@ -72,7 +72,7 @@ Available specifications can be found [here](../specification.md).
   </table>
 </details>
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582", {
   method: "PATCH",
@@ -135,7 +135,7 @@ fetch("https://shopsyncapi/v1/products/679f8f5a3b5f2173201c2582", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Update Product Variation Price Detail](./update-product-variation-price-detail.md)
 - Learn more about [Delete Product Variation Price Detail](./delete-product-variation-price-detail.md)
 

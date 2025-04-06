@@ -2,13 +2,13 @@
 title: Customer Login
 ---
 
-## 📌 Description
+##  Description
 The **Customer Login API** allows registered customers to authenticate and receive a JWT token for secure access to protected resources.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/auth/login/customer`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Content-Type": "application/json",
@@ -66,7 +66,7 @@ fetch('https://api.shopsynch.com/v1/auth/login/customer', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)

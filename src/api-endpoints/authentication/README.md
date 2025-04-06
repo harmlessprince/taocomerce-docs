@@ -4,7 +4,7 @@ title: Authentication
 
 # Authentication
 
-## 📌 Description
+##  Description
 The **Authentication API** enables users to securely log in, manage their credentials, and retrieve their profile information. It includes endpoints for user login, password recovery, and profile retrieval.
 
 ### **Key Features:**
@@ -17,7 +17,7 @@ The **Authentication API** enables users to securely log in, manage their creden
 - All authentication-related endpoints require the `X-MerchantId` header **except** for retrieving the user profile.
 - The `Authorization` header must be included for protected requests.
 
-## 🔗 Next Steps
+##  Next Steps
 - [Customer Login](./login-as-customer.md)
 - [Merchant Login](./login-as-store-owner.md)
 - [Forgot Password](./forgot-password.md)

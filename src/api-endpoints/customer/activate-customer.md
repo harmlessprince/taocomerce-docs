@@ -4,13 +4,13 @@ title: Activate Customer
 
 # Deactivate Customer
 
-## 📌 Description
+##  Description
 The **Activate Customer** API allows client to activate a customer that has been deactivated, one the account is activated, the customer will regain the ability to login to the system
 
-## 🔗 Endpoint
+##  Endpoint
 **PATCH** `/v1/customers/{customerId}/deactivate`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -22,7 +22,7 @@ The **Activate Customer** API allows client to activate a customer that has been
 None
 
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/activate', {
   method: 'PATCH',
@@ -45,6 +45,6 @@ fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/activate'
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - [User Login](./activate-customer.md)
 - [Retrieve User Profile](../authentication/user-profile.md)

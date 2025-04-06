@@ -4,17 +4,17 @@ title: Authenticated Customer Checkout
 
 # Authenticated Customer Checkout
 
-## 📌 Description
+##  Description
 The **Checkout API** allows authenticated customers to place an order using the items in their cart. If you want your customers to checkout without been authenticated, visit: [Guest Checkout](./checkout-guest.md)
 
-## 🛠️ Authentication Requirements
+##  Authentication Requirements
 - Customers **must** be authenticated and provide a valid JWT token.
 - The `X-MerchantId` header is **mandatory** for all requests.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/carts/checkout`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -41,7 +41,7 @@ The **Checkout API** allows authenticated customers to place an order using the 
 | `email`  | string | Yes       | The customer email address |
 | `phoneNumber`  | string | Yes       | The customer phone number |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/carts/checkout', {
   method: 'POST',
@@ -130,7 +130,7 @@ fetch('https://api.shopsynch.com/v1/carts/checkout', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 
 - [List Cart Items](./list-cart-items.md)
 - [Add Item to Cart](./add-item-to-cart.md)

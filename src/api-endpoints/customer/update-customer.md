@@ -4,13 +4,13 @@ title: Update Customer Profile
 
 # Update Customer Profile
 
-## 📌 Description
+##  Description
 The **Update Customer Profile** API allows authenticated users to modify their profile details, such as full name, phone number, and address. This endpoint requires a valid JWT token.
 
-## 🔗 Endpoint
+##  Endpoint
 **PATCH** `/v1/customers/profile/update`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -25,7 +25,7 @@ The **Update Customer Profile** API allows authenticated users to modify their p
 | `phoneNumber` | string | No       | The phone number of the customer. |
 | `address`     | string | No       | The updated address of the customer. |
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/customers/profile/update', {
   method: 'PATCH',
@@ -69,7 +69,7 @@ fetch('https://api.shopsynch.com/v1/customers/profile/update', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Login As Business Owner](../authentication/login-as-store-owner.md)
 - [Login As Customer](../authentication/login-as-customer.md)
 - [Retrieve User Profile](../authentication/user-profile.md)

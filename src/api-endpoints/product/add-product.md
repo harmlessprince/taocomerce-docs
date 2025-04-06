@@ -4,13 +4,13 @@ title: Add Product
 
 # Add Product
 
-## 📌 Description
+##  Description
 The **Add Product** API allows businesses to add new products to their eCommerce platform. During the product creation process, you can specify product details such as name, description, price, color, specifications, variations, and more. The API also allows you to manage different colors and variations for your products.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/products`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -169,13 +169,13 @@ Available specifications can be found [here](../specification.md).
 </details>
 
 
-## 🔗 Available Colors and Brands
+##  Available Colors and Brands
 - To view available colors, visit the [Color API](https://shopsyncapi/v1/colors).
 - To view available brands, visit the [Brand API](https://shopsyncapi/v1/brands).
 - To view available Specifications, visit the [Brand API](https://shopsyncapi/v1/brands).
 - You can use the `customColor` field to specify your own color if the color you desire isn't listed.
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.yourdomain.com/v1/products', {
   method: 'POST',

@@ -2,13 +2,13 @@
 title: Merchant Login
 ---
 
-## 📌 Description
+##  Description
 The **Merchant Login API** allows registered merchant or store owner to authenticate and receive a JWT token for secure access to protected resources.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/auth/login`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Content-Type": "application/json"
@@ -64,7 +64,7 @@ fetch('https://api.shopsynch.com/v1/auth/login', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)

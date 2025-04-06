@@ -4,10 +4,10 @@ title: Fetch Promo Ads
 
 # Fetch Promo Ads
 
-## 📌 Description
+##  Description
 This API retrieves a list of promotional ads filtered by status and paginated using a cursor. The response includes promotional ads in either `DRAFT` or `PUBLISHED` status.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1`
 - **Method:** `GET`
 
@@ -18,7 +18,7 @@ This API retrieves a list of promotional ads filtered by status and paginated us
 | `cursor`  | String | No       | The cursor for pagination.    (2025-02-11T18:21:53Z&)            |
 | `limit`   | Integer| Yes      | The number of promo ads to retrieve (min: 1, max: 20). |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -27,7 +27,7 @@ This API retrieves a list of promotional ads filtered by status and paginated us
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
   method: "GET",
@@ -80,7 +80,7 @@ fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding a Promo Ad](./add-promo-ad.md)
 - Learn more about [Updating a Promo Ad](./update-promo-ad.md)
 - Learn more about [Deleting a Promo Ad](./delete-promo-ad.md)

@@ -4,14 +4,14 @@ title: Fetch Order Details
 
 # Fetch Order Details
 
-## 📌 Description
+##  Description
 This API allows merchant to retrieve order detail, including order items and order history
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/orders/{orderId}/detail`
 - **Method:** `GET`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -20,7 +20,7 @@ This API allows merchant to retrieve order detail, including order items and ord
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/detail", {
   method: "GET",
@@ -143,7 +143,7 @@ fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/detail", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Fetch Orders](./fetch-orders.md)
 - [Checkout](../cart/checkout.md)
 

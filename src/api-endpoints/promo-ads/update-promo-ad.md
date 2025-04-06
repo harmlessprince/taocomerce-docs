@@ -4,14 +4,14 @@ title: Update Promo Ad
 
 # Update Promo Ad
 
-## 📌 Description
+##  Description
 This API allows store owners to update an existing promotional advertisement by its unique ID.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/promo-ads/{promoAdId}`
 - **Method:** `PATCH`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -42,7 +42,7 @@ This API allows store owners to update an existing promotional advertisement by 
 | `link`       | String | Yes      | The URL associated with the button. |
 | `metadata`   | Object | No       | Additional metadata for the button. |
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/promo-ads/12345", {
   method: "PATCH",
@@ -95,7 +95,7 @@ fetch("https://shopsyncapi/v1/promo-ads/12345", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding a Promo Ad](./add-promo-ad.md)
 - Learn more about [Deleting a Promo Ad](./delete-promo-ad.md)
 

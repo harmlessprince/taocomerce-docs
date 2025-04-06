@@ -2,16 +2,16 @@
 title: Fetch Brands
 ---
 
-## 📌 Description
+##  Description
 The **brands API** provides a list of available product brands that can be used to categorize and filter products effectively.
 
-## 🔗 Endpoint
+##  Endpoint
 **GET** `/v1/brands`
 
-## 🛠️ Required Headers
+##  Required Headers
 No authentication is required for this request.
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/brands', {
   method: 'GET'
@@ -48,6 +48,6 @@ fetch('https://api.shopsynch.com/v1/brands', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Fetch Colors](./color.md)
 - [Fetch Countries ](./country.md)

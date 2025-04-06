@@ -4,20 +4,20 @@ title: Get Authenticated Merchant Profile
 
 # Get Authenticated Merchant Profile
 
-## 📌 Description
+##  Description
 The **Get Authenticated Merchant Profile** API retrieves the details of the currently authenticated user. This endpoint requires a valid JWT token.
 
-## 🔗 Endpoint
+##  Endpoint
 **GET** `/v1/users/profile`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN"
 }
 ```
 
-## 📡 Example API Call (Fetch or Axios)
+##  Example API Call (Fetch or Axios)
 ```javascript
 fetch('https://api.shopsynch.com/v1/auth/users/profile', {
   method: 'GET',
@@ -58,7 +58,7 @@ fetch('https://api.shopsynch.com/v1/auth/users/profile', {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Login as Business Owner](./login-as-store-owner.md)
 - [Login as Customer](./login-as-customer.md)
 - [Forgot Password](./forgot-password.md)

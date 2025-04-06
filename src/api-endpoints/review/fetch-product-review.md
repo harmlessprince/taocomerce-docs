@@ -4,10 +4,10 @@ title: Fetch Single Product Reviews
 
 # Fetch Product Reviews
 
-## 📌 Description
+##  Description
 This API retrieves all reviews for a specific product using the product's unique ID.
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/reviews/product/{productId}`
 - **Method:** `GET`
 
@@ -17,7 +17,7 @@ This API retrieves all reviews for a specific product using the product's unique
 |----------------------|--------|-------------|
 | `status` | String | filter reviews by (`ACTIVE` or `HIDDEN`). Default: `ACTIVE`. |
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "X-MerchantId": "YOUR_MERCHANT_ID",
@@ -25,7 +25,7 @@ This API retrieves all reviews for a specific product using the product's unique
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/reviews/product/679f8f5a3b5f2173201c2582", {
   method: "GET",
@@ -77,6 +77,6 @@ fetch("https://shopsyncapi/v1/reviews/product/679f8f5a3b5f2173201c2582", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - Learn more about [Adding a Review](./add-review.md)
 - Learn more about [Updating a Review](./hide-review.md)

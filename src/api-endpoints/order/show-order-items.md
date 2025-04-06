@@ -2,16 +2,14 @@
 title: Fetch Order Items
 ---
 
-# Fetch Order Items
-
-## 📌 Description
+##  Description
 This API allows merchant to retrieve items of a specific of specific order
 
-## 🔗 Endpoint
+##  Endpoint
 - **URL:** `/v1/orders/{orderId}/items`
 - **Method:** `GET`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -20,7 +18,7 @@ This API allows merchant to retrieve items of a specific of specific order
 }
 ```
 
-## 📡 Example API Call (Using Fetch)
+##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/items", {
   method: "GET",
@@ -109,7 +107,7 @@ fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/items", {
 }
 ```
 
-## 🔗 Next Steps
+##  Next Steps
 - [Fetch Orders](./fetch-orders.md)
 - [Checkout](../cart/checkout.md)
 

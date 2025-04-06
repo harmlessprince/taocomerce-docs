@@ -2,13 +2,13 @@
 title: Customer Reset Password 
 ---
 
-## 📌 Description
+##  Description
 The **Customer Reset Password API** allows you reset customer password by supplying the token sent to their email address.
 
-## 🔗 Endpoint
+##  Endpoint
 **POST** `/v1/password/reset/customer`
 
-## 🛠️ Required Headers
+##  Required Headers
 ```json
 {
   "Content-Type": "application/json",
@@ -59,7 +59,7 @@ fetch('https://api.shopsynch.com/v1/password/reset/customer', {
 ```
 
 
-## 🔗 Next Steps
+##  Next Steps
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)
