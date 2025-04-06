@@ -72,6 +72,13 @@ As the order is shipped and delivered, the system also updates a **fulfillment s
 }
 ```
 
+## Request Body
+| Parameter   | Type   | Required | Description |
+|------------|--------|----------|-------------|
+| `status` | string | Yes      | The status to update order to. |
+| `reason` | string | No      | The reason the order status is been updated or an extra comment on order |
+
+
 ##  Example API Call (Using Fetch)
 ```javascript
 fetch("https://api.shopsyncapi.com/v1/orders/679f8f5a3b5f2173201c2582/status", {
