@@ -179,7 +179,7 @@ An order may fail due to issues like payment errors or system failures.
 
 ## 🚫 What is Not Allowed?
 
-To protect the system from errors or abuse, ShopSync enforces these restrictions:
+To protect the system from errors or abuse, ShopSynch enforces these restrictions:
 
 | Action | Why It's Not Allowed |
 |--------|----------------------|
