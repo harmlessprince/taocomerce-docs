@@ -1,5 +1,5 @@
 ---
-title: Fetch Selected Tenant Product Categories
+title: Fetch Selected Merchant Product Categories
 ---
 
 
@@ -65,5 +65,5 @@ Sample 200 Response (Success)
 ```
 
 ##  Next Steps
-- Learn more about [Creating/Selecting Tenant Category](./add-category.md)
-- Learn more about [Fetch Selected/Created Tenant Category](./fetch-selected-categories.md)
+- Learn more about [Creating/Selecting Merchant Category](./add-category.md)
+- Learn more about [Fetch Selected/Created Merchant Category](./fetch-selected-categories.md)

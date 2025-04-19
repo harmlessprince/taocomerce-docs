@@ -12,6 +12,6 @@ You are expected to select from the available system categories or create a new 
 
 
 ##  Next Steps
-- Learn more about [Creating/Selecting Tenant Category](./add-category.md)
+- Learn more about [Creating/Selecting Merchant Category](./add-category.md)
 - Learn more about [Fetching System Categories](./fetch-categories.md)
-- Learn more about [Fetch Selected/Created Tenant Category](./fetch-selected-categories.md)
+- Learn more about [Fetch Selected/Created Merchant Category](./fetch-selected-categories.md)

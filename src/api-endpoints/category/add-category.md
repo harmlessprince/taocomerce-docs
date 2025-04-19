@@ -1,8 +1,8 @@
 ---
-title: Add Tenant Product Category
+title: Add Merchant Product Category
 ---
 
-# Add Tenant Product Category
+# Add Merchant Product Category
 
  Description
 This endpoint allows you to add a new category and select category to the tenant's category list.
@@ -65,5 +65,5 @@ Sample 200 Response (Success)
 
 ##  Next Steps
 - Learn more about [Fetching System Categories](./fetch-categories.md)
-- Learn more about [Fetch Selected/Created Tenant Category](./fetch-selected-categories.md)
+- Learn more about [Fetch Selected/Created Merchant Category](./fetch-selected-categories.md)
 

@@ -23,13 +23,13 @@ Our API includes:
 - **Payment Gateway Integration**: Easily integrate with Stripe, Paystack, and more.
 
 ### **3️⃣ Scalable & Secure**
-- **Tenant-Based System**: Each business gets its own isolated environment for security and performance.
+- **Merchant-Based System**: Each business gets its own isolated environment for security and performance.
 - **Guest & Authenticated Users**: Supports both logged-in users and guest checkouts with session tracking.
 - **Robust Error Handling**: Ensures smooth operation with meaningful error responses.
 
 ## 🔥 Why Sign Up & Start Building?
 With **zero backend setup**, you can focus on building your frontend while we handle the backend complexity for you. By signing up, you get:
-- **A unique Tenant ID** to start integrating immediately.
+- **A unique Merchant ID** to start integrating immediately.
 - **Secure authentication & authorization** to protect customer data.
 - **Seamless cart & order management** for a smooth user experience.
 
