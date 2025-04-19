@@ -29,7 +29,7 @@ Our API includes:
 
 ## 🔥 Why Sign Up & Start Building?
 With **zero backend setup**, you can focus on building your frontend while we handle the backend complexity for you. By signing up, you get:
-- **A unique Merchant ID** to start integrating immediately.
+- **A unique Merchant API KEY** to start integrating immediately.
 - **Secure authentication & authorization** to protect customer data.
 - **Seamless cart & order management** for a smooth user experience.
 

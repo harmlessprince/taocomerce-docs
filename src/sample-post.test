@@ -5,7 +5,7 @@ Method: POST
 Required headers
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 
@@ -20,7 +20,7 @@ Title
 json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 

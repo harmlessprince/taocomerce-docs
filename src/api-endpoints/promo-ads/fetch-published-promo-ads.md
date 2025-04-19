@@ -25,7 +25,7 @@ This is suitable for users that wants to show some adds on there site hero secti
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -36,7 +36,7 @@ fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

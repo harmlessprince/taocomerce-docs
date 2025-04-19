@@ -16,7 +16,7 @@ The Addresses API allows users to manage their saved addresses, which can be use
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -38,7 +38,7 @@ fetch('https://api.shopsynch.com/v1/addresses', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

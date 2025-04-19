@@ -2,7 +2,7 @@
 title: Errors
 ---
 
-The eCommerce API follows RESTful principles and uses conventional HTTP response codes to indicate the success or failure of requests.
+The ShopSynch API follows RESTful principles and uses conventional HTTP response codes to indicate the success or failure of requests.
 
 ## **HTTP Codes**
 
@@ -17,6 +17,9 @@ The request was invalid due to incorrect parameters, missing required fields, or
 
 ### **401 - Unauthorized**
 Authentication failed or was not provided. This happens when an invalid API key or JWT token is passed in the `Authorization` header or when a request is made without proper authentication.
+
+### **422 - Unprocessable Entity**
+Validation failed. This happens when you submit data that does not pass the required checks.
 
 ### **404 - Not Found**
 The requested resource does not exist. This may occur when trying to access a product, order, or customer that has been deleted or never existed.

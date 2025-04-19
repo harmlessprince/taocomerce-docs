@@ -14,7 +14,7 @@ The **Add Product** API allows businesses to add new products to their eCommerce
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -42,7 +42,7 @@ Here is a breakdown of each field in the `ProductRequest` DTO:
 | `brandId`         | string    | No       | The brand ID for the product.                                     |
 | `discount`        | double    | No       | Discount on the product (0-100%).                                 |
 | `categoryId`      | string    | Yes      | The category ID the product belongs to.                           |
-| `tenantId`        | string    | Yes      | Merchant ID for your business account.                              |
+| `tenantId`        | string    | Yes      | Merchant API KEY for your business account.                              |
 | `colorId`         | string    | No      | Color ID for the product. Available colors can be found [here](../specification.md). You can also specify a custom color using the `customColor` field. |
 | `customColor`     | string    | No       | Custom color for the product (e.g., "Deep Red").                  |
 | `specifications`  | list      | No      | List of product specifications. Each specification must have a key and value. [More Info](#productspecification-dto) |
@@ -181,7 +181,7 @@ fetch('https://api.yourdomain.com/v1/products', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

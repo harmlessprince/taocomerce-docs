@@ -8,7 +8,7 @@ title: Delete Category
 The **Delete Category** API allows users to delete a category the have selected or created from their list of categories.
 
 - **Authenticated Users**: Must provide a valid JWT token.
-- The `X-MerchantId` header is **mandatory** for all requests.
+- The `X-MerchantApiKey` header is **mandatory** for all requests.
 
 ##  Endpoint
 **PATCH** `/v1/tenant-categories/:categoryId`
@@ -17,7 +17,7 @@ The **Delete Category** API allows users to delete a category the have selected 
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", 
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -28,7 +28,7 @@ fetch('https://api.shopsynch.com/v1/tenant-categories/67b1eba52950d47e85cf54f4',
   method: 'PATCH',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Content-Type': 'application/json'
   }
 })

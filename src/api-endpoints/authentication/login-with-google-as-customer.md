@@ -16,7 +16,7 @@ With firebase integration, you should enable google sign up in your account so c
 ##  Required Headers
 ```json
 {
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```

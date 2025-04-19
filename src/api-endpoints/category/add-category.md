@@ -24,7 +24,7 @@ This endpoint allows you to add a new category and select category to the tenant
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -36,7 +36,7 @@ fetch('{{baseURL}}/v1/tenant-categories', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({

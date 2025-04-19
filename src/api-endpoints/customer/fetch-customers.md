@@ -26,7 +26,7 @@ This API retrieves a list of customers filtered by email, name and paginated usi
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", 
-  "X-MerchantId": "YOUR_MERCHANT_ID", //optional
+  "X-MerchantApiKey": "MERCHANT_API_KEY", //optional
   "Content-Type": "application/json"
 }
 ```
@@ -37,7 +37,7 @@ fetch("https://shopsyncapi/v1/customers", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

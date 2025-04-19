@@ -20,7 +20,7 @@ This API retrieves all reviews for a specific product using the product's unique
 ##  Required Headers
 ```json
 {
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -30,7 +30,7 @@ This API retrieves all reviews for a specific product using the product's unique
 fetch("https://shopsyncapi/v1/reviews/product/679f8f5a3b5f2173201c2582", {
   method: "GET",
   headers: {
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

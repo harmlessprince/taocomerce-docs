@@ -15,7 +15,7 @@ This API allows users to add a new product variation, including color, image, an
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -48,7 +48,7 @@ fetch("https://shopsyncapi/v1/products/variation/add", {
   method: "POST",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   },
   body: JSON.stringify({

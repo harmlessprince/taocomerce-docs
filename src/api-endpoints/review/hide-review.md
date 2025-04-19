@@ -15,7 +15,7 @@ This API allows you to hide a product review by its unique ID. Once hidden, the 
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -29,7 +29,7 @@ fetch("https://shopsyncapi/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

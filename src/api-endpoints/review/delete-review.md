@@ -15,7 +15,7 @@ This API allows shop owners to delete a product review by its unique ID.
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -26,7 +26,7 @@ fetch("https://shopsyncapi/v1/reviews/679f8f5a3b5f2173201c2582", {
   method: "DELETE",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

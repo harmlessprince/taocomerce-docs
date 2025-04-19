@@ -32,7 +32,7 @@ This API retrieves a list of products based on various filter parameters such as
 ##  Required Headers
 ```json
 {
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -43,7 +43,7 @@ fetch("https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAM
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

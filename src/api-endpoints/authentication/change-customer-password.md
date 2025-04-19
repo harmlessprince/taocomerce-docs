@@ -15,7 +15,7 @@ Ensure the new password meets the required security standards.
 {
   "Content-Type": "application/json",
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID"
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
 }
 ```
 
@@ -32,7 +32,7 @@ fetch('https://api.shopsynch.com/v1/change/password/merchant', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Authorization': 'Bearer JWT_TOKEN'
   },
   body: JSON.stringify({

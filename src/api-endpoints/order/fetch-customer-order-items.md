@@ -15,7 +15,7 @@ This API allows authenticated customers to retrieve order items for a specific o
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -26,7 +26,7 @@ fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/items", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   }
 })

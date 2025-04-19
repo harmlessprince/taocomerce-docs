@@ -15,7 +15,7 @@ This API allows store owners to update an existing promotional advertisement by 
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -48,7 +48,7 @@ fetch("https://shopsyncapi/v1/promo-ads/12345", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   },
   body: JSON.stringify({

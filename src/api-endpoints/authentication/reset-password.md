@@ -12,7 +12,7 @@ The **Customer Reset Password API** allows you reset customer password by supply
 ```json
 {
   "Content-Type": "application/json",
-  "X-MerchantId": "YOUR_MERCHANT_ID"
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
 }
 ```
 
@@ -29,7 +29,7 @@ fetch('https://api.shopsynch.com/v1/password/reset/customer', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-MerchantId': 'YOUR_MERCHANT_ID'
+    'X-MerchantApiKey': 'MERCHANT_API_KEY'
   },
   body: JSON.stringify({
     token: "45645897-5f8b-4f63-85b6-5c6ca1ab68b7",

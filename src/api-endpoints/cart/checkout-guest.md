@@ -9,7 +9,7 @@ The **Guest Checkout API** allows none authenticated customers to place an order
 
 ##  Authentication Requirements
 -  The `X-SessionId` header is **mandatory** .
-- The `X-MerchantId` header is **mandatory** for all requests.
+- The `X-MerchantApiKey` header is **mandatory** for all requests.
 
 ##  Endpoint
 **POST** `/v1/carts/guest/checkout`
@@ -18,7 +18,7 @@ The **Guest Checkout API** allows none authenticated customers to place an order
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "X-SessionId": "XXXXXXXXXX",
   "Content-Type": "application/json"
 }
@@ -48,7 +48,7 @@ fetch('https://api.shopsynch.com/v1/carts/guest/checkout', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

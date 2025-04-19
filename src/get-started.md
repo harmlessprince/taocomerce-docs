@@ -4,7 +4,7 @@ title: Getting Started with the ShopSynch API
 
 
 ## Sign Up & Authentication
-To use the ShopSynch API, you must sign up on our platform. Register at [ShopSynch](https://shopsynch.com/signup). Upon successful registration, you will be provided an **API key**, which can be found in your dashboard  [API Key](https://shopsynch.com/dashboard/api-keys).
+To use the ShopSynch API, you must sign up on our platform. Register at [ShopSynch](https://shopsynch.com/signup). Upon successful registration, you will be provided an **API key**, which can be found in your dashboard  [Merchant API Keys](https://shopsynch.com/dashboard/api-keys).
 
 ### **Authentication**
 There are two sides to authentication, the part that requires just your API Key and one that requires both your API Key and Jwt.
@@ -15,8 +15,8 @@ For pages that are not publicly accessible, you will need to supply issued JWT T
 
 A customer can complete there shopping process as guest, without the need to signup or login.
 
-### **Merchant ID Usage**
-For every request the `X-MerchantId` header is **mandatory**. You will get an error if the X-MerchantId is not supplied. 
+### **Merchant API KEY Usage**
+For every request the `X-MerchantApiKey` header is **mandatory**. You will get an error if the X-MerchantApiKey is not supplied. 
 
 
 
@@ -25,7 +25,7 @@ For every request the `X-MerchantId` header is **mandatory**. You will get an er
 ```bash
 curl -X GET "https://api.shopsynch.com/v1/countries?name=nigeria" \
      -H "Authorization: Bearer JWT_TOKEN" \
-     -H "X-MerchantId: YOUR_MERCHANT_ID"
+     -H "X-MerchantApiKey: MERCHANT_API_KEY"
 ```
 
 ## Response Structure

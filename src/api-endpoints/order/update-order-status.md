@@ -67,7 +67,7 @@ As the order is shipped and delivered, the system also updates a **fulfillment s
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -85,7 +85,7 @@ fetch("https://api.shopsyncapi.com/v1/orders/679f8f5a3b5f2173201c2582/status", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantId": "YOUR_MERCHANT_ID",
+    "X-MerchantApiKey": "MERCHANT_API_KEY",
     "Content-Type": "application/json"
   },
   body: JSON.stringify({

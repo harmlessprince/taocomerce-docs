@@ -9,7 +9,7 @@ The **Add Item to Cart** API allows customers to add products to their cart.
 
 - **Authenticated Users**: Must provide a valid JWT token.
 - **Guest Users**: Must provide a `sessionId` to track the cart ([Generate Session Id](./generate-cart-session-id.md)).
-- The `X-MerchantId` header is **mandatory** for all requests.
+- The `X-MerchantApiKey` header is **mandatory** for all requests.
 - The `X-SessionId` header is **mandatory** for adding item to cart for none authenticated customers.
 
 ##  Endpoint
@@ -19,7 +19,7 @@ The **Add Item to Cart** API allows customers to add products to their cart.
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", // For authenticated users
-  "X-MerchantId": "YOUR_MERCHANT_ID",
+  "X-MerchantApiKey": "MERCHANT_API_KEY",
   "Content-Type": "application/json"
 }
 ```
@@ -39,7 +39,7 @@ fetch('https://api.shopsynch.com/v1/carts/add', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantId': 'YOUR_MERCHANT_ID',
+    'X-MerchantApiKey': 'MERCHANT_API_KEY',
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({

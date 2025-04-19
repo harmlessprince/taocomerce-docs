@@ -31,7 +31,7 @@ fetch('https://api.shopsynch.com/v1/change/password/merchant', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-MerchantId': 'YOUR_MERCHANT_ID'
+    'X-MerchantApiKey': 'MERCHANT_API_KEY'
   },
   body: JSON.stringify({
     currentPassword: "password",
