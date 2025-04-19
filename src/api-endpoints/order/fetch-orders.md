@@ -16,7 +16,7 @@ This API retrieves a list of placed orders based on various filter parameters.
 | Parameter            | Type   | Description |
 |----------------------|--------|-------------|
 | `sortDirectionParam` | String | Sorting direction (`ASC` or `DESC`). Default: `ASC`. |
-| `sortFieldParam`     | String | Field to sort results by (e.g., `NAME`). Default: `NAME`. |
+| `sortFieldParam`     | String | Field to sort results by e.g., (`NAME`, `ORDER_DATE`, `CATEGORY`). Default: `NAME`. |
 | `shippingMethod`              | String | Filter orders by shipping method. |
 | `paymentMethod`          | String | Filter orders by payment method. |
 | `country`           | String | Filter orders by country (e.g., `16GB`). |
