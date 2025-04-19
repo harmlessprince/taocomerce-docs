@@ -25,7 +25,8 @@ This API retrieves a list of placed orders based on various filter parameters.
 | `status`           | String | Filter orders by storage order status e.g (`PENDING`, `PROCESSING`, `UNFULFILLED`, `SHIPPED`, `DELIVERED`, `CANCELLED`). |
 | `paymentStatus`             | String | Filter orders by payment status. e.g ( `SUCCESS`, `FAILED`, `PENDING`, `REFUNDED`, `ABANDONED`, `PROCESSING`) |
 | `fulfillmentStatus`             | String | Filter orders by fulfillment status. e.g (`UNFULFILLED`, `FULFILLED`) |
-| `search`            | String | General search query for orders.(search by name, description and category) |
+| `orderNumber`            | String | Filter orders by order number e.g (`ORD-82UEJF983`) |
+
 
 
 

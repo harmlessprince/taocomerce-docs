@@ -14,7 +14,7 @@ This API retrieves a list of placed orders by currently authenticated customer a
 | Parameter            | Type   | Description |
 |----------------------|--------|-------------|
 | `sortDirectionParam` | String | Sorting direction (`ASC` or `DESC`). Default: `ASC`. |
-| `sortFieldParam`     | String | Field to sort results by (e.g., `NAME`). Default: `NAME`. |
+| `sortFieldParam`     | String | Field to sort results by e.g., (`NAME`, `ORDER_DATE`, `CATEGORY`). Default: `ORDER_DATE`. |
 | `shippingMethod`              | String | Filter orders by shipping method. |
 | `paymentMethod`          | String | Filter orders by payment method. |
 | `country`           | String | Filter orders by country (e.g., `16GB`). |
@@ -23,7 +23,7 @@ This API retrieves a list of placed orders by currently authenticated customer a
 | `status`           | String | Filter orders by storage order status e.g (`PENDING`, `PROCESSING`, `UNFULFILLED`, `SHIPPED`, `DELIVERED`, `CANCELLED`). |
 | `paymentStatus`             | String | Filter orders by payment status. e.g ( `SUCCESS`, `FAILED`, `PENDING`, `REFUNDED`, `ABANDONED`, `PROCESSING`) |
 | `fulfillmentStatus`             | String | Filter orders by fulfillment status. e.g (`UNFULFILLED`, `FULFILLED`) |
-| `search`            | String | General search query for orders.(search by name, description and category) |
+| `orderNumber`            | String | Filter orders by order number e.g (`ORD-82UEJF983`) |
 
 
 
