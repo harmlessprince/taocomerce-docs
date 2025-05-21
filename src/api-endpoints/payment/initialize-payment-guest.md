@@ -49,7 +49,8 @@ fetch('https://api.shopsynch.com/v1/payments/guest/initialize', {
     orderId: "67a64666715cd74ca8f6baf1",
     paymentMethod: "card",
     paymentGateway: "PAYSTACK",
-    currency: "NGN"
+    currency: "NGN",
+    callbackUrl: "https://example.com/"
   })
 })
 .then(response => response.json())
