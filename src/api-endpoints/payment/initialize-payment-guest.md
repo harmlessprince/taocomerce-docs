@@ -34,6 +34,7 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 | `paymentMethod`  | string | Yes      | The method of payment (e.g., `card`, `bank_transfer`). |
 | `paymentGateway` | string | Yes      | The selected payment gateway (`PAYSTACK`, `FLUTTERWAVE`, `STRIPE`). |
 | `currency`       | string | Yes      | The currency for the payment (e.g., `NGN`, `USD`). |
+| `callbackUrl`       | string | Yes      | Fully qualified url, e.g. https://example.com/ . Use this to override the callback url provided on the dashboard for this transaction|
 
 ##  Example API Call (Fetch or Axios)
 ```javascript
