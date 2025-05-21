@@ -28,13 +28,13 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 ```
 
 ## 📥 Request Body
-| Parameter         | Type   | Required | Description |
+| Parameter        | Type   | Required | Description |
 |------------------|--------|----------|-------------|
 | `orderId`        | string | Yes      | The unique identifier of the order. |
-| `paymentMethod`  | string | Yes      | The method of payment (e.g., `card`, `bank_transfer`). |
+| `paymentMethod`  | string | Yes      | The method of payment (e.g., `card`, `bank_transfer`, `offline`). |
 | `paymentGateway` | string | Yes      | The selected payment gateway (`PAYSTACK`, `FLUTTERWAVE`, `STRIPE`). |
 | `currency`       | string | Yes      | The currency for the payment (e.g., `NGN`, `USD`). |
-| `callbackUrl`       | string | Yes      | Fully qualified url, e.g. https://example.com/ . Use this to override the callback url provided on the dashboard for this transaction|
+| `callbackUrl`    | string | Yes      | Fully qualified url, e.g. https://example.com/ . Use this to override the callback url provided on the dashboard for this transaction|
 
 ##  Example API Call (Fetch or Axios)
 ```javascript
