@@ -16,12 +16,10 @@
     "@vuepress/plugin-google-analytics": "^2.0.0-rc.80",
     "sass-embedded": "^1.86.0",
     "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.20",
-    "vuepress-api-playground": "^0.3.1",
+    "vuepress": "2.0.0-rc.22",
     "vuepress-theme-hope": "2.0.0-rc.75"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
-  },
-  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
+  }
 }
