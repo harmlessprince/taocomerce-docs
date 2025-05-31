@@ -170,9 +170,9 @@ Available specifications can be found [here](../specification.md).
 
 
 ##  Available Colors and Brands
-- To view available colors, visit the [Color API](https://shopsyncapi/v1/colors).
-- To view available brands, visit the [Brand API](https://shopsyncapi/v1/brands).
-- To view available Specifications, visit the [Brand API](https://shopsyncapi/v1/brands).
+- To view available colors, visit the [Color API](https://api.shopsynch.com/v1/colors).
+- To view available brands, visit the [Brand API](https://api.shopsynch.com/v1/brands).
+- To view available Specifications, visit the [Brand API](https://api.shopsynch.com/v1/brands).
 - You can use the `customColor` field to specify your own color if the color you desire isn't listed.
 
 ##  Example API Call (Fetch or Axios)

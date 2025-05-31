@@ -41,7 +41,7 @@ This API retrieves a list of placed orders based on various filter parameters.
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/orders?sortDirectionParam=ASC", {
+fetch("https://api.shopsynch.com/v1/orders?sortDirectionParam=ASC", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

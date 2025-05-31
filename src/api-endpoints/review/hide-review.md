@@ -25,7 +25,7 @@ None
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
+fetch("https://api.shopsynch.com/v1/reviews/hide/679f8f5a3b5f2173201c2582", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

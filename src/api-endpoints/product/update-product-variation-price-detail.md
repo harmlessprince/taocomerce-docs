@@ -38,7 +38,7 @@ This API allows users to update the price details of an existing product variati
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/products/variation/priceDetail/{variationPriceDetailId}", {
+fetch("https://api.shopsynch.com/v1/products/variation/priceDetail/{variationPriceDetailId}", {
   method: "PATCH",
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',

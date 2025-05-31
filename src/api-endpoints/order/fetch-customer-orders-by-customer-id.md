@@ -40,7 +40,7 @@ This API retrieves a list of placed orders by a customer. As a merchant you can 
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/customer-orders/67dfb8408bd13b35a66f42ed?sortDirectionParam=ASC", {
+fetch("https://api.shopsynch.com/v1/customer-orders/67dfb8408bd13b35a66f42ed?sortDirectionParam=ASC", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

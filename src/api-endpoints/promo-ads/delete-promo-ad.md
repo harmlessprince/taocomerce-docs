@@ -22,7 +22,7 @@ This API allows store owners to delete a promotional advertisement by its unique
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/promo-ads/12345", {
+fetch("https://api.shopsynch.com/v1/promo-ads/12345", {
   method: "DELETE",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

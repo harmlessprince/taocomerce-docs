@@ -22,7 +22,7 @@ This API allows merchant to retrieve order detail, including order items and ord
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/detail", {
+fetch("https://api.shopsynch.com/v1/orders/679f8f5a3b5f2173201c2582/detail", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

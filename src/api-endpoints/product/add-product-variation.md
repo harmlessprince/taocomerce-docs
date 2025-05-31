@@ -44,7 +44,7 @@ This API allows users to add a new product variation, including color, image, an
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/products/variation/add", {
+fetch("https://api.shopsynch.com/v1/products/variation/add", {
   method: "POST",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

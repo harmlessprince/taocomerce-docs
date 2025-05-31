@@ -22,7 +22,7 @@ This API allows authenticated customers to retrieve order items for a specific o
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/orders/679f8f5a3b5f2173201c2582/items", {
+fetch("https://api.shopsynch.com/v1/orders/679f8f5a3b5f2173201c2582/items", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

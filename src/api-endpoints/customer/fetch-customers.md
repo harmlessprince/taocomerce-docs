@@ -33,7 +33,7 @@ This API retrieves a list of customers filtered by email, name and paginated usi
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/customers", {
+fetch("https://api.shopsynch.com/v1/customers", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

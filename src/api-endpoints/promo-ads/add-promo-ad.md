@@ -43,7 +43,7 @@ This API allows store owners to add a promotional advertisement to their store. 
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/promo-ads/12345", {
+fetch("https://api.shopsynch.com/v1/promo-ads/12345", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
