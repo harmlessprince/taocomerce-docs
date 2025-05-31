@@ -32,7 +32,7 @@ This is suitable for users that wants to show some adds on there site hero secti
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
+fetch("https://api.shopsynch.com/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:21:53Z&limit=1", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

@@ -39,7 +39,7 @@ This API retrieves a list of products based on various filter parameters such as
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&search=Smart", {
+fetch("https://api.shopsynch.com/v1/products?sortDirectionParam=ASC&sortFieldParam=NAME&name=SIGNATURE&category=TV&ramSize=16GB&search=Smart", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

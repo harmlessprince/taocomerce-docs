@@ -22,7 +22,7 @@ This API allows client to retrieve details of a specific customer by its ID.
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/customers/679f8f5a3b5f2173201c2582", {
+fetch("https://api.shopsynch.com/v1/customers/679f8f5a3b5f2173201c2582", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

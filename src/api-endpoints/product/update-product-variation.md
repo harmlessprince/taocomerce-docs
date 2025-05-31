@@ -30,7 +30,7 @@ This API allows users to update a product variation by modifying attributes such
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/products/variation/{variationId}", {
+fetch("https://api.shopsynch.com/v1/products/variation/{variationId}", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

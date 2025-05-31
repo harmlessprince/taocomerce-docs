@@ -38,7 +38,7 @@ This API retrieves a list of placed orders by currently authenticated customer a
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/customer-orders?sortDirectionParam=ASC", {
+fetch("https://api.shopsynch.com/v1/customer-orders?sortDirectionParam=ASC", {
   method: "GET",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

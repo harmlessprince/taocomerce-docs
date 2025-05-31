@@ -22,7 +22,7 @@ This API allows shop owners to delete a product review by its unique ID.
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/reviews/679f8f5a3b5f2173201c2582", {
+fetch("https://api.shopsynch.com/v1/reviews/679f8f5a3b5f2173201c2582", {
   method: "DELETE",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

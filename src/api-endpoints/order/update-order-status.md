@@ -81,7 +81,7 @@ As the order is shipped and delivered, the system also updates a **fulfillment s
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://api.shopsyncapi.com/v1/orders/679f8f5a3b5f2173201c2582/status", {
+fetch("https://api.api.shopsynch.com.com/v1/orders/679f8f5a3b5f2173201c2582/status", {
   method: "PATCH",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

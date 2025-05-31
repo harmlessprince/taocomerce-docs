@@ -33,7 +33,7 @@ This API allows users to add more price details for an existing product and vari
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/products/variation/priceDetail", {
+fetch("https://api.shopsynch.com/v1/products/variation/priceDetail", {
   method: "POST",
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',

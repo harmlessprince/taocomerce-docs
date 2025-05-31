@@ -30,7 +30,7 @@ This API allows users to add a review for a specific product by providing a rati
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/reviews", {
+fetch("https://api.shopsynch.com/v1/reviews", {
   method: "POST",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",

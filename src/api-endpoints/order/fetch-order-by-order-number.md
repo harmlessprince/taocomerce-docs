@@ -22,7 +22,7 @@ This API allows customer to retrieve order detail using their order number and i
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://shopsyncapi/v1/orders/ORD-534CFA20/show", {
+fetch("https://api.shopsynch.com/v1/orders/ORD-534CFA20/show", {
   method: "GET",
   headers: {
     "X-MerchantApiKey": "MERCHANT_API_KEY",
