@@ -6,4 +6,4 @@ index: true
 BASE URL: {{$base_url }}
 
 
-<!-- <Catalog /> -->
+<Catalog />
