@@ -54,4 +54,3 @@ By combining **Merchant API KEY** and **JWT**, our API ensures **security, scala
 
 ##  Next Steps
 - [Get Started](get-started.md) with API integration.
-<!-- - Explore available [API Endpoints](api-endpoints/README.md). -->

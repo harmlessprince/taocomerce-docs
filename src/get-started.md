@@ -29,7 +29,7 @@ curl -X GET "https://api.shopsynch.com/v1/countries?name=nigeria" \
 ```
 
 ## Response Structure
-The API uses a consistent response format:
+The API uses a consistent response format: 
 
 ### **Successful Response Example**
 ```json
