@@ -4,7 +4,7 @@ title: Getting Started with the ShopSynch API
 
 
 ## Sign Up & Authentication
-To use the ShopSynch API, you must sign up on our platform. Register at [ShopSynch](https://dashboard.shopsynch.com/register). Upon successful registration, you will be provided an **API key**, which can be found in your dashboard  [Merchant API Keys](https://shopsynch.com/dashboard/api-keys).
+To use the ShopSynch API, you must sign up on our platform. Register at [ShopSynch](https://dashboard.shopsynch.com/register). Upon successful registration, you will be provided an **API key**, which can be found in your dashboard  [Merchant API Keys](https://dashboard.shopsynch.com/dashboard/api-keys).
 
 ### **Authentication**
 There are two sides to authentication, the part that requires just your API Key and one that requires both your API Key and Jwt.
