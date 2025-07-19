@@ -13,10 +13,10 @@ For pages that requires public access, e.g Product list, adding item to cart etc
 
 For pages that are not publicly accessible, you will need to supply issued JWT Token upon login and API Key for your dashboard or customers who choose to login on your platform.
 
-A customer can complete there shopping process as guest, without the need to signup or login.
+A customer can complete their shopping process as guest, without the need to create an account or login.
 
 ### **Merchant API KEY Usage**
-For every request the `X-MerchantApiKey` header is **mandatory**. You will get an error if the X-MerchantApiKey is not supplied. 
+For every request the `X-MerchantApiKey` header is **mandatory**. You will get an error if the `X-MerchantApiKey` is not supplied. 
 
 
 

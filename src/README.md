@@ -17,7 +17,7 @@ features:
   - title: Scalable & Secure
     details: Designed to handle high traffic while ensuring secure transactions.
   - title: Comprehensive Endpoints
-    details: Manage products, orders, customers, payments, and more with our extensive API.
+    details: Manage products, orders, customers, payments and more with our extensive API.
   - title: Developer-Friendly
     details: Detailed documentation and code samples to get you started quickly.
   - title: Multi-Payment Gateway
