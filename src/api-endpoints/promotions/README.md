@@ -16,4 +16,4 @@ Applies a promo code to calculate discounted price&quot;
 - [Add Promo Code](./add-promo-code.md)
 - [Update Promo Code](./update-promo-code.md)
 - [Delete Promo Code](./delete-promo-code.md)
-- [Fetch Published Promo Code](./fetch-published-promo-code.md)
+- [Apply Promo Code](./apply-promotion-code.md) 

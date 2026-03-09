@@ -7,7 +7,7 @@ title: Apply Promo Code
 Applies a promo code to calculate discounted price.
 
 ##  Endpoint
-- **URL:** `/v1/promotions/apply/promo-code.do`
+- **URL:** `/v1/promotions/apply/promo-code`
 - **Method:** `POST`
 
 ##  Required Headers
@@ -27,7 +27,7 @@ Applies a promo code to calculate discounted price.
 
 ##  Example API Call (Using Fetch)
 ```javascript
-fetch("https://api.shopsynch.com/v1/promotions/apply/promo-code.do", {
+fetch("https://api.shopsynch.com/v1/promotions/apply/promo-code", {
   method: "POST",
   headers: {
     "Authorization": "Bearer JWT_TOKEN",
