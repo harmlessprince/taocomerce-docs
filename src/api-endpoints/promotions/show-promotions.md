@@ -1,8 +1,8 @@
 ---
-title: Show Promotion
+title: Show Promotion Code
 ---
 
-# Show Promotion
+# Show Promotion Code
 
 ##  Description
 This API allows client to retrieve details of a specific promotion by its ID.

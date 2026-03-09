@@ -1,8 +1,8 @@
 ---
-title: Delete Promo Ad
+title: Delete Promotion Code
 ---
 
-# Delete Promo Ad
+# Delete Promotion Code
 
 ##  Description
 This API allows merchant to delete a promotional code by its unique ID.

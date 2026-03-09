@@ -1,8 +1,8 @@
 ---
-title: Update Promotion
+title: Update Promotion Code
 ---
 
-# Update Promotion
+# Update Promotion Code
 
 ##  Description
 This API allows store owners to update an existing promotion by its unique ID.

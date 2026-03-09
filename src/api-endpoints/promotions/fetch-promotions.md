@@ -1,8 +1,8 @@
 ---
-title: Fetch Promo Ads
+title: Fetch Promotion Codes
 ---
 
-# Fetch Promo Ads
+# Fetch Promotion Codes
 
 ##  Description
 This API retrieves a list of promotional ads filtered by status and paginated using a cursor. The response includes promotional ads in either `DRAFT` or `PUBLISHED` status.
