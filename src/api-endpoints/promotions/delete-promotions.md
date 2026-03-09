@@ -52,5 +52,5 @@ fetch("https://api.shopsynch.com/v1/promo-ads/12345", {
 ```
 
 ##  Next Steps
-- Learn more about [Adding a Promo Ad](./add-promo-ad.md)
-- Learn more about [Updating a Promo Ad](./update-promo-ad.md)
+- Learn more about [Adding a Promo Code](./add-promotions.md)
+- Learn more about [Updating a Promo Code](./update-promotions.md)

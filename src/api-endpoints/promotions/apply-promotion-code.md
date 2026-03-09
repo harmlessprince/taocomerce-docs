@@ -57,3 +57,7 @@ fetch("https://api.shopsynch.com/v1/promotions/apply/promo-code", {
   "data": 0.0
 }
 ```
+## Next Steps
+- Learn more about [Adding a Promo Code](./add-promotions.md)
+- Learn more about [Updating a Promo Code](./update-promotions.md)
+- Learn more about [Deleting a Promo Code](./delete-promotions.md)

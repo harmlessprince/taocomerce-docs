@@ -81,6 +81,6 @@ fetch("https://api.shopsynch.com/v1/promotions/679f8f5a3b5f2173201c2582", {
 ```
 
 ##  Next Steps
-- Learn more about [Add a New Promotion](./add-promo-code.md)
-- Learn more about [Update a Promotion](./update-promo-code.md)
-- Learn more about [Delete a Promotion](./delete-promo-code.md)
+- Learn more about [Add a New Promotion](./add-promotions.md)
+- Learn more about [Update a Promotion](./update-promotions.md)
+- Learn more about [Delete a Promotion](./delete-promotions.md)

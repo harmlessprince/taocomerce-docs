@@ -97,6 +97,6 @@ fetch("https://api.shopsynch.com/v1/promotions/679f8f5a3b5f2173201c2582", {
 ```
 
 ##  Next Steps
-- Learn more about [Adding a Promo Ad](./add-promo-code.md)
-- Learn more about [Deleting a Promo Ad](./delete-promo-code.md)
+- Learn more about [Adding a Promo Code](./add-promotions.md)
+- Learn more about [Deleting a Promo Code](./delete-promotions.md)
 

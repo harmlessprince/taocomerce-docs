@@ -87,7 +87,7 @@ fetch("https://api.shopsynch.com/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:
 
 
 ##  Next Steps
-- Learn more about [Adding a Promo Ad](./add-promo-ad.md)
-- Learn more about [Updating a Promo Ad](./update-promo-ad.md)
-- Learn more about [Deleting a Promo Ad](./delete-promo-ad.md)
+- Learn more about [Adding a Promo Code](./add-promotions.md)
+- Learn more about [Updating a Promo Code](./update-promotions.md)
+- Learn more about [Deleting a Promo Code](./delete-promotions.md)
 
