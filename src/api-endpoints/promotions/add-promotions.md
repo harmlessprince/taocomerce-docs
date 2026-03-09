@@ -1,13 +1,13 @@
 ---
-title: Create Promo Code
+title: Create Promotion Code
 ---
-# Add Promo Ad
+# Create Promotion Code
 
 ##  Description
 This API allows store owners to add a promotional advertisement to their store. Only authorized users (store owners) can access this endpoint.
 
 ##  Endpoint
-- **URL:** `/v1/promotions/apply/promo-code`
+- **URL:** `/v1/promotions`
 - **Method:** `POST`
 
 ##  Required Headers
@@ -21,7 +21,7 @@ This API allows store owners to add a promotional advertisement to their store. 
 
 ## 📥 Request Body
 | Field Name  | Type   | Required | Description |Example|
-|-------------|--------|----------|-------------|
+|-------------|--------|----------|-------------|-------|
 | `name`    | string | Yes      | The name of the promotion ||
 | `code`    | string | Yes | The code for the promotion ||
 | `description`   | string | Yes      | A description of the promotion. ||
