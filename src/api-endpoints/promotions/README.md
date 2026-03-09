@@ -1,5 +1,5 @@
 ---
-title: Promo Ads API
+title: Promotion Code API
 ---
 
 # Promo Code Management
