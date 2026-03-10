@@ -25,11 +25,11 @@ To get a valid `orderId`, the user must first complete the checkout process. Ref
 ## 📥 Request Body
 | Parameter        | Type   | Required | Description |
 |------------------|--------|----------|-------------|
-| `orderId`        | string | Yes      | The unique identifier of the order. |
-| `paymentMethod`  | string | Yes      | The method of payment (e.g., `card`, `bank_transfer`, `offline`). |
-| `paymentGateway` | string | Yes      | The selected payment gateway (`PAYSTACK`, `FLUTTERWAVE`, `STRIPE`). |
-| `currency`       | string | Yes      | The currency for the payment (e.g., `NGN`, `USD`). |
-| `callbackUrl`    | string | Yes      | Fully qualified url, e.g. https://example.com/ . Use this to override the callback url provided on the dashboard for this transaction|
+| `orderId`        | string | Yes      | The order id of the order to be paid for. |
+| `paymentMethod`  | string | Yes      | The payment method to be used for the payment (e.g., `card`, `bank_transfer`, `offline`). |
+| `paymentGateway` | string | Yes      | The selected payment gateway (`PAYSTACK`, `FLUTTERWAVE`, `STRIPE`, `OFFLINE`). |
+| `currency`       | string | Yes      | The currency to be used for the payment (e.g., `NGN`, `USD`). |
+| `callbackUrl`    | string | Yes      | The callback URL to be used for the payment that are not offline Use this to override the callback url provided on the dashboard for this transaction|
 
 ##  Example API Call (Fetch or Axios)
 ```javascript
