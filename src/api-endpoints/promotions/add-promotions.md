@@ -42,8 +42,8 @@ fetch("https://api.shopsynch.com/v1/promotions", {
     "name": "Spring Sale",
     "code": "SPRING20",
     "description": "",
-    "startDate": "yyyy-MM-dd HH:mm:ss",
-    "endDate": "yyyy-MM-dd HH:mm:ss",
+    "startDate": "yyyy-MM-ddTHH:mm:ss",
+    "endDate": "yyyy-MM-ddTHH:mm:ss",
     "discount": 0.0
   })
 })
@@ -61,8 +61,8 @@ fetch("https://api.shopsynch.com/v1/promotions", {
 |└─name|string|No comments found.|-||
 |└─code|string|No comments found.|-||
 |└─description|string|No comments found.|-||
-|└─startDate|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─endDate|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─startDate|string|In UTC.|-|yyyy-MM-dd HH:mm:ss|
+|└─endDate|string|In UTC.|-|yyyy-MM-dd HH:mm:ss|
 |└─discount|double|No comments found.|-|0.0|
 |└─status|string|No comments found.|-||
 |└─tenantId|string|No comments found.|-||
