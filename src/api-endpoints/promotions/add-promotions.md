@@ -25,8 +25,8 @@ This API allows store owners to add a promotional advertisement to their store. 
 | `name`    | string | Yes      | The name of the promotion ||
 | `code`    | string | Yes | The code for the promotion ||
 | `description`   | string | Yes      | A description of the promotion. ||
-| `startDate` | string | Yes      | The start date of the promotion|yyyy-MM-dd HH:mm:ss|
-| `endDate`   | string | Yes | A list of buttons associated with the ad. At least one button is required. |yyyy-MM-dd HH:mm:ss|
+| `startDate` | string | Yes      | The start date of the promotion|yyyy-MM-ddTHH:mm:ss|
+| `endDate`   | string | Yes | A list of buttons associated with the ad. At least one button is required. |yyyy-MM-ddTHH:mm:ss|
 | `discount`    | double | Yes      | The discount percentage for the promotion |4.0|
 
 ##  Example API Call (Using Fetch)
