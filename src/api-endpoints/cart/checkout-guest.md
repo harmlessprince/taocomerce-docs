@@ -41,6 +41,9 @@ The **Guest Checkout API** allows none authenticated customers to place an order
 | `lastName`  | string | Yes      | The customer last name |
 | `email`  | string | Yes       | The customer email address |
 | `phoneNumber`  | string | Yes       | The customer phone number |
+| `currency`  | string | No       | The currency payment is been made in |
+| `totalAmount`  | string | No       | The total amount customer is expected to pay |
+| `shippingMethod`  | string | Yes       | The total amount customer is expected to pay |
 
 ##  Example API Call (Fetch or Axios)
 ```javascript

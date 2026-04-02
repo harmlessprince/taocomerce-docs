@@ -52,9 +52,29 @@ fetch("https://api.shopsynch.com/v1/promotions/apply/promo-code", {
 **Response-example:**
 ```json
 {
-  "status": true,
-  "message": "",
-  "data": 0.0
+    "status": true,
+    "message": "Discount applied successfully",
+    "data": {
+        "discountAmount": 200.00,
+        "promotion": {
+            "id": "69b411c7a0216c6ea88794f7",
+            "name": "TEY",
+            "code": "ACT2026",
+            "description": "test",
+            "startDate": "2026-03-13T15:35:00",
+            "endDate": "2026-04-20T01:00:00",
+            "discount": 10,
+            "discountValue": 10,
+            "discountType": "PERCENTAGE",
+            "maximumDiscountCap": null,
+            "minimumOrderValue": null,
+            "requiredQuantity": null,
+            "freeQuantity": null,
+            "usageLimit": null,
+            "usageCount": 0,
+            "perCustomerUsageLimit": null
+        }
+    }
 }
 ```
 ## Next Steps

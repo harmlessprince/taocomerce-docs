@@ -51,37 +51,32 @@ fetch("https://api.shopsynch.com/v1/promo-ads?status=DRAFT&cursor=2025-02-11T18:
 ## ✅ Sample 200 Response (Success)
 ```json
 {
-    "data": {
-        "data": [
-            {
-                "id": "67abd011ea45dd1b9222e591",
-                "adName": "Biggest Sale Ever",
-                "images": [
-                    "https://example.com/sale1.jpg",
-                    "https://example.com/sale2.jpg"
-                ],
-                "ctaText": "Shop Now!",
-                "promoCode": "BIGSALE50",
-                "buttons": [
-                    {
-                        "type": "primary",
-                        "position": "bottom-center",
-                        "color": "#FF0000",
-                        "textColor": "#FFFFFF",
-                        "link": "https://example.com/shop",
-                        "metadata": null
-                    }
-                ],
-                "status": "DRAFT",
-                "metadata": null,
-                "createdAt": "2025-02-11T23:32:49.254",
-                "updatedAt": "2025-02-11T23:32:49.254"
-            }
-        ],
-        "nextCursor": "2025-02-11T18:21:53.148Z"
-    },
-    "message": "Promo Ads retrieved successfully",
-    "status": true
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
+      "id": "",
+      "name": "",
+      "code": "",
+      "description": "",
+      "startDate": "yyyy-MM-dd HH:mm:ss",
+      "endDate": "yyyy-MM-dd HH:mm:ss",
+      "discountType": "PERCENTAGE",
+      "discountValue": 0,
+      "maximumDiscountCap": 0,
+      "minimumOrderValue": 0,
+      "requiredQuantity": 0,
+      "freeQuantity": 0,
+      "usageLimit": 0,
+      "usageCount": 0,
+      "perCustomerUsageLimit": 0,
+      "discount": 0,
+      "status": "",
+      "tenantId": ""
+    }
+  ]
 }
 ```
 

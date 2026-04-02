@@ -203,8 +203,6 @@ To protect the system from errors or abuse, ShopSynch enforces these restriction
 - ✅ Only use supported transitions (Pending → Processing → Shipped → Delivered).
 - ⛔ Don’t try to skip steps.
 - ⛔ Don’t mark failed or delivered orders as cancelled.
-- 🔐 Use the `idempotencyKey` to avoid duplicate status updates due to retries.
-
 ---
 
 ## 📊 Visual Workflow
