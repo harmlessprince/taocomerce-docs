@@ -22,20 +22,20 @@ This API allows store owners to add a promotional advertisement to their store. 
 ## 📥 Request Body
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|name|string|true|The name of the promotion|-||
+|`name`|string|true|The name of the promotion|-||
 |code|string|true|The code for the promotion<br/>Validation[Size(max=50, min=3, message=Promotion code must be between 3 and 50 characters)]|-||
-|description|string|false|A description of the promotion|-||
-|startDate|string|true|The start date of the promotion<br/>Validation[Future(message=Start date must be in the future)]|-|yyyy-MM-dd HH:mm:ss|
-|endDate|string|true|The end date of the promotion<br/>Validation[Future(message=End date must be in the future)]|-|yyyy-MM-dd HH:mm:ss|
-|discount|number|true|The discount percentage for the promotion<br/>Validation[Min(value=0, message=Discount must be at least 0); Max(value=100, message=Discount cannot exceed 100)]|-|0|
-|discountValue|number|false|The discount value — required for PERCENTAGE and FLAT_AMOUNT.<br/>- PERCENTAGE  → 0–100 (e.g. 10 means 10% off)<br/>- FLAT_AMOUNT → positive monetary amount (e.g. 500 means ₦500 off)<br/>- FREE_SHIPPING / BUY_X_GET_Y → omit or send null<br/>Validation[DecimalMin(value=0.0, message=Discount value must be at least 0)]|-|0|
-|discountType|enum|false|The type of discount.<br/>Defaults to PERCENTAGE if not provided, for backward compatibility.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
-|maximumDiscountCap|number|false|For PERCENTAGE only — caps the maximum monetary discount applied.<br/>e.g. "20% off but no more than ₦2,000" → maximumDiscountCap = 2000<br/>Null means no cap.<br/>Validation[DecimalMin(value= 0.0, inclusive=false, message=Maximum discount cap must be greater than 0)]|-|0|
-|minimumOrderValue|number|false|Minimum order subtotal required to qualify.<br/>Null or absent means no minimum.<br/>Validation[DecimalMin(value=0.0, message=Minimum order value must be at least 0)]|-|0|
-|requiredQuantity|int32|false|For BUY_X_GET_Y only — number of items customer must buy.<br/>Validation[Min(value=1, message=Required quantity must be at least 1)]|-|0|
-|freeQuantity|int32|false|For BUY_X_GET_Y only — number of free items customer receives.<br/>Validation[Min(value=1, message=Free quantity must be at least 1)]|-|0|
-|usageLimit|int32|false|Maximum number of times this promotion can be redeemed across all customers.<br/>Null means unlimited.<br/>Validation[Min(value=1, message=Usage limit must be at least 1)]|-|0|
-|perCustomerUsageLimit|int32|false|Maximum number of times a single customer can redeem this promotion.<br/>Null means unlimited per customer.<br/>Validation[Min(value=1, message=Per customer usage limit must be at least 1)]|-|0|
+|`description`|string|false|A description of the promotion|-||
+|`startDate`|string|true|The start date of the promotion<br/>Validation[Future(message=Start date must be in the future)]|-|yyyy-MM-dd HH:mm:ss|
+|`endDate`|string|true|The end date of the promotion<br/>Validation[Future(message=End date must be in the future)]|-|yyyy-MM-dd HH:mm:ss|
+|`discount`|number|true|The discount percentage for the promotion<br/>Validation[Min(value=0, message=Discount must be at least 0); Max(value=100, message=Discount cannot exceed 100)]|-|0|
+|`discountValue`|number|false|The discount value — required for `PERCENTAGE` and `FLAT_AMOUNT`.<br/>- `PERCENTAGE`  → 0–100 (e.g. 10 means 10% off)<br/>- `FLAT_AMOUNT` → positive monetary amount (e.g. 500 means ₦500 off)<br/>- `FREE_SHIPPING` / `BUY_X_GET_Y` → omit or send null<br/>Validation[DecimalMin(value=0.0, message=Discount value must be at least 0)]|-|0|
+|`discountType`|enum|false|The type of discount.<br/>Defaults to `PERCENTAGE` if not provided, for backward compatibility.<br/>[Enum: `PERCENTAGE`, `FLAT_AMOUNT`, `FREE_SHIPPING`, `BUY_X_GET_Y`]|-|`PERCENTAGE`|
+|`maximumDiscountCap`|number|false|For `PERCENTAGE` only — caps the maximum monetary discount applied.<br/>e.g. "20% off but no more than ₦2,000" → `maximumDiscountCap` = 2000<br/>Null means no cap.<br/>Validation[DecimalMin(value= 0.0, inclusive=false, message=Maximum discount cap must be greater than 0)]|-|0|
+|`minimumOrderValue`|number|false|Minimum order subtotal required to qualify.<br/>Null or absent means no minimum.<br/>Validation[DecimalMin(value=0.0, message=Minimum order value must be at least 0)]|-|0|
+|`requiredQuantity`|int32|false|For `BUY_X_GET_Y` only — number of items customer must buy.<br/>Validation[Min(value=1, message=Required quantity must be at least 1)]|-|0|
+|`freeQuantity`|int32|false|For `BUY_X_GET_Y` only — number of free items customer receives.<br/>Validation[Min(value=1, message=Free quantity must be at least 1)]|-|0|
+|`usageLimit`|int32|false|Maximum number of times this promotion can be redeemed across all customers.<br/>Null means unlimited.<br/>Validation[Min(value=1, message=Usage limit must be at least 1)]|-|0|
+|`perCustomerUsageLimit`|int32|false|Maximum number of times a single customer can redeem this promotion.<br/>Null means unlimited per customer.<br/>Validation[Min(value=1, message=Per customer usage limit must be at least 1)]|-|0|
 
 ##  Example API Call (Using Fetch)
 **Request-example:**
