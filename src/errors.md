@@ -30,6 +30,34 @@ An unexpected error occurred on the server, preventing the request from being pr
 ##  Handling Errors
 Ensure that your application properly handles errors by checking response status codes and implementing retry logic where appropriate. For authentication failures, verify that the API key or JWT token is valid and included in the request headers.
 
+
+## Error Reference
+
+### Promotion Errors
+
+| HTTP Status | Error Code | Description |
+|---|---|---|
+| `400` | `INVALID_DISCOUNT_TYPE` | Unknown value passed for `discountType` |
+| `400` | `DISCOUNT_VALUE_REQUIRED` | `discountValue` missing for `PERCENTAGE` or `FLAT_AMOUNT` |
+| `400` | `QUANTITY_FIELDS_REQUIRED` | `requiredQuantity` or `freeQuantity` missing for `BUY_X_GET_Y` |
+| `400` | `END_DATE_BEFORE_START_DATE` | `endDate` is before `startDate` |
+| `400` | `INVALID_STATUS_TRANSITION` | Attempted an unsupported status transition |
+| `400` | `CANNOT_SET_DEPLETED_STATUS` | `DEPLETED` cannot be set manually |
+| `409` | `PROMOTION_CODE_ALREADY_EXISTS` | A promotion with that code already exists for your tenant |
+
+### Order / Checkout Errors
+
+| HTTP Status | Error Code | Description |
+|---|---|---|
+| `400` | `PROMOTION_NOT_ACTIVE` | The promotion code exists but is not currently active |
+| `400` | `PROMOTION_MINIMUM_NOT_MET` | Order subtotal is below the promotion's `minimumOrderValue` |
+| `400` | `PROMOTION_USAGE_LIMIT_REACHED` | The promotion has been fully redeemed |
+| `400` | `PROMOTION_CUSTOMER_LIMIT_REACHED` | This customer has already used this promotion the maximum number of times |
+| `404` | `PROMOTION_NOT_FOUND` | No promotion found for the provided code |
+| `409` | `PROMOTION_ALREADY_APPLIED` | A promotion has already been applied to this order |
+
 ##  Next Steps
 - Learn more about [Authentication](authentication.md)
 <!-- - Explore available [API Endpoints](api-endpoints/README.md) -->
+
+

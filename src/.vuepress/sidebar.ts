@@ -118,6 +118,13 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Delivery Zone",
+          link: "",
+          prefix: "delivery-zone/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Fetch Countries",
           link: "country.md",
         },
