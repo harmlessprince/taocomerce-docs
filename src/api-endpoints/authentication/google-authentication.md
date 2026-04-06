@@ -128,4 +128,3 @@ useEffect(() => {
 ## Side Effects to Note
 - **Auto-Provisioning**: For new merchants, a default store is automatically created upon first Google sign-in.
 - **Account Linking**: If a user already has an account with the same email, it will be automatically linked to their Google identity.
-- **Events**: Successful social logins fire the same events (`MerchantCreated`, `CustomerLogin`) as traditional registration, ensuring your webhooks and triggers remain active.
