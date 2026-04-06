@@ -10,6 +10,7 @@ The **Authentication API** enables users to securely log in, manage their creden
 ### **Key Features:**
 - **User Login:** Authenticate users and generate a JWT token.
 - **Google Authentication:** Support for social login via Google for Merchants and Customers.
+- **Passwordless Authentication:** Secure login via Email magic links and WhatsApp OTPs.
 - **Forgot Password:** Allow users to request a password reset.
 - **Reset Password:** Enable users to update their password using a reset token.
 - **Retrieve User Profile:** Fetch user profile details.
@@ -22,6 +23,7 @@ The **Authentication API** enables users to securely log in, manage their creden
 - [Customer Login](./login-as-customer.md)
 - [Merchant Login](./login-as-store-owner.md)
 - [Google Authentication](./google-authentication.md)
+- [Passwordless Authentication](./passwordless-authentication.md)
 - [Forgot Password](./forgot-password.md)
 - [Reset Password](./reset-password.md)
 - [Retrieve User Profile](./user-profile.md)
