@@ -28,6 +28,10 @@ This API retrieves a list of products based on various filter parameters such as
 | `rating`             | Number | Filter products by rating. |
 | `newArrival`             | Number | Filter products added within a specific time frame (e.g., last 30 days). |
 | `search`            | String | General search query for products.(search by name, description and category) |
+| `archived`          | Boolean | Filter by archived status. Default: `false`. |
+
+> [!NOTE]
+> By default, archived products are **not** returned. To fetch archived products, explicitly set `archived=true`.
 
 ##  Required Headers
 ```json

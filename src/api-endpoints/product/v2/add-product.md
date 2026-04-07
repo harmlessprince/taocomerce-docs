@@ -33,6 +33,7 @@ The **Add Product V2** API is a unified endpoint for creating any type of produc
 | `attributes` | map | No | Key-value pairs for product details (e.g., `{"Color": "Red"}`). |
 | `variantGroups` | list | No** | List of variant groups (Required for VARIABLE). |
 | `bundledProductIds`| list | No***| List of product IDs (Required for BUNDLE). |
+| `isArchived` | boolean | No | Whether the product should be archived (hidden) immediately after creation. |
 
 *\* Pricing/Stock for VARIABLE products are derived from their SKUs.*  
 *\*\* See [Managing Variant Groups](./manage-variant-groups.md).*  

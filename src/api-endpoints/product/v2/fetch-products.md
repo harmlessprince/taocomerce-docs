@@ -27,6 +27,10 @@ Our V2 API introduces dynamic filtering based on the new architecture.
 | `limit` | `?limit=50` | Maximum results per page (defaults to 100). |
 | `sortFieldParam` | `?sortFieldParam=PRICE` | Sort results (e.g., NAME, PRICE, CREATED_AT). |
 | `sortDirectionParam`| `?sortDirectionParam=DESC`| Sort order: ASC or DESC. |
+| `archived` | `?archived=true` | Filter by archived status. Default: `false`. |
+
+> [!NOTE]
+> By default, archived products are **not** returned. To fetch archived products, explicitly set `archived=true`.
 
 ---
 
