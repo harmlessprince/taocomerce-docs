@@ -63,7 +63,7 @@ You can easily move a product to a different category:
 Returns a standard Success response with the updated product object in the V2 JSON shape.
 ```json
 {
-  "status": "success",
+  "status": true,
   "message": "Product updated",
   "data": { ... }
 }

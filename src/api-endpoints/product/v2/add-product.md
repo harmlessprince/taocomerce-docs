@@ -103,7 +103,7 @@ All V2 endpoints return a rich product object including both new V2 fields and l
 
 ```json
 {
-  "status": "success",
+  "status": true,
   "data": {
     "id": "prod_abc123",
     "name": "Classic Bluetooth Speaker",

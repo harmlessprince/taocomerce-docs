@@ -43,7 +43,7 @@ fetch("https://api.shopsynch.com/v1/payments/12345/status", {
     "Content-Type": "application/json"
   },
   body: JSON.stringify({
-    "status": "SUCCESS",
+    "status": true,
     "proofOfPayment": "https://example.com/receipt.jpg",
     "notes": "Verified via bank transfer"
   })

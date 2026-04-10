@@ -118,6 +118,20 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Warehouse",
+          link: "",
+          prefix: "warehouse/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
+          text: "Inventory",
+          link: "",
+          prefix: "inventory/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Delivery Zone",
           link: "",
           prefix: "delivery-zone/",

@@ -8,6 +8,16 @@ The **Product V2 API** is the next generation of our product management architec
 
 Unlike the classic V1 API, which had hardcoded fields for "RAM," "Storage," and "Size," V2 uses a **Generic Attribute System**. This means you can define any property you need (like "Material," "Voltage," or "Inseam") without being limited by a fixed schema.
 
+> **Important — Inventory & Warehouse Required**
+>
+> Product V2 uses the **Inventory system** for all stock management. Stock levels are no longer stored directly on the product or SKU — they live in dedicated inventory records tied to a warehouse.
+>
+> - When you create a V2 product, inventory records are **automatically created** in your default warehouse. You do not need to call the inventory API manually.
+> - If no warehouse exists yet, the system creates a default one ("Main Warehouse") for you automatically.
+> - **BUNDLE products are excluded** — bundles have no inventory of their own; stock is tracked at the component product level.
+>
+> See the [Warehouse](../../warehouse/README.md) and [Inventory](../../inventory/README.md) documentation to understand how to query stock levels, adjust quantities, and set up reorder alerts.
+
 ## Key Concepts
 
 ### 1. Product Types
@@ -38,3 +48,5 @@ For **VARIABLE** products, we use a two-tier hierarchy:
 *   [Fetching and Filtering (V2)](./fetch-products.md)
 *   [Managing Variant Groups](./manage-variant-groups.md)
 *   [Managing SKUs](./manage-skus.md)
+*   [Warehouse Overview](../../warehouse/README.md)
+*   [Inventory Overview](../../inventory/README.md)
