@@ -139,6 +139,13 @@ export default sidebar({
           children: "structure"
         },
         {
+          text: "Integration Configuration",
+          link: "",
+          prefix: "integration-configuration/",
+          collapsible: true,
+          children: "structure"
+        },
+        {
           text: "Fetch Countries",
           link: "country.md",
         },

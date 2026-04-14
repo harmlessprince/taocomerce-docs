@@ -21,12 +21,15 @@ The **Update Product V2** API allows you to partially update an existing product
 ## Update Logic
 This endpoint uses **Partial Update** logic. You only need to send the fields you wish to change. Fields omitted from the request body will remain unchanged in the database.
 
+> [!NOTE]
+> To update a product image, first upload the new image via the [Upload Single Image](../../media-management/upload-single-image.md) endpoint and use the returned `id` as the value for the `image` field.
+
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | `name` | string | Product's new display name. |
 | `price` | double | Updated base price. |
 | `quantityInStock` | int | Updated stock count (e.g., set to 0 for out of stock). |
-| `image` | string | New primary image URL. |
+| `image` | string | File ID of the new primary image (from the [upload endpoint](../../media-management/upload-single-image.md)). |
 | `attributes` | map | Merged with existing attributes. |
 
 ---
@@ -50,6 +53,14 @@ You can easily move a product to a different category:
 ```json
 {
   "categoryId": "cat_home_appliances_789"
+}
+```
+
+### Replacing the Product Image
+Upload the new image first, then pass its `id` here:
+```json
+{
+  "image": "file_newimage987abc"
 }
 ```
 

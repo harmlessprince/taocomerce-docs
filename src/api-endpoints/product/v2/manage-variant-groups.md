@@ -17,7 +17,7 @@ Adds a new group with at least one SKU.
 {
   "attributeName": "Color",
   "attributeValue": "Sunset Red",
-  "image": "https://example.com/red-variant.jpg",
+  "image": "file_abc123xyz",
   "colorId": "color_id_from_palette",
   "skus": [
     {
@@ -41,7 +41,7 @@ Partially update the metadata of an existing variant group (e.g., changing the h
 ```json
 {
   "attributeValue": "Flame Red",
-  "image": "https://example.com/new-red-variant.jpg"
+  "image": "file_newimage987abc"
 }
 ```
 *Note: This operation only changes the group metadata. To update price or stock, use the [SKU Update](./manage-skus.md) endpoint.*
@@ -62,6 +62,6 @@ Deletes a variant group and all its associated SKUs.
 | :--- | :--- | :--- |
 | `attributeName` | string | The dimension name (e.g., Color, Material). |
 | `attributeValue`| string | The display value (e.g., Red, Stainless Steel).|
-| `image` | string | Hero image for this specific variant group. |
+| `image` | string | File ID for the hero image of this variant group. Upload the image first via the [upload endpoint](../../media-management/upload-single-image.md) and use the returned `id`. |
 | `colorId` | string | Optional reference to our system color palette. |
 | `skus` | list | Initial SKUs for the group (Required for POST). |

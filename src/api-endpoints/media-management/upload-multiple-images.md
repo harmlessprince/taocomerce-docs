@@ -2,13 +2,13 @@
 title: Upload Multiple Images
 ---
 
-# Upload Single Image
+# Upload Multiple Images
 
 ##  Description
-The **Upload Single Image API** allows you to upload a single image file.
+The **Upload Multiple Images API** allows you to upload multiple image files in a single request.
 
 ##  Endpoint
-**GET** `/v1/files/upload/multiple/images`
+**POST** `/v1/files/upload/multiple/images`
 
 
 ##  Required Headers
@@ -16,15 +16,15 @@ The **Upload Single Image API** allows you to upload a single image file.
 {
   "Authorization": "Bearer JWT_TOKEN",
   "X-MerchantApiKey": "MERCHANT_API_KEY",
-  "Content-Type": "application/json"
+  "Content-Type": "multipart/form-data"
 }
 ```
 
 ##  Example API Call (Fetch or Axios)
 ```javascript
 var formdata = new FormData();
-formdata.append("files", fileInput.files[0], "createbudget.png");
-formdata.append("files", fileInput.files[0], "customcategory.png");
+formdata.append("files", fileInput.files[0], "product-image-1.png");
+formdata.append("files", fileInput.files[1], "product-image-2.png");
 
 var requestOptions = {
   method: 'POST',
@@ -43,15 +43,25 @@ fetch("{{url}}/v1/files/upload/multiple/images", requestOptions)
 {
     "data": [
         {
-            "name": "WhatsApp Image 2025-02-13 at 13.23.32.jpeg",
+            "id": "file_abc123xyz",
+            "name": "product-image-1.png",
             "url": "https://res.cloudinary.com/ibreathcode/image/upload/v1/product/images/fvnbwmf3pk2z5wfzjipu",
-            "type": "image/jpeg"
+            "type": "image/png"
+        },
+        {
+            "id": "file_def456uvw",
+            "name": "product-image-2.png",
+            "url": "https://res.cloudinary.com/ibreathcode/image/upload/v1/product/images/kqrtylmn8ab3x2yzcwop",
+            "type": "image/png"
         }
     ],
-    "message": "File uploaded successfully",
+    "message": "Files uploaded successfully",
     "status": true
 }
 ```
 
+> [!IMPORTANT]
+> Save the `id` from each file object in the response. These IDs are required when creating or updating V2 products — pass them as the `image`, `thumbnail`, or `imageList` field values instead of URLs.
+
 ##  Next Steps
-- Learn to [Upload Multiple Images](./upload-single-image.md)
+- Learn to [Upload a Single Image](./upload-single-image.md)

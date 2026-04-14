@@ -8,7 +8,7 @@ title: Upload Single Image
 The **Upload Single Image API** allows you to upload a single image file.
 
 ##  Endpoint
-**GET** `/v1/files/upload/single/image`
+**POST** `/v1/files/upload/single/image`
 
 
 ##  Required Headers
@@ -16,14 +16,14 @@ The **Upload Single Image API** allows you to upload a single image file.
 {
   "Authorization": "Bearer JWT_TOKEN",
   "X-MerchantApiKey": "MERCHANT_API_KEY",
-  "Content-Type": "application/json"
+  "Content-Type": "multipart/form-data"
 }
 ```
 
 ##  Example API Call (Fetch or Axios)
 ```javascript
 var formdata = new FormData();
-formdata.append("file", fileInput.files[0], "WhatsApp Image 2025-02-13 at 13.23.32.jpeg");
+formdata.append("file", fileInput.files[0], "product-image.jpeg");
 
 var requestOptions = {
   method: 'POST',
@@ -41,7 +41,8 @@ fetch("{{url}}/v1/files/upload/single/image", requestOptions)
 ```json
 {
     "data": {
-        "name": "WhatsApp Image 2025-02-13 at 13.23.32.jpeg",
+        "id": "file_abc123xyz",
+        "name": "product-image.jpeg",
         "url": "https://res.cloudinary.com/ibreathcode/image/upload/v1/product/images/hzafjkvoeq5iiltgqic5",
         "type": "image/jpeg"
     },
@@ -49,6 +50,9 @@ fetch("{{url}}/v1/files/upload/single/image", requestOptions)
     "status": true
 }
 ```
+
+> [!IMPORTANT]
+> Save the `id` from this response. It is required when creating or updating V2 products — pass it as the `image`, `thumbnail`, or `imageList` field value instead of a URL.
 
 ##  Next Steps
 - Learn to [Upload Multiple Images](./upload-multiple-images.md)
