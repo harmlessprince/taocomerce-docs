@@ -54,3 +54,4 @@ By combining **Merchant API KEY** and **JWT**, our API ensures **security, scala
 
 ##  Next Steps
 - [Get Started](get-started.md) with API integration.
+- Building a third-party app or AI agent? Read [OAuth for Connected Apps](oauth.md) instead.

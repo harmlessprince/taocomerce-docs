@@ -23,6 +23,16 @@ export default sidebar({
       link: "authentication.md",
     },
     {
+      text: "OAuth for Connected Apps",
+      collapsible: true,
+      link: "oauth.md",
+    },
+    {
+      text: "MCP (AI Agents)",
+      collapsible: true,
+      link: "mcp.md",
+    },
+    {
       text: "Errors",
       collapsible: true,
       link: "errors.md",
