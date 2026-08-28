@@ -97,7 +97,7 @@ export default defineConfig({
           { text: "Get Started", link: "/get-started" },
           { text: "Authentication", link: "/authentication" },
           { text: "OAuth for Connected Apps", link: "/oauth" },
-          { text: "MCP (AI Agents)", link: "/mcp" },
+          { text: "MCP Connector", link: "/mcp" },
           { text: "Errors", link: "/errors" },
           { text: "API Sandbox", link: "/api-reference" },
         ],
