@@ -5,32 +5,71 @@ description: Connect AI assistants and agents to ShopSynch with Model Context Pr
 
 # MCP Connector
 
-ShopSynch is preparing an official Model Context Protocol connector for AI assistants, agent builders, and developer tools.
+ShopSynch exposes a public Model Context Protocol server for AI assistants, agent builders, and developer tools.
 
-The connector will let approved AI clients help merchants work with their ShopSynch store through a secure, permission-based connection. Typical use cases include store insights, product workflows, order support, customer context, and operational reporting.
+The connector lets approved AI clients help merchants work with their ShopSynch store through a secure, permission-based connection. Typical use cases include store insights, product workflows, order support, customer context, inventory checks, and operational reporting.
 
-## Availability
+## Official Connector Profile
 
-The official connector is not yet publicly listed in client marketplaces.
+Use this profile when configuring a compatible MCP client or preparing a ShopSynch connector submission.
 
-When public access is available, this page will include the supported setup flow for compatible MCP clients such as ChatGPT, Claude, Cursor, Antigravity, and other agent tools.
+```json
+{
+  "name": "shopsynch",
+  "displayName": "ShopSynch",
+  "description": "Connect AI assistants to ShopSynch so merchants can work with products, orders, customers, inventory, payments, and store analytics.",
+  "mcpUrl": "https://api.shopsynch.com/mcp",
+  "transport": "streamable-http",
+  "authentication": {
+    "type": "oauth2",
+    "authorizationServerMetadataUrl": "https://api.shopsynch.com/.well-known/oauth-authorization-server",
+    "protectedResourceMetadataUrl": "https://api.shopsynch.com/.well-known/oauth-protected-resource",
+    "pkce": true,
+    "defaultScope": "mcp:store"
+  },
+  "privacyPolicyUrl": "https://www.shopsynch.com/privacy",
+  "termsOfServiceUrl": "https://www.shopsynch.com/terms",
+  "supportUrl": "https://www.shopsynch.com/contact"
+}
+```
+
+## Compatibility
+
+ShopSynch works with MCP clients that support remote MCP over Streamable HTTP.
+
+| Client type | Status |
+| --- | --- |
+| OAuth-aware remote MCP clients | Supported |
+| Claude Desktop or Claude.ai connectors | Supported when remote MCP and OAuth are enabled in the client |
+| Cursor, Antigravity, VS Code, and agent IDEs | Supported when the client accepts remote MCP server URLs |
+| ChatGPT native app | Requires a ChatGPT app package and marketplace review |
+
+Native marketplace installation is separate from MCP compatibility. A client may support the ShopSynch MCP server directly before it appears as a one-click installable marketplace app.
 
 ## Authentication
 
-The public connector flow will use ShopSynch account authorization. Merchants will sign in, review the requested access, and approve the connection before an AI client can access store data.
+ShopSynch MCP uses OAuth for third-party AI apps and official connector flows.
+
+Merchants sign in to ShopSynch, review the requested access, and approve the connection before an AI client can access store data. OAuth access does not bypass ShopSynch account permissions, tenant scoping, or per-tool permission checks.
 
 ShopSynch does not recommend sharing private API keys directly with third-party AI tools.
 
-## What AI Clients Can Do
+## Available Tool Areas
 
-Approved clients will only be able to access the ShopSynch capabilities granted to them. The connector is designed for commerce workflows such as:
+ShopSynch MCP tools are exposed by capability area. Exact tool availability may vary by account, permission, environment, and client support.
 
-- Understanding store performance.
-- Helping with product and catalog operations.
-- Finding order, customer, inventory, and payment context.
-- Supporting merchant operations through approved tools.
-
-Exact tool availability may vary by account, permission, environment, and client support.
+| Area | Examples |
+| --- | --- |
+| Analytics | Revenue, order, customer, and product metrics |
+| Products | Product listing, product details, catalog workflows, SKU checks |
+| Orders | Order lookup, order status, order history, fulfillment context |
+| Customers | Customer lookup and order behavior context |
+| Inventory | Stock checks, inventory status, low-stock context |
+| Payments | Payment lookup, payment status, payment link context |
+| Categories | Store categories and product classification |
+| Promotions and Ads | Promotion and campaign context |
+| Reviews | Store and product review context |
+| Store Operations | Store profile, warehouses, delivery zones, and operating context |
 
 ## Safety Rules
 
