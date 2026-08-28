@@ -4,7 +4,6 @@
       v-if="ApiReferenceComponent"
       ref="containerRef"
       class="scalar-api-container"
-      @click.capture="handleScalarHashClick"
     >
       <component :is="ApiReferenceComponent" :configuration="configuration" />
     </div>
@@ -15,7 +14,7 @@
 </template>
 
 <script setup>
-import { shallowRef, ref, onMounted } from 'vue'
+import { shallowRef, ref, onBeforeUnmount, onMounted } from 'vue'
 import '@scalar/api-reference/style.css'
 
 const ApiReferenceComponent = shallowRef(null)
@@ -27,9 +26,49 @@ const configuration = {
   isEditable: false,
 }
 
+const isMobileViewport = () => window.matchMedia('(max-width: 767px)').matches
+
 const resolveScalarTarget = (hash) => {
   const id = decodeURIComponent(hash.replace(/^#/, ''))
   return document.getElementById(id) || document.getElementById(`api-1/${id}`)
+}
+
+const closeMobileSidebar = () => {
+  if (!isMobileViewport()) {
+    return
+  }
+
+  const scalarApp = containerRef.value?.querySelector('.scalar-api-reference')
+
+  if (!scalarApp?.classList.contains('references-sidebar-mobile-open')) {
+    return
+  }
+
+  const menuButton = Array.from(containerRef.value.querySelectorAll('button')).find((button) =>
+    ['Open Menu', 'Close Menu'].includes(button.textContent?.trim()),
+  )
+
+  menuButton?.click()
+}
+
+const scrollToScalarTarget = (hash, target) => {
+  const scrollTargetIntoView = () => {
+    const navHeight = Number.parseInt(
+      getComputedStyle(document.documentElement).getPropertyValue('--vp-nav-height'),
+      10,
+    ) || 64
+    const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 16
+
+    window.scrollTo({ top })
+  }
+
+  window.history.pushState({}, '', `${window.location.pathname}${window.location.search}${hash}`)
+  scrollTargetIntoView()
+
+  window.setTimeout(() => {
+    scrollTargetIntoView()
+    window.history.replaceState({}, '', `${window.location.pathname}${window.location.search}${hash}`)
+  }, 100)
 }
 
 const handleScalarHashClick = (event) => {
@@ -47,13 +86,20 @@ const handleScalarHashClick = (event) => {
   }
 
   event.preventDefault()
-  window.history.pushState({}, '', `${window.location.pathname}${window.location.search}${hash}`)
-  target.scrollIntoView({ block: 'start' })
+  event.stopPropagation()
+  event.stopImmediatePropagation()
+  closeMobileSidebar()
+  window.requestAnimationFrame(() => scrollToScalarTarget(hash, target))
 }
 
 onMounted(async () => {
   const mod = await import('@scalar/api-reference')
   ApiReferenceComponent.value = mod.ApiReference
+  document.addEventListener('click', handleScalarHashClick, true)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleScalarHashClick, true)
 })
 </script>
 
