@@ -6,16 +6,35 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const baseDir = path.dirname(__dirname);
 
-const manifestPathCandidate1 = path.join(baseDir, '..', 'ecommerceapi', 'target', 'classes', 'doc', 'developer-api-manifest.json');
-const manifestPathCandidate2 = path.join(baseDir, '..', 'ecommerceapi', 'src', 'main', 'resources', 'doc', 'developer-api-manifest.json');
-const manifestPath = fs.existsSync(manifestPathCandidate1) ? manifestPathCandidate1 : manifestPathCandidate2;
-
-const openapiPath = path.join(baseDir, '..', 'shopsynch_internall_docs', 'openapi.json');
 const outDir = path.join(baseDir, 'src', 'public');
 const outPath = path.join(outDir, 'openapi.json');
 
+const manifestCandidates = [
+  path.join(outDir, 'developer-api-manifest.json'),
+  path.join(baseDir, '..', 'ecommerceapi', 'src', 'main', 'resources', 'doc', 'developer-api-manifest.json'),
+  path.join(baseDir, '..', 'ecommerceapi', 'target', 'classes', 'doc', 'developer-api-manifest.json'),
+];
+
+const openapiCandidates = [
+  path.join(baseDir, '..', 'shopsynch_internall_docs', 'openapi.json'),
+  path.join(outDir, 'openapi.json'),
+];
+
+const manifestPath = manifestCandidates.find(p => fs.existsSync(p));
+const openapiPath = openapiCandidates.find(p => fs.existsSync(p));
+
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
+}
+
+if (!manifestPath || !openapiPath) {
+  if (fs.existsSync(outPath)) {
+    console.log(`ℹ️ Using pre-built public openapi.json in repository at ${outPath}`);
+    process.exit(0);
+  } else {
+    console.error(`❌ Could not find developer-api-manifest.json or openapi.json to generate spec.`);
+    process.exit(1);
+  }
 }
 
 console.log(`Reading manifest from: ${manifestPath}`);
