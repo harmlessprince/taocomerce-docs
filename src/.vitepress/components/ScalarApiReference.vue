@@ -110,12 +110,9 @@ onBeforeUnmount(() => {
   width: 100%;
   position: relative;
 }
-.scalar-app {
-  min-height: calc(100vh - var(--vp-nav-height, 64px)) !important;
-}
 
-.scalar-api-container :where(.scalar-app, .references-layout) {
-  min-height: calc(100vh - var(--vp-nav-height, 64px));
+.scalar-api-container .scalar-app {
+  min-height: auto !important;
 }
 
 .scalar-api-container [id] {
