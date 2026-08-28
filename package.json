@@ -5,15 +5,18 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
+    "prebuild": "node scripts/filter-public-openapi.js",
+    "docs:dev": "node scripts/filter-public-openapi.js && vitepress dev src",
+    "docs:build": "node scripts/filter-public-openapi.js && vitepress build src",
     "docs:preview": "vitepress preview src"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "vitepress": "^1.5.0",
     "vue": "^3.5.13"
   },
   "dependencies": {
+    "@scalar/api-reference": "^1.67.0",
     "dotenv": "^16.4.7"
   }
 }

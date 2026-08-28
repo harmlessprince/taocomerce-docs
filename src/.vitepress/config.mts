@@ -87,6 +87,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Get Started", link: "/get-started" },
       { text: "API Endpoints", link: "/api-endpoints/" },
+      { text: "API Sandbox", link: "/api-reference" },
     ],
     sidebar: [
       {
@@ -98,6 +99,7 @@ export default defineConfig({
           { text: "OAuth for Connected Apps", link: "/oauth" },
           { text: "MCP (AI Agents)", link: "/mcp" },
           { text: "Errors", link: "/errors" },
+          { text: "API Sandbox", link: "/api-reference" },
         ],
       },
       {

@@ -1,13 +1,12 @@
 # Node modules
 node_modules/
 
-# VuePress output directory
+# VuePress / VitePress output and cache directories
 src/.vuepress/dist/
+src/.vitepress/dist/
+src/.vitepress/cache/
+src/.vitepress/.temp/
 dist/
-
-# Temp and cache files
-src/.vuepress/.temp/
-src/.vuepress/.cache/
 
 # Log files
 npm-debug.log*
