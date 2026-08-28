@@ -1,65 +1,79 @@
 ---
-title: MCP (AI Agents)
+title: MCP Connector
+description: Connect AI assistants and agents to ShopSynch with Model Context Protocol.
 ---
 
-# MCP (AI Agents)
+# MCP Connector
 
-## What Is MCP?
-MCP stands for Model Context Protocol. MCP is an open standard. MCP lets AI assistants and AI agents connect to external services.
+ShopSynch exposes a remote Model Context Protocol server for AI assistants, agent builders, and developer tools. An MCP client can connect to ShopSynch, ask for store context, and call approved commerce tools on behalf of an authenticated merchant.
 
-ShopSynch runs an MCP server. An AI agent can connect to this server. The agent can then read and manage your store data on your behalf.
+## Official Connector Profile
 
-Examples of AI agents that support MCP:
-- Claude Desktop and Claude.ai connectors
-- MCP Inspector (a developer tool for testing MCP connections)
-- Custom agents that you build yourself
-
-## What Can an MCP Agent Do?
-An MCP agent can perform the same actions as the ShopSynch API. This includes:
-
-- View and manage products
-- View orders
-- View customers
-- Check inventory and stock levels
-- View store analytics
-- View and manage promotions
-- View product reviews
-- View delivery zones
-- View your store profile
-
-An MCP agent never gets more access than your account allows. Every action still follows your own account permissions.
-
-## Connect to the ShopSynch MCP Server
-Use this URL to connect:
-
-```
-https://api.shopsynch.com/mcp
-```
-
-The server uses the Streamable HTTP transport.
-
-## Authenticate Your Connection
-You can connect to the MCP server in two ways.
-
-### Option 1: Merchant API Key
-Use this option for your own scripts and internal tools.
-
-Add your Merchant API key to the request header:
+Use this profile when configuring an MCP-compatible client or submitting ShopSynch for connector review.
 
 ```json
 {
-  "X-MerchantApiKey": "MERCHANT_API_KEY"
+  "name": "ShopSynch",
+  "displayName": "ShopSynch Assistant",
+  "description": "Manage ShopSynch products, orders, customers, inventory, payments, promotions, reviews, warehouses, delivery zones, and store analytics from AI assistants.",
+  "mcpUrl": "https://api.shopsynch.com/mcp",
+  "transport": "streamable-http",
+  "authentication": {
+    "type": "oauth2",
+    "authorizationServerMetadataUrl": "https://api.shopsynch.com/.well-known/oauth-authorization-server",
+    "protectedResourceMetadataUrl": "https://api.shopsynch.com/.well-known/oauth-protected-resource",
+    "dynamicClientRegistration": true,
+    "pkce": true,
+    "defaultScope": "mcp:store"
+  },
+  "fallbackAuthentication": {
+    "type": "api-key",
+    "headerName": "X-MerchantApiKey"
+  },
+  "privacyPolicyUrl": "https://www.shopsynch.com/privacy",
+  "termsOfServiceUrl": "https://www.shopsynch.com/terms",
+  "supportUrl": "https://www.shopsynch.com"
 }
 ```
 
-### Option 2: OAuth (Recommended for AI Apps)
-Use this option when you connect a third-party AI app, such as Claude or a custom agent you did not build yourself.
+## Will It Work?
 
-OAuth lets a store owner approve access to their store. The store owner does not need to share their Merchant API key.
+Yes, for clients that support remote MCP over Streamable HTTP.
 
-Read the [OAuth for Connected Apps](oauth.md) guide for full setup steps.
+OAuth-aware clients can discover the authorization server from ShopSynch's metadata endpoints and start the sign-in flow automatically. Clients that do not support OAuth discovery can still connect with a Merchant API key if they allow custom request headers.
 
-Once you have an access token, add it to the request header:
+Native marketplace installation is separate from MCP compatibility. For example, a ChatGPT app still needs an Apps SDK package and review before it appears as an installable ChatGPT app, even though the underlying ShopSynch MCP server is already usable.
+
+## Connection URLs
+
+| Purpose | URL |
+| --- | --- |
+| MCP server | `https://api.shopsynch.com/mcp` |
+| Protected resource metadata | `https://api.shopsynch.com/.well-known/oauth-protected-resource` |
+| Authorization server metadata | `https://api.shopsynch.com/.well-known/oauth-authorization-server` |
+| Dynamic client registration | `https://api.shopsynch.com/oauth/register` |
+| Authorization endpoint | `https://api.shopsynch.com/oauth/authorize` |
+| Token endpoint | `https://api.shopsynch.com/oauth/token` |
+
+## Supported Clients
+
+| Client type | Status | Setup |
+| --- | --- | --- |
+| OAuth-aware remote MCP clients | Supported | Add `https://api.shopsynch.com/mcp`; the client should discover OAuth automatically. |
+| Claude Desktop or Claude.ai connectors | Supported when remote MCP and OAuth are enabled in the client | Add the MCP server URL and approve access in the ShopSynch OAuth flow. |
+| Antigravity, Cursor, VS Code, and agent IDEs | Supported when the client accepts remote MCP URLs | Add the MCP server URL. Use OAuth when available, or the Merchant API key fallback when headers are supported. |
+| MCP Inspector | Supported | Use the server URL to test connection, OAuth flow, tool listing, and tool calls. |
+| ChatGPT native app | Packaging required | Build a ChatGPT Apps SDK app that points to this MCP server, then submit it for review. |
+
+## Authentication
+
+ShopSynch supports two authentication methods for MCP.
+
+### OAuth
+
+Use OAuth for third-party AI apps and official connector flows.
+
+The merchant signs in, selects a store when needed, and approves the requested scope. The AI client receives an access token and calls the MCP server with:
 
 ```json
 {
@@ -67,17 +81,100 @@ Once you have an access token, add it to the request header:
 }
 ```
 
-## Connect Through an AI Client
-Most AI clients that support MCP handle the connection for you. Follow these steps:
+OAuth MCP access is live-environment access in the first version. Test-mode MCP remains available with Merchant API keys.
 
-1. Open your AI client's connector or integration settings.
-2. Enter the MCP server URL: `https://api.shopsynch.com/mcp`.
-3. If the client supports OAuth, it starts the OAuth flow automatically. Sign in and approve access when prompted.
-4. If the client only supports a manual header, add your Merchant API key as shown above.
+### Merchant API Key
 
-## Errors
-A request without a valid Merchant API key or access token returns a `401 Unauthorized` response. The response includes a `WWW-Authenticate` header. OAuth-aware clients use this header to start the sign-in process automatically.
+Use Merchant API keys for internal scripts, local testing, and clients that do not support OAuth.
 
-## Next Steps
-- Set up [OAuth for Connected Apps](oauth.md).
-- Read about [Authentication](authentication.md).
+```json
+{
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
+}
+```
+
+## OAuth Scope
+
+The current MCP scope is:
+
+```text
+mcp:store
+```
+
+This gives the connected AI client access to approved MCP tools for the selected store. It does not bypass ShopSynch account permissions, tenant scoping, or per-tool permission checks.
+
+## Available Tool Areas
+
+ShopSynch tools are exposed by capability area. The exact tool schema is returned by the MCP `tools/list` request.
+
+| Area | Examples |
+| --- | --- |
+| Analytics | Revenue, order, customer, and product metrics |
+| Products | List products, get product details, create products, validate SKUs, fetch templates, find similar products, top-selling products |
+| Orders | List orders, get order details, get by order number, track orders, list statuses, get order items and history |
+| Customers | List customers, get customer details, list customers by order behavior |
+| Inventory | List inventory, get stock by SKU, low-stock checks, inventory logs |
+| Payments | List payments, get payment by order, payment statuses, latest payment link |
+| Categories | System categories, store categories, child categories |
+| Promotions and Ads | List and inspect promotions, promo ads, and published promo ads |
+| Reviews | List reviews and product reviews |
+| Store Operations | Store profile, warehouses, delivery zones |
+
+## Safety Rules
+
+AI clients should follow these rules when using the connector:
+
+- Confirm before creating or changing store data.
+- Prefer natural identifiers such as order number, SKU, slug, or customer email before asking for database IDs.
+- Use list tools to resolve IDs before calling detail or action tools.
+- Do not invent product IDs, customer IDs, category IDs, warehouse IDs, or inventory IDs.
+- Treat returned data as merchant-confidential.
+- Keep OAuth tokens private and revoke access from the ShopSynch connected-apps settings when a client is no longer trusted.
+
+## Example Client Config
+
+For MCP clients that accept a remote server URL:
+
+```json
+{
+  "mcpServers": {
+    "shopsynch": {
+      "url": "https://api.shopsynch.com/mcp"
+    }
+  }
+}
+```
+
+For clients that require a manual API key header:
+
+```json
+{
+  "mcpServers": {
+    "shopsynch": {
+      "url": "https://api.shopsynch.com/mcp",
+      "headers": {
+        "X-MerchantApiKey": "MERCHANT_API_KEY"
+      }
+    }
+  }
+}
+```
+
+## Review Checklist
+
+Use this checklist before submitting ShopSynch to any app or connector marketplace:
+
+- OAuth metadata endpoints are publicly reachable.
+- `/mcp` accepts Streamable HTTP requests through the public gateway.
+- Dynamic client registration works for public PKCE clients.
+- Authorization code flow with PKCE completes in a real browser.
+- Token refresh and grant revocation are verified with a real client.
+- Tool names, descriptions, and JSON schemas are stable.
+- Destructive tools require clear user confirmation in the client experience.
+- Privacy policy, terms, support URL, logo, and app description are ready.
+
+## Related Guides
+
+- [OAuth for Connected Apps](oauth.md)
+- [Authentication](authentication.md)
+- [API Sandbox](api-reference.md)
