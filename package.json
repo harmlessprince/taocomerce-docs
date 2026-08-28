@@ -23,8 +23,8 @@
     "vuepress-theme-hope": "^2.0.0-rc.88"
   },
   "overrides": {
-    "@vuepress/client": "$@vuepress/client",
-    "@vuepress/core": "$@vuepress/core",
-    "@vuepress/shared": "$@vuepress/shared"
+    "@vuepress/client": "2.0.0-rc.23",
+    "@vuepress/core": "2.0.0-rc.23",
+    "@vuepress/shared": "2.0.0-rc.23"
   }
 }
