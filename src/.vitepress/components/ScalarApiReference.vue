@@ -20,6 +20,7 @@ const configuration = {
   },
   theme: 'purple',
   showSidebar: true,
+  router: 'hash',
 }
 
 onMounted(async () => {

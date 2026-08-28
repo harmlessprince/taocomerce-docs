@@ -1,5 +1,5 @@
 {
-  "openapi": "3.1.0",
+  "openapi": "3.0.3",
   "info": {
     "title": "ShopSynch Public Developer API",
     "version": "v1.0.0",
@@ -12,398 +12,70 @@
   ],
   "tags": [
     {
-      "name": "ProductVariantGroupController",
-      "description": "Manages variant groups and their SKUs for V2 products.\n\n&lt;p&gt;All endpoints are scoped under {@code /v2/products/{productId}/variant-groups}.\nV1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected."
+      "name": "PRODUCT",
+      "description": "PRODUCT Endpoints"
     },
     {
-      "name": "PromotionController",
-      "description": "Promotion management"
+      "name": "PROMOTION_ADS",
+      "description": "PROMOTION_ADS Endpoints"
     },
     {
-      "name": "ProductTemplateController",
-      "description": "Product Template Management"
+      "name": "ORDER",
+      "description": "ORDER Endpoints"
     },
     {
-      "name": "MerchantBankAccountController",
-      "description": "MerchantBankAccountController"
+      "name": "CART",
+      "description": "CART Endpoints"
     },
     {
-      "name": "VariationOptionController",
-      "description": "VariationOptionController"
+      "name": "PRODUCT_CATEGORY",
+      "description": "PRODUCT_CATEGORY Endpoints"
     },
     {
-      "name": "LocationController",
-      "description": "LocationController"
+      "name": "PROMOTION_CODE",
+      "description": "PROMOTION_CODE Endpoints"
     },
     {
-      "name": "MerchantCollectionController",
-      "description": "Merchant Collections Management"
+      "name": "PRODUCT_REVIEW",
+      "description": "PRODUCT_REVIEW Endpoints"
     },
     {
-      "name": "LocalGovernmentController",
-      "description": "LocalGovernmentController"
+      "name": "AUTHENTICATION",
+      "description": "AUTHENTICATION Endpoints"
     },
     {
-      "name": "SocialAuthController",
-      "description": "SocialAuthController"
+      "name": "CUSTOMER",
+      "description": "CUSTOMER Endpoints"
     },
     {
-      "name": "OrderLogisticController",
-      "description": "OrderLogisticController"
+      "name": "MEDIA_MANAGEMENT",
+      "description": "MEDIA_MANAGEMENT Endpoints"
     },
     {
-      "name": "OrderController",
-      "description": "Order Management"
+      "name": "PAYMENT",
+      "description": "PAYMENT Endpoints"
     },
     {
-      "name": "ComplianceController",
-      "description": "Tenant Compliance Management"
+      "name": "DELIVERY_ZONE",
+      "description": "DELIVERY_ZONE Endpoints"
     },
     {
-      "name": "ChangePasswordController",
-      "description": "Change Password Management (authenticated)"
+      "name": "WAREHOUSE",
+      "description": "WAREHOUSE Endpoints"
     },
     {
-      "name": "AdminAuditLogController",
-      "description": "AdminAuditLogController"
-    },
-    {
-      "name": "PaymentGatewayController",
-      "description": "Payment Gateway"
-    },
-    {
-      "name": "AdminBillingOperationsController",
-      "description": "Admin Billing Operations APIs"
-    },
-    {
-      "name": "CustomerAuthController",
-      "description": "Customer Authentication"
-    },
-    {
-      "name": "CartV2Controller",
-      "description": "Cart Management V2"
-    },
-    {
-      "name": "StatSnapshotController",
-      "description": "StatSnapshotController"
-    },
-    {
-      "name": "TenantStoreController",
-      "description": "TenantStoreController"
-    },
-    {
-      "name": "ProductVariationPriceDetailController",
-      "description": "ProductVariationPriceDetailController"
-    },
-    {
-      "name": "BrandController",
-      "description": "BrandController"
-    },
-    {
-      "name": "AdminAppSettingController",
-      "description": "Admin – Global App Setting Management"
-    },
-    {
-      "name": "TenantCategoryController",
-      "description": "Tenant Category Management"
-    },
-    {
-      "name": "QAController",
-      "description": "QAController"
-    },
-    {
-      "name": "UserController",
-      "description": "UserController"
-    },
-    {
-      "name": "CategoryController",
-      "description": "CategoryController"
-    },
-    {
-      "name": "PaymentMethodController",
-      "description": "Payment Method Management"
-    },
-    {
-      "name": "AdminLogisticController",
-      "description": "AdminLogisticController"
-    },
-    {
-      "name": "StorefrontCollectionController",
-      "description": "Storefront Collections Customer API"
-    },
-    {
-      "name": "ProductStatsController",
-      "description": "ProductStatsController"
-    },
-    {
-      "name": "VariationController",
-      "description": "VariationController"
-    },
-    {
-      "name": "PaymentController",
-      "description": "Payment Management"
-    },
-    {
-      "name": "AdminApiUsageBillingController",
-      "description": "Admin API Usage Billing APIs"
-    },
-    {
-      "name": "BankController",
-      "description": "BankController"
-    },
-    {
-      "name": "BillingController",
-      "description": "Merchant Billing APIs"
-    },
-    {
-      "name": "ColorController",
-      "description": "ColorController"
-    },
-    {
-      "name": "AdminInventoryController",
-      "description": "Internal admin endpoints for inventory management.\nThese endpoints are not exposed to merchant users."
-    },
-    {
-      "name": "AddressController",
-      "description": "Address Management"
-    },
-    {
-      "name": "MerchantAppSettingController",
-      "description": "Merchant – Tenant App Setting Management"
-    },
-    {
-      "name": "CommunicationMessageTemplateController",
-      "description": "Compliance RejectionTemplate Controller"
-    },
-    {
-      "name": "CustomerController",
-      "description": "CustomerController"
-    },
-    {
-      "name": "OrderStatusHistoryController",
-      "description": "Order Status History Management"
-    },
-    {
-      "name": "AppTokenController",
-      "description": "App Token Management"
-    },
-    {
-      "name": "InventoryController",
-      "description": "Inventory Management\nManage stock levels across warehouses, track inventory movements, and view\nlow-stock items.\nAll operations are tenant-scoped and require merchant access."
-    },
-    {
-      "name": "MerchantDashboardTourProgressController",
-      "description": "MerchantDashboardTourProgressController"
-    },
-    {
-      "name": "AdminCacheController",
-      "description": "Admin Cache Management"
-    },
-    {
-      "name": "LogisticController",
-      "description": "LogisticController"
-    },
-    {
-      "name": "PaymentLinkController",
-      "description": "PaymentLinkController"
-    },
-    {
-      "name": "SpecificationController",
-      "description": "Specification Management"
-    },
-    {
-      "name": "AdminComplianceController",
-      "description": "Admin Compliance Management"
-    },
-    {
-      "name": "ReviewController",
-      "description": "ReviewController"
-    },
-    {
-      "name": "MerchantController",
-      "description": "Merchant Management"
-    },
-    {
-      "name": "PaystackWebhookController",
-      "description": "PaystackWebhookController"
-    },
-    {
-      "name": "AdminCategoryController",
-      "description": "AdminCategoryController"
-    },
-    {
-      "name": "TenantRoleController",
-      "description": "Merchant-accessible APIs for roles and permissions within a specific store.\n\nThese endpoints are tenant-scoped: the caller must be the store owner or\na member with the CAN_READ_ROLE permission. Admin-only roles and\nnon-merchant-visible permissions are automatically excluded from responses."
-    },
-    {
-      "name": "ForgotPasswordController",
-      "description": "Forgot Password Management (Unauthenticated)"
-    },
-    {
-      "name": "AdminFeatureFlagController",
-      "description": "Admin Feature Flag Management APIs"
-    },
-    {
-      "name": "FeatureFlagController",
-      "description": "Merchant Feature Flag APIs"
-    },
-    {
-      "name": "ConfigController",
-      "description": "Tenant Configuration Management"
-    },
-    {
-      "name": "AnalyticsController",
-      "description": "AnalyticsController"
-    },
-    {
-      "name": "WhatsAppProductFlowController",
-      "description": "WhatsApp Product Flow"
-    },
-    {
-      "name": "AdminAuthController",
-      "description": "Admin Authentication."
-    },
-    {
-      "name": "AdminDashboardController",
-      "description": "Admin Platform Dashboard"
-    },
-    {
-      "name": "PasswordlessAuthController",
-      "description": "Password-less Authentication."
-    },
-    {
-      "name": "MerchantAuditLogController",
-      "description": "MerchantAuditLogController"
-    },
-    {
-      "name": "EmailPreviewController",
-      "description": "EmailPreviewController"
-    },
-    {
-      "name": "TenantMemberController",
-      "description": "Team Management APIs"
-    },
-    {
-      "name": "MonnifyWebhookController",
-      "description": "MonnifyWebhookController"
-    },
-    {
-      "name": "StateController",
-      "description": "StateController"
-    },
-    {
-      "name": "RoleController",
-      "description": "RoleController"
-    },
-    {
-      "name": "AdminUserController",
-      "description": "Admin User Management"
-    },
-    {
-      "name": "AdminBillingSubscriptionController",
-      "description": "Admin Billing Subscription APIs"
-    },
-    {
-      "name": "CustomerOrderController",
-      "description": "Customer Order Management"
-    },
-    {
-      "name": "NotificationController",
-      "description": "Notification Management"
-    },
-    {
-      "name": "TenantInvitationController",
-      "description": "Tenant Member Invitation Management APIs"
-    },
-    {
-      "name": "WhatsAppWebhookController",
-      "description": "WhatsAppWebhookController"
-    },
-    {
-      "name": "ProductVariationController",
-      "description": "Product Variation Management (Authenticated)"
-    },
-    {
-      "name": "ProductController",
-      "description": "Product Management"
-    },
-    {
-      "name": "PromoAdController",
-      "description": "Promo Ad API"
-    },
-    {
-      "name": "AuthController",
-      "description": "Authentication."
-    },
-    {
-      "name": "BillingApiUsageController",
-      "description": "Merchant API Usage Billing APIs"
-    },
-    {
-      "name": "ProductV2Controller",
-      "description": "V2 Product Management"
-    },
-    {
-      "name": "HomeController",
-      "description": "HomeController"
-    },
-    {
-      "name": "CartSessionController",
-      "description": "CartSessionController"
-    },
-    {
-      "name": "FileController",
-      "description": "File Management (File Upload)"
-    },
-    {
-      "name": "DashboardController",
-      "description": "DashboardController"
-    },
-    {
-      "name": "CartController",
-      "description": "Cart Management"
-    },
-    {
-      "name": "CountryController",
-      "description": "CountryController"
-    },
-    {
-      "name": "CheckoutLinkController",
-      "description": "CheckoutLinkController"
-    },
-    {
-      "name": "EmailVerificationController",
-      "description": "Email Verification"
-    },
-    {
-      "name": "WarehouseController",
-      "description": "WarehouseController"
-    },
-    {
-      "name": "WhatsAppAuthController",
-      "description": "Whatsapp Authentication"
-    },
-    {
-      "name": "AdminMerchantController",
-      "description": "Admin Merchant Management"
-    },
-    {
-      "name": "DeliveryZoneController",
-      "description": "Delivery Zone Management"
-    },
-    {
-      "name": "ProductSkuController",
-      "description": "Product SKU Management"
+      "name": "INVENTORY",
+      "description": "INVENTORY Endpoints"
     }
   ],
   "paths": {
     "/v1/products/variation/priceDetail/{variationPriceDetailId}": {
       "patch": {
-        "summary": "updateProductVariationPriceDetail",
+        "summary": "Update Product Variation Price Detail",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariationPriceDetailController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -438,7 +110,7 @@
             }
           }
         },
-        "operationId": "updateProductVariationPriceDetail",
+        "operationId": "patch__v1_products_variation_priceDetail__variationPriceDetailId_",
         "parameters": [
           {
             "schema": {
@@ -860,11 +532,11 @@
     },
     "/v1/products/variation/priceDetail": {
       "post": {
-        "summary": "addProductVariationPriceDetail",
+        "summary": "Add Product Variation Price Detail",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariationPriceDetailController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -899,7 +571,7 @@
             }
           }
         },
-        "operationId": "addProductVariationPriceDetail",
+        "operationId": "post__v1_products_variation_priceDetail",
         "parameters": [
           {
             "schema": {
@@ -1311,11 +983,11 @@
     },
     "/v2/product-templates/by-category/{categoryId}": {
       "get": {
-        "summary": "Get effective template for a category",
+        "summary": "Get Product Template by Category",
         "deprecated": false,
         "description": "Returns the active system default for this category.\nReturns 404 if no template is configured for this category.",
         "tags": [
-          "ProductTemplateController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -1335,7 +1007,7 @@
             }
           }
         },
-        "operationId": "getForCategory",
+        "operationId": "get__v2_product_templates_by_category__categoryId_",
         "parameters": [
           {
             "schema": {
@@ -1367,7 +1039,7 @@
         "deprecated": false,
         "description": "This API creates a new promotional ad.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "requestBody": {
           "content": {
@@ -1402,7 +1074,7 @@
             }
           }
         },
-        "operationId": "createAd",
+        "operationId": "post__v1_promo_ads",
         "parameters": [
           {
             "schema": {
@@ -1816,7 +1488,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of promotional ads filtered by status and paginated using a cursor.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "responses": {
           "200": {
@@ -1836,7 +1508,7 @@
             }
           }
         },
-        "operationId": "getAllAds",
+        "operationId": "get__v1_promo_ads",
         "parameters": [
           {
             "schema": {
@@ -2283,7 +1955,7 @@
         "deprecated": false,
         "description": "This API updates a specific promotional ad by its ID.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "requestBody": {
           "content": {
@@ -2318,7 +1990,7 @@
             }
           }
         },
-        "operationId": "updateAd",
+        "operationId": "patch__v1_promo_ads__id_",
         "parameters": [
           {
             "schema": {
@@ -2742,7 +2414,7 @@
         "deprecated": false,
         "description": "This API retrieves a specific promotional ad by its ID.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "responses": {
           "200": {
@@ -2762,7 +2434,7 @@
             }
           }
         },
-        "operationId": "getAdById",
+        "operationId": "get__v1_promo_ads__id_",
         "parameters": [
           {
             "schema": {
@@ -2792,7 +2464,7 @@
         "deprecated": false,
         "description": "This API deletes a specific promotional ad.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "responses": {
           "200": {
@@ -2812,7 +2484,7 @@
             }
           }
         },
-        "operationId": "deleteAd",
+        "operationId": "delete__v1_promo_ads__id_",
         "parameters": [
           {
             "schema": {
@@ -3238,7 +2910,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of published promotional ads.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "responses": {
           "200": {
@@ -3258,7 +2930,7 @@
             }
           }
         },
-        "operationId": "getAllPublishedAds",
+        "operationId": "get__v1_promo_ads_published",
         "parameters": [
           {
             "schema": {
@@ -3291,7 +2963,7 @@
         "deprecated": false,
         "description": "This API updates the status of a specific promotional ad.",
         "tags": [
-          "PromoAdController"
+          "PROMOTION_ADS"
         ],
         "requestBody": {
           "content": {
@@ -3326,7 +2998,7 @@
             }
           }
         },
-        "operationId": "changeAdsStatus",
+        "operationId": "patch__v1_promo_ads_update__id__status__status_",
         "parameters": [
           {
             "schema": {
@@ -3368,7 +3040,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of orders for the authenticated customer. The response includes orders in PUBLISHED status.",
         "tags": [
-          "CustomerOrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -3388,7 +3060,7 @@
             }
           }
         },
-        "operationId": "getCustomerOrders",
+        "operationId": "get__v1_customer_orders",
         "parameters": [
           {
             "schema": {
@@ -3566,7 +3238,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of orders for a specific customer. Shop owner access is required.",
         "tags": [
-          "CustomerOrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -3586,7 +3258,7 @@
             }
           }
         },
-        "operationId": "fetchCustomerOrders",
+        "operationId": "get__v1_customer_orders__customerId_",
         "parameters": [
           {
             "schema": {
@@ -4168,7 +3840,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of items in a specific order for the customer.",
         "tags": [
-          "CustomerOrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -4188,7 +3860,7 @@
             }
           }
         },
-        "operationId": "getOrderItems",
+        "operationId": "get__v1_customer_orders__orderId__items",
         "parameters": [
           {
             "schema": {
@@ -4220,7 +3892,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of items in the cart for the authenticated customer or the current guest session.",
         "tags": [
-          "CartController"
+          "CART"
         ],
         "responses": {
           "200": {
@@ -4240,7 +3912,7 @@
             }
           }
         },
-        "operationId": "listItemsInCart",
+        "operationId": "get__v1_carts_items",
         "parameters": [
           {
             "schema": {
@@ -4284,7 +3956,7 @@
         "deprecated": false,
         "description": "This API adds a product item to the cart, optionally specifying a product variation and variant price.",
         "tags": [
-          "CartController"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -4319,7 +3991,7 @@
             }
           }
         },
-        "operationId": "addItemToCart",
+        "operationId": "post__v1_carts_add",
         "parameters": [
           {
             "schema": {
@@ -4363,7 +4035,7 @@
         "deprecated": false,
         "description": "This API removes an item from the cart using its unique identifier.",
         "tags": [
-          "CartController"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -4396,7 +4068,7 @@
             }
           }
         },
-        "operationId": "removeItemFromCart",
+        "operationId": "patch__v1_carts_remove__carItemId_",
         "parameters": [
           {
             "schema": {
@@ -4450,7 +4122,7 @@
         "deprecated": false,
         "description": "This API increments the quantity of a specific cart item by 1.",
         "tags": [
-          "CartController"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -4483,7 +4155,7 @@
             }
           }
         },
-        "operationId": "incrementItemQuantity",
+        "operationId": "patch__v1_carts_item_increment_quantity__cartId_",
         "parameters": [
           {
             "schema": {
@@ -4537,7 +4209,7 @@
         "deprecated": false,
         "description": "This API decrements the quantity of a specific cart item by 1.",
         "tags": [
-          "CartController"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -4570,7 +4242,7 @@
             }
           }
         },
-        "operationId": "decrementItemQuantity",
+        "operationId": "patch__v1_carts_item_decrement_quantity__cartId_",
         "parameters": [
           {
             "schema": {
@@ -4624,7 +4296,7 @@
         "deprecated": false,
         "description": "This API removes all items currently in the cart.",
         "tags": [
-          "CartController"
+          "CART"
         ],
         "responses": {
           "200": {
@@ -4644,7 +4316,7 @@
             }
           }
         },
-        "operationId": "clearCart",
+        "operationId": "delete__v1_carts_clear",
         "parameters": [
           {
             "schema": {
@@ -4688,7 +4360,7 @@
         "deprecated": false,
         "description": "This API updates the variation of an authenticated merchant's product.",
         "tags": [
-          "ProductVariationController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -4723,7 +4395,7 @@
             }
           }
         },
-        "operationId": "updateProductVariation",
+        "operationId": "patch__v1_products_variation__variationId_",
         "parameters": [
           {
             "schema": {
@@ -5149,7 +4821,7 @@
         "deprecated": false,
         "description": "This API adds a variation to an authenticated merchant's product.",
         "tags": [
-          "ProductVariationController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -5184,7 +4856,7 @@
             }
           }
         },
-        "operationId": "addProductVariation",
+        "operationId": "post__v1_products_variation_add",
         "parameters": [
           {
             "schema": {
@@ -5600,7 +5272,7 @@
         "deprecated": false,
         "description": "Retrieves all global, system-wide product categories with optional filtering.",
         "tags": [
-          "CategoryController"
+          "PRODUCT_CATEGORY"
         ],
         "responses": {
           "200": {
@@ -5620,7 +5292,7 @@
             }
           }
         },
-        "operationId": "getAllCategories",
+        "operationId": "get__v1_categories",
         "parameters": [
           {
             "schema": {
@@ -5694,7 +5366,7 @@
         "deprecated": false,
         "description": "Retrieves the child categories directly under a specific parent category.",
         "tags": [
-          "CategoryController"
+          "PRODUCT_CATEGORY"
         ],
         "responses": {
           "200": {
@@ -5714,7 +5386,7 @@
             }
           }
         },
-        "operationId": "getChildren",
+        "operationId": "get__v1_categories__categoryId__children",
         "parameters": [
           {
             "schema": {
@@ -5746,7 +5418,7 @@
         "deprecated": false,
         "description": "Applies a promo code to calculate discounted price.",
         "tags": [
-          "PromotionController"
+          "PROMOTION_CODE"
         ],
         "requestBody": {
           "content": {
@@ -5781,7 +5453,7 @@
             }
           }
         },
-        "operationId": "applyPromoCode",
+        "operationId": "post__v1_promotions_apply_promo_code",
         "parameters": [
           {
             "schema": {
@@ -5803,7 +5475,7 @@
         "deprecated": false,
         "description": "Creates a new promotion for the merchant store.",
         "tags": [
-          "PromotionController"
+          "PROMOTION_CODE"
         ],
         "requestBody": {
           "content": {
@@ -5838,7 +5510,7 @@
             }
           }
         },
-        "operationId": "createPromotion",
+        "operationId": "post__v1_promotions",
         "parameters": [
           {
             "schema": {
@@ -6252,7 +5924,7 @@
         "deprecated": false,
         "description": "Retrieves all promotions configured for the current merchant store.",
         "tags": [
-          "PromotionController"
+          "PROMOTION_CODE"
         ],
         "responses": {
           "200": {
@@ -6272,7 +5944,7 @@
             }
           }
         },
-        "operationId": "getAllPromotions",
+        "operationId": "get__v1_promotions",
         "parameters": [
           {
             "schema": {
@@ -6768,7 +6440,7 @@
         "deprecated": false,
         "description": "Updates an existing promotion configuration by its ID.",
         "tags": [
-          "PromotionController"
+          "PROMOTION_CODE"
         ],
         "requestBody": {
           "content": {
@@ -6803,7 +6475,7 @@
             }
           }
         },
-        "operationId": "updatePromotion",
+        "operationId": "patch__v1_promotions__promotionId_",
         "parameters": [
           {
             "schema": {
@@ -7223,11 +6895,11 @@
         ]
       },
       "get": {
-        "summary": "Show Promotion",
+        "summary": "Get Promotion",
         "deprecated": false,
         "description": "Retrieves details of a specific promotion by its ID.",
         "tags": [
-          "PromotionController"
+          "PROMOTION_CODE"
         ],
         "responses": {
           "200": {
@@ -7247,7 +6919,7 @@
             }
           }
         },
-        "operationId": "getPromotion",
+        "operationId": "get__v1_promotions__promotionId_",
         "parameters": [
           {
             "schema": {
@@ -7671,7 +7343,7 @@
         "deprecated": false,
         "description": "Deletes a promotion configuration by its ID.",
         "tags": [
-          "PromotionController"
+          "PROMOTION_CODE"
         ],
         "responses": {
           "200": {
@@ -7691,7 +7363,7 @@
             }
           }
         },
-        "operationId": "deletePromotion",
+        "operationId": "delete__v1_promotions__promotionId_",
         "parameters": [
           {
             "schema": {
@@ -8117,7 +7789,7 @@
         "deprecated": false,
         "description": "Retrieves all product reviews in the merchant's store with optional filtering. Shop owners use this to monitor customer feedback, identify problematic reviews, and manage reputation.",
         "tags": [
-          "ReviewController"
+          "PRODUCT_REVIEW"
         ],
         "responses": {
           "200": {
@@ -8137,7 +7809,7 @@
             }
           }
         },
-        "operationId": "index",
+        "operationId": "get__v1_reviews",
         "parameters": [
           {
             "schema": {
@@ -8615,7 +8287,7 @@
         "deprecated": false,
         "description": "Retrieves all reviews for a specific product. Reviews are filtered by status (active, hidden, or pending) to display only appropriate reviews on product detail pages.",
         "tags": [
-          "ReviewController"
+          "PRODUCT_REVIEW"
         ],
         "responses": {
           "200": {
@@ -8635,7 +8307,7 @@
             }
           }
         },
-        "operationId": "findProductReviews",
+        "operationId": "get__v1_reviews_product__productId_",
         "parameters": [
           {
             "schema": {
@@ -8678,7 +8350,7 @@
         "deprecated": false,
         "description": "Submits a new product review from a customer. Reviews include rating, comment, and reviewer name. System validates one review per customer per product and performs moderation checks.",
         "tags": [
-          "ReviewController"
+          "PRODUCT_REVIEW"
         ],
         "requestBody": {
           "content": {
@@ -8713,7 +8385,7 @@
             }
           }
         },
-        "operationId": "createReview",
+        "operationId": "post__v1_reviews_add",
         "parameters": [
           {
             "schema": {
@@ -8735,7 +8407,7 @@
         "deprecated": false,
         "description": "Permanently deletes a product review. Removed review no longer appears on product pages or in review listings. Deletion is irreversible (deleted review cannot be recovered).",
         "tags": [
-          "ReviewController"
+          "PRODUCT_REVIEW"
         ],
         "responses": {
           "200": {
@@ -8755,7 +8427,7 @@
             }
           }
         },
-        "operationId": "deleteReview",
+        "operationId": "delete__v1_reviews__reviewId_",
         "parameters": [
           {
             "schema": {
@@ -9181,7 +8853,7 @@
         "deprecated": false,
         "description": "Hides a review from public display temporarily. Hidden reviews no longer appear on product pages but remain in system for audit purposes. Reviews can be unhidden if needed (soft deletion).",
         "tags": [
-          "ReviewController"
+          "PRODUCT_REVIEW"
         ],
         "requestBody": {
           "content": {
@@ -9216,7 +8888,7 @@
             }
           }
         },
-        "operationId": "hideReview",
+        "operationId": "patch__v1_reviews_hide__reviewId_",
         "parameters": [
           {
             "schema": {
@@ -9244,11 +8916,11 @@
     },
     "/v1/auth/passwordless/initiate": {
       "post": {
-        "summary": "Initiate Password-less Authentication.",
+        "summary": "Initiate Passwordless Authentication",
         "deprecated": false,
         "description": "This API initiates password-less authentication.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9283,17 +8955,17 @@
             }
           }
         },
-        "operationId": "initiate",
+        "operationId": "post__v1_auth_passwordless_initiate",
         "parameters": []
       }
     },
     "/v1/auth/passwordless/initiate/email": {
       "post": {
-        "summary": "Initiate Password-less email Authentication.",
+        "summary": "Initiate Passwordless Email Authentication",
         "deprecated": false,
         "description": "This API initiates password-less authentication via user email address.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9328,17 +9000,17 @@
             }
           }
         },
-        "operationId": "initiate_1",
+        "operationId": "post__v1_auth_passwordless_initiate_email",
         "parameters": []
       }
     },
     "/v1/auth/passwordless/initiate/phone": {
       "post": {
-        "summary": "Initiate Password-less Phone number Authentication .",
+        "summary": "Initiate Passwordless Phone Authentication",
         "deprecated": false,
         "description": "This API initiates password-less authentication for phone number via whatsapp.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9373,17 +9045,17 @@
             }
           }
         },
-        "operationId": "initiate_2",
+        "operationId": "post__v1_auth_passwordless_initiate_phone",
         "parameters": []
       }
     },
     "/v1/auth/passwordless/merchant/verify-email": {
       "post": {
-        "summary": "Verify Merchant Email.",
+        "summary": "Verify Merchant Passwordless Email",
         "deprecated": false,
         "description": "This API verifies merchant email.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9418,17 +9090,17 @@
             }
           }
         },
-        "operationId": "verifyMerchantEmail",
+        "operationId": "post__v1_auth_passwordless_merchant_verify_email",
         "parameters": []
       }
     },
     "/v1/auth/passwordless/merchant/verify-phone": {
       "post": {
-        "summary": "Verify Merchant Phone.",
+        "summary": "Verify Merchant Passwordless Phone",
         "deprecated": false,
         "description": "This API verifies merchant phone.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9463,17 +9135,17 @@
             }
           }
         },
-        "operationId": "verifyMerchantPhone",
+        "operationId": "post__v1_auth_passwordless_merchant_verify_phone",
         "parameters": []
       }
     },
     "/v1/auth/passwordless/customer/verify-email": {
       "post": {
-        "summary": "Verify Customer Email.",
+        "summary": "Verify Customer Passwordless Email",
         "deprecated": false,
         "description": "This API verifies customer email.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9508,7 +9180,7 @@
             }
           }
         },
-        "operationId": "verifyCustomerEmail",
+        "operationId": "post__v1_auth_passwordless_customer_verify_email",
         "parameters": [
           {
             "schema": {
@@ -9526,11 +9198,11 @@
     },
     "/v1/auth/passwordless/customer/verify-phone": {
       "post": {
-        "summary": "Verify Customer Phone.",
+        "summary": "Verify Customer Passwordless Phone",
         "deprecated": false,
         "description": "This API verifies customer phone.",
         "tags": [
-          "PasswordlessAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -9565,7 +9237,7 @@
             }
           }
         },
-        "operationId": "verifyCustomerPhone",
+        "operationId": "post__v1_auth_passwordless_customer_verify_phone",
         "parameters": [
           {
             "schema": {
@@ -9587,7 +9259,7 @@
         "deprecated": false,
         "description": "Retrieves a paginated list of customers for a shop owner with advanced pagination support using cursor-based navigation. Supports filtering by search term, registration date range, account status, and account type.",
         "tags": [
-          "CustomerController"
+          "CUSTOMER"
         ],
         "responses": {
           "200": {
@@ -9607,7 +9279,7 @@
             }
           }
         },
-        "operationId": "getAllCustomers",
+        "operationId": "get__v1_customers",
         "parameters": [
           {
             "schema": {
@@ -10133,11 +9805,11 @@
     },
     "/v1/customers/profile": {
       "get": {
-        "summary": "Get Authenticated Customer Profile",
+        "summary": "Get Customer Profile",
         "deprecated": false,
         "description": "Retrieves the complete profile information of the authenticated customer, including personal details, account status, preferences, and account type.",
         "tags": [
-          "CustomerController"
+          "CUSTOMER"
         ],
         "responses": {
           "200": {
@@ -10157,7 +9829,7 @@
             }
           }
         },
-        "operationId": "getUserProfile_1",
+        "operationId": "get__v1_customers_profile",
         "parameters": [
           {
             "schema": {
@@ -10179,7 +9851,7 @@
         "deprecated": false,
         "description": "Retrieves detailed information for a specific customer by ID. Only shop owners can access other customers' data. Returns all customer details for merchant relationship and account management purposes.",
         "tags": [
-          "CustomerController"
+          "CUSTOMER"
         ],
         "responses": {
           "200": {
@@ -10199,7 +9871,7 @@
             }
           }
         },
-        "operationId": "fetchCustomer",
+        "operationId": "get__v1_customers__customerId_",
         "parameters": [
           {
             "schema": {
@@ -10625,7 +10297,7 @@
         "deprecated": false,
         "description": "Updates the authenticated customer's profile information. Customer can modify personal details, contact information, preferences, and other account settings.",
         "tags": [
-          "CustomerController"
+          "CUSTOMER"
         ],
         "requestBody": {
           "content": {
@@ -10660,7 +10332,7 @@
             }
           }
         },
-        "operationId": "updateCustomerProfile",
+        "operationId": "patch__v1_customers_profile_update",
         "parameters": [
           {
             "schema": {
@@ -10682,7 +10354,7 @@
         "deprecated": false,
         "description": "Retrieves a paginated list of customers (registered + guest) by joining the customers collection with their orders. Aggregates counts and total spending.",
         "tags": [
-          "CustomerController"
+          "CUSTOMER"
         ],
         "responses": {
           "200": {
@@ -10702,7 +10374,7 @@
             }
           }
         },
-        "operationId": "getOrderBasedCustomers",
+        "operationId": "get__v1_customers_order_based",
         "parameters": [
           {
             "schema": {
@@ -11213,7 +10885,7 @@
         "deprecated": false,
         "description": "This API verifies a merchant's email address using a token sent to their email. It validates the token, marks the email as verified,",
         "tags": [
-          "EmailVerificationController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -11248,7 +10920,7 @@
             }
           }
         },
-        "operationId": "verifyEmail",
+        "operationId": "post__v1_auth_email_merchant_verify",
         "parameters": []
       }
     },
@@ -11258,7 +10930,7 @@
         "deprecated": false,
         "description": "This API initiates the email verification process for a merchant by generating a verification token and sending it to the provided email address.",
         "tags": [
-          "EmailVerificationController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -11293,17 +10965,17 @@
             }
           }
         },
-        "operationId": "initiateEmailVerification",
+        "operationId": "post__v1_auth_email_merchant_initiate_verification",
         "parameters": []
       }
     },
     "/v1/auth/customer/signup": {
       "post": {
-        "summary": "Register Customer.",
+        "summary": "Register Customer",
         "deprecated": false,
         "description": "This API registers a new customer.",
         "tags": [
-          "CustomerAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -11338,7 +11010,7 @@
             }
           }
         },
-        "operationId": "registerCustomer_1",
+        "operationId": "post__v1_auth_customer_signup",
         "parameters": [
           {
             "schema": {
@@ -11356,11 +11028,11 @@
     },
     "/v1/auth/customer/refresh-token": {
       "post": {
-        "summary": "Login Customer",
+        "summary": "Refresh Customer Token",
         "deprecated": false,
         "description": "This API authenticates a customer using email and password credentials. Upon successful authentication, generates a JWT token\nfor API access and returns the customer's profile information. Also publishes a customer login event for tracking and analytics.",
         "tags": [
-          "CustomerAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -11395,7 +11067,7 @@
             }
           }
         },
-        "operationId": "refreshToken",
+        "operationId": "post__v1_auth_customer_refresh_token",
         "parameters": [
           {
             "schema": {
@@ -11417,7 +11089,7 @@
         "deprecated": false,
         "description": "Manually generates or retries waybill creation for an order shipment.",
         "tags": [
-          "OrderLogisticController"
+          "ORDER"
         ],
         "requestBody": {
           "content": {
@@ -11452,7 +11124,7 @@
             }
           }
         },
-        "operationId": "generateWaybill",
+        "operationId": "post__v1_orders__orderId__logistics_waybill",
         "parameters": [
           {
             "schema": {
@@ -11484,7 +11156,7 @@
         "deprecated": false,
         "description": "Returns tracking information for the selected logistics provider on an order.",
         "tags": [
-          "OrderLogisticController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -11504,7 +11176,7 @@
             }
           }
         },
-        "operationId": "trackOrder",
+        "operationId": "get__v1_orders__orderId__logistics_tracking",
         "parameters": [
           {
             "schema": {
@@ -11536,7 +11208,7 @@
         "deprecated": false,
         "description": "Uploads a single image to Cloudinary and persists a File record. Returns the file {@code id} which must be used when creating products.",
         "tags": [
-          "FileController"
+          "MEDIA_MANAGEMENT"
         ],
         "requestBody": {
           "content": {
@@ -11581,7 +11253,7 @@
             }
           }
         },
-        "operationId": "uploadSingleImage",
+        "operationId": "post__v1_files_upload_single_image",
         "parameters": [
           {
             "schema": {
@@ -11603,7 +11275,7 @@
         "deprecated": false,
         "description": "Uploads multiple images to Cloudinary and persists File records for each. Returns a list of file objects — use each {@code id} when creating products.",
         "tags": [
-          "FileController"
+          "MEDIA_MANAGEMENT"
         ],
         "requestBody": {
           "content": {
@@ -11648,7 +11320,7 @@
             }
           }
         },
-        "operationId": "uploadMultipleImages",
+        "operationId": "post__v1_files_upload_multiple_images",
         "parameters": [
           {
             "schema": {
@@ -11670,7 +11342,7 @@
         "deprecated": false,
         "description": "Uploads a single file using type-specific validation rules. Currently supports image uploads up to 1MB and PDF uploads up to 3MB. Returns the file {@code id} and URL so downstream APIs can store both values.",
         "tags": [
-          "FileController"
+          "MEDIA_MANAGEMENT"
         ],
         "requestBody": {
           "content": {
@@ -11715,7 +11387,7 @@
             }
           }
         },
-        "operationId": "uploadFile",
+        "operationId": "post__v1_files_upload",
         "parameters": [
           {
             "schema": {
@@ -11747,7 +11419,7 @@
         "deprecated": false,
         "description": "Generates a Paystack payment link with automatic split settlement.",
         "tags": [
-          "PaymentLinkController"
+          "PAYMENT"
         ],
         "requestBody": {
           "content": {
@@ -11782,7 +11454,7 @@
             }
           }
         },
-        "operationId": "generatePaymentLink",
+        "operationId": "post__v1_payment_links",
         "parameters": [
           {
             "schema": {
@@ -12198,7 +11870,7 @@
         "deprecated": false,
         "description": "Returns the latest saved payment link for an order so the merchant can copy or reshare it.",
         "tags": [
-          "PaymentLinkController"
+          "PAYMENT"
         ],
         "responses": {
           "200": {
@@ -12218,7 +11890,7 @@
             }
           }
         },
-        "operationId": "getLatestPaymentLinkForOrder",
+        "operationId": "get__v1_payment_links_orders__orderId__latest",
         "parameters": [
           {
             "schema": {
@@ -12644,7 +12316,7 @@
         "deprecated": false,
         "description": "Retrieves a paginated list of payments for a tenant with cursor-based navigation.",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "responses": {
           "200": {
@@ -12664,7 +12336,7 @@
             }
           }
         },
-        "operationId": "getAllPayments",
+        "operationId": "get__v1_payments",
         "parameters": [
           {
             "schema": {
@@ -13202,7 +12874,7 @@
         "deprecated": false,
         "description": "Retrieves the payment details associated with a specific order.",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "responses": {
           "200": {
@@ -13222,7 +12894,7 @@
             }
           }
         },
-        "operationId": "getPaymentByOrderId",
+        "operationId": "get__v1_payments_order__orderId_",
         "parameters": [
           {
             "schema": {
@@ -13648,7 +13320,7 @@
         "deprecated": false,
         "description": "Initializes a payment transaction for an authenticated customer's order.",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "requestBody": {
           "content": {
@@ -13683,7 +13355,7 @@
             }
           }
         },
-        "operationId": "initializePayment",
+        "operationId": "post__v1_payments_initialize",
         "parameters": [
           {
             "schema": {
@@ -13705,7 +13377,7 @@
         "deprecated": false,
         "description": "Initializes a payment transaction for a guest (unauthenticated) customer's order.",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "requestBody": {
           "content": {
@@ -13740,7 +13412,7 @@
             }
           }
         },
-        "operationId": "initializeGuestPayment",
+        "operationId": "post__v1_payments_guest_initialize",
         "parameters": [
           {
             "schema": {
@@ -13762,7 +13434,7 @@
         "deprecated": false,
         "description": "Verifies payment completion with the external payment gateway using the payment reference.",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "requestBody": {
           "content": {
@@ -13797,7 +13469,7 @@
             }
           }
         },
-        "operationId": "verifyPayment",
+        "operationId": "post__v1_payments_confirm",
         "parameters": [
           {
             "schema": {
@@ -13830,7 +13502,7 @@
         "deprecated": false,
         "description": "Updates the payment status for a specific payment record manually (offline/manual payment).",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "requestBody": {
           "content": {
@@ -13865,7 +13537,7 @@
             }
           }
         },
-        "operationId": "updatePaymentStatus",
+        "operationId": "patch__v1_payments__paymentId__status",
         "parameters": [
           {
             "schema": {
@@ -14291,7 +13963,7 @@
         "deprecated": false,
         "description": "Returns an array of all possible payment statuses defined in the system.",
         "tags": [
-          "PaymentController"
+          "PAYMENT"
         ],
         "responses": {
           "200": {
@@ -14311,7 +13983,7 @@
             }
           }
         },
-        "operationId": "getPaymentStatuses",
+        "operationId": "get__v1_payments_statuses",
         "parameters": [
           {
             "schema": {
@@ -14333,7 +14005,7 @@
         "deprecated": false,
         "description": "Registers a new shop owner (merchant) account with store details. This endpoint handles the complete\nmerchant registration workflow including email verification token generation and merchant creation event publishing.",
         "tags": [
-          "AuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14368,7 +14040,7 @@
             }
           }
         },
-        "operationId": "registerShopOwner",
+        "operationId": "post__v1_auth_signup_merchant",
         "parameters": [
           {
             "schema": {
@@ -14386,11 +14058,11 @@
     },
     "/v1/auth/login": {
       "post": {
-        "summary": "Login User (Shop Owner/Merchant)",
+        "summary": "Login Merchant",
         "deprecated": false,
         "description": "This endpoint:\n- Uses email and password for credential validation\n- Generates a JWT token with user identity and roles embedded\n- Token is valid for the configured expiration duration (typically 24 hours or per configuration)\n- X-Session-Id header is optional and used for tracking login events\n- Skips tenant context validation as login is tenant-independent\n- Returned token must be included in Authorization header for subsequent API calls\n- Password hashing verification is performed server-side for security",
         "tags": [
-          "AuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14425,7 +14097,7 @@
             }
           }
         },
-        "operationId": "login_1",
+        "operationId": "post__v1_auth_login",
         "parameters": [
           {
             "schema": {
@@ -14458,7 +14130,7 @@
         "deprecated": false,
         "description": "Authenticates a customer user using email and password credentials. Upon successful authentication, generates a JWT token\nfor API access and returns the customer's profile information. Also publishes a customer login event for tracking and analytics.",
         "tags": [
-          "AuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14493,7 +14165,7 @@
             }
           }
         },
-        "operationId": "loginAsCustomer",
+        "operationId": "post__v1_auth_login_customer",
         "parameters": [
           {
             "schema": {
@@ -14522,11 +14194,11 @@
     },
     "/v1/auth/refresh-token": {
       "post": {
-        "summary": "Refresh Token",
+        "summary": "Refresh Merchant Token",
         "deprecated": false,
         "description": "Generates a new access token using a refresh token. Validates the provided refresh token, checks its expiration, and if valid,",
         "tags": [
-          "AuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14561,7 +14233,7 @@
             }
           }
         },
-        "operationId": "refreshToken_1",
+        "operationId": "post__v1_auth_refresh_token",
         "parameters": [
           {
             "schema": {
@@ -14579,11 +14251,11 @@
     },
     "/v1/auth/logout": {
       "post": {
-        "summary": "logout",
+        "summary": "Logout",
         "deprecated": false,
         "description": "",
         "tags": [
-          "AuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14618,7 +14290,7 @@
             }
           }
         },
-        "operationId": "logout",
+        "operationId": "post__v1_auth_logout",
         "parameters": [
           {
             "schema": {
@@ -14636,11 +14308,11 @@
     },
     "/v1/auth/phone/initiate": {
       "post": {
-        "summary": "Initiate OTP",
+        "summary": "Initiate Merchant WhatsApp OTP",
         "deprecated": false,
         "description": "A One Time Password is sent to user whatsapp number to verify their identity",
         "tags": [
-          "WhatsAppAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14675,17 +14347,17 @@
             }
           }
         },
-        "operationId": "initiateOTP",
+        "operationId": "post__v1_auth_phone_initiate",
         "parameters": []
       }
     },
     "/v1/auth/phone/verify": {
       "post": {
-        "summary": "Verify OTP",
+        "summary": "Verify Merchant WhatsApp OTP",
         "deprecated": false,
         "description": "The OTP sent to the user's WhatsApp number is validated. If valid, the user is authenticated and a JWT token is generated for API access. If the phone number is new, it will be marked as verified. The response includes the authentication token and user details upon successful verification, or an error message if verification fails.",
         "tags": [
-          "WhatsAppAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -14720,17 +14392,17 @@
             }
           }
         },
-        "operationId": "verifyOTP",
+        "operationId": "post__v1_auth_phone_verify",
         "parameters": []
       }
     },
     "/v2/products/{productId}/variant-groups": {
       "post": {
-        "summary": "addVariantGroup",
+        "summary": "Add Product Variant Group",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariantGroupController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -14765,7 +14437,7 @@
             }
           }
         },
-        "operationId": "addVariantGroup",
+        "operationId": "post__v2_products__productId__variant_groups",
         "parameters": [
           {
             "schema": {
@@ -15187,11 +14859,11 @@
     },
     "/v2/products/{productId}/variant-groups/{groupId}": {
       "patch": {
-        "summary": "updateVariantGroup",
+        "summary": "Update Product Variant Group",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariantGroupController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -15226,7 +14898,7 @@
             }
           }
         },
-        "operationId": "updateVariantGroup",
+        "operationId": "patch__v2_products__productId__variant_groups__groupId_",
         "parameters": [
           {
             "schema": {
@@ -15656,11 +15328,11 @@
         ]
       },
       "delete": {
-        "summary": "removeVariantGroup",
+        "summary": "Remove Product Variant Group",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariantGroupController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -15680,7 +15352,7 @@
             }
           }
         },
-        "operationId": "removeVariantGroup",
+        "operationId": "delete__v2_products__productId__variant_groups__groupId_",
         "parameters": [
           {
             "schema": {
@@ -16112,11 +15784,11 @@
     },
     "/v2/products/{productId}/variant-groups/{groupId}/skus": {
       "post": {
-        "summary": "addSku",
+        "summary": "Add SKU to Product Variant Group",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariantGroupController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -16151,7 +15823,7 @@
             }
           }
         },
-        "operationId": "addSku",
+        "operationId": "post__v2_products__productId__variant_groups__groupId__skus",
         "parameters": [
           {
             "schema": {
@@ -16583,11 +16255,11 @@
     },
     "/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}": {
       "patch": {
-        "summary": "updateSku",
+        "summary": "Update Product SKU",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariantGroupController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -16622,7 +16294,7 @@
             }
           }
         },
-        "operationId": "updateSku",
+        "operationId": "patch__v2_products__productId__variant_groups__groupId__skus__skuId_",
         "parameters": [
           {
             "schema": {
@@ -17062,11 +16734,11 @@
         ]
       },
       "delete": {
-        "summary": "removeSku",
+        "summary": "Remove Product SKU",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductVariantGroupController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -17086,7 +16758,7 @@
             }
           }
         },
-        "operationId": "removeSku",
+        "operationId": "delete__v2_products__productId__variant_groups__groupId__skus__skuId_",
         "parameters": [
           {
             "schema": {
@@ -17528,11 +17200,11 @@
     },
     "/v2/products/skus/generate": {
       "post": {
-        "summary": "Generate SKU",
+        "summary": "Generate Product SKU",
         "deprecated": false,
         "description": "Generates a deterministic, readable SKU from product properties and reports whether it is available for the current tenant.",
         "tags": [
-          "ProductSkuController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -17567,7 +17239,7 @@
             }
           }
         },
-        "operationId": "generate",
+        "operationId": "post__v2_products_skus_generate",
         "parameters": [
           {
             "schema": {
@@ -17979,11 +17651,11 @@
     },
     "/v2/products/skus/validate": {
       "get": {
-        "summary": "Validate SKU",
+        "summary": "Validate Product SKU",
         "deprecated": false,
         "description": "Checks whether a SKU code is available for the current tenant. Exclude parameters allow editing an existing product or SKU without self-conflict.",
         "tags": [
-          "ProductSkuController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -18003,7 +17675,7 @@
             }
           }
         },
-        "operationId": "validate",
+        "operationId": "get__v2_products_skus_validate",
         "parameters": [
           {
             "schema": {
@@ -18429,7 +18101,7 @@
         "deprecated": false,
         "description": "This API creates a new delivery zone.",
         "tags": [
-          "DeliveryZoneController"
+          "DELIVERY_ZONE"
         ],
         "requestBody": {
           "content": {
@@ -18464,7 +18136,7 @@
             }
           }
         },
-        "operationId": "createZone",
+        "operationId": "post__v1_delivery_zones",
         "parameters": [
           {
             "schema": {
@@ -18878,7 +18550,7 @@
         "deprecated": false,
         "description": "This API returns all delivery zones.",
         "tags": [
-          "DeliveryZoneController"
+          "DELIVERY_ZONE"
         ],
         "responses": {
           "200": {
@@ -18898,7 +18570,7 @@
             }
           }
         },
-        "operationId": "getZones",
+        "operationId": "get__v1_delivery_zones",
         "parameters": [
           {
             "schema": {
@@ -19314,7 +18986,7 @@
         "deprecated": false,
         "description": "This API deletes an existing delivery zone.",
         "tags": [
-          "DeliveryZoneController"
+          "DELIVERY_ZONE"
         ],
         "responses": {
           "200": {
@@ -19334,7 +19006,7 @@
             }
           }
         },
-        "operationId": "deleteZone",
+        "operationId": "delete__v1_delivery_zones__id_",
         "parameters": [
           {
             "schema": {
@@ -19758,7 +19430,7 @@
         "deprecated": false,
         "description": "This API updates an existing delivery zone.",
         "tags": [
-          "DeliveryZoneController"
+          "DELIVERY_ZONE"
         ],
         "requestBody": {
           "content": {
@@ -19793,7 +19465,7 @@
             }
           }
         },
-        "operationId": "updateZone",
+        "operationId": "put__v1_delivery_zones__id_",
         "parameters": [
           {
             "schema": {
@@ -20215,11 +19887,11 @@
     },
     "/v2/products": {
       "post": {
-        "summary": "Get Product Details by productId",
+        "summary": "Create Product",
         "deprecated": false,
         "description": "Retrieves complete details of a single product including all attributes, specifications, pricing,\navailability, and related information.",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -20254,7 +19926,7 @@
             }
           }
         },
-        "operationId": "createProduct",
+        "operationId": "post__v2_products",
         "parameters": [
           {
             "schema": {
@@ -20664,11 +20336,11 @@
         ]
       },
       "get": {
-        "summary": "Get All Products (v2)",
+        "summary": "Get All Products",
         "deprecated": false,
         "description": "Fetch all products",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -20688,7 +20360,7 @@
             }
           }
         },
-        "operationId": "allProducts",
+        "operationId": "get__v2_products",
         "parameters": [
           {
             "schema": {
@@ -20855,11 +20527,11 @@
     },
     "/v2/products/slug/{slug}": {
       "get": {
-        "summary": "Get Product Details by slug",
+        "summary": "Get Product by Slug",
         "deprecated": false,
         "description": "Retrieves complete details of a single product including all attributes, specifications, pricing,\navailability, and related information.",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -20879,7 +20551,7 @@
             }
           }
         },
-        "operationId": "findBySlug",
+        "operationId": "get__v2_products_slug__slug_",
         "parameters": [
           {
             "schema": {
@@ -20907,11 +20579,11 @@
     },
     "/v2/products/{productId}": {
       "patch": {
-        "summary": "updateProduct",
+        "summary": "Update Product",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -20946,7 +20618,7 @@
             }
           }
         },
-        "operationId": "updateProduct",
+        "operationId": "patch__v2_products__productId_",
         "parameters": [
           {
             "schema": {
@@ -21366,11 +21038,11 @@
         ]
       },
       "get": {
-        "summary": "Get Product Details by productId",
+        "summary": "Get Product Details",
         "deprecated": false,
         "description": "Retrieves complete details of a single product including all attributes, specifications, pricing,\navailability, and related information.",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -21390,7 +21062,7 @@
             }
           }
         },
-        "operationId": "showProduct",
+        "operationId": "get__v2_products__productId_",
         "parameters": [
           {
             "schema": {
@@ -21416,11 +21088,11 @@
         ]
       },
       "delete": {
-        "summary": "deleteProduct",
+        "summary": "Delete Product",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -21440,7 +21112,7 @@
             }
           }
         },
-        "operationId": "deleteProduct",
+        "operationId": "delete__v2_products__productId_",
         "parameters": [
           {
             "schema": {
@@ -21862,10 +21534,10 @@
     },
     "/v2/products/{productId}/archive": {
       "patch": {
-        "summary": "Archive Product (V2)",
+        "summary": "Archive Product",
         "deprecated": false,
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -21900,7 +21572,7 @@
             }
           }
         },
-        "operationId": "archiveProduct",
+        "operationId": "patch__v2_products__productId__archive",
         "parameters": [
           {
             "schema": {
@@ -21928,10 +21600,10 @@
     },
     "/v2/products/{productId}/unarchive": {
       "patch": {
-        "summary": "Unarchive Product (V2)",
+        "summary": "Unarchive Product",
         "deprecated": false,
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -21966,7 +21638,7 @@
             }
           }
         },
-        "operationId": "unarchiveProduct",
+        "operationId": "patch__v2_products__productId__unarchive",
         "parameters": [
           {
             "schema": {
@@ -21994,11 +21666,11 @@
     },
     "/v2/products/similar/by/category/{productId}": {
       "get": {
-        "summary": "getSimilarProducts",
+        "summary": "Get Similar Products",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -22018,7 +21690,7 @@
             }
           }
         },
-        "operationId": "getSimilarProducts",
+        "operationId": "get__v2_products_similar_by_category__productId_",
         "parameters": [
           {
             "schema": {
@@ -22057,11 +21729,11 @@
     },
     "/v2/products/top-selling": {
       "get": {
-        "summary": "getTopSelling",
+        "summary": "Get Top Selling Products",
         "deprecated": false,
         "description": "",
         "tags": [
-          "ProductV2Controller"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -22081,7 +21753,7 @@
             }
           }
         },
-        "operationId": "getTopSelling",
+        "operationId": "get__v2_products_top_selling",
         "parameters": [
           {
             "schema": {
@@ -22134,7 +21806,7 @@
         "deprecated": false,
         "description": "Creates a new warehouse for the merchant store.",
         "tags": [
-          "WarehouseController"
+          "WAREHOUSE"
         ],
         "requestBody": {
           "content": {
@@ -22169,7 +21841,7 @@
             }
           }
         },
-        "operationId": "create_2",
+        "operationId": "post__v1_warehouses",
         "parameters": [
           {
             "schema": {
@@ -22583,7 +22255,7 @@
         "deprecated": false,
         "description": "Retrieves all warehouses configured for the current merchant store.",
         "tags": [
-          "WarehouseController"
+          "WAREHOUSE"
         ],
         "responses": {
           "200": {
@@ -22603,7 +22275,7 @@
             }
           }
         },
-        "operationId": "list_1",
+        "operationId": "get__v1_warehouses",
         "parameters": [
           {
             "schema": {
@@ -23019,7 +22691,7 @@
         "deprecated": false,
         "description": "Updates an existing warehouse's details.",
         "tags": [
-          "WarehouseController"
+          "WAREHOUSE"
         ],
         "requestBody": {
           "content": {
@@ -23054,7 +22726,7 @@
             }
           }
         },
-        "operationId": "update_2",
+        "operationId": "patch__v1_warehouses__id_",
         "parameters": [
           {
             "schema": {
@@ -23480,7 +23152,7 @@
         "deprecated": false,
         "description": "Creates a new product in the merchant's store (tenant). Validates product details including brand, color,\nand category associations. Specifications are validated against tenant-specific configuration. Product is\nimmediately published upon creation unless status is set to INACTIVE.",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -23515,7 +23187,7 @@
             }
           }
         },
-        "operationId": "createProduct_1",
+        "operationId": "post__v1_products",
         "parameters": [
           {
             "schema": {
@@ -23929,7 +23601,7 @@
         "deprecated": false,
         "description": "Retrieves a paginated list of products with optional filtering and sorting. Supports filtering by search term,\ncategory, brand, color, price range, stock status, and customer rating. Results are returned in pages for efficient\ndata loading and display.",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -23949,7 +23621,7 @@
             }
           }
         },
-        "operationId": "allProduct",
+        "operationId": "get__v1_products",
         "parameters": [
           {
             "schema": {
@@ -24119,7 +23791,7 @@
         "summary": "Update Product",
         "deprecated": false,
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "requestBody": {
           "content": {
@@ -24154,7 +23826,7 @@
             }
           }
         },
-        "operationId": "updateProduct_1",
+        "operationId": "patch__v1_products__productId_",
         "parameters": [
           {
             "schema": {
@@ -24578,7 +24250,7 @@
         "deprecated": false,
         "description": "Retrieves complete details of a single product including all attributes, specifications, pricing,\navailability, and related information.",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -24598,7 +24270,7 @@
             }
           }
         },
-        "operationId": "showProduct_1",
+        "operationId": "get__v1_products__productId_",
         "parameters": [
           {
             "schema": {
@@ -24628,7 +24300,7 @@
         "deprecated": false,
         "description": "Permanently deletes a product from the merchant's store. Product details are removed from system but\nhistorical order records remain intact for audit purposes.",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -24648,7 +24320,7 @@
             }
           }
         },
-        "operationId": "deleteProduct_1",
+        "operationId": "delete__v1_products__productId_",
         "parameters": [
           {
             "schema": {
@@ -25070,11 +24742,11 @@
     },
     "/v1/products/slug/{slug}": {
       "get": {
-        "summary": "Get Product Details by slug",
+        "summary": "Get Product by Slug",
         "deprecated": false,
         "description": "Retrieves complete details of a single product including all attributes, specifications, pricing,\navailability, and related information.",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -25094,7 +24766,7 @@
             }
           }
         },
-        "operationId": "findBySlug_1",
+        "operationId": "get__v1_products_slug__slug_",
         "parameters": [
           {
             "schema": {
@@ -25126,7 +24798,7 @@
         "deprecated": false,
         "description": "Retrieves a list of products similar to a specified product, typically from the same category or with\nrelated attributes. Useful for \"You might also like\" or \"Related products\" sections in product detail pages.",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -25146,7 +24818,7 @@
             }
           }
         },
-        "operationId": "getSimilarProducts_1",
+        "operationId": "get__v1_products_similar_by_category__productId_",
         "parameters": [
           {
             "schema": {
@@ -25185,11 +24857,11 @@
     },
     "/v1/products/{productId}/rating": {
       "get": {
-        "summary": "Get Product Rating\n\nRetrieves the average customer rating for a product calculated from all customer reviews.\nRating provides social proof and helps customers make purchase decisions.",
+        "summary": "Get Product Rating",
         "deprecated": false,
         "description": "This endpoint:\n         - Public endpoint (no authentication required)\n         - Computes average rating from all published customer reviews\n         - Rating range is typically 1.0 to 5.0 stars\n         - Returns 0.0 if product has no reviews yet\n         - Used in product listings and detail pages to display customer sentiment\n         - Computation is cached or aggregated query for performance",
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -25209,7 +24881,7 @@
             }
           }
         },
-        "operationId": "getProductRating",
+        "operationId": "get__v1_products__productId__rating",
         "parameters": [
           {
             "schema": {
@@ -25237,10 +24909,10 @@
     },
     "/v1/products/top-selling": {
       "get": {
-        "summary": "Get Top Selling Products (Public)\n\nRetrieves a list of the most popular products based on total quantity sold.\nThis endpoint is public-facing and omits sensitive business metrics.",
+        "summary": "Get Top Selling Products",
         "deprecated": false,
         "tags": [
-          "ProductController"
+          "PRODUCT"
         ],
         "responses": {
           "200": {
@@ -25260,7 +24932,7 @@
             }
           }
         },
-        "operationId": "getTopSelling_1",
+        "operationId": "get__v1_products_top_selling",
         "parameters": [
           {
             "schema": {
@@ -25313,7 +24985,7 @@
         "deprecated": false,
         "description": "Create a new inventory record manually. This helps merchants add new products to their inventory.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "requestBody": {
           "content": {
@@ -25348,7 +25020,7 @@
             }
           }
         },
-        "operationId": "create_3",
+        "operationId": "post__v1_inventory",
         "parameters": [
           {
             "schema": {
@@ -25762,7 +25434,7 @@
         "deprecated": false,
         "description": "Retrieves a paginated list of inventory records for the authenticated tenant. Results are ordered by creation date descending and include full pagination metadata.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -25782,7 +25454,7 @@
             }
           }
         },
-        "operationId": "list_2",
+        "operationId": "get__v1_inventory",
         "parameters": [
           {
             "schema": {
@@ -26220,7 +25892,7 @@
         "deprecated": false,
         "description": "Get stock for a product across all warehouses.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -26240,7 +25912,7 @@
             }
           }
         },
-        "operationId": "byProduct",
+        "operationId": "get__v1_inventory_product__productId_",
         "parameters": [
           {
             "schema": {
@@ -26666,7 +26338,7 @@
         "deprecated": false,
         "description": "Get stock for a product across all warehouses for storefront users.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -26686,7 +26358,7 @@
             }
           }
         },
-        "operationId": "byProductStorefront",
+        "operationId": "get__v1_inventory_product__productId__storefront",
         "parameters": [
           {
             "schema": {
@@ -26718,7 +26390,7 @@
         "deprecated": false,
         "description": "Get stock for a specific SKU across all warehouses.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -26738,7 +26410,7 @@
             }
           }
         },
-        "operationId": "bySku",
+        "operationId": "get__v1_inventory_product__productId__sku__skuId_",
         "parameters": [
           {
             "schema": {
@@ -27174,7 +26846,7 @@
         "deprecated": false,
         "description": "Get stock for a specific SKU across all warehouses for storefront users.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -27194,7 +26866,7 @@
             }
           }
         },
-        "operationId": "bySkuStorefront",
+        "operationId": "get__v1_inventory_product__productId__sku__skuId__storefront",
         "parameters": [
           {
             "schema": {
@@ -27236,7 +26908,7 @@
         "deprecated": false,
         "description": "List items at or below their reorder level, indicating they need restocking. This helps merchants proactively manage inventory and avoid stockouts.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -27256,7 +26928,7 @@
             }
           }
         },
-        "operationId": "lowStock",
+        "operationId": "get__v1_inventory_low_stock",
         "parameters": [
           {
             "schema": {
@@ -27672,7 +27344,7 @@
         "deprecated": false,
         "description": "List inventory audit logs for the tenant. This helps merchants track changes and maintain accountability.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "responses": {
           "200": {
@@ -27692,7 +27364,7 @@
             }
           }
         },
-        "operationId": "logs",
+        "operationId": "get__v1_inventory_logs",
         "parameters": [
           {
             "schema": {
@@ -28130,7 +27802,7 @@
         "deprecated": false,
         "description": "Adjust the stock quantity for an existing inventory item. This helps merchants manage their inventory levels dynamically.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "requestBody": {
           "content": {
@@ -28165,7 +27837,7 @@
             }
           }
         },
-        "operationId": "adjust",
+        "operationId": "patch__v1_inventory__id__adjust",
         "parameters": [
           {
             "schema": {
@@ -28591,7 +28263,7 @@
         "deprecated": false,
         "description": "Reserve stock for a new order. This helps merchants ensure they have enough inventory to fulfill orders.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "requestBody": {
           "content": {
@@ -28626,7 +28298,7 @@
             }
           }
         },
-        "operationId": "reserve",
+        "operationId": "patch__v1_inventory__id__reserve",
         "parameters": [
           {
             "schema": {
@@ -29052,7 +28724,7 @@
         "deprecated": false,
         "description": "Release a previously reserved stock. This helps merchants free up inventory for other uses.",
         "tags": [
-          "InventoryController"
+          "INVENTORY"
         ],
         "requestBody": {
           "content": {
@@ -29087,7 +28759,7 @@
             }
           }
         },
-        "operationId": "release",
+        "operationId": "patch__v1_inventory__id__release",
         "parameters": [
           {
             "schema": {
@@ -29513,7 +29185,7 @@
         "deprecated": false,
         "description": "Creates an order from the merchant dashboard using Product V2 inventory-backed line items. The merchant can either generate an online payment link or initialize offline payment collection when the admin-controlled offline payment feature flag is enabled.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "requestBody": {
           "content": {
@@ -29548,7 +29220,7 @@
             }
           }
         },
-        "operationId": "createMerchantOrder",
+        "operationId": "post__v1_orders",
         "parameters": [
           {
             "schema": {
@@ -29962,7 +29634,7 @@
         "deprecated": false,
         "description": "Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges, and date ranges.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -29982,7 +29654,7 @@
             }
           }
         },
-        "operationId": "getOrders",
+        "operationId": "get__v1_orders",
         "parameters": [
           {
             "schema": {
@@ -30575,7 +30247,7 @@
         "deprecated": false,
         "description": "Retrieves a single order by its order number. Order number is visible to both customers and merchants, providing a human-readable alternative to internal order IDs.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -30595,7 +30267,7 @@
             }
           }
         },
-        "operationId": "showByOrderNumber",
+        "operationId": "get__v1_orders__orderNumber__show",
         "parameters": [
           {
             "schema": {
@@ -30646,7 +30318,7 @@
         "deprecated": false,
         "description": "Retrieves complete order details including all associated order line items for a shop owner. Provides comprehensive view necessary for order fulfillment, including item quantities, prices, and variants.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -30666,7 +30338,7 @@
             }
           }
         },
-        "operationId": "showOrderForMerchant",
+        "operationId": "get__v1_orders__orderId__detail",
         "parameters": [
           {
             "schema": {
@@ -31092,7 +30764,7 @@
         "deprecated": false,
         "description": "Retrieves all line items (products) associated with a specific order.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -31112,7 +30784,7 @@
             }
           }
         },
-        "operationId": "getOrderItems_1",
+        "operationId": "get__v1_orders__orderId__items",
         "parameters": [
           {
             "schema": {
@@ -31538,7 +31210,7 @@
         "deprecated": false,
         "description": "Updates the current status of an order to reflect fulfillment progress. Valid status transitions are enforced to prevent invalid workflow progressions. Records an audit trail entry capturing who changed the status and why.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "requestBody": {
           "content": {
@@ -31573,7 +31245,7 @@
             }
           }
         },
-        "operationId": "updateOrderStatus",
+        "operationId": "patch__v1_orders__orderId__status",
         "parameters": [
           {
             "schema": {
@@ -31999,7 +31671,7 @@
         "deprecated": false,
         "description": "Returns an array of all possible order statuses defined in the system. This endpoint is public and does not require tenant context.",
         "tags": [
-          "OrderController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -32019,7 +31691,7 @@
             }
           }
         },
-        "operationId": "getOrderStatuses",
+        "operationId": "get__v1_orders_statuses",
         "parameters": [
           {
             "schema": {
@@ -32037,10 +31709,10 @@
     },
     "/v1/auth/social/google/merchant/initiate": {
       "get": {
-        "summary": "Initiate Merchant Social Auth\nGenerates a Google authorization URL for Merchants and redirects to the consent screen. \nAccount will be linked or a new store provisioned.",
+        "summary": "Initiate Merchant Google Login",
         "deprecated": false,
         "tags": [
-          "SocialAuthController"
+          "AUTHENTICATION"
         ],
         "responses": {
           "200": {
@@ -32058,7 +31730,7 @@
             }
           }
         },
-        "operationId": "initiateMerchantGoogleLogin",
+        "operationId": "get__v1_auth_social_google_merchant_initiate",
         "parameters": [
           {
             "schema": {
@@ -32096,10 +31768,10 @@
     },
     "/v1/auth/social/google/customer/initiate": {
       "get": {
-        "summary": "Initiate Customer Social Auth\nGenerates a Google authorization URL for Customers and redirects to the consent screen.\nSpecific to the provided tenantId/store.",
+        "summary": "Initiate Customer Google Login",
         "deprecated": false,
         "tags": [
-          "SocialAuthController"
+          "AUTHENTICATION"
         ],
         "responses": {
           "200": {
@@ -32117,7 +31789,7 @@
             }
           }
         },
-        "operationId": "initiateCustomerGoogleLogin",
+        "operationId": "get__v1_auth_social_google_customer_initiate",
         "parameters": [
           {
             "schema": {
@@ -32185,10 +31857,10 @@
     },
     "/v1/auth/social/google/merchant/verify": {
       "post": {
-        "summary": "Verify Merchant Social Token\nVerifies a Google ID token from a client SDK specifically for Merchant access. \nReturns a session JWT upon successful verification.",
+        "summary": "Verify Merchant Google Token",
         "deprecated": false,
         "tags": [
-          "SocialAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -32223,7 +31895,7 @@
             }
           }
         },
-        "operationId": "verifyMerchantGoogleToken",
+        "operationId": "post__v1_auth_social_google_merchant_verify",
         "parameters": [
           {
             "schema": {
@@ -32252,10 +31924,10 @@
     },
     "/v1/auth/social/google/customer/verify": {
       "post": {
-        "summary": "Verify Customer Social Token\nVerifies a Google ID token from a client SDK for Customer access within a specific tenant.\nReturns a session JWT upon successful verification.",
+        "summary": "Verify Customer Google Token",
         "deprecated": false,
         "tags": [
-          "SocialAuthController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -32290,7 +31962,7 @@
             }
           }
         },
-        "operationId": "verifyCustomerGoogleToken",
+        "operationId": "post__v1_auth_social_google_customer_verify",
         "parameters": [
           {
             "schema": {
@@ -32323,7 +31995,7 @@
         "deprecated": false,
         "description": "This API creates a new category for the merchant store, either from a system category template or as a custom category.",
         "tags": [
-          "TenantCategoryController"
+          "PRODUCT_CATEGORY"
         ],
         "requestBody": {
           "content": {
@@ -32358,7 +32030,7 @@
             }
           }
         },
-        "operationId": "createCategory",
+        "operationId": "post__v1_tenant_categories",
         "parameters": [
           {
             "schema": {
@@ -32772,7 +32444,7 @@
         "deprecated": false,
         "description": "This API retrieves a list of tenant categories, both for dashboard and customer facing purposes.",
         "tags": [
-          "TenantCategoryController"
+          "PRODUCT_CATEGORY"
         ],
         "responses": {
           "200": {
@@ -32792,7 +32464,7 @@
             }
           }
         },
-        "operationId": "getAllCategories_1",
+        "operationId": "get__v1_tenant_categories",
         "parameters": [
           {
             "schema": {
@@ -32866,7 +32538,7 @@
         "deprecated": false,
         "description": "This API deletes a tenant category and dissociates its products.",
         "tags": [
-          "TenantCategoryController"
+          "PRODUCT_CATEGORY"
         ],
         "responses": {
           "200": {
@@ -32886,7 +32558,7 @@
             }
           }
         },
-        "operationId": "deleteCategory",
+        "operationId": "delete__v1_tenant_categories__categoryId_",
         "parameters": [
           {
             "schema": {
@@ -33306,11 +32978,11 @@
         ]
       },
       "put": {
-        "summary": "Update Tenant Category name",
+        "summary": "Update Tenant Category",
         "deprecated": false,
         "description": "Only custom categories (no systemCategoryId) can be renamed. System-backed categories return 400 if a rename is attempted.",
         "tags": [
-          "TenantCategoryController"
+          "PRODUCT_CATEGORY"
         ],
         "requestBody": {
           "content": {
@@ -33345,7 +33017,7 @@
             }
           }
         },
-        "operationId": "updateCategory",
+        "operationId": "put__v1_tenant_categories__categoryId_",
         "parameters": [
           {
             "schema": {
@@ -33771,7 +33443,7 @@
         "deprecated": false,
         "description": "Retrieves all items in the cart for the authenticated customer or session (V2).",
         "tags": [
-          "CartV2Controller"
+          "CART"
         ],
         "responses": {
           "200": {
@@ -33791,7 +33463,7 @@
             }
           }
         },
-        "operationId": "listItemsInCart_1",
+        "operationId": "get__v2_carts_items",
         "parameters": [
           {
             "schema": {
@@ -33824,7 +33496,7 @@
         "deprecated": false,
         "description": "Adds a V2 product to the cart. For VARIABLE products, both skuId and variantGroupId must be provided. For SIMPLE, DIGITAL, and BUNDLE products, neither is needed.",
         "tags": [
-          "CartV2Controller"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -33859,7 +33531,7 @@
             }
           }
         },
-        "operationId": "addItemToCart_1",
+        "operationId": "post__v2_carts_add",
         "parameters": [
           {
             "schema": {
@@ -33892,7 +33564,7 @@
         "deprecated": false,
         "description": "Removes an item from the cart by its ID (V2).",
         "tags": [
-          "CartV2Controller"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -33925,7 +33597,7 @@
             }
           }
         },
-        "operationId": "removeItemFromCart_1",
+        "operationId": "patch__v2_carts_remove__cartItemId_",
         "parameters": [
           {
             "schema": {
@@ -33968,7 +33640,7 @@
         "deprecated": false,
         "description": "Increases the quantity of a cart item by 1 (V2).",
         "tags": [
-          "CartV2Controller"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -34001,7 +33673,7 @@
             }
           }
         },
-        "operationId": "incrementItemQuantity_1",
+        "operationId": "patch__v2_carts_item_increment_quantity__cartId_",
         "parameters": [
           {
             "schema": {
@@ -34044,7 +33716,7 @@
         "deprecated": false,
         "description": "Decreases the quantity of a cart item by 1 (V2). Removes the item if quantity reaches 0.",
         "tags": [
-          "CartV2Controller"
+          "CART"
         ],
         "requestBody": {
           "content": {
@@ -34077,7 +33749,7 @@
             }
           }
         },
-        "operationId": "decrementItemQuantity_1",
+        "operationId": "patch__v2_carts_item_decrement_quantity__cartId_",
         "parameters": [
           {
             "schema": {
@@ -34120,7 +33792,7 @@
         "deprecated": false,
         "description": "Removes all items from the cart (V2).",
         "tags": [
-          "CartV2Controller"
+          "CART"
         ],
         "responses": {
           "200": {
@@ -34140,7 +33812,7 @@
             }
           }
         },
-        "operationId": "clearCart_1",
+        "operationId": "delete__v2_carts_clear",
         "parameters": [
           {
             "schema": {
@@ -34173,7 +33845,7 @@
         "deprecated": false,
         "description": "Retrieves the complete status history for an order by order number. This endpoint is publicly accessible and displays the order tracking timeline showing all status transitions from placement to delivery.",
         "tags": [
-          "OrderStatusHistoryController"
+          "ORDER"
         ],
         "responses": {
           "200": {
@@ -34193,7 +33865,7 @@
             }
           }
         },
-        "operationId": "getOrderHistory",
+        "operationId": "get__v1_order_status_history__orderNumber_",
         "parameters": [
           {
             "schema": {
@@ -34221,11 +33893,11 @@
     },
     "/v1/password/forgot/request/customer": {
       "post": {
-        "summary": "Initiate Forgot Password for Customer",
+        "summary": "Request Customer Password Reset",
         "deprecated": false,
         "description": "This API generates a reset token and sends an email to the customer.",
         "tags": [
-          "ForgotPasswordController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -34260,7 +33932,7 @@
             }
           }
         },
-        "operationId": "forgotPasswordForCustomer",
+        "operationId": "post__v1_password_forgot_request_customer",
         "parameters": [
           {
             "schema": {
@@ -34278,11 +33950,11 @@
     },
     "/v1/password/reset/customer": {
       "post": {
-        "summary": "Reset Customer Password.",
+        "summary": "Reset Customer Password",
         "deprecated": false,
         "description": "This API resets the customer password.",
         "tags": [
-          "ForgotPasswordController"
+          "AUTHENTICATION"
         ],
         "requestBody": {
           "content": {
@@ -34317,7 +33989,7 @@
             }
           }
         },
-        "operationId": "resetCustomerPassword",
+        "operationId": "post__v1_password_reset_customer",
         "parameters": [
           {
             "schema": {
@@ -34339,7 +34011,7 @@
         "deprecated": false,
         "description": "Generates and returns a new unique cart session identifier for guest shopping cart management.",
         "tags": [
-          "CartSessionController"
+          "CART"
         ],
         "responses": {
           "200": {
@@ -34359,7 +34031,7 @@
             }
           }
         },
-        "operationId": "getSessionID",
+        "operationId": "get__v1_generate_session_id",
         "parameters": [
           {
             "schema": {
