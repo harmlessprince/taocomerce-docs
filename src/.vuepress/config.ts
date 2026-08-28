@@ -1,10 +1,18 @@
 import { defineUserConfig } from "vuepress";
+import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import theme from "./theme.js";
 import sidebar from "./sidebar.js";
 import { config } from "dotenv";
 config();
 export default defineUserConfig({
+  bundler: viteBundler({
+    viteOptions: {
+      resolve: {
+        dedupe: ["vue", "vuepress", "@vuepress/client", "@vuepress/shared", "@vuepress/core"],
+      },
+    },
+  }),
   base: "/",
   // permalinkPattern: "/:slug",
   // permalinkPattern: ":slug.html",

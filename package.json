@@ -21,5 +21,10 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "vuepress-theme-hope": "^2.0.0-rc.88"
+  },
+  "overrides": {
+    "@vuepress/client": "$@vuepress/client",
+    "@vuepress/core": "$@vuepress/core",
+    "@vuepress/shared": "$@vuepress/shared"
   }
 }
