@@ -129,6 +129,11 @@ onBeforeUnmount(() => {
   pointer-events: auto;
 }
 
+.scalar-api-container .open-api-client-button,
+.scalar-api-container .darklight-reference {
+  display: none !important;
+}
+
 .api-reference-page .VPDoc {
   padding: 0 !important;
 }
