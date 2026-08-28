@@ -15,12 +15,10 @@ import '@scalar/api-reference/style.css'
 
 const ApiReferenceComponent = shallowRef(null)
 const configuration = {
-  spec: {
-    url: '/openapi.json',
-  },
+  url: '/openapi.json',
   theme: 'purple',
   showSidebar: true,
-  router: 'hash',
+  isEditable: false,
 }
 
 onMounted(async () => {
@@ -29,15 +27,18 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
+<style>
 .scalar-api-container {
-  min-height: 80vh;
-  margin-top: 1rem;
+  height: calc(100vh - 64px);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
-.scalar-loading {
-  padding: 2rem;
-  text-align: center;
-  font-family: var(--vp-font-family-base);
-  color: var(--vp-c-text-2);
+/* Override VitePress default doc layout margins for Scalar page */
+.VPContent.is-sub-nav {
+  padding-top: 0 !important;
+}
+.scalar-app {
+  height: 100% !important;
 }
 </style>
