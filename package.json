@@ -11,6 +11,7 @@
     "docs:preview": "vitepress preview src"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "vitepress": "^1.5.0",
     "vue": "^3.5.13"
   },
