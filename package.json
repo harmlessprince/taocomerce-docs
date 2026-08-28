@@ -5,26 +5,15 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress-vite build src",
-    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
-    "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "npx vp-update"
+    "docs:dev": "vitepress dev src",
+    "docs:build": "vitepress build src",
+    "docs:preview": "vitepress preview src"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.23",
-    "@vuepress/plugin-docsearch": "^2.0.0-rc.104",
-    "@vuepress/plugin-google-analytics": "^2.0.0-rc.103",
-    "sass-embedded": "^1.86.0",
-    "vue": "^3.5.13",
-    "vuepress": "^2.0.0-rc.23"
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "vuepress-theme-hope": "^2.0.0-rc.88"
-  },
-  "overrides": {
-    "@vuepress/client": "2.0.0-rc.23",
-    "@vuepress/core": "2.0.0-rc.23",
-    "@vuepress/shared": "2.0.0-rc.23"
+    "dotenv": "^16.4.7"
   }
 }

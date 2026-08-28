@@ -1,15 +1,20 @@
 ---
-home: true
-title: Home
-heroImage: https://res.cloudinary.com/ibreathcode/image/upload/v1743273889/shopsynch/ShopSync_logomark_blue_vj8uzh.png
-actions:
-  - text: Get Started
-    link: get-started.md
-    type: primary
+layout: home
 
-  - text: Introduction
-    link: introduction.md
-    type: secondary
+hero:
+  name: ShopSynch API
+  text: The Ultimate E-commerce API
+  tagline: Build with joy
+  image:
+    src: https://res.cloudinary.com/ibreathcode/image/upload/v1743273889/shopsynch/ShopSync_logomark_blue_vj8uzh.png
+    alt: ShopSynch Logo
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /get-started
+    - theme: alt
+      text: Introduction
+      link: /introduction
 
 features:
   - title: Seamless Integration
@@ -28,11 +33,6 @@ features:
     details: Add, update, and manage products with rich specifications, pricing, and availability.
   - title: AI-Driven Insights (Coming Soon)
     details: We are working on AI-powered features for business owners to query the system and get quick insights into orders, payments, and other key metrics.
-
-footer: MIT Licensed | Copyright © 2025-present ShopSynch
 ---
 
 ShopSynch is an innovative e-commerce platform designed to help small and medium-sized businesses (SMBs) sell online effortlessly and scale globally. Our goal is to provide a seamless, API-first e-commerce solution for businesses looking to integrate cutting-edge technology with flexibility and simplicity.
-
-
-
