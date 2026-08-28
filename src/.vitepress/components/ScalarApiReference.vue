@@ -23,6 +23,7 @@ const configuration = {
   url: '/openapi.json',
   theme: 'purple',
   showSidebar: true,
+  hideModels: true,
   isEditable: false,
 }
 
@@ -136,6 +137,11 @@ onBeforeUnmount(() => {
 
 .api-reference-page .VPDoc {
   padding: 0 !important;
+}
+
+.api-reference-page .VPDocFooter,
+.api-reference-page .VPFooter {
+  display: none !important;
 }
 
 .api-reference-page .VPDoc .container,
