@@ -32,7 +32,7 @@ Use this profile when configuring an MCP-compatible client or submitting ShopSyn
   },
   "privacyPolicyUrl": "https://www.shopsynch.com/privacy",
   "termsOfServiceUrl": "https://www.shopsynch.com/terms",
-  "supportUrl": "https://www.shopsynch.com"
+  "supportUrl": "https://www.shopsynch.com/contact"
 }
 ```
 
