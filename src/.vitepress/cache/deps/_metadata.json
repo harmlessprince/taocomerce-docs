@@ -1,0 +1,337 @@
+{
+  "hash": "407dee30",
+  "configHash": "88a623a3",
+  "lockfileHash": "dd1b56e7",
+  "browserHash": "0e469fa2",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "5efc42d0",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "f222ba56",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/vitepress/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "45040cf7",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "3fba6c77",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "5f37debb",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "83142b95",
+      "needsInterop": false
+    },
+    "@scalar/api-reference": {
+      "src": "../../../../node_modules/@scalar/api-reference/dist/index.js",
+      "file": "@scalar_api-reference.js",
+      "fileHash": "18e8f23c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "shopping-shipping-box-parcel-package.svg-QJZTCINN": {
+      "file": "shopping-shipping-box-parcel-package__svg-QJZTCINN.js"
+    },
+    "tag-new-circle.svg-MWRFGAG2": {
+      "file": "tag-new-circle__svg-MWRFGAG2.js"
+    },
+    "travel-map-earth-globe.svg-O6DRQ5IR": {
+      "file": "travel-map-earth-globe__svg-O6DRQ5IR.js"
+    },
+    "browser-KHSETXML": {
+      "file": "browser-KHSETXML.js"
+    },
+    "modal-2RR6FWB5": {
+      "file": "modal-2RR6FWB5.js"
+    },
+    "AgentScalarChatInterface.vue-SW5PUQDP": {
+      "file": "AgentScalarChatInterface__vue-SW5PUQDP.js"
+    },
+    "chunk-4RCTY5KE": {
+      "file": "chunk-4RCTY5KE.js"
+    },
+    "programming-computer-database-server.svg-BJUCLOQ7": {
+      "file": "programming-computer-database-server__svg-BJUCLOQ7.js"
+    },
+    "programming-computer-database.svg-2WN3DP7H": {
+      "file": "programming-computer-database__svg-2WN3DP7H.js"
+    },
+    "programming-module-four-layout.svg-RATP6TFY": {
+      "file": "programming-module-four-layout__svg-RATP6TFY.js"
+    },
+    "programming-module-three.svg-XILIZVHZ": {
+      "file": "programming-module-three__svg-XILIZVHZ.js"
+    },
+    "programming-module.svg-CZ7CYJ6E": {
+      "file": "programming-module__svg-CZ7CYJ6E.js"
+    },
+    "programming-script-code.svg-L2EFFKYD": {
+      "file": "programming-script-code__svg-L2EFFKYD.js"
+    },
+    "shopping-cart.svg-LHRAW3KO": {
+      "file": "shopping-cart__svg-LHRAW3KO.js"
+    },
+    "shopping-gift-present.svg-D7O5FU4K": {
+      "file": "shopping-gift-present__svg-D7O5FU4K.js"
+    },
+    "money-cashier-receipt.svg-4OCGHC6M": {
+      "file": "money-cashier-receipt__svg-4OCGHC6M.js"
+    },
+    "money-currency-dollar-pay.svg-LNJLXDIJ": {
+      "file": "money-currency-dollar-pay__svg-LNJLXDIJ.js"
+    },
+    "money-graph-arrow-increase.svg-AMTAKX3R": {
+      "file": "money-graph-arrow-increase__svg-AMTAKX3R.js"
+    },
+    "money-graph-bar-chart-increase.svg-TYM4OXZ6": {
+      "file": "money-graph-bar-chart-increase__svg-TYM4OXZ6.js"
+    },
+    "nature-ecology-leaf.svg-5ZGUELZP": {
+      "file": "nature-ecology-leaf__svg-5ZGUELZP.js"
+    },
+    "phone-telephone.svg-AM3FSGLS": {
+      "file": "phone-telephone__svg-AM3FSGLS.js"
+    },
+    "programming-bug.svg-GMPGWWOY": {
+      "file": "programming-bug__svg-GMPGWWOY.js"
+    },
+    "programming-cloud.svg-W7Y6BIK5": {
+      "file": "programming-cloud__svg-W7Y6BIK5.js"
+    },
+    "interface-signal-square.svg-C33AUDDN": {
+      "file": "interface-signal-square__svg-C33AUDDN.js"
+    },
+    "interface-time-clock-circle.svg-DBMJQ3UQ": {
+      "file": "interface-time-clock-circle__svg-DBMJQ3UQ.js"
+    },
+    "interface-time-hour-glass.svg-BIJZCHFN": {
+      "file": "interface-time-hour-glass__svg-BIJZCHFN.js"
+    },
+    "interface-users-multiple.svg-E7W5QF5V": {
+      "file": "interface-users-multiple__svg-E7W5QF5V.js"
+    },
+    "interface-weather-moon.svg-AQB7UCVC": {
+      "file": "interface-weather-moon__svg-AQB7UCVC.js"
+    },
+    "mail-chat-bubble-square.svg-FA5KAVAK": {
+      "file": "mail-chat-bubble-square__svg-FA5KAVAK.js"
+    },
+    "mail-send-email-paper-airplane.svg-VIWO2K7J": {
+      "file": "mail-send-email-paper-airplane__svg-VIWO2K7J.js"
+    },
+    "mail-send-envelope.svg-RKGY55R7": {
+      "file": "mail-send-envelope__svg-RKGY55R7.js"
+    },
+    "interface-login-key.svg-ZAJ4LRCI": {
+      "file": "interface-login-key__svg-ZAJ4LRCI.js"
+    },
+    "interface-search.svg-CX6LQ4VR": {
+      "file": "interface-search__svg-CX6LQ4VR.js"
+    },
+    "interface-setting-cog.svg-3P2B35XT": {
+      "file": "interface-setting-cog__svg-3P2B35XT.js"
+    },
+    "interface-share-megaphone-bullhorn.svg-P7ZZJ2I7": {
+      "file": "interface-share-megaphone-bullhorn__svg-P7ZZJ2I7.js"
+    },
+    "interface-share-rocket.svg-QH3YN7N2": {
+      "file": "interface-share-rocket__svg-QH3YN7N2.js"
+    },
+    "interface-share-satellite.svg-C6J32EEG": {
+      "file": "interface-share-satellite__svg-C6J32EEG.js"
+    },
+    "interface-share-space-ship.svg-KRS5RFYU": {
+      "file": "interface-share-space-ship__svg-KRS5RFYU.js"
+    },
+    "interface-share.svg-ZOAESYYB": {
+      "file": "interface-share__svg-ZOAESYYB.js"
+    },
+    "interface-favorite-star.svg-J3G7Y73M": {
+      "file": "interface-favorite-star__svg-J3G7Y73M.js"
+    },
+    "interface-favorite-stars-sparkles.svg-5YVVJ2GX": {
+      "file": "interface-favorite-stars-sparkles__svg-5YVVJ2GX.js"
+    },
+    "interface-hierarchy-flowchart.svg-34O3FWPC": {
+      "file": "interface-hierarchy-flowchart__svg-34O3FWPC.js"
+    },
+    "interface-home-house.svg-QOZBUDTD": {
+      "file": "interface-home-house__svg-QOZBUDTD.js"
+    },
+    "interface-hyperlink.svg-A2JLMVSC": {
+      "file": "interface-hyperlink__svg-A2JLMVSC.js"
+    },
+    "interface-lighting-brightness.svg-RZASGQ4V": {
+      "file": "interface-lighting-brightness__svg-RZASGQ4V.js"
+    },
+    "interface-lock-closed.svg-7RPLM35G": {
+      "file": "interface-lock-closed__svg-7RPLM35G.js"
+    },
+    "interface-lock-open-unlock.svg-DTHQYUU3": {
+      "file": "interface-lock-open-unlock__svg-DTHQYUU3.js"
+    },
+    "interface-edit-attachment.svg-WU7RM55Q": {
+      "file": "interface-edit-attachment__svg-WU7RM55Q.js"
+    },
+    "interface-edit-binocular.svg-5MHI6LX2": {
+      "file": "interface-edit-binocular__svg-5MHI6LX2.js"
+    },
+    "interface-edit-magic-wand.svg-XXRMZHVP": {
+      "file": "interface-edit-magic-wand__svg-XXRMZHVP.js"
+    },
+    "interface-edit-tool-paint-roller.svg-HUSNDDV6": {
+      "file": "interface-edit-tool-paint-roller__svg-HUSNDDV6.js"
+    },
+    "interface-edit-tool-pencil.svg-SAKL3RAE": {
+      "file": "interface-edit-tool-pencil__svg-SAKL3RAE.js"
+    },
+    "interface-favorite-award.svg-X7GF2NC2": {
+      "file": "interface-favorite-award__svg-X7GF2NC2.js"
+    },
+    "interface-favorite-flag.svg-JF6NEBCG": {
+      "file": "interface-favorite-flag__svg-JF6NEBCG.js"
+    },
+    "interface-favorite-heart.svg-HUP3X4RD": {
+      "file": "interface-favorite-heart__svg-HUP3X4RD.js"
+    },
+    "interface-award-crown.svg-OEXVR6GR": {
+      "file": "interface-award-crown__svg-OEXVR6GR.js"
+    },
+    "interface-bookmark-tag.svg-QUDYELM5": {
+      "file": "interface-bookmark-tag__svg-QUDYELM5.js"
+    },
+    "interface-bookmark.svg-XZAA2TBK": {
+      "file": "interface-bookmark__svg-XZAA2TBK.js"
+    },
+    "interface-calendar-date-one.svg-WP7QG5JV": {
+      "file": "interface-calendar-date-one__svg-WP7QG5JV.js"
+    },
+    "interface-content-book-open-pages.svg-QYVI2EG4": {
+      "file": "interface-content-book-open-pages__svg-QYVI2EG4.js"
+    },
+    "interface-content-book-page.svg-5AS2MNWE": {
+      "file": "interface-content-book-page__svg-5AS2MNWE.js"
+    },
+    "interface-content-file.svg-R6GNRCLM": {
+      "file": "interface-content-file__svg-R6GNRCLM.js"
+    },
+    "interface-copy-clipboard.svg-7T4EEQP3": {
+      "file": "interface-copy-clipboard__svg-7T4EEQP3.js"
+    },
+    "computer-device-network-wifi-connection.svg-VNNEQ6AL": {
+      "file": "computer-device-network-wifi-connection__svg-VNNEQ6AL.js"
+    },
+    "computer-device-network-wifi-router.svg-4IOV3RRH": {
+      "file": "computer-device-network-wifi-router__svg-4IOV3RRH.js"
+    },
+    "ecology-science-erlenmeyer-flask.svg-5MTDBUN7": {
+      "file": "ecology-science-erlenmeyer-flask__svg-5MTDBUN7.js"
+    },
+    "image-flash-lightning.svg-B4EMYAN6": {
+      "file": "image-flash-lightning__svg-B4EMYAN6.js"
+    },
+    "image-picture-flower.svg-I2BKC5OK": {
+      "file": "image-picture-flower__svg-I2BKC5OK.js"
+    },
+    "interface-alert-exclamation-diamond.svg-QS7HXFBL": {
+      "file": "interface-alert-exclamation-diamond__svg-QS7HXFBL.js"
+    },
+    "interface-alert-exclamation-triangle-warning.svg-ISOK62I6": {
+      "file": "interface-alert-exclamation-triangle-warning__svg-ISOK62I6.js"
+    },
+    "interface-alert-information-circle.svg-RRWMCGK5": {
+      "file": "interface-alert-information-circle__svg-RRWMCGK5.js"
+    },
+    "computer-device-mobile-phone-android-samsung-back.svg-DBWHMRMP": {
+      "file": "computer-device-mobile-phone-android-samsung-back__svg-DBWHMRMP.js"
+    },
+    "computer-device-mobile-phone-android-samsung.svg-G2FK3YRO": {
+      "file": "computer-device-mobile-phone-android-samsung__svg-G2FK3YRO.js"
+    },
+    "computer-device-mobile-phone-iphone-x-back.svg-LFBJPOYK": {
+      "file": "computer-device-mobile-phone-iphone-x-back__svg-LFBJPOYK.js"
+    },
+    "computer-device-mobile-phone-iphone-x.svg-RBCFL6C4": {
+      "file": "computer-device-mobile-phone-iphone-x__svg-RBCFL6C4.js"
+    },
+    "computer-device-mobile-tablet-touch.svg-UU7XOFTP": {
+      "file": "computer-device-mobile-tablet-touch__svg-UU7XOFTP.js"
+    },
+    "computer-device-mobile-tablet.svg-YHRVLZGI": {
+      "file": "computer-device-mobile-tablet__svg-YHRVLZGI.js"
+    },
+    "computer-device-network-ethernet-cat6.svg-ELVRWVTQ": {
+      "file": "computer-device-network-ethernet-cat6__svg-ELVRWVTQ.js"
+    },
+    "computer-device-network-lan-www.svg-7NEDRF2E": {
+      "file": "computer-device-network-lan-www__svg-7NEDRF2E.js"
+    },
+    "basic-shape-diamond.svg-B3UZB5U6": {
+      "file": "basic-shape-diamond__svg-B3UZB5U6.js"
+    },
+    "basic-shape-hexagon.svg-VICRSP7Z": {
+      "file": "basic-shape-hexagon__svg-VICRSP7Z.js"
+    },
+    "basic-shape-primary-circle-ellipse-round.svg-YGEVAPEM": {
+      "file": "basic-shape-primary-circle-ellipse-round__svg-YGEVAPEM.js"
+    },
+    "basic-shape-primary-square-rectangle.svg-HUJD3RUI": {
+      "file": "basic-shape-primary-square-rectangle__svg-HUJD3RUI.js"
+    },
+    "basic-shape-shield.svg-ZXOI3HTD": {
+      "file": "basic-shape-shield__svg-ZXOI3HTD.js"
+    },
+    "computer-device-desktop-monitor.svg-A4CEJQOJ": {
+      "file": "computer-device-desktop-monitor__svg-A4CEJQOJ.js"
+    },
+    "computer-device-desktop.svg-5VJ2QVRI": {
+      "file": "computer-device-desktop__svg-5VJ2QVRI.js"
+    },
+    "computer-device-laptop.svg-2SMKERBR": {
+      "file": "computer-device-laptop__svg-2SMKERBR.js"
+    },
+    "chunk-7LQZNBC3": {
+      "file": "chunk-7LQZNBC3.js"
+    },
+    "chunk-HO2CTRUR": {
+      "file": "chunk-HO2CTRUR.js"
+    },
+    "chunk-GMLJFOMH": {
+      "file": "chunk-GMLJFOMH.js"
+    },
+    "chunk-OFXDZRG6": {
+      "file": "chunk-OFXDZRG6.js"
+    },
+    "interface-content-folder.svg-Z3YEQVYJ": {
+      "file": "interface-content-folder__svg-Z3YEQVYJ.js"
+    },
+    "chunk-WUKPMNDV": {
+      "file": "chunk-WUKPMNDV.js"
+    },
+    "chunk-UEFGQ2CT": {
+      "file": "chunk-UEFGQ2CT.js"
+    },
+    "chunk-3KOD66RD": {
+      "file": "chunk-3KOD66RD.js"
+    }
+  }
+}

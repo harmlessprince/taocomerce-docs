@@ -1,6 +1,7 @@
 ---
 title: Interactive API Reference
-layout: page
+sidebar: false
+aside: false
 ---
 
 # Interactive API Reference & Sandbox
