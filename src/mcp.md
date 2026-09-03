@@ -81,6 +81,102 @@ When using ShopSynch with an AI assistant:
 - Revoke access from your ShopSynch account settings when a client is no longer needed.
 - Treat store, customer, order, and payment data as confidential.
 
+## Quickstart
+
+Use the configs below to connect ShopSynch to your AI tool directly. The MCP server uses OAuth by default — your tool will open a browser window to authorise access to your store the first time you connect.
+
+### Claude Desktop
+
+Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
+
+```json
+{
+  "mcpServers": {
+    "shopsynch": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://api.shopsynch.com/mcp"]
+    }
+  }
+}
+```
+
+Restart Claude Desktop after saving. ShopSynch will appear in the tools list.
+
+### Cursor
+
+Create or edit `.cursor/mcp.json` in your project root (or `~/.cursor/mcp.json` globally):
+
+```json
+{
+  "mcpServers": {
+    "shopsynch": {
+      "url": "https://api.shopsynch.com/mcp"
+    }
+  }
+}
+```
+
+Cursor will prompt you to authenticate with ShopSynch on first use.
+
+### Antigravity / VS Code (Remote MCP)
+
+Any MCP client that accepts a remote server URL can connect directly:
+
+```
+https://api.shopsynch.com/mcp
+```
+
+Transport: `streamable-http`. No local process required.
+
+### Claude Code (CLI)
+
+```bash
+claude mcp add --transport http shopsynch https://api.shopsynch.com/mcp
+```
+
+### API Key Authentication (No OAuth)
+
+If your tool or script does not support OAuth, you can use an API key header instead:
+
+```
+X-MerchantApiKey: pk_live_<your-key>
+```
+
+API keys are available in your [ShopSynch merchant dashboard](https://dashboard.shopsynch.com). This bypasses the OAuth consent flow and authenticates the key's owning store directly.
+
+---
+
+## Machine-Readable Discovery
+
+AI agent hosts and MCP indexers can auto-discover ShopSynch by fetching:
+
+```
+GET https://api.shopsynch.com/.well-known/mcp.json
+```
+
+This returns a JSON document with the MCP endpoint URL, transport type, OAuth metadata pointers, and authentication options — no credentials required.
+
+```json
+{
+  "name": "shopsynch",
+  "displayName": "ShopSynch",
+  "description": "Connect AI assistants to ShopSynch...",
+  "mcpUrl": "https://api.shopsynch.com/mcp",
+  "transport": "streamable-http",
+  "authentication": {
+    "type": "oauth2",
+    "authorizationServerMetadataUrl": "https://api.shopsynch.com/.well-known/oauth-authorization-server",
+    "protectedResourceMetadataUrl": "https://api.shopsynch.com/.well-known/oauth-protected-resource",
+    "pkce": true,
+    "defaultScope": "mcp:store",
+    "alternativeHeader": "X-MerchantApiKey"
+  },
+  "documentationUrl": "https://docs.shopsynch.com/mcp"
+}
+```
+
+---
+
 ## Related Guides
 
 - [OAuth for Connected Apps](oauth.md)
