@@ -169,6 +169,7 @@ When you pass `X-Enable-Cache: true` (or when requests come from the ShopSynch d
 | `GET /v1/dashboard/overview/low-stock` | **3 minutes** | Stale-while-revalidate (6 min) | Urgent low-stock notifications |
 | `GET /v1/merchants/profile` | **5 minutes** | Must-revalidate | Authenticated merchant user details |
 | `GET /v1/merchants/profile/business` | **5 minutes** | Must-revalidate | Store business information & current mode |
+| `GET /v1/users/me/permissions` | **3 minutes** | Must-revalidate | Effective merchant permissions for active store |
 
 ### Universal ETag Support
 **All other GET and HEAD endpoints** across `/v1/*` and `/v2/*` (including `/v1/products`, `/v1/categories`, `/v1/orders`, etc.) automatically support **ETags**. You can use `If-None-Match` on any read endpoint to save bandwidth.
