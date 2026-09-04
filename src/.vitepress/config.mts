@@ -98,6 +98,7 @@ export default defineConfig({
           { text: "Authentication", link: "/authentication" },
           { text: "OAuth for Connected Apps", link: "/oauth" },
           { text: "MCP Connector", link: "/mcp" },
+          { text: "Caching & Performance", link: "/caching" },
           { text: "Errors", link: "/errors" },
           { text: "API Sandbox", link: "/api-reference" },
         ],

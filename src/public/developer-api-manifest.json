@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "source": "@DeveloperApi",
-  "endpointCount": 144,
+  "endpointCount": 155,
   "endpoints": [
     {
       "group": "AUTHENTICATION",
@@ -41,7 +41,7 @@
       "controller": "AuthController",
       "javaMethod": "loginAsCustomer",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/identityAccess/rest/AuthController.java",
-      "line": 259,
+      "line": 260,
       "id": "POST /v1/auth/login/customer",
       "handler": "com.harmlessprince.ecommerceApi.identityAccess.rest.AuthController#loginAsCustomer"
     },
@@ -55,7 +55,7 @@
       "controller": "AuthController",
       "javaMethod": "refreshToken",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/identityAccess/rest/AuthController.java",
-      "line": 292,
+      "line": 293,
       "id": "POST /v1/auth/refresh-token",
       "handler": "com.harmlessprince.ecommerceApi.identityAccess.rest.AuthController#refreshToken"
     },
@@ -69,7 +69,7 @@
       "controller": "AuthController",
       "javaMethod": "logout",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/identityAccess/rest/AuthController.java",
-      "line": 319,
+      "line": 321,
       "id": "POST /v1/auth/logout",
       "handler": "com.harmlessprince.ecommerceApi.identityAccess.rest.AuthController#logout"
     },
@@ -340,6 +340,132 @@
       "handler": "com.harmlessprince.ecommerceApi.identityAccess.rest.WhatsAppAuthController#verifyOTP"
     },
     {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "List Branches",
+      "order": 10,
+      "httpMethod": "GET",
+      "path": "/v1/branches",
+      "controller": "BranchController",
+      "javaMethod": "list",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 52,
+      "id": "GET /v1/branches",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#list"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Get Branch",
+      "order": 15,
+      "httpMethod": "GET",
+      "path": "/v1/branches/{id}",
+      "controller": "BranchController",
+      "javaMethod": "get",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 82,
+      "id": "GET /v1/branches/{id}",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#get"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Create Branch",
+      "order": 20,
+      "httpMethod": "POST",
+      "path": "/v1/branches",
+      "controller": "BranchController",
+      "javaMethod": "create",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 109,
+      "id": "POST /v1/branches",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#create"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Update Branch",
+      "order": 30,
+      "httpMethod": "PATCH",
+      "path": "/v1/branches/{id}",
+      "controller": "BranchController",
+      "javaMethod": "update",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 136,
+      "id": "PATCH /v1/branches/{id}",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#update"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Set Online Branch",
+      "order": 40,
+      "httpMethod": "PATCH",
+      "path": "/v1/branches/{id}/online-branch",
+      "controller": "BranchController",
+      "javaMethod": "setOnlineBranch",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 165,
+      "id": "PATCH /v1/branches/{id}/online-branch",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#setOnlineBranch"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Delete Branch",
+      "order": 45,
+      "httpMethod": "DELETE",
+      "path": "/v1/branches/{id}",
+      "controller": "BranchController",
+      "javaMethod": "delete",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 194,
+      "id": "DELETE /v1/branches/{id}",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#delete"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Get Branch Price Overrides",
+      "order": 45,
+      "httpMethod": "GET",
+      "path": "/v1/branches/{id}/price-overrides",
+      "controller": "BranchController",
+      "javaMethod": "getPriceOverrides",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 223,
+      "id": "GET /v1/branches/{id}/price-overrides",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#getPriceOverrides"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Set Branch Price Override",
+      "order": 50,
+      "httpMethod": "PUT",
+      "path": "/v1/branches/{id}/price-overrides",
+      "controller": "BranchController",
+      "javaMethod": "setPriceOverride",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 255,
+      "id": "PUT /v1/branches/{id}/price-overrides",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#setPriceOverride"
+    },
+    {
+      "group": "BRANCH",
+      "version": "v1",
+      "title": "Clear Branch Price Override",
+      "order": 60,
+      "httpMethod": "DELETE",
+      "path": "/v1/branches/{id}/price-overrides",
+      "controller": "BranchController",
+      "javaMethod": "clearPriceOverride",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/branch/rest/BranchController.java",
+      "line": 286,
+      "id": "DELETE /v1/branches/{id}/price-overrides",
+      "handler": "com.harmlessprince.ecommerceApi.branch.rest.BranchController#clearPriceOverride"
+    },
+    {
       "group": "CART",
       "version": "v1",
       "title": "Generate Cart Session ID",
@@ -601,7 +727,7 @@
       "controller": "DeliveryZoneController",
       "javaMethod": "createZone",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/delivery/DeliveryZoneController.java",
-      "line": 48,
+      "line": 49,
       "id": "POST /v1/delivery-zones",
       "handler": "com.harmlessprince.ecommerceApi.delivery.DeliveryZoneController#createZone"
     },
@@ -643,7 +769,7 @@
       "controller": "DeliveryZoneController",
       "javaMethod": "deleteZone",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/delivery/DeliveryZoneController.java",
-      "line": 152,
+      "line": 151,
       "id": "DELETE /v1/delivery-zones/{id}",
       "handler": "com.harmlessprince.ecommerceApi.delivery.DeliveryZoneController#deleteZone"
     },
@@ -657,7 +783,7 @@
       "controller": "InventoryController",
       "javaMethod": "list",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 67,
+      "line": 69,
       "id": "GET /v1/inventory",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#list"
     },
@@ -671,7 +797,7 @@
       "controller": "InventoryController",
       "javaMethod": "byProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 101,
+      "line": 110,
       "id": "GET /v1/inventory/product/{productId}",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#byProduct"
     },
@@ -685,7 +811,7 @@
       "controller": "InventoryController",
       "javaMethod": "byProductStorefront",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 130,
+      "line": 139,
       "id": "GET /v1/inventory/product/{productId}/storefront",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#byProductStorefront"
     },
@@ -699,7 +825,7 @@
       "controller": "InventoryController",
       "javaMethod": "bySku",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 157,
+      "line": 166,
       "id": "GET /v1/inventory/product/{productId}/sku/{skuId}",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#bySku"
     },
@@ -713,7 +839,7 @@
       "controller": "InventoryController",
       "javaMethod": "bySkuStorefront",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 187,
+      "line": 196,
       "id": "GET /v1/inventory/product/{productId}/sku/{skuId}/storefront",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#bySkuStorefront"
     },
@@ -727,7 +853,7 @@
       "controller": "InventoryController",
       "javaMethod": "lowStock",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 214,
+      "line": 223,
       "id": "GET /v1/inventory/low-stock",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#lowStock"
     },
@@ -741,7 +867,7 @@
       "controller": "InventoryController",
       "javaMethod": "logs",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 242,
+      "line": 251,
       "id": "GET /v1/inventory/logs",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#logs"
     },
@@ -755,7 +881,7 @@
       "controller": "InventoryController",
       "javaMethod": "getById",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 276,
+      "line": 285,
       "id": "GET /v1/inventory/{id}",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#getById"
     },
@@ -769,9 +895,23 @@
       "controller": "InventoryController",
       "javaMethod": "logsByInventory",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 308,
+      "line": 317,
       "id": "GET /v1/inventory/{id}/logs",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#logsByInventory"
+    },
+    {
+      "group": "INVENTORY",
+      "version": "v1",
+      "title": "Get Inventory Batches by Inventory ID",
+      "order": 76,
+      "httpMethod": "GET",
+      "path": "/v1/inventory/{id}/batches",
+      "controller": "InventoryController",
+      "javaMethod": "batchesByInventory",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
+      "line": 358,
+      "id": "GET /v1/inventory/{id}/batches",
+      "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#batchesByInventory"
     },
     {
       "group": "INVENTORY",
@@ -783,7 +923,7 @@
       "controller": "InventoryController",
       "javaMethod": "create",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 347,
+      "line": 390,
       "id": "POST /v1/inventory",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#create"
     },
@@ -797,7 +937,7 @@
       "controller": "InventoryController",
       "javaMethod": "adjust",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 378,
+      "line": 420,
       "id": "PATCH /v1/inventory/{id}/adjust",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#adjust"
     },
@@ -811,7 +951,7 @@
       "controller": "InventoryController",
       "javaMethod": "reserve",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 427,
+      "line": 465,
       "id": "PATCH /v1/inventory/{id}/reserve",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#reserve"
     },
@@ -825,7 +965,7 @@
       "controller": "InventoryController",
       "javaMethod": "release",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/inventory/InventoryController.java",
-      "line": 464,
+      "line": 502,
       "id": "PATCH /v1/inventory/{id}/release",
       "handler": "com.harmlessprince.ecommerceApi.inventory.InventoryController#release"
     },
@@ -867,7 +1007,7 @@
       "controller": "FileController",
       "javaMethod": "uploadFile",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/file/rest/FileController.java",
-      "line": 152,
+      "line": 153,
       "id": "POST /v1/files/upload",
       "handler": "com.harmlessprince.ecommerceApi.file.rest.FileController#uploadFile"
     },
@@ -881,7 +1021,7 @@
       "controller": "OrderController",
       "javaMethod": "getOrders",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderController.java",
-      "line": 93,
+      "line": 95,
       "id": "GET /v1/orders",
       "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderController#getOrders"
     },
@@ -895,7 +1035,7 @@
       "controller": "OrderController",
       "javaMethod": "createMerchantOrder",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderController.java",
-      "line": 158,
+      "line": 160,
       "id": "POST /v1/orders",
       "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderController#createMerchantOrder"
     },
@@ -944,6 +1084,20 @@
     {
       "group": "ORDER",
       "version": "v1",
+      "title": "Cancel Order Line Item",
+      "order": 55,
+      "httpMethod": "PATCH",
+      "path": "/v1/orders/{orderId}/items/{lineId}/cancel",
+      "controller": "OrderController",
+      "javaMethod": "cancelOrderLineItem",
+      "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderController.java",
+      "line": 324,
+      "id": "PATCH /v1/orders/{orderId}/items/{lineId}/cancel",
+      "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderController#cancelOrderLineItem"
+    },
+    {
+      "group": "ORDER",
+      "version": "v1",
       "title": "Update Order Status",
       "order": 60,
       "httpMethod": "PATCH",
@@ -951,7 +1105,7 @@
       "controller": "OrderController",
       "javaMethod": "updateOrderStatus",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderController.java",
-      "line": 319,
+      "line": 356,
       "id": "PATCH /v1/orders/{orderId}/status",
       "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderController#updateOrderStatus"
     },
@@ -965,7 +1119,7 @@
       "controller": "OrderController",
       "javaMethod": "getOrderStatuses",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderController.java",
-      "line": 461,
+      "line": 501,
       "id": "GET /v1/orders/statuses",
       "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderController#getOrderStatuses"
     },
@@ -1035,7 +1189,7 @@
       "controller": "OrderLogisticController",
       "javaMethod": "generateWaybill",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderLogisticController.java",
-      "line": 37,
+      "line": 41,
       "id": "POST /v1/orders/{orderId}/logistics/waybill",
       "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderLogisticController#generateWaybill"
     },
@@ -1049,7 +1203,7 @@
       "controller": "OrderLogisticController",
       "javaMethod": "trackOrder",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/order/controllers/OrderLogisticController.java",
-      "line": 60,
+      "line": 66,
       "id": "GET /v1/orders/{orderId}/logistics/tracking",
       "handler": "com.harmlessprince.ecommerceApi.order.controllers.OrderLogisticController#trackOrder"
     },
@@ -1371,7 +1525,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "allProducts",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 92,
+      "line": 93,
       "id": "GET /v2/products",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#allProducts"
     },
@@ -1385,7 +1539,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "findBySlug",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 132,
+      "line": 142,
       "id": "GET /v2/products/slug/{slug}",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#findBySlug"
     },
@@ -1399,7 +1553,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "showProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 198,
+      "line": 217,
       "id": "GET /v2/products/{productId}",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#showProduct"
     },
@@ -1413,7 +1567,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "createProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 220,
+      "line": 248,
       "id": "POST /v2/products",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#createProduct"
     },
@@ -1427,7 +1581,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "updateProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 263,
+      "line": 292,
       "id": "PATCH /v2/products/{productId}",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#updateProduct"
     },
@@ -1441,7 +1595,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "deleteProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 285,
+      "line": 314,
       "id": "DELETE /v2/products/{productId}",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#deleteProduct"
     },
@@ -1455,7 +1609,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "archiveProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 301,
+      "line": 330,
       "id": "PATCH /v2/products/{productId}/archive",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#archiveProduct"
     },
@@ -1469,7 +1623,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "unarchiveProduct",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 317,
+      "line": 346,
       "id": "PATCH /v2/products/{productId}/unarchive",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#unarchiveProduct"
     },
@@ -1483,7 +1637,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "getSimilarProducts",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 334,
+      "line": 363,
       "id": "GET /v2/products/similar/by/category/{productId}",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#getSimilarProducts"
     },
@@ -1497,7 +1651,7 @@
       "controller": "ProductV2Controller",
       "javaMethod": "getTopSelling",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/product/v2/ProductV2Controller.java",
-      "line": 345,
+      "line": 383,
       "id": "GET /v2/products/top-selling",
       "handler": "com.harmlessprince.ecommerceApi.product.v2.ProductV2Controller#getTopSelling"
     },
@@ -1665,7 +1819,7 @@
       "controller": "TenantCategoryController",
       "javaMethod": "getAllCategories",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/productCategory/TenantCategoryController.java",
-      "line": 52,
+      "line": 49,
       "id": "GET /v1/tenant-categories",
       "handler": "com.harmlessprince.ecommerceApi.productCategory.TenantCategoryController#getAllCategories"
     },
@@ -1679,7 +1833,7 @@
       "controller": "TenantCategoryController",
       "javaMethod": "createCategory",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/productCategory/TenantCategoryController.java",
-      "line": 75,
+      "line": 72,
       "id": "POST /v1/tenant-categories",
       "handler": "com.harmlessprince.ecommerceApi.productCategory.TenantCategoryController#createCategory"
     },
@@ -1693,7 +1847,7 @@
       "controller": "TenantCategoryController",
       "javaMethod": "updateCategory",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/productCategory/TenantCategoryController.java",
-      "line": 114,
+      "line": 110,
       "id": "PUT /v1/tenant-categories/{categoryId}",
       "handler": "com.harmlessprince.ecommerceApi.productCategory.TenantCategoryController#updateCategory"
     },
@@ -1707,7 +1861,7 @@
       "controller": "TenantCategoryController",
       "javaMethod": "deleteCategory",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/productCategory/TenantCategoryController.java",
-      "line": 141,
+      "line": 136,
       "id": "DELETE /v1/tenant-categories/{categoryId}",
       "handler": "com.harmlessprince.ecommerceApi.productCategory.TenantCategoryController#deleteCategory"
     },
@@ -1721,7 +1875,7 @@
       "controller": "ReviewController",
       "javaMethod": "index",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/review/ReviewController.java",
-      "line": 48,
+      "line": 49,
       "id": "GET /v1/reviews",
       "handler": "com.harmlessprince.ecommerceApi.review.ReviewController#index"
     },
@@ -1735,7 +1889,7 @@
       "controller": "ReviewController",
       "javaMethod": "findProductReviews",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/review/ReviewController.java",
-      "line": 80,
+      "line": 81,
       "id": "GET /v1/reviews/product/{productId}",
       "handler": "com.harmlessprince.ecommerceApi.review.ReviewController#findProductReviews"
     },
@@ -1749,7 +1903,7 @@
       "controller": "ReviewController",
       "javaMethod": "createReview",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/review/ReviewController.java",
-      "line": 103,
+      "line": 104,
       "id": "POST /v1/reviews/add",
       "handler": "com.harmlessprince.ecommerceApi.review.ReviewController#createReview"
     },
@@ -1763,7 +1917,7 @@
       "controller": "ReviewController",
       "javaMethod": "deleteReview",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/review/ReviewController.java",
-      "line": 136,
+      "line": 137,
       "id": "DELETE /v1/reviews/{reviewId}",
       "handler": "com.harmlessprince.ecommerceApi.review.ReviewController#deleteReview"
     },
@@ -1791,7 +1945,7 @@
       "controller": "PromoAdController",
       "javaMethod": "createAd",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 53,
+      "line": 54,
       "id": "POST /v1/promo-ads",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#createAd"
     },
@@ -1819,7 +1973,7 @@
       "controller": "PromoAdController",
       "javaMethod": "getAdById",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 106,
+      "line": 105,
       "id": "GET /v1/promo-ads/{id}",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#getAdById"
     },
@@ -1833,7 +1987,7 @@
       "controller": "PromoAdController",
       "javaMethod": "getAllAds",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 129,
+      "line": 128,
       "id": "GET /v1/promo-ads",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#getAllAds"
     },
@@ -1847,7 +2001,7 @@
       "controller": "PromoAdController",
       "javaMethod": "getAdBySlug",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 193,
+      "line": 192,
       "id": "GET /v1/promo-ads/by-slug/{slug}",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#getAdBySlug"
     },
@@ -1861,7 +2015,7 @@
       "controller": "PromoAdController",
       "javaMethod": "getAllPublishedAds",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 171,
+      "line": 170,
       "id": "GET /v1/promo-ads/published",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#getAllPublishedAds"
     },
@@ -1875,7 +2029,7 @@
       "controller": "PromoAdController",
       "javaMethod": "changeAdsStatus",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 216,
+      "line": 215,
       "id": "PATCH /v1/promo-ads/update/{id}/status/{status}",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#changeAdsStatus"
     },
@@ -1889,7 +2043,7 @@
       "controller": "PromoAdController",
       "javaMethod": "deleteAd",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promoAd/PromoAdController.java",
-      "line": 243,
+      "line": 241,
       "id": "DELETE /v1/promo-ads/{id}",
       "handler": "com.harmlessprince.ecommerceApi.promoAd.PromoAdController#deleteAd"
     },
@@ -1903,7 +2057,7 @@
       "controller": "PromotionController",
       "javaMethod": "applyPromoCode",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promotion/PromotionController.java",
-      "line": 51,
+      "line": 52,
       "id": "POST /v1/promotions/apply/promo-code",
       "handler": "com.harmlessprince.ecommerceApi.promotion.PromotionController#applyPromoCode"
     },
@@ -1917,7 +2071,7 @@
       "controller": "PromotionController",
       "javaMethod": "createPromotion",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promotion/PromotionController.java",
-      "line": 98,
+      "line": 99,
       "id": "POST /v1/promotions",
       "handler": "com.harmlessprince.ecommerceApi.promotion.PromotionController#createPromotion"
     },
@@ -1973,7 +2127,7 @@
       "controller": "PromotionController",
       "javaMethod": "deletePromotion",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/promotion/PromotionController.java",
-      "line": 210,
+      "line": 208,
       "id": "DELETE /v1/promotions/{promotionId}",
       "handler": "com.harmlessprince.ecommerceApi.promotion.PromotionController#deletePromotion"
     },
@@ -1987,7 +2141,7 @@
       "controller": "WarehouseController",
       "javaMethod": "list",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/warehouse/WarehouseController.java",
-      "line": 43,
+      "line": 45,
       "id": "GET /v1/warehouses",
       "handler": "com.harmlessprince.ecommerceApi.warehouse.WarehouseController#list"
     },
@@ -2001,7 +2155,7 @@
       "controller": "WarehouseController",
       "javaMethod": "create",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/warehouse/WarehouseController.java",
-      "line": 74,
+      "line": 76,
       "id": "POST /v1/warehouses",
       "handler": "com.harmlessprince.ecommerceApi.warehouse.WarehouseController#create"
     },
@@ -2015,7 +2169,7 @@
       "controller": "WarehouseController",
       "javaMethod": "update",
       "source": "src/main/java/com/harmlessprince/ecommerceApi/warehouse/WarehouseController.java",
-      "line": 102,
+      "line": 103,
       "id": "PATCH /v1/warehouses/{id}",
       "handler": "com.harmlessprince.ecommerceApi.warehouse.WarehouseController#update"
     }
