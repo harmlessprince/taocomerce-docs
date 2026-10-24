@@ -130,14 +130,6 @@ export default defineConfig({
                 link: "/api-endpoints/authentication/google-authentication",
               },
               {
-                text: "Login with Google",
-                link: "/api-endpoints/authentication/login-with-google-as-customer",
-              },
-              {
-                text: "Signup with Google",
-                link: "/api-endpoints/authentication/sginup-with-google-as-customer",
-              },
-              {
                 text: "Passwordless Auth",
                 link: "/api-endpoints/authentication/passwordless-authentication",
               },
