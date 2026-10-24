@@ -4,22 +4,26 @@ title: Cart API
 
 # Cart API
 
-##  Description
-The **Cart API** provides endpoints for managing a user's shopping cart. Users can add, update, remove, and list items in their cart. The API supports both authenticated users and guest users.
+Use the Cart API to manage the shopping cart of a customer. A customer can be authenticated or a guest.
 
-##  Authentication Requirements
-- **Authenticated Users**: Must provide a valid JWT token in the `Authorization` header.
-- **Guest Users**: Must provide a `sessionId` to track their cart.
-- The `X-MerchantApiKey` header is **mandatory** for all requests.
+> [!WARNING]
+> The V1 cart endpoints (`/v1/carts/*`) are removed. The API returns `410 Gone`. See [Migrate from V1 to V2](../migrate-v1-to-v2.md).
 
-##  Available Endpoints
-- [Generate Cart Session](./generate-cart-session-id.md) *(For guest users)*
-- [Add Item to Cart](./add-item-to-cart.md)
-- [List Cart Items](./list-cart-items.md)
-- [Increment Cart Item Quantity](./increment-cart-item.md)
-- [Decrement Cart Item Quantity](./decrement-cart-item.md)
-- [Remove Item from Cart](./remove-cart-item.md)
-- [Clear Cart](./clear-cart.md)
+## Authentication
+- An authenticated customer sends the `Authorization: Bearer JWT_TOKEN` header.
+- A guest customer sends the `X-Session-Id` header. To get a session ID, use [Generate Cart Session ID](./generate-cart-session-id.md).
+- Every request must have the `X-MerchantApiKey` header.
+- If a request has no token and no session ID, the API returns `400`: "Please log in or start a guest session to continue."
 
-##  Next Steps
-- [Checkout API](./checkout.md)
+## Endpoints
+| Endpoint | Method | Path |
+|---|---|---|
+| [Generate Cart Session ID](./generate-cart-session-id.md) | GET | `/v1/generate/session/id` |
+| [Cart V2 endpoints](./v2/index.md) | | `/v2/carts/*` |
+| [Add Item to Cart](./v2/add-item-to-cart.md) | POST | `/v2/carts/add` |
+| [Replace Booking Time](./v2/replace-booking.md) | PATCH | `/v2/carts/booking/{cartItemId}` |
+| [Checkout](./v2/checkout.md) | POST | `/v2/carts/checkout`, `/v2/carts/guest/checkout` |
+
+## Next steps
+- [Cart V2 endpoints](./v2/index.md)
+- [Checkout](./v2/checkout.md)

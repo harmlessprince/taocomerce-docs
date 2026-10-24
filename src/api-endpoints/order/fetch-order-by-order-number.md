@@ -85,5 +85,5 @@ fetch("https://api.shopsynch.com/v1/orders/ORD-534CFA20/show", {
 
 ##  Next Steps
 - [Fetch Orders](./fetch-orders.md)
-- [Checkout](../cart/checkout.md)
+- [Checkout](../cart/v2/checkout.md)
 

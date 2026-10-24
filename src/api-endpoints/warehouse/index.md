@@ -38,4 +38,4 @@ All warehouse endpoints require merchant authentication. The calling user must h
 - [Create a Warehouse](./create-warehouse.md)
 - [List Warehouses](./list-warehouses.md)
 - [Update a Warehouse](./update-warehouse.md)
-- [Inventory Overview](../inventory/README.md)
+- [Inventory Overview](../inventory/index.md)

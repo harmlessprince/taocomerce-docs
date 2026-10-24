@@ -2,24 +2,23 @@
 title: Product API
 ---
 
-# Products API
+# Product API
 
-> [!IMPORTANT]
-> **V2 API is Now Available!**
-> We've launched a more flexible V2 architecture. New integrations should use the [V2 API Documentation](./v2/README.md).
-> The V1 API is now in maintenance mode (Legacy).
+Use the Product API to manage and to read the products of a store.
 
-##  Description
-The Products API provides endpoints for managing product-related operations, including creating, updating, retrieving, and deleting products and their variations.
+> [!WARNING]
+> The V1 product endpoints (`/v1/products/*`) are removed. The API returns `410 Gone`. See [Migrate from V1 to V2](../migrate-v1-to-v2.md).
+> To build a customer storefront, use the [Storefront API](../storefront/index.md).
 
-##  V2 Documentation (Recommended)
-- [V2 Overview](./v2/README.md)
-- [How to Create Product (V2)](./v2/add-product.md)
-- [Fetch Products (V2)](./v2/fetch-products.md)
+## V2
+- [V2 Overview](./v2/index.md)
+- [Add Product](./v2/add-product.md)
+- [Fetch Products](./v2/fetch-products.md)
+- [Update Product](./v2/update-product.md)
+- [Manage Variant Groups](./v2/manage-variant-groups.md)
+- [Manage SKUs](./v2/manage-skus.md)
+- [Archive or Unarchive Product](./archive-unarchive-product.md)
 
-##  V1 Documentation (Legacy)
-- [Fetch Products V1](./fetch-products.md)
-- [Add Product V1](./add-product.md)
-- [Update Product V1](./update-product.md)
-- [Delete Product V1](./delete-product.md)
-- [Fetch Similar Products V1](./retrieve-similar-product-by-category.md)
+## Product statistics (merchant)
+- [Top Selling Products by Quantity](./fetch-top-selling-products.md)
+- [Top Selling Products by Revenue](./fetch-top-selling-by-revenue.md)

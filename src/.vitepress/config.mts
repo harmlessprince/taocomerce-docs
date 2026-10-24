@@ -221,43 +221,31 @@ export default defineConfig({
               },
             ],
           },
+          { text: "Migrate from V1 to V2", link: "/api-endpoints/migrate-v1-to-v2" },
+          {
+            text: "Storefront",
+            collapsed: true,
+            items: [
+              { text: "Overview", link: "/api-endpoints/storefront/" },
+              { text: "Get Products", link: "/api-endpoints/storefront/get-products" },
+              { text: "Get Product", link: "/api-endpoints/storefront/get-product" },
+              { text: "Similar and Top Selling", link: "/api-endpoints/storefront/similar-and-top-selling" },
+              { text: "Payment Gateways", link: "/api-endpoints/storefront/payment-gateways" },
+            ],
+          },
           {
             text: "Product",
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/product/" },
-              {
-                text: "Add Product",
-                link: "/api-endpoints/product/add-product",
-              },
-              {
-                text: "Fetch Products",
-                link: "/api-endpoints/product/fetch-products",
-              },
-              {
-                text: "Fetch Product Details",
-                link: "/api-endpoints/product/fetch-product-details",
-              },
-              {
-                text: "Update Product",
-                link: "/api-endpoints/product/update-product",
-              },
-              {
-                text: "Delete Product",
-                link: "/api-endpoints/product/delete-product",
-              },
-              {
-                text: "Fetch Top Selling Products",
-                link: "/api-endpoints/product/fetch-top-selling-products",
-              },
-              {
-                text: "Toggle Product Status",
-                link: "/api-endpoints/product/toggle-product-status",
-              },
-              {
-                text: "Fetch Product V2",
-                link: "/api-endpoints/product/v2/fetch-products",
-              },
+              { text: "Fetch Products", link: "/api-endpoints/product/v2/fetch-products" },
+              { text: "Add Product", link: "/api-endpoints/product/v2/add-product" },
+              { text: "Update Product", link: "/api-endpoints/product/v2/update-product" },
+              { text: "Manage Variant Groups", link: "/api-endpoints/product/v2/manage-variant-groups" },
+              { text: "Manage SKUs", link: "/api-endpoints/product/v2/manage-skus" },
+              { text: "Archive or Unarchive", link: "/api-endpoints/product/archive-unarchive-product" },
+              { text: "Top Selling by Quantity", link: "/api-endpoints/product/fetch-top-selling-products" },
+              { text: "Top Selling by Revenue", link: "/api-endpoints/product/fetch-top-selling-by-revenue" },
             ],
           },
           {
@@ -265,18 +253,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/review/" },
-              {
-                text: "Add Review",
-                link: "/api-endpoints/review/add-review",
-              },
-              {
-                text: "Fetch Reviews",
-                link: "/api-endpoints/review/fetch-reviews",
-              },
-              {
-                text: "Delete Review",
-                link: "/api-endpoints/review/delete-review",
-              },
+              { text: "Add Review", link: "/api-endpoints/review/add-review" },
+              { text: "Fetch Reviews", link: "/api-endpoints/review/fetch-reviews" },
+              { text: "Fetch Product Reviews", link: "/api-endpoints/review/fetch-product-review" },
+              { text: "Hide Review", link: "/api-endpoints/review/hide-review" },
+              { text: "Delete Review", link: "/api-endpoints/review/delete-review" },
             ],
           },
           {
@@ -353,39 +334,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/cart/" },
-              {
-                text: "Generate Session ID",
-                link: "/api-endpoints/cart/generate-cart-session-id",
-              },
-              {
-                text: "List Cart Items",
-                link: "/api-endpoints/cart/list-cart-items",
-              },
-              {
-                text: "Add Item to Cart",
-                link: "/api-endpoints/cart/add-item-to-cart",
-              },
-              {
-                text: "Increment Cart Item",
-                link: "/api-endpoints/cart/increment-cart-item",
-              },
-              {
-                text: "Decrement Cart Item",
-                link: "/api-endpoints/cart/decrement-cart-item",
-              },
-              {
-                text: "Remove Cart Item",
-                link: "/api-endpoints/cart/remove-cart-item",
-              },
-              {
-                text: "Clear Cart",
-                link: "/api-endpoints/cart/clear-cart",
-              },
-              { text: "Checkout", link: "/api-endpoints/cart/checkout" },
-              {
-                text: "Checkout Guest",
-                link: "/api-endpoints/cart/checkout-guest",
-              },
+              { text: "Generate Session ID", link: "/api-endpoints/cart/generate-cart-session-id" },
+              { text: "Cart V2 Endpoints", link: "/api-endpoints/cart/v2/" },
+              { text: "Add Item", link: "/api-endpoints/cart/v2/add-item-to-cart" },
+              { text: "Replace Booking Time", link: "/api-endpoints/cart/v2/replace-booking" },
+              { text: "Checkout", link: "/api-endpoints/cart/v2/checkout" },
             ],
           },
           {

@@ -5,9 +5,9 @@ title: Fetch Top Selling Product By Quantity
 # Fetch Top Selling Products By Quantity Sold
 
 ##  Description
-Retrieves a list of the most popular products based on total quantity sold. This endpoint is public-facing and omits sensitive business metrics.
+Retrieves a list of the most popular products based on total quantity sold. This endpoint is for merchants. It needs a merchant token. For a public list, use [Get Top Selling Storefront Products](../storefront/similar-and-top-selling.md#top-selling-products).
 ##  Endpoint
-- **URL:** `/v1/products/top-by-quantity`
+- **URL:** `/v1/product-stats/top-by-quantity`
 - **Method:** `GET`
 
 ## Query Parameters
@@ -64,5 +64,4 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 ```
 
 ##  Next Steps
-- Learn more about [Adding Product Variation](./update-product-variation-price-detail.md)
-- Learn more about [Adding Product Variation Price Detail](./delete-product-variation-price-detail.md)
+- See [Fetch Products](./v2/fetch-products.md)

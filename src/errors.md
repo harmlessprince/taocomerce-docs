@@ -2,36 +2,49 @@
 title: Errors
 ---
 
-The ShopSynch API follows RESTful principles and uses conventional HTTP response codes to indicate the success or failure of requests.
+The ShopSynch API uses standard HTTP status codes to show if a request succeeded or failed.
 
-## **HTTP Codes**
+## HTTP status codes
 
-### **200 - OK**
-The request was successful, and the intended action was executed correctly. This applies to retrieving products, processing orders, and updating customer details.
+| Status | Name | Meaning |
+|---|---|---|
+| `200` | OK | The request succeeded. |
+| `201` | Created | The API created a new resource, for example an order, a product, or a customer. |
+| `400` | Bad Request | The request is not valid. A parameter is wrong, a required field is missing, or the data format is wrong. For example, the cart is empty at checkout. |
+| `401` | Unauthorized | Authentication failed or is missing. The API key or the JWT token in the request is not valid. |
+| `404` | Not Found | The resource does not exist. It was deleted or it never existed. |
+| `422` | Unprocessable Entity | Validation failed. The data that you sent does not pass the required checks. The response lists each field with an error. |
+| `5xx` | Server Error | An error occurred on the server. Report the error immediately. It can show a system problem. |
 
-### **201 - Created**
-A new resource has been successfully created. This is typically returned when a new order, product, or customer profile is added to the system.
+## Error response format
+An error response has `status` set to `false` and a `message`.
+```json
+{
+  "status": false,
+  "message": "Your cart is empty. Please add items to your cart before proceeding."
+}
+```
 
-### **400 - Bad Request**
-The request was invalid due to incorrect parameters, missing required fields, or improperly formatted data. This may occur when attempting to create an order without specifying necessary details.
-
-### **401 - Unauthorized**
-Authentication failed or was not provided. This happens when an invalid API key or JWT token is passed in the `Authorization` header or when a request is made without proper authentication.
-
-### **422 - Unprocessable Entity**
-Validation failed. This happens when you submit data that does not pass the required checks.
-
-### **404 - Not Found**
-The requested resource does not exist. This may occur when trying to access a product, order, or customer that has been deleted or never existed.
-
-### **5xx - Server Errors**
-An unexpected error occurred on the server, preventing the request from being processed. If this happens, please report it immediately, as it may indicate a system issue.
-
-##  Handling Errors
-Ensure that your application properly handles errors by checking response status codes and implementing retry logic where appropriate. For authentication failures, verify that the API key or JWT token is valid and included in the request headers.
-
+## Handle errors
+- Check the HTTP status code of each response.
+- If authentication fails, make sure that the API key or the JWT token is valid and that you send it in the request headers.
+- Retry a request only if the error is a `5xx` error.
 
 ## Error Reference
+
+### Cart and Storefront Errors
+
+| HTTP Status | Message | Description |
+|---|---|---|
+| `400` | Please log in or start a guest session to continue. | The request has no `Authorization` header and no `X-Session-Id` header. |
+| `400` | Please start a guest session first. | A guest checkout request has no `X-Session-Id` header. |
+| `410` | This v1 endpoint has been deprecated. Please integrate with the equivalent v2 endpoint. | You called a removed `/v1/products/*` or `/v1/carts/*` endpoint. See [Migrate from V1 to V2](api-endpoints/migrate-v1-to-v2.md). The `errorCode` is `API_VERSION_DEPRECATED`. |
+| `400` | Your cart is empty. Please add items to your cart before proceeding. | You started checkout with an empty cart. |
+| `400` | Please select all required options before adding this item to your cart. | A V2 add-to-cart request does not select a variant group and a SKU for a product that has options. |
+| `400` | The requested quantity is more than what we have in stock. Only N items are available. | The quantity is more than the available stock. |
+| `400` | 'PRODUCT' is no longer available. | The product is archived. |
+| `404` | The specified item could not be found in your cart. | The cart item ID does not exist in the cart. |
+| `404` | Product not found | The product ID or slug does not exist. |
 
 ### Promotion Errors
 
@@ -58,6 +71,6 @@ Ensure that your application properly handles errors by checking response status
 
 ##  Next Steps
 - Learn more about [Authentication](authentication.md)
-<!-- - Explore available [API Endpoints](api-endpoints/README.md) -->
+<!-- - Explore available [API Endpoints](api-endpoints/index.md) -->
 
 

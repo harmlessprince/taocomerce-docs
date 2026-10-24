@@ -10,7 +10,7 @@ These APIs allow merchants to manage the visibility of their products without pe
 - **Unarchiving** restores a previously archived product, making it visible to customers again.
 
 > [!IMPORTANT]
-> By default, archived products are **not** returned by the [Fetch Products](./fetch-products.md) API. This ensures that customers only see active products in the storefront.
+> By default, archived products are **not** returned by the [Fetch Products](./v2/fetch-products.md) API. This ensures that customers only see active products in the storefront.
 
 ## 1. Archive Product
 

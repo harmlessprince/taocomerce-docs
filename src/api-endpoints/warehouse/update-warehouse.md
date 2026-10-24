@@ -78,4 +78,4 @@ Updates the details of an existing warehouse. All fields are optional — only i
 ## Next Steps
 
 - [List Warehouses](./list-warehouses.md)
-- [Inventory Overview](../inventory/README.md)
+- [Inventory Overview](../inventory/index.md)

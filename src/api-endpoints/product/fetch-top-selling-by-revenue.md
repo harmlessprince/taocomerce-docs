@@ -8,7 +8,7 @@ title: Fetch Top Selling Product By Revenue
 Get Top Selling Products base on revenue<br><br>Retrieves a list of the most popular products based on total revenue.
 
 ##  Endpoint
-- **URL:** `/v1/products/top-by-revenue`
+- **URL:** `/v1/product-stats/top-by-revenue`
 - **Method:** `GET`
 
 ## Query Parameters
@@ -67,5 +67,4 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 ```
 
 ##  Next Steps
-- Learn more about [Adding Product Variation](./update-product-variation-price-detail.md)
-- Learn more about [Adding Product Variation Price Detail](./delete-product-variation-price-detail.md)
+- See [Fetch Products](./v2/fetch-products.md)

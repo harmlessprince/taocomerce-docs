@@ -8,7 +8,7 @@ title: Initialize Payment
 Initializes a payment transaction for a guest (unauthenticated) customer's order. Performs same validation as customer payment initialization but without requiring user authentication. Guest payment includes currency validation and creates a guest-friendly payment record.
 
 ##  How to Get an `orderId`
-To get a valid `orderId`, the user must first complete the checkout process. Refer to the **[Checkout API](../cart/checkout.md)** for details on how to create an order and retrieve the `orderId`.
+To get a valid `orderId`, the user must first complete the checkout process. Refer to the **[Checkout API](../cart/v2/checkout.md)** for details on how to create an order and retrieve the `orderId`.
 
 ##  Endpoint
 **POST** `/v1/payments/initialize`
@@ -82,5 +82,5 @@ fetch('https://api.shopsynch.com/v1/payments/initialize', {
 ```
 
 ##  Next Steps
-- [Checkout API](../cart/checkout.md)
+- [Checkout API](../cart/v2/checkout.md)
 - [Payment Confirmation](./verify-payment.md)
