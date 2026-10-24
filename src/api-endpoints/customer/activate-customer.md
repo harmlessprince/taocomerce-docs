@@ -2,49 +2,30 @@
 title: Activate Customer
 ---
 
-# Deactivate Customer
+# Activate Customer
 
-##  Description
-The **Activate Customer** API allows client to activate a customer that has been deactivated, one the account is activated, the customer will regain the ability to login to the system
+Use this endpoint to reactivate a customer account that was previously deactivated.
 
-##  Endpoint
-**PATCH** `/v1/customers/{customerId}/deactivate`
+## Endpoint
+**PATCH** `/v1/customers/{customerId}/activate`
 
-##  Required Headers
+| Path parameter | Type | Description |
+|---|---|---|
+| `customerId` | string | Unique identifier of the customer account. |
+
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "Content-Type": "application/json"
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
 }
 ```
 
-## 📥 Request Body
-None
-
-
-##  Example API Call (Fetch or Axios)
-```javascript
-fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/activate', {
-  method: 'PATCH',
-  headers: {
-    'Authorization': 'Bearer JWT_TOKEN',
-    'Content-Type': 'application/json'
-  }
-})
-.then(response => response.json())
-.then(data => console.log(data));
-```
-
-## 📤 Sample 200 Response (Success)
+## Response 200
 ```json
 {
-    "data": null,
-    "message": "Customer activated successfully",
-    "status": true
+  "status": true,
+  "message": "Customer activated successfully",
+  "data": null
 }
 ```
-
-
-##  Next Steps
-- [User Login](./activate-customer.md)
-- [Retrieve User Profile](../authentication/user-profile.md)

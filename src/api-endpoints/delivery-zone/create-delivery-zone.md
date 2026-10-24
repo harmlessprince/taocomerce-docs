@@ -4,13 +4,16 @@ title: Create Delivery Zone
 
 # Create Delivery Zone
 
-## Description
-This API allows merchants to create a new delivery zone. A delivery zone defines the delivery fee and estimated delivery time for a specific set of states and their associated areas.
+Use this endpoint to create a new delivery zone. A delivery zone defines the delivery fee and estimated delivery time for a specific country, states, and coverage areas.
 
 ## Endpoint
 **POST** `/v1/delivery-zones`
 
-## Required Headers
+## Authentication
+- Requires merchant authentication: `Authorization: Bearer JWT_TOKEN`.
+- Requires `X-MerchantApiKey: MERCHANT_API_KEY`.
+
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -19,48 +22,24 @@ This API allows merchants to create a new delivery zone. A delivery zone defines
 }
 ```
 
-## 📥 Request Body
-Here is a breakdown of each field in the `DeliveryZoneRequest` DTO:
+## Request body
 
-### DeliveryZoneRequest DTO
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `name` | string | Yes | Name of the delivery zone (e.g. "Lagos Mainland"). |
+| `fee` | number | Yes | Delivery fee for this zone. Must be 0 or greater. |
+| `stateAreas` | array | Yes | List of states and their corresponding coverage areas. |
+| `country` | string | No | Country name. Defaults to `"Nigeria"` if omitted. |
+| `estimatedDeliveryTime` | string | No | Delivery duration estimate (e.g. "1-2 business days"). |
+| `active` | boolean | No | Whether the zone is active immediately. Defaults to `true`. |
 
-| Field                   | Type   | Required | Description                                                                 |
-|-------------------------|--------|----------|-----------------------------------------------------------------------------|
-| `name`                  | string | Yes      | The name of the delivery zone (e.g., "Lagos Mainland").                     |
-| `estimatedDeliveryTime` | string | No       | Estimated time for delivery (e.g., "2-3 business days").                    |
-| `fee`                   | double | Yes      | The delivery fee for this zone (must be 0 or greater).                       |
-| `stateAreas`            | list   | Yes      | A list of states and their corresponding areas included in this zone. [More Info](#statearearequest-dto) |
+### `stateAreas` items
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `state` | string | Yes | Name of the state (e.g. "Lagos"). |
+| `areas` | array of strings | Yes | Names of covered areas within the state. |
 
-### StateAreaRequest DTO
-<details>
-  <summary>State Area Request</summary>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>Type</th>
-        <th>Required</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>state</code></td>
-        <td>string</td>
-        <td>Yes</td>
-        <td>The name of the state (e.g., "Lagos").</td>
-      </tr>
-      <tr>
-        <td><code>areas</code></td>
-        <td>list</td>
-        <td>Yes</td>
-        <td>A list of names of areas within the state (e.g., ["Ikeja", "Surulere"]).</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
-
-## Example API Call (Using Fetch)
+## Example request
 ```javascript
 fetch('https://api.shopsynch.com/v1/delivery-zones', {
   method: 'POST',
@@ -71,55 +50,53 @@ fetch('https://api.shopsynch.com/v1/delivery-zones', {
   },
   body: JSON.stringify({
     name: "Lagos Mainland",
+    country: "Nigeria",
+    fee: 1500.0,
     estimatedDeliveryTime: "1-2 business days",
-    fee: 1500.00,
     stateAreas: [
       {
         state: "Lagos",
         areas: ["Ikeja", "Surulere", "Yaba", "Maryland"]
       }
-    ]
+    ],
+    active: true
   })
 })
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
+  .then(response => response.json())
+  .then(data => console.log(data));
 ```
 
-## ✅ Sample 200 Response (Success)
+## Response 200
 ```json
 {
-    "status": true,
-    "message": "Delivery zone created successfully",
-    "data": {
-        "id": "dz-12345",
-        "name": "Lagos Mainland",
-        "fee": 1500.0,
-        "estimatedDeliveryTime": "1-2 business days",
-        "stateAreas": [
-            {
-                "state": "Lagos",
-                "areas": ["Ikeja", "Surulere", "Yaba", "Maryland"]
-            }
-        ]
-    }
+  "status": true,
+  "message": "Delivery zone created successfully",
+  "data": {
+    "id": "67a6261a320f3f7368dfec99",
+    "name": "Lagos Mainland",
+    "country": "Nigeria",
+    "fee": 1500.0,
+    "estimatedDeliveryTime": "1-2 business days",
+    "active": true,
+    "stateAreas": [
+      {
+        "state": "Lagos",
+        "areas": ["Ikeja", "Surulere", "Yaba", "Maryland"]
+      }
+    ],
+    "overlappingZones": []
+  }
 }
 ```
 
-## ❌ Sample 400 Response (Validation Error)
-```json
-{
-    "status": false,
-    "message": "Validation failed",
-    "errors": [
-        {
-            "field": "name",
-            "message": "Zone name is required"
-        },
-        {
-            "field": "fee",
-            "message": "Delivery fee cannot be negative"
-        }
-    ]
-}
-```
+## Error responses
+| Status | Message |
+|---|---|
+| `400` | Please enter a name for the delivery zone. |
+| `400` | Please specify the delivery fee. |
+| `400` | Please select at least one state and its corresponding coverage areas. |
+| `401` | Unauthorized |
+
+## Next steps
+- [Fetch Delivery Zones](./fetch-delivery-zones.md)
+- [Match Delivery Zone](./match-delivery-zone.md)
