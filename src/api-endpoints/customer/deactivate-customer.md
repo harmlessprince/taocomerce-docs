@@ -4,47 +4,28 @@ title: Deactivate Customer
 
 # Deactivate Customer
 
-##  Description
-The **Deactivate Customer** API allows client users to deactivate a customer, this prevents the customer from login in to your application.
+Use this endpoint to deactivate a customer account. A deactivated customer cannot log in or place new orders.
 
-##  Endpoint
+## Endpoint
 **PATCH** `/v1/customers/{customerId}/deactivate`
 
-##  Required Headers
+| Path parameter | Type | Description |
+|---|---|---|
+| `customerId` | string | Unique identifier of the customer account. |
+
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "Content-Type": "application/json"
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
 }
 ```
 
-## 📥 Request Body
-None
-
-
-##  Example API Call (Fetch or Axios)
-```javascript
-fetch('https://api.shopsynch.com/v1/customers/67a5ff5cb6ac842d1241d096/deactivate', {
-  method: 'PATCH',
-  headers: {
-    'Authorization': 'Bearer JWT_TOKEN',
-    'Content-Type': 'application/json'
-  }
-})
-.then(response => response.json())
-.then(data => console.log(data));
-```
-
-## 📤 Sample 200 Response (Success)
+## Response 200
 ```json
 {
-    "data": null,
-    "message": "Customer deactivated successfully",
-    "status": true
+  "status": true,
+  "message": "Customer deactivated successfully",
+  "data": null
 }
 ```
-
-
-##  Next Steps
-- [User Login](./activate-customer.md)
-- [Retrieve User Profile](../authentication/user-profile.md)

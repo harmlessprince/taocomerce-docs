@@ -40,7 +40,7 @@ All path settings have sensible defaults (shown in the table above). If you only
 
 ## Next Steps
 
-- [Authentication Overview](../authentication/README.md)
+- [Authentication Overview](../authentication/index.md)
 - [Google OAuth (Customer)](../authentication/login-with-google-as-customer.md)
 - [Forgot Password](../authentication/forgot-password.md)
 - [Reset Password](../authentication/reset-password.md)

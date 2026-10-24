@@ -1,3 +1,5 @@
+# Fetch Authenticated Customer Orders
+
 ---
 title: Fetch Authenticated Customer Orders
 ---
@@ -112,4 +114,4 @@ fetch("https://api.shopsynch.com/v1/customer-orders?sortDirectionParam=ASC", {
 ##  Next Steps
 - [Fetch Order Detail](./fetch-order-detail.md)
 - [Fetch Order Items](./show-order-items.md)
-- [Checkout](../cart/checkout.md)
+- [Checkout](../cart/v2/checkout.md)

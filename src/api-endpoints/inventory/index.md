@@ -49,4 +49,4 @@ Access to inventory endpoints is controlled by three permission levels:
 - [Reserve & Release Stock](./reserve-release-stock.md)
 - [Low Stock Alerts](./low-stock.md)
 - [Inventory Logs](./inventory-logs.md)
-- [Warehouse Overview](../warehouse/README.md)
+- [Warehouse Overview](../warehouse/index.md)

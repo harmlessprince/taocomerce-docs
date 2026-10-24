@@ -2,7 +2,7 @@
 title: Fetch Customers
 ---
 
-# Fetch Promo Ads
+# Fetch Customers
 
 ##  Description
 This API retrieves a list of customers filtered by email, name and paginated using a cursor.

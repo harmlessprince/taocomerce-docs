@@ -4,55 +4,47 @@ title: Delete Delivery Zone
 
 # Delete Delivery Zone
 
-## Description
-This API allows merchants to delete an existing delivery zone by its unique ID. Deleting a zone will remove its associated delivery fees and areas from the system.
+Use this endpoint to permanently delete an existing delivery zone by its ID.
 
 ## Endpoint
-- **URL:** `/v1/delivery-zones/{id}`
-- **Method:** `DELETE`
+**DELETE** `/v1/delivery-zones/{id}`
 
-## Path Parameters
-| Parameter | Type   | Description                          |
-|-----------|--------|--------------------------------------|
-| `id`      | string | The unique ID of the delivery zone. |
+| Path parameter | Type | Description |
+|---|---|---|
+| `id` | string | Unique identifier of the delivery zone to delete. |
 
-## Required Headers
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
-  "X-MerchantApiKey": "MERCHANT_API_KEY",
-  "Content-Type": "application/json"
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
 }
 ```
 
-## Example API Call (Using Fetch)
+## Example request
 ```javascript
-fetch('https://api.shopsynch.com/v1/delivery-zones/dz-12345', {
+fetch('https://api.shopsynch.com/v1/delivery-zones/67a6261a320f3f7368dfec99', {
   method: 'DELETE',
   headers: {
     'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantApiKey': 'MERCHANT_API_KEY',
-    'Content-Type': 'application/json'
+    'X-MerchantApiKey': 'MERCHANT_API_KEY'
   }
 })
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
+  .then(response => response.json())
+  .then(data => console.log(data));
 ```
 
-## ✅ Sample 200 Response (Success)
+## Response 200
 ```json
 {
-    "status": true,
-    "message": "Delivery zone deleted successfully",
-    "data": null
+  "status": true,
+  "message": "Delivery zone deleted successfully",
+  "data": null
 }
 ```
 
-## ❌ Sample 404 Response (Not Found)
-```json
-{
-    "status": false,
-    "message": "Delivery zone not found"
-}
-```
+## Error responses
+| Status | Message |
+|---|---|
+| `404` | Delivery zone not found |
+| `401` | Unauthorized |

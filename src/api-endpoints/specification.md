@@ -55,4 +55,4 @@ fetch('https://api.shopsynch.com/v1/specifications', {
 ```
 
 ##  Next Steps
-- [Product API](./product/README.md)
+- [Product API](./product/index.md)

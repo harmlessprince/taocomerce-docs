@@ -4,37 +4,38 @@ title: Generate Cart Session ID
 
 # Generate Cart Session ID
 
-##  Description
-The **Generate Cart Session ID** API provides a unique session ID for guest users to track their cart. The generated session ID is valid for **7 days** and must be included in subsequent cart-related requests.
+Use this endpoint to get a session ID for a guest customer. The guest sends this ID in the `X-Session-Id` header of each cart request.
 
-##  Endpoint
+A session ID is valid for 7 days. Each time the guest uses the session, the API extends the expiry date.
+
+## Endpoint
 **GET** `/v1/generate/session/id`
 
-##  Required Headers
-No authentication is required for this endpoint.
+## Headers
+This endpoint does not need authentication. Send the `X-MerchantApiKey` header.
 
-##  Example API Call (Fetch or Axios)
+## Example request
 ```javascript
 fetch('https://api.shopsynch.com/v1/generate/session/id', {
-  method: 'GET'
+  method: 'GET',
+  headers: { 'X-MerchantApiKey': 'MERCHANT_API_KEY' }
 })
-.then(response => response.json())
-.then(data => console.log(data));
+  .then(response => response.json())
+  .then(data => console.log(data));
 ```
 
-## 📤 Sample 200 Response (Success)
+## Response 200
 ```json
 {
-    "data": {
-        "sessionId": "6cb7ce1f-9360-4e63-a91d-422b89fe2341",
-        "expiresAt": "2025-02-10T10:01:30.129971"
-    },
-    "message": "Success",
-    "status": true
+  "data": {
+    "sessionId": "6cb7ce1f-9360-4e63-a91d-422b89fe2341",
+    "expiresAt": "2025-02-10T10:01:30.129971"
+  },
+  "message": "Success",
+  "status": true
 }
 ```
 
-##  Next Steps
-- [Add Item to Cart](./add-item-to-cart.md)
-- [Remove Item from Cart](./remove-cart-item.md)
-- [Fetch Cart Details](./list-cart-items.md)
+## Next steps
+- [Add Item to Cart](./v2/add-item-to-cart.md)
+- [Cart V2 endpoints](./v2/index.md)

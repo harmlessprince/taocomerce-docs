@@ -59,4 +59,4 @@ fetch('https://api.shopsynch.com/v1/payments/confirm', {
 
 ##  Next Steps
 - [Initialize Payment](./initialize-payment.md)
-- [Order Processing](../order/README.md)
+- [Order Processing](../order/index.md)

@@ -130,14 +130,6 @@ export default defineConfig({
                 link: "/api-endpoints/authentication/google-authentication",
               },
               {
-                text: "Login with Google",
-                link: "/api-endpoints/authentication/login-with-google-as-customer",
-              },
-              {
-                text: "Signup with Google",
-                link: "/api-endpoints/authentication/sginup-with-google-as-customer",
-              },
-              {
                 text: "Passwordless Auth",
                 link: "/api-endpoints/authentication/passwordless-authentication",
               },
@@ -199,26 +191,23 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/customer/" },
-              {
-                text: "Activate Customer",
-                link: "/api-endpoints/customer/activate-customer",
-              },
-              {
-                text: "Deactivate Customer",
-                link: "/api-endpoints/customer/deactivate-customer",
-              },
-              {
-                text: "Delete Customer",
-                link: "/api-endpoints/customer/delete-customer",
-              },
-              {
-                text: "Fetch Customer Stats",
-                link: "/api-endpoints/customer/fetch-customer-stats",
-              },
-              {
-                text: "Fetch Customers",
-                link: "/api-endpoints/customer/fetch-customers",
-              },
+              { text: "Fetch Customers", link: "/api-endpoints/customer/fetch-customers" },
+              { text: "Show Customer", link: "/api-endpoints/customer/show-customer" },
+              { text: "Update Profile", link: "/api-endpoints/customer/update-customer" },
+              { text: "Activate Customer", link: "/api-endpoints/customer/activate-customer" },
+              { text: "Deactivate Customer", link: "/api-endpoints/customer/deactivate-customer" },
+            ],
+          },
+          { text: "Migrate from V1 to V2", link: "/api-endpoints/migrate-v1-to-v2" },
+          {
+            text: "Storefront",
+            collapsed: true,
+            items: [
+              { text: "Overview", link: "/api-endpoints/storefront/" },
+              { text: "Get Products", link: "/api-endpoints/storefront/get-products" },
+              { text: "Get Product", link: "/api-endpoints/storefront/get-product" },
+              { text: "Similar and Top Selling", link: "/api-endpoints/storefront/similar-and-top-selling" },
+              { text: "Payment Gateways", link: "/api-endpoints/storefront/payment-gateways" },
             ],
           },
           {
@@ -226,38 +215,14 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/product/" },
-              {
-                text: "Add Product",
-                link: "/api-endpoints/product/add-product",
-              },
-              {
-                text: "Fetch Products",
-                link: "/api-endpoints/product/fetch-products",
-              },
-              {
-                text: "Fetch Product Details",
-                link: "/api-endpoints/product/fetch-product-details",
-              },
-              {
-                text: "Update Product",
-                link: "/api-endpoints/product/update-product",
-              },
-              {
-                text: "Delete Product",
-                link: "/api-endpoints/product/delete-product",
-              },
-              {
-                text: "Fetch Top Selling Products",
-                link: "/api-endpoints/product/fetch-top-selling-products",
-              },
-              {
-                text: "Toggle Product Status",
-                link: "/api-endpoints/product/toggle-product-status",
-              },
-              {
-                text: "Fetch Product V2",
-                link: "/api-endpoints/product/v2/fetch-products",
-              },
+              { text: "Fetch Products", link: "/api-endpoints/product/v2/fetch-products" },
+              { text: "Add Product", link: "/api-endpoints/product/v2/add-product" },
+              { text: "Update Product", link: "/api-endpoints/product/v2/update-product" },
+              { text: "Manage Variant Groups", link: "/api-endpoints/product/v2/manage-variant-groups" },
+              { text: "Manage SKUs", link: "/api-endpoints/product/v2/manage-skus" },
+              { text: "Archive or Unarchive", link: "/api-endpoints/product/archive-unarchive-product" },
+              { text: "Top Selling by Quantity", link: "/api-endpoints/product/fetch-top-selling-products" },
+              { text: "Top Selling by Revenue", link: "/api-endpoints/product/fetch-top-selling-by-revenue" },
             ],
           },
           {
@@ -265,18 +230,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/review/" },
-              {
-                text: "Add Review",
-                link: "/api-endpoints/review/add-review",
-              },
-              {
-                text: "Fetch Reviews",
-                link: "/api-endpoints/review/fetch-reviews",
-              },
-              {
-                text: "Delete Review",
-                link: "/api-endpoints/review/delete-review",
-              },
+              { text: "Add Review", link: "/api-endpoints/review/add-review" },
+              { text: "Fetch Reviews", link: "/api-endpoints/review/fetch-reviews" },
+              { text: "Fetch Product Reviews", link: "/api-endpoints/review/fetch-product-review" },
+              { text: "Hide Review", link: "/api-endpoints/review/hide-review" },
+              { text: "Delete Review", link: "/api-endpoints/review/delete-review" },
             ],
           },
           {
@@ -307,22 +265,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/promo-ads/" },
-              {
-                text: "Add Promo Ad",
-                link: "/api-endpoints/promo-ads/add-promo-ads",
-              },
-              {
-                text: "Fetch Promo Ads",
-                link: "/api-endpoints/promo-ads/fetch-promo-ads",
-              },
-              {
-                text: "Update Promo Ad",
-                link: "/api-endpoints/promo-ads/update-promo-ads",
-              },
-              {
-                text: "Delete Promo Ad",
-                link: "/api-endpoints/promo-ads/delete-promo-ads",
-              },
+              { text: "Create Promo Ad", link: "/api-endpoints/promo-ads/add-promo-ad" },
+              { text: "Fetch Promo Ads", link: "/api-endpoints/promo-ads/fetch-promo-ads" },
+              { text: "Fetch Published Ads", link: "/api-endpoints/promo-ads/fetch-published-promo-ads" },
+              { text: "Update Promo Ad", link: "/api-endpoints/promo-ads/update-promo-ad" },
+              { text: "Delete Promo Ad", link: "/api-endpoints/promo-ads/delete-promo-ad" },
             ],
           },
           {
@@ -330,22 +277,12 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/promotions/" },
-              {
-                text: "Add Promo Code",
-                link: "/api-endpoints/promotions/add-promo-code",
-              },
-              {
-                text: "Fetch Promo Codes",
-                link: "/api-endpoints/promotions/fetch-promo-code",
-              },
-              {
-                text: "Update Promo Code",
-                link: "/api-endpoints/promotions/update-promo-code",
-              },
-              {
-                text: "Delete Promo Code",
-                link: "/api-endpoints/promotions/delete-promo-code",
-              },
+              { text: "Create Promotion", link: "/api-endpoints/promotions/add-promotions" },
+              { text: "Fetch Promotions", link: "/api-endpoints/promotions/fetch-promotions" },
+              { text: "Show Promotion", link: "/api-endpoints/promotions/show-promotions" },
+              { text: "Update Promotion", link: "/api-endpoints/promotions/update-promotions" },
+              { text: "Apply Promo Code", link: "/api-endpoints/promotions/apply-promotion-code" },
+              { text: "Delete Promotion", link: "/api-endpoints/promotions/delete-promotions" },
             ],
           },
           {
@@ -353,39 +290,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/cart/" },
-              {
-                text: "Generate Session ID",
-                link: "/api-endpoints/cart/generate-cart-session-id",
-              },
-              {
-                text: "List Cart Items",
-                link: "/api-endpoints/cart/list-cart-items",
-              },
-              {
-                text: "Add Item to Cart",
-                link: "/api-endpoints/cart/add-item-to-cart",
-              },
-              {
-                text: "Increment Cart Item",
-                link: "/api-endpoints/cart/increment-cart-item",
-              },
-              {
-                text: "Decrement Cart Item",
-                link: "/api-endpoints/cart/decrement-cart-item",
-              },
-              {
-                text: "Remove Cart Item",
-                link: "/api-endpoints/cart/remove-cart-item",
-              },
-              {
-                text: "Clear Cart",
-                link: "/api-endpoints/cart/clear-cart",
-              },
-              { text: "Checkout", link: "/api-endpoints/cart/checkout" },
-              {
-                text: "Checkout Guest",
-                link: "/api-endpoints/cart/checkout-guest",
-              },
+              { text: "Generate Session ID", link: "/api-endpoints/cart/generate-cart-session-id" },
+              { text: "Cart V2 Endpoints", link: "/api-endpoints/cart/v2/" },
+              { text: "Add Item", link: "/api-endpoints/cart/v2/add-item-to-cart" },
+              { text: "Replace Booking Time", link: "/api-endpoints/cart/v2/replace-booking" },
+              { text: "Checkout", link: "/api-endpoints/cart/v2/checkout" },
             ],
           },
           {
@@ -393,26 +302,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/payment/" },
-              {
-                text: "Initialize Paystack Payment",
-                link: "/api-endpoints/payment/initialize-paystack-payment",
-              },
-              {
-                text: "Verify Paystack Payment",
-                link: "/api-endpoints/payment/verify-paystack-payment",
-              },
-              {
-                text: "Initialize Monnify Payment",
-                link: "/api-endpoints/payment/initialize-monnify-payment",
-              },
-              {
-                text: "Verify Monnify Payment",
-                link: "/api-endpoints/payment/verify-monnify-payment",
-              },
-              {
-                text: "Initialize Payment Link",
-                link: "/api-endpoints/payment/initialize-payment-link",
-              },
+              { text: "Initialize Payment", link: "/api-endpoints/payment/initialize-payment" },
+              { text: "Initialize Guest Payment", link: "/api-endpoints/payment/initialize-payment-guest" },
+              { text: "Verify Payment", link: "/api-endpoints/payment/verify-payment" },
+              { text: "Update Payment Status", link: "/api-endpoints/payment/update-payment-status" },
+              { text: "Storefront Gateways", link: "/api-endpoints/storefront/payment-gateways" },
             ],
           },
           {
@@ -420,14 +314,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/media-management/" },
-              {
-                text: "Upload Media",
-                link: "/api-endpoints/media-management/upload-media",
-              },
-              {
-                text: "Delete Media",
-                link: "/api-endpoints/media-management/delete-media",
-              },
+              { text: "Upload Single Image", link: "/api-endpoints/media-management/upload-single-image" },
+              { text: "Upload Multiple Images", link: "/api-endpoints/media-management/upload-multiple-images" },
             ],
           },
           {
@@ -435,18 +323,13 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/order/" },
-              {
-                text: "Fetch Orders",
-                link: "/api-endpoints/order/fetch-orders",
-              },
-              {
-                text: "Fetch Order Details",
-                link: "/api-endpoints/order/fetch-order-details",
-              },
-              {
-                text: "Update Order Status",
-                link: "/api-endpoints/order/update-order-status",
-              },
+              { text: "Fetch Orders", link: "/api-endpoints/order/fetch-orders" },
+              { text: "Fetch Customer Orders", link: "/api-endpoints/order/fetch-customer-orders" },
+              { text: "Customer Orders by ID", link: "/api-endpoints/order/fetch-customer-orders-by-customer-id" },
+              { text: "Fetch Order Detail", link: "/api-endpoints/order/fetch-order-detail" },
+              { text: "Show Order by Number", link: "/api-endpoints/order/fetch-order-by-order-number" },
+              { text: "Fetch Order Items", link: "/api-endpoints/order/show-order-items" },
+              { text: "Update Order Status", link: "/api-endpoints/order/update-order-status" },
             ],
           },
           {
@@ -454,22 +337,9 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/warehouse/" },
-              {
-                text: "Add Warehouse",
-                link: "/api-endpoints/warehouse/add-warehouse",
-              },
-              {
-                text: "Fetch Warehouses",
-                link: "/api-endpoints/warehouse/fetch-warehouses",
-              },
-              {
-                text: "Update Warehouse",
-                link: "/api-endpoints/warehouse/update-warehouse",
-              },
-              {
-                text: "Delete Warehouse",
-                link: "/api-endpoints/warehouse/delete-warehouse",
-              },
+              { text: "Create Warehouse", link: "/api-endpoints/warehouse/create-warehouse" },
+              { text: "List Warehouses", link: "/api-endpoints/warehouse/list-warehouses" },
+              { text: "Update Warehouse", link: "/api-endpoints/warehouse/update-warehouse" },
             ],
           },
           {
@@ -477,14 +347,12 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/inventory/" },
-              {
-                text: "Fetch Inventory",
-                link: "/api-endpoints/inventory/fetch-inventory",
-              },
-              {
-                text: "Update Inventory",
-                link: "/api-endpoints/inventory/update-inventory",
-              },
+              { text: "Create Inventory", link: "/api-endpoints/inventory/create-inventory" },
+              { text: "List Inventory", link: "/api-endpoints/inventory/list-inventory" },
+              { text: "Adjust Stock", link: "/api-endpoints/inventory/adjust-stock" },
+              { text: "Reserve or Release Stock", link: "/api-endpoints/inventory/reserve-release-stock" },
+              { text: "Low Stock Alerts", link: "/api-endpoints/inventory/low-stock" },
+              { text: "Inventory Logs", link: "/api-endpoints/inventory/inventory-logs" },
             ],
           },
           {
@@ -492,41 +360,17 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/api-endpoints/delivery-zone/" },
-              {
-                text: "Add Delivery Zone",
-                link: "/api-endpoints/delivery-zone/add-delivery-zone",
-              },
-              {
-                text: "Fetch Delivery Zones",
-                link: "/api-endpoints/delivery-zone/fetch-delivery-zones",
-              },
-              {
-                text: "Update Delivery Zone",
-                link: "/api-endpoints/delivery-zone/update-delivery-zone",
-              },
-              {
-                text: "Delete Delivery Zone",
-                link: "/api-endpoints/delivery-zone/delete-delivery-zone",
-              },
+              { text: "Create Delivery Zone", link: "/api-endpoints/delivery-zone/create-delivery-zone" },
+              { text: "Fetch Delivery Zones", link: "/api-endpoints/delivery-zone/fetch-delivery-zones" },
+              { text: "Match Delivery Zone", link: "/api-endpoints/delivery-zone/match-delivery-zone" },
+              { text: "Update Delivery Zone", link: "/api-endpoints/delivery-zone/update-delivery-zone" },
+              { text: "Pause or Resume Zone", link: "/api-endpoints/delivery-zone/update-zone-status" },
+              { text: "Delete Delivery Zone", link: "/api-endpoints/delivery-zone/delete-delivery-zone" },
             ],
           },
           {
             text: "Integration Configuration",
-            collapsed: true,
-            items: [
-              {
-                text: "Overview",
-                link: "/api-endpoints/integration-configuration/",
-              },
-              {
-                text: "Update Integration Config",
-                link: "/api-endpoints/integration-configuration/update-integration-configuration",
-              },
-              {
-                text: "Fetch Integration Config",
-                link: "/api-endpoints/integration-configuration/fetch-integration-configuration",
-              },
-            ],
+            link: "/api-endpoints/integration-configuration/"
           },
           { text: "Fetch Countries", link: "/api-endpoints/country" },
           {
