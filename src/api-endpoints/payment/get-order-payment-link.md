@@ -44,7 +44,7 @@ Use this endpoint to retrieve the most recent payment link generated for an orde
     "reference": "ref_841EBF47_1741432000",
     "paymentGateway": "PAYSTACK",
     "paymentMethod": "card",
-    "channel": "WHATSAPP_PWA",
+    "channel": "API",
     "expiresAt": "2026-03-09T10:00:00"
   }
 }

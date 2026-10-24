@@ -4,7 +4,7 @@ title: Generate Payment Link
 
 # Generate Payment Link
 
-Use this endpoint to generate a hosted Paystack payment link with automatic split settlement. This endpoint is used by custom integrations, headless checkouts, and mobile checkout PWAs to collect payments for an order.
+Use this endpoint to generate a hosted Paystack payment link with automatic split settlement. This endpoint is used by custom integrations and headless checkouts to collect payments for an order.
 
 ## Endpoint
 **POST** `/v1/payment-links`
@@ -37,7 +37,7 @@ Use this endpoint to generate a hosted Paystack payment link with automatic spli
 | `state` | string | No | Delivery state. |
 | `area` | string | No | Delivery area within the city. |
 | `paymentGateway` | string | No | Gateway to use (`PAYSTACK`). Default: `PAYSTACK`. |
-| `channel` | string | No | Creation channel (`WHATSAPP_PWA`, `STOREFRONT`, `API`). Default: `WHATSAPP_PWA`. |
+| `channel` | string | No | Source channel for the payment link (`API`). Default: `API`. |
 | `callbackUrl` | string | No | Optional URL where the customer is redirected after payment. |
 | `description` | string | No | Optional description for the payment. |
 | `metadata` | object | No | Custom key-value pairs forwarded to the payment gateway. |
@@ -54,7 +54,7 @@ Use this endpoint to generate a hosted Paystack payment link with automatic spli
   "city": "Ikeja",
   "state": "Lagos",
   "paymentGateway": "PAYSTACK",
-  "channel": "WHATSAPP_PWA",
+  "channel": "API",
   "description": "Payment for Order ORD-841EBF47"
 }
 ```
@@ -76,7 +76,7 @@ Use this endpoint to generate a hosted Paystack payment link with automatic spli
     "reference": "ref_841EBF47_1741432000",
     "paymentGateway": "PAYSTACK",
     "paymentMethod": "card",
-    "channel": "WHATSAPP_PWA",
+    "channel": "API",
     "accessCode": "0pe2944vdz",
     "expiresAt": "2026-03-09T10:00:00"
   }
