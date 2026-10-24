@@ -4,19 +4,16 @@ title: Update Delivery Zone
 
 # Update Delivery Zone
 
-## Description
-This API allows merchants to update an existing delivery zone's details, such as its name, fee, estimated delivery time, or the states and areas it covers.
+Use this endpoint to update an existing delivery zone's configuration, including its name, fee, estimated delivery time, and covered states/areas.
 
 ## Endpoint
-- **URL:** `/v1/delivery-zones/{id}`
-- **Method:** `PUT`
+**PUT** `/v1/delivery-zones/{id}`
 
-## Path Parameters
-| Parameter | Type   | Description                          |
-|-----------|--------|--------------------------------------|
-| `id`      | string | The unique ID of the delivery zone. |
+| Path parameter | Type | Description |
+|---|---|---|
+| `id` | string | Unique identifier of the delivery zone. |
 
-## Required Headers
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -25,97 +22,34 @@ This API allows merchants to update an existing delivery zone's details, such as
 }
 ```
 
-## 📥 Request Body
-The request body follows the same structure as the [Create Delivery Zone](./create-delivery-zone.md) API.
+## Request body
+Same as [Create Delivery Zone](./create-delivery-zone.md#request-body).
 
-### DeliveryZoneRequest DTO
-
-| Field                   | Type   | Required | Description                                                                 |
-|-------------------------|--------|----------|-----------------------------------------------------------------------------|
-| `name`                  | string | Yes      | The updated name of the delivery zone.                                      |
-| `estimatedDeliveryTime` | string | No       | Updated estimated delivery time.                                            |
-| `fee`                   | double | Yes      | Updated delivery fee (must be 0 or greater).                                 |
-| `stateAreas`            | list   | Yes      | Updated list of states and areas. [More Info](#statearearequest-dto)        |
-
-### StateAreaRequest DTO
-<details>
-  <summary>State Area Request</summary>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>Type</th>
-        <th>Required</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>state</code></td>
-        <td>string</td>
-        <td>Yes</td>
-        <td>The name of the state (e.g., "Lagos").</td>
-      </tr>
-      <tr>
-        <td><code>areas</code></td>
-        <td>list</td>
-        <td>Yes</td>
-        <td>A list of area names within the state.</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
-
-## Example API Call (Using Fetch)
-```javascript
-fetch('https://api.shopsynch.com/v1/delivery-zones/dz-12345', {
-  method: 'PUT',
-  headers: {
-    'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantApiKey': 'MERCHANT_API_KEY',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    name: "Lagos Mainland Updated",
-    estimatedDeliveryTime: "1 business day",
-    fee: 1800.00,
-    stateAreas: [
+## Response 200
+```json
+{
+  "status": true,
+  "message": "Delivery zone updated successfully",
+  "data": {
+    "id": "67a6261a320f3f7368dfec99",
+    "name": "Lagos Mainland Express",
+    "country": "Nigeria",
+    "fee": 2000.0,
+    "estimatedDeliveryTime": "Same day delivery",
+    "active": true,
+    "stateAreas": [
       {
-        state: "Lagos",
-        areas: ["Ikeja", "Surulere", "Yaba", "Maryland", "Oshodi"]
+        "state": "Lagos",
+        "areas": ["Ikeja", "Surulere", "Yaba", "Maryland"]
       }
-    ]
-  })
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
-```
-
-## ✅ Sample 200 Response (Success)
-```json
-{
-    "status": true,
-    "message": "Delivery zone updated successfully",
-    "data": {
-        "id": "dz-12345",
-        "name": "Lagos Mainland Updated",
-        "fee": 1800.0,
-        "estimatedDeliveryTime": "1 business day",
-        "stateAreas": [
-            {
-                "state": "Lagos",
-                "areas": ["Ikeja", "Surulere", "Yaba", "Maryland", "Oshodi"]
-            }
-        ]
-    }
+    ],
+    "overlappingZones": []
+  }
 }
 ```
 
-## ❌ Sample 404 Response (Not Found)
-```json
-{
-    "status": false,
-    "message": "Delivery zone not found"
-}
-```
+## Error responses
+| Status | Message |
+|---|---|
+| `404` | Delivery zone not found |
+| `401` | Unauthorized |
