@@ -145,5 +145,5 @@ fetch("https://api.shopsynch.com/v1/orders/679f8f5a3b5f2173201c2582/detail", {
 
 ##  Next Steps
 - [Fetch Orders](./fetch-orders.md)
-- [Checkout](../cart/checkout.md)
+- [Checkout](../cart/v2/checkout.md)
 

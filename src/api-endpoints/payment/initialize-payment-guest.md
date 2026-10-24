@@ -8,7 +8,7 @@ title: Initialize Guest Payment
 The **Initialize Guest Payment** API allows none authenticated customers to start the payment process for an order. Before initializing payment, you must have a valid `orderId`, which can be obtained from the **Checkout Guest API**.
 
 ##  How to Get an `orderId`
-To get a valid `orderId`, the user must first complete the checkout process. Refer to the **[Checkout Guest API](../cart/checkout-guest.md)** for details on how to create an order and retrieve the `orderId`.
+To get a valid `orderId`, the user must first complete the checkout process. Refer to the **[Checkout Guest API](../cart/v2/checkout.md)** for details on how to create an order and retrieve the `orderId`.
 
 ##  Authentication Requirements
 -  The `X-SessionId` header is **mandatory** .
@@ -87,5 +87,5 @@ fetch('https://api.shopsynch.com/v1/payments/guest/initialize', {
 ```
 
 ##  Next Steps
-- [Checkout API](../cart/checkout.md)
+- [Checkout API](../cart/v2/checkout.md)
 - [Payment Confirmation](./verify-payment.md)

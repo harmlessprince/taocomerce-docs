@@ -114,4 +114,4 @@ fetch("https://api.shopsynch.com/v1/orders?sortDirectionParam=ASC", {
 
 ##  Next Steps
 - [Show Order](./show-order-items.md)
-- [Checkout](../cart/checkout.md)
+- [Checkout](../cart/v2/checkout.md)

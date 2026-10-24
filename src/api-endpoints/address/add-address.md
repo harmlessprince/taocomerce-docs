@@ -88,5 +88,5 @@ fetch('https://api.shopsynch.com/v1/addresses', {
 
 ##  Next Steps
 - Learn more about [Update Address](update-address.md)
-<!-- - Explore additional [API Endpoints](../../api-endpoints/README.md) -->
+<!-- - Explore additional [API Endpoints](../../api-endpoints/index.md) -->
 [baseUrl](https://api.shopsynch.com/)

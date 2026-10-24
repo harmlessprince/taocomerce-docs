@@ -243,4 +243,4 @@ fetch("https://api.shopsynch.com/v1/customer-orders/67dfb8408bd13b35a66f42ed?sor
 ##  Next Steps
 - [Fetch Order Detail](./fetch-order-detail.md)
 - [Fetch Order Items](./show-order-items.md)
-- [Checkout](../cart/checkout.md)
+- [Checkout](../cart/v2/checkout.md)

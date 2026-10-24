@@ -16,7 +16,7 @@ Unlike the classic V1 API, which had hardcoded fields for "RAM," "Storage," and 
 > - If no warehouse exists yet, the system creates a default one ("Main Warehouse") for you automatically.
 > - **BUNDLE products are excluded** — bundles have no inventory of their own; stock is tracked at the component product level.
 >
-> See the [Warehouse](../../warehouse/README.md) and [Inventory](../../inventory/README.md) documentation to understand how to query stock levels, adjust quantities, and set up reorder alerts.
+> See the [Warehouse](../../warehouse/index.md) and [Inventory](../../inventory/index.md) documentation to understand how to query stock levels, adjust quantities, and set up reorder alerts.
 
 ## Key Concepts
 
@@ -48,5 +48,5 @@ For **VARIABLE** products, we use a two-tier hierarchy:
 *   [Fetching and Filtering (V2)](./fetch-products.md)
 *   [Managing Variant Groups](./manage-variant-groups.md)
 *   [Managing SKUs](./manage-skus.md)
-*   [Warehouse Overview](../../warehouse/README.md)
-*   [Inventory Overview](../../inventory/README.md)
+*   [Warehouse Overview](../../warehouse/index.md)
+*   [Inventory Overview](../../inventory/index.md)
