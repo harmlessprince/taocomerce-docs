@@ -2,16 +2,18 @@
 title: Add Product Review
 ---
 
-# Add Review
+# Add Product Review
 
-##  Description
-This API allows users to add a review for a specific product by providing a rating, comment, and product ID.
+Use this endpoint to submit a review for a specific product. Authenticated customers and guest reviewers can submit ratings and comments.
 
-##  Endpoint
-- **URL:** `/v1/reviews`
-- **Method:** `POST`
+## Endpoint
+**POST** `/v1/reviews/add`
 
-##  Required Headers
+## Authentication
+- Requires customer authentication: `Authorization: Bearer JWT_TOKEN` (optional if guest review is allowed).
+- Requires `X-MerchantApiKey: MERCHANT_API_KEY`.
+
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN",
@@ -20,67 +22,47 @@ This API allows users to add a review for a specific product by providing a rati
 }
 ```
 
-## 📥 Request Body
+## Request body
 
-| Field Name   | Type   | Required | Description |
-|--------------|--------|----------|-------------|
-| `rating`     | Integer | Yes (1-5) | The rating given to the product (1 to 5). |
-| `comment`    | String  | Yes      | The comment describing the review. |
-| `productId`  | String  | Yes      | The ID of the product being reviewed. |
+| Field Name | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `productId` | string | Yes | Unique identifier of the product. |
+| `rating` | integer | Yes | Rating value from 1 to 5. |
+| `comment` | string | Yes | Review message content. |
+| `reviewerName` | string | No | Optional display name for the reviewer. |
 
-##  Example API Call (Using Fetch)
-```javascript
-fetch("https://api.shopsynch.com/v1/reviews", {
-  method: "POST",
-  headers: {
-    "Authorization": "Bearer JWT_TOKEN",
-    "X-MerchantApiKey": "MERCHANT_API_KEY",
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    "rating": 5,
-    "comment": "Excellent product! Highly recommended.",
-    "productId": "12345",
-    "userId": "67890"
-  })
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error("Error:", error));
-```
-
-## ✅ Sample 200 Response (Success)
 ```json
 {
-    "status": true,
-    "message": "Review added successfully",
-    "data": {
-        "id": "679f8f5a3b5f2173201c2582",
-        "createdDate": "2025-02-08T10:30:00",
-        "rating": 5,
-        "comment": "Excellent product! Highly recommended.",
-        "user": {
-            "id": "679f8f5a3b5f2173201cjsjs",
-            "fullName": "John Doe"
-        },
-        "product": {
-            "id": "679f8f5a3b5f2173201c2582",
-            "name": "Product Name",
-            "description": "product description"
-        }
-    }
+  "productId": "679f8f5a3b5f2173201c2582",
+  "rating": 5,
+  "comment": "Excellent quality and fast delivery.",
+  "reviewerName": "John Doe"
 }
 ```
 
-## ❌ Sample 404 Response (Not Found Error)
+## Responses
+
+### 200 OK
+```json
+{
+  "status": true,
+  "message": "Your review has been submitted successfully.",
+  "data": {
+    "id": "67b93a20d43a5c1234567890",
+    "productId": "679f8f5a3b5f2173201c2582",
+    "rating": 5,
+    "comment": "Excellent quality and fast delivery.",
+    "status": "active",
+    "reviewerName": "John Doe",
+    "createdAt": "2026-03-08T10:30:00Z"
+  }
+}
+```
+
+### 400 Bad Request
 ```json
 {
   "status": false,
-  "message": "Product not found"
+  "message": "You have already submitted a review for this product. Thank you for your feedback!"
 }
 ```
-
-##  Next Steps
-- Learn more about [Fetching Reviews](./fetch-reviews.md)
-- Learn more about [Updating Reviews](./hide-review.md)
-

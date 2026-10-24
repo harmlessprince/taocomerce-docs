@@ -19,5 +19,6 @@ The **Media Management API** provides endpoints for uploading and managing media
 - **Content-Type**: Must set `Content-Type` header to `multipart/form-data` for file uploads.
 
 ##  Available Endpoints
+- [Upload Single File](./upload-single-file.md) - Upload a single file (image or PDF)
 - [Upload Single Image](./upload-single-image.md) - Upload a single image file
 - [Upload Multiple Images](./upload-multiple-images.md) - Upload multiple image files in one request
