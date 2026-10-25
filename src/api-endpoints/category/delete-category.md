@@ -1,53 +1,39 @@
 ---
-title: Delete Category
+title: Delete Tenant Category
 ---
 
-# Delete Category
+# Delete Tenant Category
 
-##  Description
-The **Delete Category** API allows users to delete a category the have selected or created from their list of categories.
+Use this endpoint to delete a category from your store's category list. Any products associated with this category will be dissociated.
 
-- **Authenticated Users**: Must provide a valid JWT token.
-- The `X-MerchantApiKey` header is **mandatory** for all requests.
+## Endpoint
+**DELETE** `/v1/tenant-categories/{categoryId}`
 
-##  Endpoint
-**PATCH** `/v1/tenant-categories/:categoryId`
+## Authentication
+- Requires merchant authentication: `Authorization: Bearer JWT_TOKEN`.
+- Requires `X-MerchantApiKey: MERCHANT_API_KEY`.
 
-##  Required Headers
+## Headers
 ```json
 {
   "Authorization": "Bearer JWT_TOKEN", 
-  "X-MerchantApiKey": "MERCHANT_API_KEY",
-  "Content-Type": "application/json"
+  "X-MerchantApiKey": "MERCHANT_API_KEY"
 }
 ```
 
-##  Example API Call (Fetch or Axios)
-```javascript
-fetch('https://api.shopsynch.com/v1/tenant-categories/67b1eba52950d47e85cf54f4', {
-  method: 'PATCH',
-  headers: {
-    'Authorization': 'Bearer JWT_TOKEN',
-    'X-MerchantApiKey': 'MERCHANT_API_KEY',
-    'Content-Type': 'application/json'
-  }
-})
-.then(response => response.json())
-.then(data => console.log(data));
-```
+## Path parameters
 
-## 📤 Sample 200 Response (Success)
+| Parameter | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `categoryId` | string | Yes | Unique identifier of the tenant category to delete. |
+
+## Responses
+
+### 200 OK
 ```json
 {
-    "message": "Category deleted",
-    "status": true
-}
-```
-
-## 📤 Sample 404 Response (Success)
-```json
-{
-    "status": false,
-    "message": "Category now found"
+  "status": true,
+  "message": "Category deleted successfully.",
+  "data": null
 }
 ```

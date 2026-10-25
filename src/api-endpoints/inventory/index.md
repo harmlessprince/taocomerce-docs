@@ -1,12 +1,10 @@
 ---
-title: Inventory
+title: Inventory Overview
 ---
 
-# Inventory
+# Inventory Management
 
 The Inventory system tracks stock levels for your products across one or more warehouses. It is the single source of truth for stock availability in **Product V2**.
-
-> **Important:** Inventory is required for all Product V2 workflows. When you create a V2 product, the system automatically creates inventory records in your default warehouse. You do not need to call the inventory API manually for standard product creation.
 
 ## How It Fits In
 
@@ -21,9 +19,7 @@ Product V2
 - **VARIABLE products** → one inventory record per SKU per warehouse.
 - **BUNDLE products** → no inventory records (a bundle is composed of other products; stock is tracked at the component level).
 
-## Stock Quantities Explained
-
-Every inventory record tracks three values:
+## Stock Quantities
 
 | Field | Description |
 | :--- | :--- |
@@ -31,22 +27,16 @@ Every inventory record tracks three values:
 | `reservedQty` | Units held for pending orders (not yet shipped). |
 | `availableQty` | Units available for purchase. Computed as `onHandQty − reservedQty`. |
 
-## Permissions
+## Endpoints
 
-Access to inventory endpoints is controlled by three permission levels:
-
-| Permission | What It Allows |
-| :--- | :--- |
-| `can_read_inventory` | View stock levels across warehouses. |
-| `can_update_inventory` | Adjust stock quantities. |
-| `can_manage_inventory` | Full control — create records, set reorder levels, manage warehouses. |
-
-## Next Steps
-
-- [Create an Inventory Record](./create-inventory.md)
-- [List & Query Inventory](./list-inventory.md)
-- [Adjust Stock](./adjust-stock.md)
-- [Reserve & Release Stock](./reserve-release-stock.md)
-- [Low Stock Alerts](./low-stock.md)
-- [Inventory Logs](./inventory-logs.md)
-- [Warehouse Overview](../warehouse/index.md)
+| Endpoint | Method | Path | Description |
+|---|---|---|---|
+| [List & Query Inventory](./list-inventory.md) | GET | `/v1/inventory` | List store inventory records |
+| [Get Inventory Record](./inventory-detail-and-batches.md) | GET | `/v1/inventory/{id}` | Record details, logs, and batches |
+| [Storefront Stock](./storefront-stock.md) | GET | `/v1/inventory/product/{id}/storefront` | Public real-time available stock |
+| [Adjust Stock](./adjust-stock.md) | PATCH | `/v1/inventory/{id}/adjust` | Increase or decrease stock quantity |
+| [Physical Stock Count](./physical-count.md) | PATCH | `/v1/inventory/{id}/count` | Audit and record physical stock count |
+| [Reserve & Release Stock](./reserve-release-stock.md) | PATCH | `/v1/inventory/{id}/reserve` | Hold or release stock for orders |
+| [Low Stock Alerts](./low-stock.md) | GET | `/v1/inventory/low-stock` | List items below reorder threshold |
+| [Inventory Logs](./inventory-logs.md) | GET | `/v1/inventory/logs` | Audit trail of all stock movements |
+| [Create Inventory Record](./create-inventory.md) | POST | `/v1/inventory` | Manual inventory creation |

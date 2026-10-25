@@ -46,7 +46,10 @@ For **VARIABLE** products, we use a two-tier hierarchy:
 ## Next Steps
 *   [How to Create a Product (V2)](./add-product.md)
 *   [Fetching and Filtering (V2)](./fetch-products.md)
+*   [Lookup Products (V2)](./lookup-products.md)
 *   [Managing Variant Groups](./manage-variant-groups.md)
 *   [Managing SKUs](./manage-skus.md)
+*   [SKU Generator and Validation](./sku-generator.md)
+*   [Category Templates](./category-template.md)
 *   [Warehouse Overview](../../warehouse/index.md)
 *   [Inventory Overview](../../inventory/index.md)
