@@ -1,17 +1,18 @@
 ---
-title: Category API
+title: Product Category API Overview
 ---
 
-# Category API
+# Product Category API
 
-##  Description
+The Category API provides endpoints for browsing system categories, managing store-specific categories, and retrieving nested category trees.
 
-The categories are used for categorizing a product, the system provides basic categories you can select from to start with.
+## Endpoints
 
-You are expected to select from the available system categories or create a new one using the provided API's.
-
-
-##  Next Steps
-- Learn more about [Creating/Selecting Merchant Category](./add-category.md)
-- Learn more about [Fetching System Categories](./fetch-categories.md)
-- Learn more about [Fetch Selected/Created Merchant Category](./fetch-selected-categories.md)
+| Endpoint | Method | Path | Description |
+|---|---|---|---|
+| [System Categories](./fetch-categories.md) | GET | `/v1/categories` | List all system categories |
+| [Category Children](./category-children.md) | GET | `/v1/categories/{categoryId}/children` | List sub-categories under a parent |
+| [Merchant Categories](./fetch-selected-categories.md) | GET | `/v1/tenant-categories` | List merchant's configured store categories |
+| [Add Merchant Category](./add-category.md) | POST | `/v1/tenant-categories` | Add custom or system-backed category |
+| [Update Tenant Category](./update-category.md) | PUT | `/v1/tenant-categories/{categoryId}` | Rename a custom store category |
+| [Delete Tenant Category](./delete-category.md) | DELETE | `/v1/tenant-categories/{categoryId}` | Remove category from store |

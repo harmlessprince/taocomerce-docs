@@ -20,7 +20,9 @@ The **Authentication API** enables users to securely log in, manage their creden
 - The `Authorization` header must be included for protected requests.
 
 ##  Next Steps
+- [Customer Registration](./customer-registration.md)
 - [Customer Login](./login-as-customer.md)
+- [Refresh Customer Token](./customer-refresh-token.md)
 - [Merchant Login](./login-as-store-owner.md)
 - [Google Authentication](./google-authentication.md)
 - [Passwordless Authentication](./passwordless-authentication.md)
