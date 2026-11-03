@@ -178,6 +178,24 @@ client_id=YOUR_CLIENT_ID
 
 ShopSynch returns a new access token and a new refresh token, in the same shape as Step 4.
 
+### Token lifetimes
+
+| Token | Lifetime |
+|---|---|
+| Access token | 1 hour (`expires_in` is `3600`). |
+| Refresh token | 30 days **without being used**. Each successful refresh starts a new 30 days, so an app that keeps working never hits this limit. |
+| The merchant's approval | 180 days at most. After that the merchant must approve your app again, however recently you refreshed. |
+
+Refresh tokens are single-use. Every refresh returns a **new** refresh token, and the one you just used stops working. Save the new refresh token before you do anything else with the response. If your app loses it, for example by crashing between the response and the save, you will have to send the merchant through the sign-in again.
+
+If the same refresh request is sent twice within 30 seconds, for example a retry after a timeout, ShopSynch returns the same tokens both times. Do not rely on this; send one refresh request at a time per merchant.
+
+### When refreshing fails
+
+If the token request returns `"error": "invalid_grant"`, the refresh token can no longer be used. It may be older than the limits above, may already have been used, or the merchant may have removed your app. Check the `error` field in the response body rather than the HTTP status.
+
+Refreshing again will not help. Start over at [Step 2](#step-2-send-the-merchant-to-sign-in-and-approve-access) and send the merchant through the sign-in so they can approve your app again.
+
 ## Scopes
 A scope defines what your app can do with the merchant's store. Request only the scopes your app needs.
 
@@ -211,7 +229,7 @@ A scope defines what your app can do with the merchant's store. Request only the
 
 | Status | Meaning |
 |---|---|
-| `401 Unauthorized` | The access token is missing, invalid, or expired. Refresh the token or ask the merchant to sign in again. |
+| `401 Unauthorized` | The access token is missing, invalid, expired, or revoked. Refresh the token. If the refresh returns `invalid_grant`, ask the merchant to sign in again. The `error_description` in the response names both endpoints. |
 | `403 Forbidden` | The access token does not have the scope needed for this action. |
 | `503 Service Unavailable` | ShopSynch could not verify the token at this time. Retry the request. |
 

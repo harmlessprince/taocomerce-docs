@@ -54,6 +54,18 @@ Merchants sign in to ShopSynch, review the requested access, and approve the con
 
 ShopSynch does not recommend sharing private API keys directly with third-party AI tools.
 
+### If a Connection Stops Working
+
+Your AI tool renews its access automatically in the background, so a working connection normally stays working. The connection ends when:
+
+- the merchant removes the app under **Connected Apps** in the ShopSynch dashboard,
+- the app has not been used for 30 days, or
+- 180 days have passed since the merchant approved it.
+
+When that happens, the next request is rejected with `401 Unauthorized` and `invalid_token`. Reconnect the server in your AI tool, which opens the ShopSynch sign-in page again, and approve access. Your tool does not need to be reinstalled or reconfigured.
+
+If you build your own MCP client, follow the steps in [Refresh an Expired Access Token](oauth.md#refresh-an-expired-access-token) and [When refreshing fails](oauth.md#when-refreshing-fails). Scripts that cannot open a browser can use an [API key](#api-key-authentication-no-oauth) instead.
+
 ## Available Tool Areas
 
 ShopSynch MCP tools are exposed by capability area. Exact tool availability may vary by account, permission, environment, and client support.
